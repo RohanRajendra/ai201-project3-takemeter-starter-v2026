@@ -1,0 +1,291 @@
+text,label,note,stretch
+"Also F-Droid apparently: https://f-droid.org/en/packages/net.minetest.minetest/
+
+And installing it from there instead of the play store actually gives you some assurance that it isn't full of spyware or will be full of spyware in the next silent update.",evidence,"pre-labelled, checked; hn:49521286; fresh pull (hn_extra_pool.csv)",extra_evidence
+"I assume the cost is whatever you run the model on. Jev is already dirty cheap, $0.42 per million input tokens and output is free and the input cost is covering tokenization + API utilization",evidence,"pre-labelled, checked; hn:49885643; fresh pull (hn_extra_pool.csv)",extra_evidence
+"True, I guess at every step it’s affecting a growingly larger part of the intellectual population.
+I remember Umberto Eco only half-jokingly ranting in the early 2000 against the speed and ease with which suddenly everyone could match his rare bibliophile abilities and his portentous memory.
+I guess we’re all getting to feel the same way now, with the difference that the industrial/financial complex built on this new revolution feels like the most disenfranchising ever so far.",evidence,"pre-labelled, checked; hn:48863686; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Netbird's great. I've been using Pangolin (https://pangolin.net/) lately for my homelab. It's very similar in functionality to Netbird, but I like the UX of it better.",evidence,"pre-labelled, checked; hn:49758343; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Example of startups/incumbents that are using AI to reinforce workflows? I am assuming you don't read up on this stuff much, but it's everywhere. I can give you multiple examples in my industry (logistics) that are actively using AI to speed up doc collection, invoicing, maintenance cycles, and in general, a lot of back office flows.
+
+These are just some of the bigger guys that are either raising seed funding or already well-established... I can't imagine all the small and obscure teams that are chasing the same thing.
+
+https://www.flexport.com/
+https://www.loop.com/
+https://bubba.ai/
+https://alvys.com/
+https://www.roserocket.com
+https://www.withterminal.com/
+
+A lot of these guys have marketshare already and are weaving AI surgically through the stack, which is how people should be building. These aren't AI wrapper companies... these are companies that are leveraging AI to amplify their existing products.
+
+I am not sure why it's so hard for people to assume the semantical analysis that AI offers can't be leveraged properly inside of a product.
+
+Take this one post, and then extrapolate similar products across all verticals... that is currently the waters that are being tested. Law, healthcare, construction, etc - there all getting pressure tested for similar AI integrations.",evidence,"pre-labelled, checked; hn:49288469; fresh pull (hn_extra_pool.csv)",extra_evidence
+"It's not that the Internet is repeating Star Wars. It's that Star Wars was a fictitious allegory of what power and capabilities provide, and should serve as a warning of what might happen ... or is happening. (I'd hesitate to call The Force a technology per se, though there are other technologies portrayed in the series ... little of which I've watched since Ep. 4-6.)
+
+Technology is a force multiplier, genenerally, and new technologies, after an initial period of disruption, tend to either be adopted by existing power elites, or form new power elites, often a combination of both. I've only come to realise this myself relatively late in the game.
+
+It's instructive to revisit much of the early writing of the Internet. Much of that was strongly hagiographic and deludedly optimistic, but there were exceptions. Andrew J. Shapiro's The Control Revolution (1999) got far more right than wrong.
+
+<https://www.worldcat.org/title/41076267>
+
+<https://archive.org/details/controlrevolutio0000shap>
+
+<http://libgen.vg/book/index.php?md5=9CCE57E117DD4213F395FE0722352BF7>",evidence,"pre-labelled, checked; hn:48692814; fresh pull (hn_extra_pool.csv)",extra_evidence
+"same goes for dutch intelligence agencies and i highly doubt others inside the EU sharing data willy nilly.
+
+https://nos.nl/artikel/2586859-aivd-en-mivd-delen-minder-info-met-vs-en-meer-met-europa-zeggen-directeuren",evidence,"pre-labelled, checked; hn:49229787; fresh pull (hn_extra_pool.csv)",extra_evidence
+It's based on Cloudflare data which tracks know crawlers. You can see the discussion in this thread: https://news.ycombinator.com/item?id=50041619,evidence,"pre-labelled, checked; hn:50049778; fresh pull (hn_extra_pool.csv)",extra_evidence
+"93% of equities are held by the top 10% of households. Most middle class wealth in the US is primary residence real estate. The stock market isn’t the economy. No one is entitled to wealth, nor it maintaining it's value.
+
+> As of 2022, about half of households with a worker age 55 and older had no retirement savings, and 32% had no retirement savings or a defined benefit plan.
+
+The scaremongering about equity values and your average person’s holdings and exposure is not grounded in facts and reality. It’s simply scaremongering.
+
+https://news.ycombinator.com/item?id=49357337 (citations)",evidence,"pre-labelled, checked; hn:49831575; fresh pull (hn_extra_pool.csv)",extra_evidence
+"saves me time.
+
+on one hand, ups guys are cool with it, but on the other I think the postal service workers don't like dealing with amazon packages.
+
+On the other hand, ""works with alexa"" is such garbage.
+
+I bought a garmin car GPS that had alexa built in. Why would you want alexa to be part of your car nav?
+
+https://www.amazon.com/dp/B09D5PW315
+
+obviously to get better product placement on the site.",evidence,"pre-labelled, checked; hn:50099737; fresh pull (hn_extra_pool.csv)",extra_evidence
+"> I wonder just how different their processes really are
+
+Night and day.
+
+Apples has in-house silicon dev groups starting (at least) 2008 w/ acquisition of PA semi for their low power CPUs, followed by the acquisition of Anobit in 2012(?). Apple does their own architecture, microarchitecture, etc, full cycle development.
+
+Apple licenses ISA, not designs.",evidence,"pre-labelled, checked; hn:49430107; fresh pull (hn_extra_pool.csv)",extra_evidence
+">There was no default ""state"", at least by the time you're talking about humans, we probably already learned from each other by observation. Sure, politics and wars and religion and feudal dynasties and whatever make bumps in the line, but generally it goes up.
+
+No, that's not the shape of the line. You can view it here:
+
+https://ourworldindata.org/grapher/global-average-gdp-per-capita-over-the-long-run
+
+The hockey stick upturn in recent centuries needs explanation.
+
+I'm pushing back so hard on this comparative definition of wealth (which I notice is the secondary definition you found behind large possessions) because I think it's silly to do that when we have an unbelievably dramatic increase in wealth in recent centuries which needs understanding first.
+
+Hand-waving away human progress and forcing zero sum definitions of wealth feels unserious. You have terms for things like inequality, why not use those instead of distorting what wealth means?",evidence,"pre-labelled, checked; hn:48914832; fresh pull (hn_extra_pool.csv)",extra_evidence
+"I recently watched a YT video about this subject: https://www.youtube.com/watch?v=lSVgeMoXJTs
+
+In summary, companies use the bus-metric to see how viable a project is. Bus, as in, how many people can be hit by a bus before there is no one left to maintain the project.
+
+Despite its ubiquity, SQLite is maintained by only 3 people. That bus-metric for SQLite is 3, which is way too low for some companies.
+
+Give the link a watch; it was really interesting.",evidence,"pre-labelled, checked; hn:48048578; fresh pull (hn_extra_pool.csv)",extra_evidence
+"85W for the whole system?! The specifications for the CPU mention a TDP of 85W [1].
+
+[1] https://www.intel.com/content/www/us/en/products/sku/92986/intel-xeon-processor-e52620-v4-20m-cache-2-10-ghz/specifications.html",evidence,"pre-labelled, checked; hn:48355915; fresh pull (hn_extra_pool.csv)",extra_evidence
+"> Look at the most contentious issues in the US: abortion, climate change, taxing the wealthy, gun control, Affordable Healthcare Act.
+
+You left out immigration, crime, and “moral values”: https://www.pewresearch.org/politics/2024/05/23/top-problems-facing-the-u-s/",evidence,"pre-labelled, checked; hn:49165125; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Regarding the submodule question: I decided to test it and came up with this script:
+https://gist.github.com/Meneth32/bdb17a8787fc0ab197805d8d0cf2d7b8
+
+On debian 13 (trixie) with git version 2.47.3, it runs without error.
+You CAN use sha1 submodules in sha256 repos.",evidence,"pre-labelled, checked; hn:49931484; fresh pull (hn_extra_pool.csv)",extra_evidence
+"MOSS-Transcribe-Diarize [0] is by a Chinese team so apparently it's quite good. Try it out here [1].
+
+[0] https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
+
+[1] https://huggingface.co/spaces/OpenMOSS-Team/MOSS-transcribe-diarize",evidence,"pre-labelled, checked; hn:48898791; fresh pull (hn_extra_pool.csv)",extra_evidence
+"If you look at the screenshots of the game in question, it's pretty obvious what is going on
+
+https://www.luanti.org/en/#gallery
+
+Even though those are mods, it's a bad look to be holding those up as reference game images.",evidence,"pre-labelled, checked; hn:49478930; fresh pull (hn_extra_pool.csv)",extra_evidence
+"This is my docker compose for sharing files with randoms online https://pastebin.com/raw/cYV7ksw9
+
+Don't pass -d, your tunnel URL prints in the console and you can download dirs as tarball.",evidence,"pre-labelled, checked; hn:49760238; fresh pull (hn_extra_pool.csv)",extra_evidence
+"It is very rational and standard journalistic practice to focus on academic funding provenance.
+
+Gowers is funded by XTX markets:
+
+https://www.renaissancephilanthropy.org/ai-for-math-fund
+
+XTX markets heavily uses machine learning and disguises the influencer money as ""philanthropy"":
+
+https://www.xtxmarkets.com/
+
+But you would probably say that Magnus Carlsen's previous engagement with the Maltese gambling company Unibet and him releasing a couple of YouTube videos talking positively about poker and gambling have nothing to do with each other. Nothing at all.",evidence,"pre-labelled, checked; hn:48220544; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Flock: 111 000 cameras installed, source:https://roadsigns.com/blogs/resources/how-many-flock-cameras-are-there
+
+Meta: 9 million glasses sold, source: https://roadtovr.com/meta-ray-ban-smart-glasses-sales-tripled-2025/",evidence,"pre-labelled, checked; hn:49834415; fresh pull (hn_extra_pool.csv)",extra_evidence
+We have a `yt-dlp` based extractor that can fetch the subtitles/transcripts from the sites `yt-dlp` supports: https://hister.org/docs/extractors#ytdlp,evidence,"pre-labelled, checked; hn:49752018; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Nice post! You piqued my curiosity, so after a bit of research it turns out that, with techniques like MTP/MLA/CSA, it's quite probable that these models are much more efficient (and maybe bigger? tho 400B sounds about right) than a simple RAM breakdown would suggest.
+
+MTP - https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/
+
+MLA - https://machinelearningmastery.com/a-gentle-introduction-to-multi-head-latent-attention-mla/
+
+CSA - https://deepseek.ai/blog/deepseek-v4-compressed-attention",evidence,"pre-labelled, checked; hn:48203653; fresh pull (hn_extra_pool.csv)",extra_evidence
+"The median income in the US is $84K. Try feeding/housing a family on that, saving for a new car, paying for college education..
+
+The US has the 2nd highest poverty level of all OECD countries, second only to Costa Rica.",evidence,"pre-labelled, checked; hn:49182291; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Roughly in the same space is Zotero <https://www.zotero.org/> which is intended as a way of organizing research materials but is also a great way of quickly archiving web pages you've visited, including quick tagging and full text search.",evidence,"pre-labelled, checked; hn:49745537; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Some American cities like St Louis, Baltimore, Memphis, New Orleans have averaged about 50 homicides per 100,000 per year over the last 10 years. Detroit averaged about 40.
+
+It is not ""unhinged propaganda from the right"" for people living in those cities to wonder why the rate cannot be under 2.5 per 100,000 like it is in most European cities. Except for a few years in the early 2000s, London's rate has stayed below 2.5 for the last 250 years.",evidence,"pre-labelled, checked; hn:49893787; fresh pull (hn_extra_pool.csv)",extra_evidence
+"They walked that back, and now tell you they're downgrading the model: https://www.wired.com/story/anthropic-responds-to-backlash-on-claudes-secret-sabotage-on-ai-research/, https://archive.is/yxYhU",evidence,"pre-labelled, checked; hn:48490253; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Everything is inferred from device traces, and compared against known protocol implementations (ex USB - thanks to the openrazer project) - which AFAIK have remained pretty stable over the years.
+
+So far, it's survived a few device firmware updates with no visible breaking changes, but I can't guarantee it always will.
+
+https://github.com/openrazer/openrazer",evidence,"pre-labelled, checked; hn:49362083; fresh pull (hn_extra_pool.csv)",extra_evidence
+"I got a disappointing pelican on default reasoning mode: https://static.simonwillison.net/static/2026/deepseek-flash-v4-default.png
+
+But a REALLY good pelican on reasoning mode high (via OpenRouter): https://static.simonwillison.net/static/2026/deepseek-flash-v4-high.png",evidence,"pre-labelled, checked; hn:49129891; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Substance would be real activity happening in Estonia:
+- Where are the decisions made?
+- Where is the work being done?
+
+Why would I otherwise pay 66% in taxes in Belgium when I could just set up an Estonian ltd, get limited liability and pay 0 until I take anything out?",evidence,"pre-labelled, checked; hn:48663959; fresh pull (hn_extra_pool.csv)",extra_evidence
+"> look at the Rwanda: It is absolutely possible to have a genocide made by democracies,
+
+Rwanda has never been a democracy. Habyarimana was ""elected"" with 99% of the votes ffs.
+
+> and it is in fact more frequent than dictatorships
+
+It is trivially easy to verify that this is not true.",evidence,"pre-labelled, checked; hn:49229073; fresh pull (hn_extra_pool.csv)",extra_evidence
+"If anyone wants to get a deeper understanding of the Apollo Guidance Computer I can recommend the book ""Digital Apollo"" by David A. Mindell. It puts the AGC into the context of the fly-by-wire efforts that started with airplanes and moved on to spacecraft.
+
+The book ""The Apollo Guidance Computer: Architecture and Operation"" by Frank O'Brien is also good and goes into more technical detail. I'm told he gets a few things wrong, but it's a generally good treatment. There are several videos on YouTube that discuss the AGC at various levels of detail, including the excellent series by CuriousMarc where he and his team restore an AGC into working order, an astonishing accomplishment.",evidence,"pre-labelled, checked; hn:50006607; fresh pull (hn_extra_pool.csv)",extra_evidence
+"It's like Snowden said (paraphrasing): ""If privacy comes from policy, the policy can be changed on a whim, and in effect you have no privacy at all""",evidence,"pre-labelled, checked; hn:49429280; fresh pull (hn_extra_pool.csv)",extra_evidence
+"You can derive a pretty solid yardstick of how things are going for China by what you can find on the aftermarket, currently there is a glut of nvidia 4080s that have had their memory doubled up to 32GB. I'd have to assume they got a good deal buying up piles of H100s or whatever else was eating rack space, or potentially took a loss because they have hit the constraints of the # of cards they can rack.
+
+On the OEM side of things 9070/XTs are also shooting back up in price now that we have <$100 USB 4 egpu docks.
+
+People like to complain about how expensive things have gotten but I think it's pretty neat that there's so much pressure for throughput that it's even viable to buy 4 docks and 4 $850 GPUs and still save money over a single 48GB card.",evidence,"pre-labelled, checked; hn:49311405; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Truly, people have been saying this since 2017 and the Apple Neural Engine has proven them wrong time immemorial.
+
+Apple's own desktops, with the fastest Apple Silicon GPUs and TDPs 20x higher than an iPhone still can't compete for real-world datacenter use even with RDNA clustering. Apple's GPGPU architecture is behind AMD at this point, there's a reason why Apple Intelligence is critically reliant on Nvidia and Google to provide inference backends.",evidence,"pre-labelled, checked; hn:49028146; fresh pull (hn_extra_pool.csv)",extra_evidence
+Or you could have just opened an existing Intel pdf brochure which explains it with more intuitive illustrations (the search took me 2 minutes and it consumed a fraction of energy) https://download.intel.com/newsroom/kits/chipmaking/pdfs/Sand-to-Silicon_32nm-Version.pdf,evidence,"pre-labelled, checked; hn:49244902; fresh pull (hn_extra_pool.csv)",extra_evidence
+"> It sounds like the first franchise collapsed owing money.
+
+It did not, the franchisees simply wanted out because they were offered better paid work overseas.
+
+They told corporate they wanted to sell the franchise back to them, as they say they wanted to recoup their investment in the franchise before they left the USA.
+
+Corporate arrived the same day and started saying the franchise owes them $200,000, didn't inventory the franchise, terminated their franchise that day, seized the franchise that same day.
+
+https://www.youtube.com/watch?v=14ktgvoH4Mc&t=590s
+
+I don't have the facts about who's right about that, but that corporate behaviour seems remarkably aggressive and fishy to me.",evidence,"pre-labelled, checked; hn:48321736; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Discord Wants Your Government ID. They Just Leaked 70,000 of Them.
+
+The company that lost thousands of government IDs to hackers now wants face scans from everyone.
+
+https://stateofsurveillance.org/news/discord-age-verification-id-biometric-privacy-2026/",evidence,"pre-labelled, checked; hn:48692086; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Google has been the dominant force for about 80% of the internet’s existence. I understand things come and go, but Google is incredibly unique. Their importance cannot be overstated",evidence,"pre-labelled, checked; hn:49404981; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Right, there were never been any applications to have Russia as NATO member precisely because even initial, informal discussions failed:
+
+https://www.spiegel.de/international/world/secret-documents-from-the-1990s-how-close-was-russia-to-nato-membership-a-613a9896-ac9f-46ac-b27c-00547d96b9fb 
+https://transatlanticrelations.org/wp-content/uploads/2019/04/19-Kozyrev.pdf 
+https://www.cambridge.org/core/journals/european-journal-of-international-security/article/reconsidering-nato-expansion-a-counterfactual-analysis-of-russia-and-the-west-in-the-1990s/356448EA9D5C63C53BE1EC6B33FE470A 
+https://www.washingtonpost.com/archive/politics/2000/03/06/putin-says-why-not-to-russia-joining-nato/c1973032-c10f-4bff-9174-8cae673790cd/ 
+https://georgewbush-whitehouse.archives.gov/news/releases/2001/06/20010618.html 
+https://meduza.io/en/feature/2019/04/04/nato-was-born-70-years-ago-today-moscow-has-always-viewed-it-as-a-threat-but-that-hasn-t-prevented-three-attempts-to-join-the-alliance 
+https://www.theguardian.com/world/2021/nov/04/ex-nato-head-says-putin-wanted-to-join-alliance-early-on-in-his-rule
+
+the rabbit hole goes a bit deeper, and it seems that ruskie were trying to knock the doors since as early as 1954 and were repeatedly told to duck off
+
+i have not found the proofs for the part ""would allow using benefits of NATO, by not submitting to anything"" - the closest to this was the request to accept them sooner",evidence,"pre-labelled, checked; hn:50055408; fresh pull (hn_extra_pool.csv)",extra_evidence
+"https://blog.chuanxilu.net/en/posts/2026/05/dual-pass-review-recall-precision-tradeoff/
+
+This is what I did. Using a loop skill to dig problems and bugs in each step on development from design to coding to make sure the output software works properly and on purpose.",evidence,"pre-labelled, checked; hn:48245817; fresh pull (hn_extra_pool.csv)",extra_evidence
+"I randomly came across a YouTube video [1] on the history of After Effects that I found really interesting. Seems as if there is quite a bit of evidence that the Nedry animation was done with an early preview.
+
+[1]: https://www.youtube.com/watch?v=-LQyhSI56gU",evidence,"pre-labelled, checked; hn:48924219; fresh pull (hn_extra_pool.csv)",extra_evidence
+"The CFTC commission comprises five seats, four of which are currently vacant: https://www.cftc.gov/About/Commissioners/index.htm",evidence,"pre-labelled, checked; hn:48201804; fresh pull (hn_extra_pool.csv)",extra_evidence
+"Wush was already doing something similar (using tailscale under the hood)
+
+https://github.com/coder/wush",evidence,"pre-labelled, checked; hn:49454002; fresh pull (hn_question_pool.csv)",extra_evidence
+"Nice, looks like a great release. UI looks like it got a nice touch up and also cool to see that the project has AI powered object masking using onnx models: https://github.com/OpenShot/openshot-onnx.",evidence,"pre-labelled, checked; hn:49508116; fresh pull (hn_question_pool.csv)",extra_evidence
+Try using Handy! It's open source and free: https://handy.computer/ and also on Github https://github.com/cjpais/Handy,evidence,"pre-labelled, checked; hn:48434585; fresh pull (hn_question_pool.csv)",extra_evidence
+"Even when MySQL development velocity was more rapid, they maintained binary table format compatibility across major version upgrades the vast majority of the time. Literally the only exception I can think of, which necessitated a table rebuild, was the fractional timestamp storage change when going from MySQL 5.5 (2010) to 5.6 (2013).",evidence,"pre-labelled, checked; hn:48485998; fresh pull (hn_question_pool.csv)",extra_evidence
+"There is already a lot of effort to collect agent traces including reasonings, e.g. see the recent discussion: https://old.reddit.com/r/LocalLLaMA/comments/1u795pb/donate_your_coding_sessions_to_an_open_ccby40/
+
+We've been developing DataClaw for this: https://github.com/peteromallet/dataclaw",evidence,"pre-labelled, checked; hn:48581668; fresh pull (hn_question_pool.csv)",extra_evidence
+"Were you alive in 2024?
+
+Trump won by <1% against an incumbent in a time that incumbents lost by >10%.
+
+It's absolutely not that people like Trump, it's just that democrats are inept. Literally all democrats had to do was run somebody that didn't have a record of losing primaries.",evidence,"pre-labelled, checked; hn:48523167; fresh pull (hn_question_pool.csv)",extra_evidence
+"Yes, as I understand it, you choose the level of location precision to share https://meshtastic.org/docs/configuration/radio/channels/#position-precision",evidence,"pre-labelled, checked; hn:48066925; fresh pull (hn_question_pool.csv)",extra_evidence
+"> who I regarded as generally low quality
+
+how did you come up with this assessment",question,"pre-labelled, checked; hn:48298769; from set_aside.csv",question
+What would an average person lose if everybody used more open platforms?,question,"pre-labelled, checked; hn:49592192; from set_aside.csv",question
+I'm curious prior to this has there been any research/attempts at chemical methods to strengthen the structure and allow it to be unrolled?,question,"pre-labelled, checked; hn:48689514; from set_aside.csv",question
+"How do the apps bootstrap identity? Do they just use Apple/google (that seems really bad), or do they have you do some verification and input a token into the app somehow?",question,"pre-labelled, checked; hn:48734240; from set_aside.csv",question
+"Could you help create a new issue for that? I will do it later. It is already 1:00 AM my time, but I am happy that anyone is interested in it. : )",question,"pre-labelled, checked; hn:48530422; from set_aside.csv",question
+"If you're willing, could you go on (expand your point), or link to a treatise that supports your position?",question,"pre-labelled, checked; hn:48445842; from set_aside.csv",question
+"Correct me if I'm wrong but assuming there is only Alice and Bob in the network, each with their key-as-address, and they are both behind a CGNAT, Iroh will still need a third party to host the relay?",question,"pre-labelled, checked; hn:48551170; from set_aside.csv",question
+"Appreciate providing this benchmark. I am curious, do you think that as new models (from the same company) are released and you repeat the benchmark, they adapt/extend their training data to include your dataset, thus polluting the benchmark results? Would you be doing anything to combat this?",question,"pre-labelled, checked; hn:50003374; from set_aside.csv",question
+"Sorry to be off topic, but I have a question: has anyone installed the latest beta iOS and macOS, and if so what is the current status of Gemini integration?",question,"pre-labelled, checked; hn:48460570; from set_aside.csv",question
+"Will it be possible to disable, or better yet, wipe the whole feature off?",question,"pre-labelled, checked; hn:48457479; from set_aside.csv",question
+"What about buying API access through intermediaries like OpenRouter? Also, will the people passing verification be added to a openaiwatchlist DB?",question,"pre-labelled, checked; hn:48629140; from set_aside.csv",question
+"Neat!!! Does this work with mailto, can you embed html into emails?",question,"pre-labelled, checked; hn:50003813; from hn_candidates.csv",question
+"Can you just smoke weed, enjoy the music and not talk to anybody? Is that sort of experience possible?",question,"pre-labelled, checked; hn:49513829; from hn_candidates.csv",question
+"What are the chances there will be another Mac Pro in the future?
+
+Will Apple ever make a computer that makes Siracusa happy? (and do you have the ""Believe"" shirt?)",question,"pre-labelled, checked; hn:48138699; from hn_candidates.csv",question
+"> because I still learn something new from it every time
+
+Can you share in what ways these learnings affect your decisions or behaviors?",question,"pre-labelled, checked; hn:50001759; from hn_candidates.csv",question
+"> OpenCode Go currently offers $120 for $10 on DeepSeek Flash v4
+
+At DeepSeek's absurdly low rates or market rates?",question,"pre-labelled, checked; hn:49218284; from hn_candidates.csv",question
+"First year CD student excited to learn puts together a website, and more experienced guys makes a shitty comment that puts things into context. Then someone makes a funny comment mimicking its structure. Is that correct?",question,"pre-labelled, checked; hn:48829195; from hn_candidates.csv",question
+Is deepseek actually turning enough of a profit off inference to fully pay for training the next model? And do those profits depend on releasing model weights somehow?,question,"pre-labelled, checked; hn:49219320; from hn_candidates.csv",question
+Really cool project! Been looking for a browser-based audio editor. How does it handle large file sizes?,question,"pre-labelled, checked; hn:48268538; from hn_candidates.csv",question
+It sounds like you’re saying “sophisticated marketing”. Can you distinguish that from marketing that say McDonald’s does towards kids?,question,"pre-labelled, checked; hn:49455748; from hn_candidates.csv",question
+I’m no artist so I’m left to ask - how exactly is that metric determined?,question,"pre-labelled, checked; hn:49442277; from hn_candidates.csv",question
+"If I'm a passenger in a tesla, does the owner and/or tesla break a law when neither informs me that I'm being spied on?",question,"pre-labelled, checked; hn:49612970; from hn_extra_pool.csv",question
+Do you have any code you can share with us on how you do this? Very interested! Related to https://news.ycombinator.com/item?id=49482425,question,"pre-labelled, checked; hn:49482972; from hn_extra_pool.csv",question
+You are saying you can one shot without loops on something like GLM-5.2?,question,"pre-labelled, checked; hn:48640377; from hn_extra_pool.csv",question
+"Is it the reply to ‘HELO’ that enables things like tarpits?
+
+Like if my server replied with ‘HI PLEASURE TO MEET YOU 127.0.0.1 THAT NAME SOUNDS FAMILIAR ARE YOU BY CHANCE FROM BOSTON MY MOTHER IS FROM BOSTON WELL QUINCY ACTUALLY BUT DO YOU KNOW 127.0.1.1 THEY ARE A REALLY GOOD FRIEND OF MINE YOU SHOULD MEET I HEAR THEIR DAUGHTER IS A DOCTOR DONTYAKNOW AND YOU COULD…”
+
+etc, etc?",question,"pre-labelled, checked; hn:48562996; from hn_extra_pool.csv",question
+"Can you show the setup?
+
+(Can we do a Gaussian Splat of the setup of the photograph for the Gaussian Splat of the Strawberry?)",question,"pre-labelled, checked; hn:48191869; from hn_extra_pool.csv",question
+"Noob question;
+
+So if i only use the Firefox extension, all pages Hister will ""fetch and store"" will have gone through my browsers content blocker (uBlock Origin) before being saved ?",question,"pre-labelled, checked; hn:48275680; from hn_extra_pool.csv",question
+"Curious to learn more about how people are using it?
+
+Are they downloading parquet files and running analyses locally, or are they connecting to Iceberg-like data lake and leveraging DuckDBs query engine capabilities or have you exposed an interface (REST, UI) to query your data?",question,"pre-labelled, checked; hn:49332440; from hn_extra_pool.csv",question
+Where can I find more information on the cybersecurity breakthroughs adapted prompt?,question,"pre-labelled, checked; hn:49254597; from hn_extra_pool.csv",question
+"> wealth is not what is or should be taxed
+
+But why not?",question,"pre-labelled, checked; hn:49866118; from hn_extra_pool.csv",question
+"How do you do that with topics not directly experimenceable, like quantum mechanics or, as in this case, silicon manufacture?",question,"pre-labelled, checked; hn:49240704; from hn_extra_pool.csv",question
+"The question I have is, what were you exposed to and doing at ages 5, 10, and 15 that made you capable of developing a PCB in your freshman year of college?",question,"pre-labelled, checked; hn:48319007; from hn_extra_pool.csv",question
+"Interesting, so ""otherthinking"" is bad here. Have you tried other devices to turn yourself back on track without the extra work?",question,"pre-labelled, checked; hn:49031653; from hn_extra_pool.csv",question
+Did some try to estimates what it would take to bake interference for a capable large language model into silicon so that one can pipeline inputs through it and produce outputs at one token per clock cycle?,question,"pre-labelled, checked; hn:48358148; from hn_extra_pool.csv",question
+Does it means that any device that supports android 17 will support graphene as well?,question,"pre-labelled, checked; hn:48569427; from hn_question_pool.csv",question
+"Can someone explain why they're using terms like ""voluntary separation window"" instead of more natural language?",question,"pre-labelled, checked; hn:48106566; from hn_question_pool.csv",question
+Why did Nvidia think quads were a good idea over triangles when SGI was doing triangles? What is a holdover of Sun thinking? Was it a patent differentiation play or a patent defensive move? Or just following Microsoft's lead (and why did Microsoft think it made sense?),question,"pre-labelled, checked; hn:49880573; from hn_question_pool.csv",question
+"can you describe how such groups can coexist without isolation so that the more developed one helps the less developed one without a degree of influence and control in some shape or form?
+
+ideally something not too far removed from how the world works today",question,"pre-labelled, checked; hn:49716285; from hn_question_pool.csv",question
+"Could you briefly describe your workflow for doing that or give a pointer to a blog you wrote/like that aligns with the process? Thanks in any case, happy designing ;-)",question,"pre-labelled, checked; hn:48190714; from hn_question_pool.csv",question
+"To what extent does Grokipedia reflect Musk's personal ideological biases?
+
+I haven't paid that much attention to it, to be honest.",question,"pre-labelled, checked; hn:48291675; from hn_question_pool.csv",question
+"> the second most important urban index crime after murder
+
+Can you comment on why this is? Is it because it's common? Or so visibly impactful?",question,"pre-labelled, checked; hn:48186232; from hn_question_pool.csv",question
+What are the take aways from this? Should we avoid extensions now? Only install extensions from who you trust? What about if they get owned and you have auto-update extensions on as most people do?,question,"pre-labelled, checked; hn:48219567; from hn_question_pool.csv",question
+"I'm not in industry, is DPML (which I assume is the time required to make a mask?) set by electron beam scan time or something?",question,"pre-labelled, checked; hn:49443240; from hn_question_pool.csv",question

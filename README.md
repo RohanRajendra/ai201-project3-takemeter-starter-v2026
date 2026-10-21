@@ -109,6 +109,26 @@ neither checkable support nor first-hand experience for it.
 **Example 2:** *(HN item 49499287)*
 > This is a reach. Children can't vote. If that was a real concern you would be banning adults from social media.
 
+### `question` *(stretch: the fourth label)*
+
+Added after the core was built and kept out of `labels.csv` (see Stretch
+Features). Its rows are in `labels_stretch.csv`.
+
+**Definition:** The comment asks for information, clarification or help the
+writer doesn't have, and makes no claim of its own.
+
+**Example 1:** *(HN item 48689514)*
+> I'm curious prior to this has there been any research/attempts at chemical methods to strengthen the structure and allow it to be unrolled?
+
+**Example 2:** *(HN item 48460570)*
+> Sorry to be off topic, but I have a question: has anyone installed the latest beta iOS and macOS, and if so what is the current status of Gemini integration?
+
+**Boundary with the other three:** the Scope rule decides it. Only a pure
+question or request is `question`. A question that also states a separate
+claim, including a first-hand premise or a "surely…" aside, gets the label for
+that claim. A rhetorical question that is really a claim is labelled by the
+claim. This is why adding the label changed none of the 231 core rows.
+
 ### The hardest boundary
 
 **Which two labels:** `evidence` vs `experience`. Both offer support, and HN
@@ -366,7 +386,10 @@ labelled the 20 `cold` rows by hand, blind, with `label_cold.py`. The criteria
 targets and reasons were drafted by the same agent from my scaffold, then
 checked over three rubric rounds and three easy/hard rounds before I filed
 them. Claude also wrote `collect_hn.py`, drafted the taxonomy and the README
-text, and ran the notebook.
+text, and ran the notebook. The 93 stretch rows in `labels_stretch.csv` were
+made the same way: Claude pre-labelled 112 candidates and the same agent
+reviewed every one, correcting 15. Claude also wrote `stretch_runs.py` and ran
+the stretch runs.
 
 ---
 
@@ -396,6 +419,48 @@ seed 42.
 - **What I'll report:** accuracy, macro F1, per-label F1 and the confidence
   gap, against run 1, with the size of every change.
 
+**Result: built.** `python stretch_runs.py epochs` → `results_stretch_epochs.json`.
+Same 161 / 35 / 35 split and the same 35 test posts as `results.json`. Before
+using the runner I checked it: run with 3 epochs, it reproduces `results.json`
+exactly, down to the confusion matrix.
+
+| Measure | Run 1 (3 epochs) | Run 2 (10 epochs) | Change |
+|---|---|---|---|
+| Accuracy | 0.629 | 0.771 | **+0.143** (22 → 27 of 35 right) |
+| Macro F1 | 0.257 | 0.651 | **+0.394** |
+| F1 — `evidence` (n=6) | 0.000 | 0.727 | +0.727 (P 0.80, R 0.67) |
+| F1 — `experience` (n=7) | 0.000 | 0.333 | +0.333 (P 0.40, R 0.29) |
+| F1 — `assertion` (n=22) | 0.772 | 0.894 | +0.122 (precision 0.63 → 0.84) |
+| Confidence gap (most − least sure third) | 0.545 | 0.455 | −0.091 |
+| Mean confidence when right | 0.641 | 0.802 | +0.161 |
+
+**What moved, and what it says:**
+
+- **The model got off the majority class.** Run 1 predicted `assertion` 35
+  times out of 35. On the validation split, run 2 was still doing that after
+  epoch 2 (30 optimizer steps, about where run 1 stopped). It first predicted a
+  minority label at epoch 3. Validation macro F1 was 0.26 at epochs 1–2, 0.49 at
+  epoch 3, 0.76 at epoch 5 and 0.81 at epoch 10. So run 1 was under-trained, not unable to learn the
+  distinction.
+- **`evidence` was learned first and best.** 4 of 6 found, with 1 false alarm.
+  The pointers (links, figures, version numbers) are surface cues, as the
+  criteria context predicted.
+- **`experience` is still the weak label, and the errors run toward
+  `assertion`.** 4 of the 7 real `experience` posts were called `assertion`,
+  while only 1 `assertion` was called `experience`. That's the Rule 2 boundary
+  (is a specific thing described?), and it has no surface cue beyond "I".
+- **The hardest boundary shows up too.** 2 of the 6 `evidence` posts were
+  called `experience`. Those are first-person posts with a pointer, exactly the
+  line Rule 1 draws.
+- **The confidence gap shrank, but run 1's gap meant nothing.** Run 1 was
+  "right" only on `assertion` posts. In run 2 both thirds are better (1.00 and
+  0.55, against 0.82 and 0.27), and the model is surer when it's right.
+
+These are one seed on 35 test posts, so a single post moves `experience` F1 by
+roughly 0.1–0.15. They show the direction, not a stable number. That's unit 6's
+three-seed job, and the notebook's default stays at 3 epochs, so unit 6 starts
+from the run the criteria were written against.
+
 ### 2. A fourth label, `question`
 
 - **What it captures:** comments that make no claim and only ask for
@@ -416,6 +481,59 @@ seed 42.
   rows, run 2's settings), with per-label F1 including `question`, and what
   happened to the other three labels.
 
+**Result: built.** `python stretch_runs.py question` → `results_stretch_question.json`.
+The 43 `question` rows in `labels_stretch.csv` come from four places:
+
+| Source | Rows |
+|---|---|
+| Pure questions I had set aside from the core pool (`data/set_aside.csv`) | 11 |
+| Unlabelled rest of the core pool (rows 256–449 of `data/hn_candidates.csv`) | 10 |
+| Fresh pull 1 (`data/hn_extra_pool.csv`, 120 new stories) | 13 |
+| Fresh pull 2 (`data/hn_question_pool.csv`, 80 more new stories) | 9 |
+
+The candidates were posts with a "?" in them, pre-labelled and then reviewed
+under the rules, like the core. 45 were proposed and 2 were corrected to
+`assertion` in review: one rhetorical question, and one question wrapped in
+"surely…" claims. The questions were split 70/15/15 on their own (seed 42) and
+added to the core split, so the test set is the same 35 core posts plus 7
+held-out questions.
+
+| Label | Precision | Recall | F1 | Test n |
+|---|---|---|---|---|
+| `evidence` | 0.667 | 0.667 | 0.667 | 6 |
+| `experience` | 1.000 | 0.429 | 0.600 | 7 |
+| `assertion` | 0.759 | 1.000 | 0.863 | 22 |
+| `question` | 0.750 | 0.429 | 0.545 | 7 |
+| **All 42** | | | macro 0.669 | accuracy 0.762 |
+
+**What it captures that the three missed:** about 1 in 7 of the comments I
+read in Milestone 1, and 12 of the 256 I labelled, were pure questions or
+requests that make no claim at all. A
+three-label model has to call every one of them `evidence`, `experience` or
+`assertion`, and its scores never show those mistakes, because the questions
+were never in its test set. With the fourth label they're measurable: the model
+finds 3 of the 7 held-out questions, and 3 of the 4 it misses go to
+`assertion`. That's the expected direction, since a short question looks like a
+short unsupported claim.
+
+**What happened to the other three labels** (the same 35 core test posts, so
+this compares directly with run 2):
+
+| Measure, on the 35 core posts | Run 2 (3 labels) | Run 4 (4 labels) | Change |
+|---|---|---|---|
+| Accuracy | 0.771 | 0.829 | +0.057 (27 → 29 right) |
+| Macro F1 over the 3 core labels | 0.651 | 0.748 | +0.097 |
+| F1 — `evidence` | 0.727 | 0.727 | 0 |
+| F1 — `experience` | 0.333 | 0.600 | +0.267 |
+| F1 — `assertion` | 0.894 | 0.917 | +0.023 |
+
+The core labels didn't get worse, and `experience` got better: 3 of 7 found
+with no false alarms, against 2 of 7 with 3 false alarms in run 2. I wouldn't
+read much into that. It's two posts on one seed, and the four-label model also
+trained on 29 more posts. One real `experience` post was called `question`,
+which is the new boundary showing up.
+
+
 ### 3. 50 extra examples for the thinnest label
 
 - **Which label:** `evidence`, with 40 rows (17.3%), the thinnest of the three.
@@ -429,6 +547,66 @@ seed 42.
   settings, so the only thing that changes is the extra `evidence` data.
 - **What I'll report:** `evidence` precision, recall and F1 against run 2, plus
   whatever happens to the other labels.
+
+**Result: built.** `python stretch_runs.py extra` → `results_stretch_extra.json`.
+
+**Where the 50 came from:** 43 from fresh pull 1 (`data/hn_extra_pool.csv`,
+120 stories not in the core pool) and 7 from fresh pull 2
+(`data/hn_question_pool.csv`, 80 more). `collect_hn.py` now has an `--exclude`
+option that skips every story and comment already pulled, so the three pools
+share no stories. Two changes from the declared plan:
+- **The filter got stricter partway through.** The first 55 candidates under
+  "any digit or quote mark" gave only 11 `evidence` posts, so for the rest I
+  read only posts with a link, a %/$ figure or a year, or a quoted phrase of 3
+  or more words. The filter still only decided what got read; every label came
+  from the rules.
+- **More candidates than planned.** 67 `evidence` candidates were pre-labelled
+  and reviewed. The review overrode 13 of the first 56, mostly links that only
+  name the subject, define a word, or back a side remark rather than the claim,
+  and those 13 were dropped. That left 43, and 7 more from pull 2 made 50.
+
+The 50 were added to the **training split only** (`evidence` goes from 28 to
+78 training posts, 17% → 37% of training). Validation, test and settings are
+identical to run 2.
+
+| Measure, same 35 test posts | Run 2 (10 epochs) | Run 3 (+ 50 `evidence`) | Change |
+|---|---|---|---|
+| `evidence` precision | 0.800 | 0.667 | −0.133 |
+| `evidence` recall | 0.667 | 0.667 | 0 (4 of 6 both times) |
+| `evidence` F1 | 0.727 | 0.667 | **−0.061** |
+| `experience` F1 | 0.333 | 0.429 | +0.095 |
+| `assertion` F1 | 0.894 | 0.818 | −0.076 (recall 21 → 18 of 22) |
+| Accuracy | 0.771 | 0.714 | −0.057 (27 → 25 right) |
+| Macro F1 | 0.651 | 0.638 | −0.013 |
+
+**What happened to `evidence`'s numbers: nothing good.** The model found 4 of
+the 6 test `evidence` posts with and without the extra 50, and picked up one
+more false alarm, an `assertion` post called `evidence`. The
+bigger effect was on `assertion`. Tripling `evidence` in training shrank
+`assertion`'s share from 63% to 48%, the model called `assertion` less often,
+and 3 real `assertion` posts went to `experience` and 1 to `evidence`.
+
+**What I take from it:** `evidence` wasn't short of examples. Its surface cues
+were learnable from 28. In run 2 both misses went to `experience`, the Rule 1
+boundary (first person plus a pointer). In run 3 one went to `experience` and
+one to `assertion`. 50 more link-heavy posts don't teach where Rule 1 draws
+its line. The extra rows also arrived
+through a filter that favours links, so they may have taught "link means
+`evidence`" more strongly than the rules mean it. With 6 test posts every
+change here is one post, and one seed. A stable answer needs unit 6's three
+seeds.
+
+**Known soft spots the stretch review turned up** (written down, not fixed, so
+the core stays frozen for unit 6):
+- **Praise in front of a question.** "Neat!!! Does this work with mailto…?"
+  went in as `question`, while a standalone "This is so cool…" post in the core
+  is `assertion`. I treat praise as a judgment only when it's the whole point
+  of the post.
+- **A suggestion plus a link to the thing suggested.** One core row (HN item
+  49377302: "You could also distill the Anticipatory Music Transformer… [link]")
+  is `evidence`. Under the stricter line the stretch review used, where the
+  link has to let the reader check the claim, it would probably be
+  `assertion`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

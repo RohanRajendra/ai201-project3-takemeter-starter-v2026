@@ -8,7 +8,8 @@ text, and writes a candidate pool to data/hn_candidates.csv. Labels are added
 separately in labels.csv — this script never labels anything.
 
     python collect_hn.py                       # default pool
-    python collect_hn.py --stories 120 --per-story 4 --seed 7 --out data/hn_extra.csv
+    python collect_hn.py --stories 120 --per-story 4 --seed 7 --out data/hn_extra.csv \
+        --exclude data/hn_candidates.csv     # skip every story and comment already pulled
 
 Whole comments are kept. Comments are filtered, never trimmed:
   - 12 to 200 words (very long comments get truncated by the model anyway)
@@ -93,17 +94,21 @@ def main():
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--out", default="data/hn_candidates.csv")
     parser.add_argument("--exclude", nargs="*", default=[],
-                        help="CSV files whose hn_id values should be skipped")
+                        help="earlier pools: their comments and their stories are skipped")
     args = parser.parse_args()
 
-    seen = set()
+    seen, used_stories = set(), set()
     for path in args.exclude:
         with open(path, newline="") as f:
-            seen.update(row["hn_id"] for row in csv.DictReader(f))
+            for row in csv.DictReader(f):
+                seen.add(row["hn_id"])
+                used_stories.add(row["story_id"])
 
     rng = random.Random(args.seed)
     rows = []
-    for story in stories(args.stories, args.seed):
+    pool = [s for s in stories(args.stories + len(used_stories), args.seed)
+            if s["objectID"] not in used_stories][: args.stories]
+    for story in pool:
         picked = []
         hits = comments_for(story["objectID"])
         rng.shuffle(hits)

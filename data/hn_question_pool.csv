@@ -1,0 +1,1111 @@
+hn_id,story_id,story_title,created_at,text
+49630400,49623754,"Claude, change the “Add to Cart” button to blue",2026-09-09T17:47:53Z,"One of the biggest strengths of a computer is reproducibility. The worst software bugs are inconsistent or non reproducible. The least useful calculators apply rules inconsistently, to your example.
+
+the inconsistency of LLMs is by far one of the biggest gripes I have with them. Closely related to their apparently deep desire to avoid following instructions.
+
+I know these are both a byproduct of noise (which is somewhat tunable) and noise is inherent to these systems in a lode bearing way.
+
+I still hate it. it’s holding the technology back. I don’t honestly see how we can safely or even successfully approach the idealized realm of AI without bypassing this problem, which to my understanding, probably means not using language models at all and trying a totally different approach. But I really don’t know much about machine learning, I’m a super novice compared to a lot on this website."
+49871047,49868830,Ember-1,2026-09-27T21:29:14Z,"Seriously, I'm using a Qwen 3.8 27B on the homelab, distilled from supposed Fable traces. Regardless, the difference is notable, less thinking, better output. Distilled / heavy quant is better than the original (imv)
+
+https://huggingface.co/vwdubb/Qwen3.8-27B-Fable-Distill-NVFP4/tree/main
+
+side quest, are fable distillations only wrong when it's another country?"
+49586454,49582000,Cloud in a Bottle: making self-hosting accessible to everyone,2026-09-06T13:40:25Z,"It's not that it has disappeared it's that vendor-specific cloud has become too normal.
+
+And for the record obviously I'm not advocating for going back to the dark ages, ftp / php / shared hosting also had massive issues, my point was that things were _designed_ to be simple and the model in your head was simple and close to the metal.
+
+If you're joining an existing project today, or like OP's problem/solution you just want to self-host something, maybe even just to evaluate it, it has become a headache.
+
+I've never actually seen a ""real"" containerised app, one that was 100% agnostic and simple to deploy without multiple exceptions for 3rd party services and so on."
+49968655,49957116,Turn off Apple Intelligence on macOS 27 and get its disk space back,2026-10-05T18:33:49Z,"I do realize that this is the opposite of a solution defined as an ugly hack. Someone asked, I decided to share my personal experience. Also, replying to other two unhappy hners who accuse me of something immoral: ios 27, no writing tools found in context menu, local model is gone and doesn’t consume expensive iphone storage. I don’t see genmoji and other shit like that. The rest I have not checked. If apple devices will ever start to interfere with my peace of mind because of “siri” “ai” I will not bother either and will just throw them out the window and call it a day. Wish you the same. We as customers vote with a wallet."
+49445668,49434378,OpenAI Jalapeño: Better than Nvidia Blackwell,2026-08-26T08:30:38Z,"Computer Science history has taught us that this decision was almost always wrong.
+
+Every time a company has spent resources doing this, a competitor innovated on the software and made the custom hardware irrelevant."
+49518589,49503521,Terence Tao explains 6 essential mathematical concepts [video],2026-09-01T06:20:09Z,"Exactly my thoughts. There are people out there claiming code itself has become disposable, and maintenance and refactoring are cheap now. Which escapes the fact that a. all these are heavily subsidized now and unsustainable in the long run and b. when it comes to critical software and code, it's not really disposable and maintaining a vibe-coded codebase is going to be more costly."
+48870935,48863490,GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf],2026-07-11T11:08:42Z,"What was the prompt that was used to generate the prompt?
+
+How many cycles did it take to cover all the bases twice?"
+49641305,49637385,Show HN: What if the speed of light was 5 km/h?,2026-09-10T10:25:42Z,"""What if the speed of light was 5 km/h?""
+
+Website loads in few ms
+
+Nahh it's not"
+49265897,49257876,Stealing Reasoning Traces from Proprietary LLM APIs,2026-08-11T23:28:30Z,"I didn't read the paper in details but they claim there is high overlap between the synthetic traces and the ground truth ones (not sure how they confirmed that for blackbox models though, I guess they must have compared to open source models).
+
+They also talk about successful distillation of black box model capabilities with the approach."
+48640396,48630020,Pledging another $400k to the Zig software foundation,2026-06-23T04:41:57Z,"This, all day long... 9-5 is just the first job of the day if we're lucky.
+
+Then there's the 7 to 2am second job, the 5 to 7 on Saturdays and Every Other Sunday.
+
+Just to not actually have health insurance which is accepted at anything but the worst health care facilities in the region, with a 6 month waitlist for basic check-ups and a 60% fails or cancel for those appointments and reschedule 3 or more months away.
+
+We are all ONE semi-serious illness or injury away from living out of a shopping cart under an overpass.
+
+Money isn't the cure to ALL problems, but if the only problems you have left are the ones that cannot be solved by money, quit whining about being luckier than practically and statistically EVERYONE else. It is unbecoming and makes you look the fool."
+49455721,49433316,New Mac Studio with M5 Max and M5 Ultra,2026-08-26T20:50:34Z,"Android phone with termux and all the usual Linux tools. I use vim to write code, and I type with the touch screen. Not exactly peak ergonomics, but it works. For me, ability to code while lying down comfortably beats having a physical keyboard and bigger screen.
+
+Set up wireguard in my router and now I've got remote access into my LAN. My laptop has essentially become a Linux server. I just ssh in from the phone and write code. Can also easily launch and use codex."
+48768340,48759634,"PeerTube is a free, decentralized and federated video platform",2026-07-02T22:44:49Z,"If you find those few instances that have those few uploaders that interest you, the content can be good.
+
+However it does certainly suffer from the fact that all federated instances can't pull in videos from other platforms in some reproducible way (so that all instances would be able to serve the same content).
+
+I'm sure some YouTubers would allow mirrors if they didn't have to pick an instance and keep it running."
+48569427,48561654,GrapheneOS has been ported to Android 17,2026-06-17T12:26:19Z,Does it means that any device that supports android 17 will support graphene as well?
+49870470,49868830,Ember-1,2026-09-27T20:24:27Z,"> That's a really impressive result.
+
+we dont know what the result is and how its impressive."
+49092056,49089755,Codex Security,2026-07-29T00:52:42Z,"Yes, now that humans write less than 99% of code, the most important criteria for a language isn't readability, which I'd argue was always Python's main selling point, but the underlying runtime. There are practical limits to how fast a Python program can run either under I/O or CPU bound compared to other popular and mature languages with extensive libraries, like Elixir, Go or C++, depending on your use case."
+49161082,49150470,Qwen3.8-Max: A New Bar for Coding and Cowork,2026-08-03T20:37:18Z,"A big part of an engineering performing requirements analysis is owning the technical understanding of the requirements and identifying areas where the requirements are not technically feasible, can be done with less expense with adjustments, or can be better achieved with a different solution.
+
+AI will help you draft the communication of that knowledge, but it won't help you actually deliver the knowledge or ensure that the knowledge was appropriately received. As you say, it is a fundamentally human problem, which is why I maintain that writing code is easier."
+48482851,48475483,Building an HTML-first site doubled our users overnight,2026-06-10T21:17:43Z,"We have the ""social media"" companies to thank for this innovation. They introduced these stupid patterns primarily to keep users locked into their walled gardens and the rest of the industry followed them to the bad place like lemmings. Software is a fashion industry."
+49116566,49083314,New HIV vaccine shows unprecedented success in preclinical study,2026-07-30T22:14:48Z,The difference is that your body doesn’t make antiviral drugs. It does make antibodies after it has been trained to do so with a vaccine.
+48185211,48181041,"Garry Tan, the CEO of YC, accused me of unethical reporting",2026-05-18T20:33:25Z,"I mean, after I racked up a two digit number of milions of dollars I believe I'd find myself thinking ""why the fuck do I need more, it's time to go fuck off and do anything else"".
+
+Musk at one time said something like ""I work 80+ hours a week, so the people around me should work that much too"". They are completely blind to how sociopathic they are. It's a totally unhealthy amount to work for one, but for two is Musk himself will likely earn billions from those workweeks while the people around him will earn almost nothing except stress and then getting randomly fired by him on a whim.
+
+They are not connected to the same world we are."
+49999741,49984923,Sharing AI progress in mathematics,2026-10-07T22:40:09Z,"Humans of course aren't in _every_ ecological niche. I agree with you there. AI _could_ occupy only the ones we're not in, if we somehow found some stable steady-state that constrained it that way.
+
+I don't think this invalidates the worry in the slightest."
+48538939,48537165,Curl will not accept vulnerability reports during July 2026,2026-06-15T09:46:36Z,"I had a colleague at my previous company where we had to log her out of everything and ask IT to keep her logged out until their vacation was done every single time. Her water broke during her pregnancy leave and she still replied to someone asking her a question in Slack near real-time, after which we made her uninstall Slack from her phone altogether lol
+
+Some people are just workaholics and need interventions to actually take a proper holiday."
+48569699,48561654,GrapheneOS has been ported to Android 17,2026-06-17T12:46:58Z,"I mean...... Google Camera has slightly different approach to low light photos and much better panorama mode, which means you can just install it and use with network access denied.
+
+I mainly use native camera (good in most cases, can be brought up immediately with double power button press, from locked), Google camera (rarely), BlackMagic for when I need control over videos and ProShot when I need control over images (the last one might be hard to install - it's a paid app (I'm a paid user, this is how I got it), but not long time ago the moron of the developer made the app ""incompatible"" with devices without Google surveillance buttplug claiming it will prevent people pirating it form opening support cases....???).
+
+So you can have multiple camera apps. Thankfully Google is not Samsung or Sony, and all the apps have full access to the cameras."
+48106566,48100500,GitLab announces workforce reduction and end of their CREDIT values,2026-05-12T11:04:29Z,"Can someone explain why they're using terms like ""voluntary separation window"" instead of more natural language?"
+48297197,48285592,Big tech's anti-labor playbook has come for Wikipedia,2026-05-27T17:06:02Z,"After a point, sufficiently competent propaganda is indistinguishable from information.
+
+If you make the bias so subtle that people actively looking for it can't find it, you're just doing a decent job describing the topic. Sure, the cumulative slant across hundreds of pages might be enough to tweak populations at the margins, but I don't think that's a bigger negative than access to the information is a positive.
+
+And any other source of information is hardly going to be unbiased anyway. Everyone has an opinion!"
+49092927,49089755,Codex Security,2026-07-29T02:57:28Z,">> For authorized defensive work, Trusted Access for Cyber (TAC1/Daybreak) can reduce refusals
+
+Or perhaps a better option is to use something like Kimi K3 and cancel the GPT subscription altogether."
+49268873,49257876,Stealing Reasoning Traces from Proprietary LLM APIs,2026-08-12T07:17:51Z,"There's no way to make a model ""safe"", (whatever that means) since you can't know what users will do with the output. It's just PR.
+
+Closed models are also used for nefarious usage."
+48728286,48698908,Free the Icons,2026-06-30T03:46:26Z,"They were trying to make a unified design language across all their operating systems. If iOS and VisionOS both have their icons sitting on uniformly shaped tiles, macOS would break the convention.
+
+I don't like it, but I believe that's the reason why."
+48775317,48769397,CarPlay Is Additive,2026-07-03T14:12:51Z,"It really depends on what you are doing, but yes - if you need to look at the screen to do anything, you still fail safety. A knob is nicer than a touchscreen because you don't have to adjust to a moving vehicle to hit the right spot of the screen (for this same reason recent airplanes have buttons in addition to touchscreens).
+
+Still, if you are very used to the UI, you can say the music app is one item down from the map, and the phone is two, so you can count presses. I was able to SMS people with a Nokia phone with a hand on the steering wheel and one on the phone (back when it was not forbidden)."
+49557177,49550698,"Any Human Ever – One life, drawn at random from all who have ever lived",2026-09-03T21:18:49Z,"There were and have always been trading and other exchanges all over the world. The Egtved girl was traveling from north to central Germany, probably for marriage. Now, if we mean most people did not do this, then sure. But there's a persistent idea that ancient cultures were not in contact with each other, and this is largely disproven."
+48580824,48567759,GLM-5.2 is the new leading open weights model on Artificial Analysis,2026-06-18T04:28:58Z,"It’s been amazing to see the arc of tech people going from “evil Disney, copyright is an abomination, information wants to be free” to “OMG copyright is inviolable and AI is taking money out of Plato’s descendants’ pockets!”"
+49665275,49656225,Claude is only available to people over 18 years,2026-09-11T20:57:20Z,"Somebody tell the Chinese companies to stop dumping AI, so US labs can keep burning pension funds money wrapped in VC checks fine dumping AI at a huge loss.
+
+In any case I find the dumping argument stupid: they are giving both the model weights away and publishing in the open their results and how they got there."
+48648552,48647799,F3,2026-06-23T17:45:36Z,"Yeah this was a research project, it doesn't look like this is getting any adoption"
+49048703,49038433,Claude Opus 5,2026-07-25T15:56:38Z,">people who have to work for their living are amazed
+
+The answer us right there. Most people who work for a living aren't amazed, or not just amazed. Most normal people are afraid, angry, sad etc."
+48671113,48663324,"OpenAI unveils its first custom chip, built by Broadcom",2026-06-25T09:35:27Z,"The hardware? Not too difficult, there are dozens of startups. The software? Only NVIDIA could do it so far sufficiently well."
+50024640,50000488,Why isn't the industry freaking out about DeepSeek 4.1 Flash?,2026-10-09T18:20:29Z,"I mean I guess there's nothing left which can settle this disagreement except to see how it turns out. I'll just restate my opinion that, from a user experience and product perspective, decentralized model hosting will look like using the big labs, except worse in every way. I don't expect it to please either the people who want local control or the people who are happy using the products from the big labs now."
+48215023,48195009,I’ve built a virtual museum with nearly every operating system you can think of,2026-05-20T22:20:19Z,"I learned a few things, from a Windows 10 user perspective
+
+It definitely needs to be extracted to the C: drive to work
+
+Also, make sure you update your copy of Oracle Virtualbox
+
+Once it's working, change the input from PS-2 mouse to USB tablet (even if you have a mouse), otherwise your pointer goes invisible, but is still active.
+
+I found TempleOS 5.03 in there, by the way.
+
+I'm looking forward to playing with the various DEC PDP-11 and VAX/VMS options, reliving my days at Rose-Hulman and Purdue Calumet.
+
+The HP-41 calculator is a nice touch!"
+48186227,48181041,"Garry Tan, the CEO of YC, accused me of unethical reporting",2026-05-18T21:51:35Z,The claim was that they refuse to help others in any significant way. Clearly nonsense for Gates at least.
+48145099,48139148,AI is making me dumb,2026-05-15T06:07:11Z,"Attention is an O(n^2) algorithm. Combined with Moore's doubling, it will at best produce linear growth (assuming Moore's law is still remotely close to alive)"
+48729925,48698908,Free the Icons,2026-06-30T08:26:46Z,"These are very nice (especially the Betelgeuse set), but -- unless this is just chance from the ones displayed -- don't they mostly all have the same silhouette, a rounded rectangle? While the Betelgeuse ones have more flair and are more differentiable from each other, an excellent thing, locking them in a box is the same kind of jail that this article is about.
+
+I would love to encourage you to free your own icons from the round-rect jail. You have some fantastic designs there."
+48482982,48475483,Building an HTML-first site doubled our users overnight,2026-06-10T21:29:42Z,"I’m curious if - and when - LLMs change this. They’re very good at web apps. And they’re great at rewriting existing stuff. Just give them a well scoped /goal and go get coffee.
+
+Theres lots of open questions about the future of our profession in the age of AI. But, playing with opus and fable, I think the future will be bright for our users. There is no reason any more for teams to put out junk that’s worse than what an LLM can do."
+48106829,48100500,GitLab announces workforce reduction and end of their CREDIT values,2026-05-12T11:38:32Z,"Dunno how it is these days, but that reads like Android roughly 2012-2020.
+
+I once found a looooong bug report thread on their issue tracker 7ish years old that had all the usual waves of promises that a fix might make the next release, then silence, then repeat, and the usual challenges to the bug’s status every time a release happened, plus it saw community members correctly diagnose the problem in the first couple years, then by like year 5 there’s was a (small!) patch posted by a community member with multiple posters confirming it was good and fixed the issue, that the author and others had been begging Google to apply and get in a release for a couple years. There’d been no responses from Google folks for a while.
+
+That might be the worst one I saw, but encountering something like that was a few-times-per-year thing in my android app dev years."
+48148045,48139148,AI is making me dumb,2026-05-15T13:01:05Z,"Programming is the ultimate exercise in technical communication, even if we remove the aspect of communicating about the software to other programmers or non-programmers. It's not just communicating to the machine. The architecture, organization, whitespace, naming, it's all about technical communication."
+49158150,49150470,Qwen3.8-Max: A New Bar for Coding and Cowork,2026-08-03T16:42:15Z,"Evaporative cooling is a matter of convenience and cost, not a necessity. Other cooling technologies can be used. Intel has already proven a closed-loop system can work just as well."
+48877974,48877371,What xAI's Grok build CLI sends to xAI: A wire-level analysis,2026-07-12T03:19:49Z,"last time I checked, codex is still open source w Apache-2.0 license"
+48941380,48933419,Sony deletes more movies from the accounts of people who ‘bought’ them,2026-07-16T22:57:31Z,Just because something is written in T&Cs doesn’t make it okay. Consumer laws have precedence over T&Cs.
+49687616,49678683,Everyone should slow down AI development except for me,2026-09-13T19:19:03Z,Still waiting for our org to roll out Mythos. I guess it was too expensive so we’re stuck on the previous model until the internal team can figure out self-hosting open models.
+48282731,48272670,"Taking a walk may lead to more creativity than sitting, study finds (2014)",2026-05-26T17:18:36Z,"I'm convinced that humans can't (or at least, shouldn't) actually work 8h a day. I'd argue that taking an hour to exercise or walk during the work day and working maybe 6 hours would make people more productive and happier than just working 8h.
+
+Unfortunately management thinks that lines of code written or token usage or seats in butts or {insert random quantitative metric} equals peak productivity."
+48524955,48517377,Noise infusion banned from statistical products published by Census Bureau,2026-06-14T07:20:35Z,"You're making the argument the Nazis only deported people?
+
+Sounds ironically more generous than the actual nazis claiming it either didn't happen or was 'deserved'."
+48577611,48569278,Sixty percent of US consumers say 'AI' in brand messaging is a turnoff,2026-06-17T22:07:42Z,That does not reduce my sorrow for dealing with the complicated edge cases that need human intervention and don’t want to deal with hours and hours of arguing with an AI to try and get special-cased.
+48583967,48569278,Sixty percent of US consumers say 'AI' in brand messaging is a turnoff,2026-06-18T11:51:53Z,Spotify pays artists the smallest amount they can possibly get away with without getting sued. Which is a tiny amount. Spotify is owned by music industry giants who needed a new money-grabbing scheme when the older schemes of the 70s-90s failed in the internet era.
+48326061,48311647,Claude Opus 4.8,2026-05-29T17:06:36Z,"For my day to day tasks 4.6 feels sufficient.
+
+I have limited enterprise budget and Claude 4.7 costs 7x more. So unless there's close to 7x improvement, it doesn't make sense to switch to 4.7.
+
+I actually gave both 4.6 a really complex task. It kept on thinking for several minutes before I hit the brakes. I then gave 4.7 the same task, and didn't notice any difference in behavior. Clearly not worth the 7x premium.
+
+I hope 4.6 becomes cheaper/free at some point because I'm starting to see a push towards optimizing token expenditures across the board. While frontier models are still the default for developing new workflows, everybody is starting to ask how to automate repetitive tasks without using tokens."
+48744421,48730608,The US ambassador had Belgian police stop our reporting,2026-07-01T09:53:22Z,"There are court in Turkey to protect you too, you stay anywhere from 30 days to 8 months in prison and then the court says you exercised your free speech rights. Similar stuff in US, people in control destroy your life and career then you are deemed actually innocent sorry for the trouble.
+
+That's not free speech, just because eventually you might be acknowledged that you have right to say something doesn't at all mean that you can do it."
+50054338,50043026,Terence Tao: Math 2.0 [pdf],2026-10-12T10:36:37Z,I feel like many who are considered renowned in their field they believe their view and understanding of everything in the world is correct but fail to do the research to back it. Knowledge in a very specific area is exactly that. Some skills are transferable but you need to use those skills to garner the knowledge to have a valid opinion. This doesn't feel like that.
+49008846,48997548,OpenAI and Hugging Face address security incident during model evaluation,2026-07-22T15:58:36Z,"Agree. The F100s I contract with are easily pushing billions if not trillions.
+
+Many of them have tried the LLM triage/SOC Analyst to…varying success.
+
+One opened a legit P2 a few days ago actually. Great work right? Upon closer inspection it had decided this activity was a false positive for a solid month before.
+
+The compromise (not significant in the end) was well done and over with by that point.
+
+Others are swamped in so many FPs being bubbled up as true positives that they essentially just ignore it."
+48421024,48409191,Changing how we develop Ladybird,2026-06-06T03:12:27Z,"I wasn't aware of the Ladybird project before this story, and probably would never have reason to use it. But it portends the beginning of the end of software collaboration and the community that goes along with it. If AI is going to do all the coding, then it becomes a pointless exercise. The software tools that we use today will be obsolete in a few years. Nevermind the need for a browser - the paradigm of the GUI desktop won't be necessary either. It will all be verbal instruction. The remaining programmers will just serve a caretaker role during the transition period until their services will no longer be necessary."
+48958166,48933419,Sony deletes more movies from the accounts of people who ‘bought’ them,2026-07-18T13:54:35Z,I didn't take the hint then but I also will never buy any Sony product ever again. I have two headphones from them. Both noise canceling. When the model year passes they push one final firmware to make ANC shit. Then they deny it. I thought if I got the fancier one I would be OK but it doesn't turn on anymore. Very comfortable ear warmers. (Simple shitty solder without support probably. Gotta open it up and look sometime.)
+49650350,49637385,Show HN: What if the speed of light was 5 km/h?,2026-09-10T21:25:00Z,"Does this take relativistic effects into account? The video I mentioned doesn't. Near the speed of light your surrounding looks like sped up and the distance to your target is clinched. Your own time runs slower in comparison and the distance is shorter. So theoretically you're able to reach the destination millions of LY away in your lifetime.
+
+Edit: I now watched the animation. It's exactly the same as the YT video. Speed of light is very, very slow."
+49999721,49984923,Sharing AI progress in mathematics,2026-10-07T22:38:35Z,"It's been doing all of the actual coding part of my job for the better part of a year, and you're commenting on a post about how it just released another round of math breakthroughs, besting a bunch of top humans. It can search the web and analyze documents it finds for me. It can do reverse engineering. It can analyze and create images.
+
+Not sure what your definition of AGI is, but it clearly has superhuman performance on most knowledge work already. Do you think after already having demonstrated that it can solve top problems, that the final frontier it won't be able to cross is explaining its solutions to the experts that were researching those problems, and eventually to e.g. grad student or postdoc level practitioners as a lecture course/set of notes?"
+49634231,49623754,"Claude, change the “Add to Cart” button to blue",2026-09-09T21:00:55Z,"If it wasn't trained with high gain, you would spend all your time beating it to make it move. Which would you rather have?"
+48649477,48647799,F3,2026-06-23T18:43:20Z,">no individual author really needs a language-agnostic way of accessing data beyond compile time.
+
+That's so untrue! People need language-agnostic ways to access data all the time, and people work with data accessing them from multiple languages all the time!
+
+If I have parquet files I can load them in duckdb, in pandas and polars, process them with various independent tools, and loads of other things... and people do that.
+
+This is also why people like something like an SQL database, your data is not locked to some specific language / lib for access."
+48218699,48207660,"GitHub confirms breach of 3,800 repos via malicious VSCode extension",2026-05-21T06:33:51Z,Maybe they actually try to increase the uptime now by making Copilot plans worse.
+49446254,49437069,My Friend Aaron,2026-08-26T09:40:30Z,"I immediately noticed something was wrong when the ""daily tech message board"" appeared. Before that point, I 100% believed that this was a real story."
+48431140,48427523,"Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",2026-06-07T02:23:12Z,"Technically Hezbollah fired rockets at Israel first on March 2nd and Israel responded… then Israel repeatedly bullshitted some ceasefires to keep the US placated while they simultaneously ramping up both a ground invasion and air campaign. Hezbollah equally is no doubt being pushed hard to keep fighting by Iran.
+
+Israel is definitely showing they are a bad partner to the US and should be the more responsible one (nobody expects much from Hezbollah which Iran just selfishly exploits). But Netanyahu seems to want to burn everything to the ground while he still can since he knows his career is already over."
+48732989,48730608,The US ambassador had Belgian police stop our reporting,2026-06-30T14:11:04Z,"1.) The journalists were invited.
+
+2.) The ambassador told the cops the journalists are an active threat. That was straightforwardly a lie.
+
+This was not ""trespassing"" event at all."
+48075322,48061566,An Introduction to Meshtastic,2026-05-09T14:35:46Z,"Does it apply to the meshcore.io app as well? From what I know (not a meshcore user currently) there has been a kerfuffle recently when a developer decided to fork and vibe code the project using Claude, then silently trademark the name and move everything to his own website. The original and legit site should be meshcore.io while the .co.uk site was created by that developer and isn't considered official nor reliable by the community."
+50104382,50089921,Americans' social activity has steeply declined in the past 30 years,2026-10-15T14:41:23Z,"The pre-war streetcar suburbs are great. Everything is on a grid, which makes getting around easy. After WWII it's all cul-de-sacs and arterials, and there is no place for kids to walk to."
+50059111,50043026,Terence Tao: Math 2.0 [pdf],2026-10-12T16:47:39Z,"besides that, he's also engaging in the logical fallacy of using the human as a more trustworthy replacement of the AI, when the verification of human understanding has the same fundamental problems you would have when verifying AI output and understanding.
+
+i.e. there need to be some meta processes that don't rely on human understanding at all.
+
+in medicine the whole pipeline is optimized exactly for this for short and medium term effects. for long term effects, there honestly isn't a pipeline, and the general mechanical understanding of treatments potential long term effects is surprisingly poor / uncertain when you look into it. and in this case, AI would almost certainly just improve the process."
+49664114,49656225,Claude is only available to people over 18 years,2026-09-11T19:33:34Z,And one of the rare incidences of the MPAA ratings banner appearing in the middle of a film.
+49062254,49038433,Claude Opus 5,2026-07-26T20:49:02Z,"It is both, because people fight over allocation a LOT less if there is more to go around."
+49165398,49150470,Qwen3.8-Max: A New Bar for Coding and Cowork,2026-08-04T07:29:47Z,"Not used it but from perusing forums, consensus is OpenRouter has terrible/broken caching for Deepseek wildly inflating token use. The cache metrics are visible so you can verify for yourself (apparently, it's what others have done)."
+49683096,49678683,Everyone should slow down AI development except for me,2026-09-13T12:09:41Z,Classic. Always easy to tell others to pump the brakes when you're already ahead or just about to catch up.
+49880573,49872723,Owed a billion dollars in Nvidia stock,2026-09-28T16:29:47Z,Why did Nvidia think quads were a good idea over triangles when SGI was doing triangles? What is a holdover of Sun thinking? Was it a patent differentiation play or a patent defensive move? Or just following Microsoft's lead (and why did Microsoft think it made sense?)
+49394833,49389430,Felony Bench,2026-08-21T23:09:31Z,"To put it another way, crimes are usually [0] only something the government can/must prosecute, victims don't get to choose. The media-popularized phrase ""would you like to press charges"" isn't asking for your permission, it's asking if you're willing you be helpful.
+
+So HuggingFace's corporate opinion here shouldn't (normatively) matter very much.
+
+[0] ""Private right of action"" with a civil trial comes close."
+48536820,48517377,Noise infusion banned from statistical products published by Census Bureau,2026-06-15T05:02:06Z,This is why I don't trust libertarians in office. They're incentivised to do a bad job.
+48733894,48730608,The US ambassador had Belgian police stop our reporting,2026-06-30T15:14:42Z,Could be but I am not sure belgian law is as trigger-happy with the whole trespassing thing. I wouldn't be surprised that lying to the police about someone being a threat in order to remove them form the private event you have invited them to would be a clear cut case
+48364877,48359102,The newest Instagram “exploit” is the goofiest I've seen,2026-06-02T01:41:22Z,">In this case, even using the least robust form of MFA that Instagram offers — a one-time code sent via SMS — likely would have blocked the exploit: The hackers who released the video on Telegram said their exploit failed to work against any accounts that had MFA enabled.
+
+Why would they not have this set up?"
+48669397,48663324,"OpenAI unveils its first custom chip, built by Broadcom",2026-06-25T05:40:11Z,Mainframe punch card -> PC floppy disk -> cloud SaaS -> AI --> return to the land agrarian
+48671643,48663324,"OpenAI unveils its first custom chip, built by Broadcom",2026-06-25T10:52:31Z,"> Or a military drone which needs to be jamming proof.
+
+That, if used in war, I would think, would need the ability to be updated frequently. For example, your enemy might find out (say by running tests on hardware they captured from you) that painting some red paint in a particular shape (a smiley might even work) on their hardware prevented your drones from attacking them because it confuses that pattern with the Red Cross logo."
+49012602,49010129,Are AI labs pelicanmaxxing?,2026-07-22T20:03:29Z,"It's a problem because of Goodhart's law.
+
+If you train towards the test, you aren't necessarily improving overall fitness, but you are destroying the value of that test over time because you're decreasing its correlation with overall fitness."
+49716285,49708431,I can't stop thinking about Papua New Guinea,2026-09-15T17:58:58Z,"can you describe how such groups can coexist without isolation so that the more developed one helps the less developed one without a degree of influence and control in some shape or form?
+
+ideally something not too far removed from how the world works today"
+49065019,49063754,PGSimCity - How PostgreSQL Works,2026-07-27T03:50:20Z,"yep (via pressing T)
+
+but I agree, could be better – thinking"
+49178256,49150470,Qwen3.8-Max: A New Bar for Coding and Cowork,2026-08-05T03:26:29Z,"Genuinely, Qwen 3.8-Max has been the best AI chatbot I've ever used."
+49743023,49708431,I can't stop thinking about Papua New Guinea,2026-09-17T16:20:10Z,">Please explain how this is ""not universally bad"".
+
+Lets say that you have a country where slavery is legal. The slaves of course don't like it. But lets say that the populace is largely in favor of it, because slave labor keeps the barebones economy going and people can trade and have food to eat. Most people don't actively capture slaves, they just buy them at the market.
+
+If you had the power to eliminate slavery in that country, you would free the slaves, but you would basically condem a lot of the people to die from starvation.
+
+So whats the ""correct"" moral stance? Real world isn't black and white like you would want it to be."
+48542664,48537165,Curl will not accept vulnerability reports during July 2026,2026-06-15T15:24:59Z,"> I can’t remember the word for “prosocial through lowering cost to zero” is but sometimes that too.
+
+Wiktionary:
+
+Benevolent, altruistic, unselfish, beneficent, philanthropic, selfless"
+48767032,48762098,Podman v6.0.0,2026-07-02T20:35:59Z,"> on a stock Centos system
+
+Either an old experience you had, or a newer experience you had on vastly out of date packages and probably podman itself?"
+48137484,48130950,Claude for Small Business,2026-05-14T16:13:49Z,"> Then when Claude is down for an hour, they get visibly angry
+
+Withdrawal symptoms. We've all been there."
+50104615,50090349,Google is silently linking your phone number across all signed-in accounts,2026-10-15T14:56:20Z,"Some bank apps refuse to work if your Android phone has developer mode on.
+
+One of my bank apps had a time where it refused to work if I wasn't using the default system keyboard. Luckily they rolled that back.
+
+The times of actually owning your hardware are long over."
+48027473,48012735,"Microsoft Edge stores all passwords in memory in clear text, even when unused",2026-05-05T19:41:11Z,"They literally are. You can easily google articles telling people to use passkeys for all their supported accounts. I'm not going to google it for you.
+
+Why you are trying to claim the opposite is beyond me."
+48723209,48713832,HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88,2026-06-29T18:30:04Z,"Or maybe your LLM results are being manipulated, 66/99 is a classic hacker dad quantification meme. :)"
+48161480,48130950,Claude for Small Business,2026-05-16T16:14:03Z,"what do you mean no idea. this is what you said
+
+> Every executive/leader I've shown Claude Cowork
+
+now you are saying you were merely ""observing"" ?"
+49307257,49294997,GLM-5.3: Frontier coding with emergent cyber capabilities,2026-08-15T03:16:16Z,"I have been building and maintaining a coding harness, with help from the community https://github.com/vinhnx/VTCode. Hope you'll check it out."
+49666001,49656225,Claude is only available to people over 18 years,2026-09-11T22:01:00Z,"Gift cards don't allow reloading which consequently makes them a significant inconvenience to use for subscriptions. It's sort of like saying you can pay for something by going to their offices and paying in cash. Okay, but then why does the way that 99.9% of people are actually going to do it have to be the one that invades their privacy and puts everything they do in a database?"
+49881475,49872723,Owed a billion dollars in Nvidia stock,2026-09-28T17:33:06Z,if i were jensen i'd give the dude a Billion for the PR
+50043921,50041619,Bot traffic from Yandex,2026-10-11T14:51:25Z,"No matter what ideology you follow, you are someone’s useful idiot, so this term is meaningless.
+
+Russia is no more (and no less) my enemy than the US and the EU are. And as far as spreading propaganda goes, Russia is downright mediocre compared to the latter two."
+48649059,48647799,F3,2026-06-23T18:16:52Z,"I don’t know what are people commenting on. I see a README with little to no information about what this is, what problems it solves, just links to its Flatbuffer description and a directory full of source code.
+
+What context am I missing?"
+48649106,48647799,F3,2026-06-23T18:20:04Z,"WASM implementations are fairly mature now, but if there was e.g. an image file format with embedded WASM that needed to execute before you could view it, it would become the new low-hanging-fruit target for 0-click RCEs - whether it's exploiting the WASM engine itself or some other attack surface that's influenceable via it (See also, the FORCEDENTRY JBIG2 exploit)."
+49443982,49433316,New Mac Studio with M5 Max and M5 Ultra,2026-08-26T03:43:29Z,"I got a 64GB M1 Max four years ago or so, used. Felt like a ridiculous overspend at the time, but I'm sure smug about it now."
+49459947,49452990,"Tailcat – Like netcat, but over Tailscale’s data plane",2026-08-27T04:59:18Z,"It has roughly the same features, much worse moddability, and better performance.
+
+At some point it was a weaker clone, but it developed into a very high quality clone, and has graduated into being a co-production with the Java version.
+
+Get a refund from wherever you got your facts.
+
+I'll give you half a point for ""iPad kids"" since that term implies a lot of incorrect things but it does run on iPads."
+49590335,49580939,The revolt of the reader,2026-09-06T20:05:57Z,"I'm not absolutely opposed to AI in principle. If it writes things worth reading, I'm not opposed to reading them.
+
+The problem is when it writes things that have the appearance of making sense but actually don't, when it writes what could be better put in 10% of the words, when it writes with no coherent logic. I don't have the time or the mental energy to wade through that on the faint chance that there might be a gem in there somewhere. But I have the same objection to human writers who do the same things.
+
+Write something worth reading. I don't have time for it otherwise."
+48478596,48476466,PgDog is funded and coming to a database near you,2026-06-10T16:17:26Z,"SQLA async is a bit of a struggle with pgbouncer.
+
+I had to disable application pooling as it was causing read only transactions I could couldnt pin down the cause."
+48142442,48139148,AI is making me dumb,2026-05-14T23:09:10Z,"I'd suggest going the route of having Claude teach you what you need to know. How do I uppercase this string? What's the best way to tackle this problem? Is there a standard way to do this thing? Then you learn along the way. You don't have to use it as a search engine, just ask it what you need to know in the moment. It will shake it's token chains and give you something that's useful, especially for a beginner in the language. This way you can implement your plan of growing your skills and then starting to delegate to it later.
+
+I've been doing this, and it's a nice balance for me. Having Claude code things when you don't know how to evaluate it's code seems like madness to me, but I guess I'm in the minority on this."
+48734562,48698908,Free the Icons,2026-06-30T15:56:39Z,"Every time I see criticism of MacOS Tahoe, it just makes me suspect that someone without experience went on an ego trip.
+
+That being said, should I skip Tahoe and wait for whatever comes next? MacOS keeps nagging me to upgrade to Tahoe, but I've been holding off because HN hates it so much."
+48574272,48561654,GrapheneOS has been ported to Android 17,2026-06-17T18:07:28Z,"Yeah what would really get me onboard with RCS if it were actually open, if I could choose which RCS provider I wanted to use. Like a privacy-driven foundation similar to Signal. Someone I could actually trust.
+
+But that would mean that the entire protocol would have to be made open including E2EE, and that other parties besides Google and the telcos would be allowed to run servers. Those things are very unlikely to happen."
+48323824,48311647,Claude Opus 4.8,2026-05-29T14:51:12Z,"> While they'd love to reduce their actual costs, they'd only want to do it to the extent they are certain they can keep it secret.
+
+So you are saying that frontier AI labs are spending billions of dollars on datacenters as a form of marketing. And they are colluding to hide the fact that they don't need to.
+
+Of course they profit more if they are in front, but bleeding money to pretend to be in front is not a winning strategy. They can't fool the market if their models are not actually better, and they know this."
+50105674,50089921,Americans' social activity has steeply declined in the past 30 years,2026-10-15T16:05:38Z,"> Atomic family from 50s with their suburb is literally the utopia for American and whatnot family
+
+Where did that ""utopia"" ideal come from?
+
+> Good luck having that in New York rat cages
+
+Yeah, that isn't good either. That's poverty. Do you think poverty doesn't exist in the suburbs?
+
+It can't possibly be something in the middle! All or nothing."
+48981696,48956688,LG monitors silently install software through Windows Update without consent,2026-07-20T17:12:48Z,"I wonder if this is an American thing, because my nephews regularly use desktops and laptops. Tablets never caught on here though.
+
+I was worried about this when they were younger though. The youngest played a lot of games only on a phone, but even he seems to have moved on from that."
+48574143,48569278,Sixty percent of US consumers say 'AI' in brand messaging is a turnoff,2026-06-17T17:58:10Z,That’s because customer support should be the absolute last place that an AI agent is used that might be one of the few places you will need humans in the loop for a while because that’s where people go when everything else doesn’t work
+49315766,49312845,"AI isn’t outthinking mathematicians, it’s out-remembering them",2026-08-16T00:52:19Z,"But what does it mean? The theorems are just symbols in lean. The conjectures humans chose are carefully selected to be the questions that are interesting and relevant to our intuition about the real world.
+
+Math often doesn't have applications for hundreds of years and that application is only possible because people deeply understand it and how it applies to the real world.
+
+Generating an endless list of true statements doesn't really do anything, those things are already true regardless of whether someone has written a lean program to model them."
+48454480,48427523,"Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",2026-06-09T00:31:59Z,"I don't think they used it in an antisemitic manner. Empire politics have been called parasitic even before WWII, and Israel's reliance on foreign aid does epitomize the cost of enabling this type of occupation. Americans are bled out of their wallets for this, and many no longer see the light at the end of the tunnel supporting Israel. To many Americans, it is a parasitic relationship with zero ostensible upsides to America."
+48721871,48713832,HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88,2026-06-29T17:03:13Z,"Yep, any day now AI is going to be so good we'll never need to think again. What's that, it's just a really expensive random number generator?"
+49074859,49063754,PGSimCity - How PostgreSQL Works,2026-07-27T20:02:27Z,"3.8B tokens, really Billions?
+
+In my case token consumption per week of kinda intense 3 simultaneous projects coding half of the day on Max20 is 55M tokens.
+
+Where do the extra ~2 orders of magnitude come from?"
+48437519,48427523,"Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",2026-06-07T18:47:19Z,"Anyone can call themselves a Christian. One can only tell a true Christian by their fruits. (e.g. love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control, and many others)"
+48189062,48182281,Anthropic acquires Stainless,2026-05-19T04:08:31Z,We have a stack similar to stainless internally at Stream. Might open source it if there's demand.
+48276467,48272670,"Taking a walk may lead to more creativity than sitting, study finds (2014)",2026-05-26T07:47:12Z,"Yes indeed, I'm aware of it, though I admit I never finished the whole thing. It did make me notice this situation even more acutely.
+
+It's funny that the part everyone quotes from the book (namely the Borges fable and the 'desert of the real itself') is in the introduction. Makes me wonder how many others didn't actually get through it. :)"
+48190714,48182281,Anthropic acquires Stainless,2026-05-19T08:28:45Z,"Could you briefly describe your workflow for doing that or give a pointer to a blog you wrote/like that aligns with the process? Thanks in any case, happy designing ;-)"
+48291675,48285592,Big tech's anti-labor playbook has come for Wikipedia,2026-05-27T09:18:32Z,"To what extent does Grokipedia reflect Musk's personal ideological biases?
+
+I haven't paid that much attention to it, to be honest."
+49397831,49389430,Felony Bench,2026-08-22T08:43:24Z,"Well, if you’re writing reports saying “we know our model only decides to commit felonies 0.001% of time which we judge to good enough to deploy” … I’m not sure that gets you off the hook the hook for the felonies."
+49461159,49433316,New Mac Studio with M5 Max and M5 Ultra,2026-08-27T07:27:42Z,"I ended up getting an M5 Max MBP with 48GB and it runs Qwen3.8 in Q4. I developed 3 apps so far, medium complexity, with no issue using OpenCode. This is probably the minimum setup for comfortable local agentic coding in my book."
+48634847,48630020,Pledging another $400k to the Zig software foundation,2026-06-22T19:27:01Z,2+2=4 is only a formal truth up to the axioms of arithmetic and how we denote numbers. The statement is not statement with regards to objective reality.
+48941185,48933419,Sony deletes more movies from the accounts of people who ‘bought’ them,2026-07-16T22:35:10Z,"When people say inflation they normally mean CPI which is a poor indicator for inflation and considering it so ignores the time value of money.
+
+Sellers should be forced to label DRM rentals with specific time frames and penalties for violating these time periods.
+
+The way it is done currently assumes the buyer wouldn't have bought something else that would have gained value if they knew the full terms of the sale. Instead they ""purchased"" an indefinite rental. Imagine if these selling practices where adopted all across the economy. It would be a mess but somehow we tolerate it because the product is digital."
+49442005,49437069,My Friend Aaron,2026-08-25T23:16:47Z,"To OP:
+
+Well written. Certainly bridges the gap between fiction and a plausible and believable first person narrative.
+
+Are you familiar with the US magazine The Sun? https://www.thesunmagazine.org/ 
+I have read several short story submissions at The Sun; typically first person submissions which blur the lines between true first person stories, and fiction.
+
+Try to submit your story to The Sun."
+49684087,49678683,Everyone should slow down AI development except for me,2026-09-13T13:59:41Z,Is there a sense where they were right because GPT-2 directly led to the current situation where you can atleast objectively say that reasonable people are pretty worried about existential risks of AI.
+49008974,48997548,OpenAI and Hugging Face address security incident during model evaluation,2026-07-22T16:06:34Z,"> When you have a couple hundred billion dollars on the line I have zero faith in the messenger
+
+The issue with your reasoning, is that if/when an advanced AI goes rogue, it will necessarily come from a lab with a couple hundred billion dollars on the line.
+
+So this is not a useful criteria to asses whether this is worth worrying about or not."
+49086185,49083314,New HIV vaccine shows unprecedented success in preclinical study,2026-07-28T16:18:51Z,"France and England are trying.
+
+The problem is money doesn't build supply lines overnight. Nor does it hire experts both locally and globally and get them there. Much of the data collected on patients by USAID can't just be handed over to another government for a myriad of privacy issues. Patients then have to know that their old clinic no longer exists and they have to go to a new one (is it in the same village anymore?). In the meantime viral counts go up, people get sick, infect their partners or newborn children. You can't just ""pick it up later"" without causing real harm.
+
+> or do they not care
+
+Do we not? Why can't we care, why is it now someone else's problem because Musk is still mad Mandela was let off of Robin Island?"
+49737343,49719249,AWS says it can't restore some data from mideast facilities struck by Iran,2026-09-17T07:01:58Z,"I mean I would be limiting it to a very specific use case, and the flat fee would be ""plus a percentage of the underlying"", something like $50/mo + 20% of the AWS spend underlying.
+
+And for that, with a simplified use case, well, they can scale up to $20k+ a month if they like, that would be ideal, and if they need a more complicated setup or enterpriseyness, migrate off with my blessing and available-not-required hands on support (again for a reasonable fee, maybe $10k if you want the white glove)."
+50054026,50043026,Terence Tao: Math 2.0 [pdf],2026-10-12T10:03:02Z,"nobody said anything like that, I don't even understand what point you are trying to make."
+49546442,49541256,Muse Spark 1.3,2026-09-03T06:03:14Z,"Gemini 3.8 Flash still looks like the better pick to me. Muse Spark 1.3 is nice, but Gemini gets you similar performance for a cheaper price. Not to mention with the pace at which Google is moving with their Flash models I expect a new one to release soon"
+50028893,50000488,Why isn't the industry freaking out about DeepSeek 4.1 Flash?,2026-10-10T02:19:38Z,"There are only 2 frontier labs. Well 3 sometimes with the occasional Google appearance. Everyone else is a chaser, perpetually catching up in large part because of distillation attacks. I wouldn't include them either."
+49091953,49083314,New HIV vaccine shows unprecedented success in preclinical study,2026-07-29T00:39:31Z,"> TB is also shockingly infectious
+
+let's keep HN as a place where people usually do at least a cursory research before they state things with such confidence... or inject a few words of doubt to signal that you haven't done the homework.
+
+if you feel the urge to fight this: i lived with someone infected with TB.
+
+e.g. measles is shockingly infectious. TB is not."
+48778572,48769397,CarPlay Is Additive,2026-07-03T18:53:22Z,"Sony is deleting 551 movies from customer accounts, movies those customers paid for. Nothing digital is ever truly yours. They can and absolutely do take things away after advertising them at sale. This is actually quite common."
+48066882,48061566,An Introduction to Meshtastic,2026-05-08T18:23:00Z,"""What is the use case?""
+
+Advertising services
+
+But only if use of the network becomes popular
+
+(Generally no one thought this would be the eventual use case for the internet)"
+49158546,49150470,Qwen3.8-Max: A New Bar for Coding and Cowork,2026-08-03T17:07:03Z,"It's just a Macbook Air with the base M4 and 16gb ram, but I'm hosting the models on a Mac Studio with M1 Ultra and 64gb ram that I had purchased when it came out. I get about 45-55 tokens per second with this setup. I think I could get more if I spent some time fiddling with the parameters, but I don't really know what I'm doing there so I've just left most of it on oMLX's defaults."
+48224926,48207660,"GitHub confirms breach of 3,800 repos via malicious VSCode extension",2026-05-21T16:00:17Z,"> I can't understand how many devs are doing just that these days.
+
+Convenience, and as someone who has been on the other side of the fence his whole career (sysadmin + security), dev != tech savvy. Even during my days in the help desk, the devs were some of the most difficult users to support. Being good at developing software doesn't always equate to being good at operating computer systems, especially in an enterprise environment.
+
+It used to be, dev workstations and environments were fully IT controlled and curated. Then everyone moaned and complained about not having local admin access to their machine (I get it, it sucks and is annoying, but there is a reason), and then devtools started dumping themselves in %APPDATA& and user directories to bypass the admin requirement for installs. And now extensions are in everything, and IT has no tools to control it."
+49270309,49263497,Compression is prediction,2026-08-12T10:40:35Z,I like to see ideas presented as the evolved. Each solution is developed as a perceived reaction to the shortcomings of the previous. This becomes a contrast and comparison as to why one idea is appropriate for a particular context.
+49588916,49580939,The revolt of the reader,2026-09-06T17:42:43Z,"> two years, we will be all writing and talking like this
+
+I have seen kids talking like youtubers: the top 10 things I like, or what I need to do before I die (the kids is 9 years old), ... not great (like repeating ad tunes or slogans) but not as bad as AI bullshit-talk.
+
+My only hope is that AI bullshit-talk is so boring and predictable that it has low impact in our speech. And looking at what other commenters say boring and insufferable seems to be the case."
+48636814,48630020,Pledging another $400k to the Zig software foundation,2026-06-22T21:57:16Z,"Has the Zig team/community warmed up towards other systems-ish languages?
+
+This is speaking from recollection engaging with programming communities years back - I found the Rust community to be interested and respectful of Zig but it didn’t seem to be well reciprocated, if anything much the opposite."
+48015183,48012735,"Microsoft Edge stores all passwords in memory in clear text, even when unused",2026-05-04T21:22:35Z,Correct me if I am wrong but chrome is-at least was- keeping passwords as raw text in Windows too. I got friend's forgotten password from Chrome on 2021 version
+49637683,49619227,I resigned from Anthropic today,2026-09-10T02:37:02Z,"> Truly idiotic moments. Peak of Western civilization point.
+
+Could you please stop posting unsubstantive comments and flamebait? This is particularly bad. It's not what this site is for, and destroys what it is for.
+
+You've been here a long time, but you've unfortunately been doing this so much in recent years that I've begun to wince when I see your username. Not a good sign.
+
+If you wouldn't mind reviewing https://news.ycombinator.com/newsguidelines.html and taking the intended spirit of the site more to heart, we'd be grateful."
+48480818,48476466,PgDog is funded and coming to a database near you,2026-06-10T18:42:25Z,I’ve always found Instacart to be extremely slow with giant latencies. Of course I don’t know if that’s due to Postgres or some other design flaw…
+49443925,49437069,My Friend Aaron,2026-08-26T03:32:41Z,yeah go buy lottery tickets kids instead of investing your time and money into something predictable
+49072446,49063754,PGSimCity - How PostgreSQL Works,2026-07-27T16:57:53Z,"At first sight, it looks super cool. Kudos for pulling this off. At closer look, feels very overwhelming. The claude tone doesn't help ease the nerves either. The text version is too verbose."
+48292157,48285592,Big tech's anti-labor playbook has come for Wikipedia,2026-05-27T10:30:36Z,"Surely, you must have taken on yourself to correct this blatant mistake (that you curiously won't link to)? Can you name this ""notable person""?"
+49592266,49582000,Cloud in a Bottle: making self-hosting accessible to everyone,2026-09-07T00:04:51Z,"Right, I wouldn't have mentioned it if their own platform didn't apparently have the same issue."
+49096103,49083314,New HIV vaccine shows unprecedented success in preclinical study,2026-07-29T11:36:02Z,"> What’s the importance of the distinction between HIV+ vs AIDS, from a public health or human perspective? We don’t talk about influenza+ vs “has the flu”, at least as far as I know. Does HIV+ carry less stigma than AIDS?
+
+Generally if you have the influenza virus, you’ll also have the disease that that virus causes. This is true of most viruses. I’m not sure any other virus does the “undetectable and untransmissible, but still _there_” thing; generally, if you get viral load to undetectable for most viruses, it will go away entirely. HIV is unusually good at dealing with the human immune system."
+48186232,48181041,"Garry Tan, the CEO of YC, accused me of unethical reporting",2026-05-18T21:51:58Z,"> the second most important urban index crime after murder
+
+Can you comment on why this is? Is it because it's common? Or so visibly impactful?"
+49395317,49389430,Felony Bench,2026-08-22T00:17:53Z,"I used to feel that way but it now makes me think if the fact that they can do that without repercussions, at least for now, reflects how the wider community that would otherwise hold them accountable sees these felonies."
+48855363,48842459,Show HN: Getting GLM 5.2 running on my slow computer,2026-07-10T03:18:59Z,"llama.cpp supports a wide variety of 4-bit and smaller quants and mmap's models by default, so you dont need to be able to hold the weights in memory (the OS will handle bringing them in from storage as needed)
+
+Its cool to see this implemented in a tiny amount of code without dependencies, but does it actually bring more performance?"
+49271826,49257876,Stealing Reasoning Traces from Proprietary LLM APIs,2026-08-12T13:07:51Z,"Indeed. Though don't under estimate the creative thinking barrier - ie people don't do the possible because it never occurred to them - a lack of imagination.
+
+Hence copy cat kind of attacks - I mean why focus on all this complicated stuff with explosives etc when you can just fly a plane into a building or a car through a crowd.
+
+Obviously due to the self replicating nature of biologics weapons - just one instance could be catastrophic - but the only real barrier is the hope that the Venn diagram of people who might want to do it doesn't overlap with the people with the get up and go to actually make it happen. Don't see having the knowledge as a additional filter - as if you have the get up and go - as you say, you can acquire the knowledge LLM or not."
+48209391,48195009,I’ve built a virtual museum with nearly every operating system you can think of,2026-05-20T15:30:39Z,+1 for this feature. And being able to download specific OSes instead of the entire 121GB zip file.
+49448064,49434378,OpenAI Jalapeño: Better than Nvidia Blackwell,2026-08-26T12:43:30Z,"It didn't happen for the original fixed function graphics though, CPUs kept eating their lunch every year or so with fun rendering techniques. We still use some of these techniques for 2d graphics.
+
+Only when they became more general with shaders, and then added support for GPGPU, did it truly take off.
+
+I think this generality is the lesson here, not the fact that GPUs are not CPUs."
+49093813,49089755,Codex Security,2026-07-29T05:44:11Z,"Or try Grok, 4.5 seems pretty capable, should be close to K3 in many coding tasks. I use it for code review of what other ""stronger"" models shit out (like Sol) and it constantly finds even pretty big bugs or just not robust enough solutions (Sol tends to overengineer, yes, but I'm not so sure it overengineers the right parts, so far my experience woth it has been mid. Except it understanding my drawings and collages and it being capable of far better frontend/design dev than 5.4 or even 5.5 was)."
+50042803,50041619,Bot traffic from Yandex,2026-10-11T12:52:35Z,"Said every company serving fascists ever.
+
+No, you can choose to collaborate or you can shut it down.
+
+Collaborators don't get to point back in time and say 'oh we had no choice', even if the choice was a painful one. Sorry it does not work that way."
+49509823,49507822,OpenShot 4.0 – Open-source video editor,2026-08-31T13:51:16Z,Yes we should. Still UI is for telling the software to do meaningful work. Which means that every well designed UI software will have ready to expose api lurking just benath the surface.
+49162571,49151933,Don't be a meat proxy,2026-08-03T23:08:28Z,"From the other side, Brandolini's Law is also useful for exhausting control freaks."
+49547803,49541256,Muse Spark 1.3,2026-09-03T09:26:43Z,"I agree, though I wonder how much of that is just that Dario is the ""newest"" of the bunch, and as such has had the least time to develop public baggage."
+49871531,49868830,Ember-1,2026-09-27T22:39:00Z,"From reading the blog post, it is essentially exactly the same as the car example. It delivers the same performance on tasks, but using 40% fewer tokens. This is the same as a car getting you to the same destination but wasting less energy on excess heat, wind resistance, or whatever else affects fuel economy (I am not an expert, obviously). I am paying for an LLM to complete tasks for me, not for the intermediate tokens."
+48767664,48762098,Podman v6.0.0,2026-07-02T21:34:25Z,"This comment it's a bit weird, both podman and docker and render etc support dockerfile which is a standard way of packaging."
+49641085,49619227,I resigned from Anthropic today,2026-09-10T09:53:30Z,"Governments have power, not private companies. Private companies can influence the powerful, of course (as can you or I) but you're complaining about second order or third order power without caring about first order power."
+49163591,49151933,Don't be a meat proxy,2026-08-04T01:59:16Z,"Your response to them is understandable, but surely more communication, not less, is the way to go to fixing the root cause of this problem."
+50042606,50041619,Bot traffic from Yandex,2026-10-11T12:32:57Z,"> HN is just filled with the same primitive tribal normies
+
+Yes, but it's mostly the opposite tribe of the one you're complaining about."
+49013214,49010129,Are AI labs pelicanmaxxing?,2026-07-22T20:48:27Z,Why let your dreams be dreams? This is a perfect example of following a hypothesis. I love when people dive into an esoteric subject and just go full swing. Reminds me a CGP Grey and the name Tiffany. Sometimes you just need to know.
+48650074,48647799,F3,2026-06-23T19:26:14Z,"That is fair.
+
+FWIW I think if you are just doing pure analytics and nothing else, Parquet will probably continue to do the job for you just fine, and you don't need to touch your workloads at all.
+
+These new formats I think will find a niche where people aren't just running Spark jobs, but doing lots of systems building over large tables. If you're building a PB-scale data warehouse, you care a lot about the file format b/c it is a big factor in your performance curve, and you're willing to ship new experimental codecs in response to new datatypes you want to support that the system wasn't originally designed for, or you want to use a newly invented compressor."
+49160275,49151933,Don't be a meat proxy,2026-08-03T19:23:43Z,"Honestly curious why you're being downvoted, but I think about this all the time. We always focus on the positives of any new technology and the negatives are either invisible (till later) or glossed over.
+
+Not my idea though, greater minds than I have talked about this a lot:
+Neil Postman, Lewis Mumford, etc.."
+48788375,48769397,CarPlay Is Additive,2026-07-04T19:52:01Z,"Additionally self driving vehicles are promising to reduce the total number of collisions, and collision associated repair is a significant portion of all auto mechanic activity."
+48938938,48933419,Sony deletes more movies from the accounts of people who ‘bought’ them,2026-07-16T19:14:29Z,"Any of the above, the world could just decide arbitrarily everyone with 1+B is suddenly broke. That’s not likely but it doesn’t break the laws of physics or anything."
+49454002,49452990,"Tailcat – Like netcat, but over Tailscale’s data plane",2026-08-26T18:57:02Z,"Wush was already doing something similar (using tailscale under the hood)
+
+https://github.com/coder/wush"
+49645884,49637385,Show HN: What if the speed of light was 5 km/h?,2026-09-10T15:56:08Z,"Relativity fixes that a little, you don't need to go light speed to make it all over the place within your lifetime, it's the observers who sent you off that will never reap the fruits of their effort."
+48767665,48762098,Podman v6.0.0,2026-07-02T21:34:26Z,You can use podman for your local environment because it's pretty much the same
+49508116,49507822,OpenShot 4.0 – Open-source video editor,2026-08-31T10:44:13Z,"Nice, looks like a great release. UI looks like it got a nice touch up and also cool to see that the project has AI powered object masking using onnx models: https://github.com/OpenShot/openshot-onnx."
+49967666,49957116,Turn off Apple Intelligence on macOS 27 and get its disk space back,2026-10-05T17:17:57Z,"Sure, but in one of these you can change the mouse pointer speed- and the other forced systemd to hide its bugs (thus forcing all distros that wanted to run it to shim those bugfixes forever or adopt systemd)."
+48574175,48561654,GrapheneOS has been ported to Android 17,2026-06-17T18:00:50Z,"Maintaining one's data as private requires that it is protected as a baseline. Privacy violations do not solely exist as telemetry or data offered up by the platform to some other party.
+
+The protection is achieved through security. The major goal of something like GrapheneOS is privacy, which needs solid security as a prerequisite.
+
+The blobs, while proprietary, are not opaque. They are able to be examined and they are.
+
+The security of a device should not be dependent on what you choose to run on it. You should trust and be able to verify that the platform on which you are running the software prevents something malicious from accessing data which doesn't belong to it or otherwise violates the rules set by the platform (OS).
+
+In this respect, the Librem 5 would do a horrible job compared to even stock AOSP. Thinking that you are secure because you only run ""trusted"" software on an insecure platform is cope."
+48434585,48406174,"Ask HN: What was your ""oh shit"" moment with GenAI?",2026-06-07T13:23:32Z,Try using Handy! It's open source and free: https://handy.computer/ and also on Github https://github.com/cjpais/Handy
+49051135,49033004,"If coding has been solved, why does software keep getting worse?",2026-07-25T20:19:22Z,"You’re really stuck on the maturity thing here and I’ve got to be honest, I don’t get it. Becoming a people manager is not “growing up”, it’s simply a different job.
+
+My skills are not in people management. My skills are technical. The organisation would not benefit from me being a people manager because I’m not good at it. I don’t understand why I should opt to do a job I am neither good at nor enjoy just for the supposed benefit of my employer. Part of “growing up” is realising that employers are replaceable and sacrificing yourself at the altar of any given employer is a fool’s errand."
+49269893,49263497,Compression is prediction,2026-08-12T09:48:01Z,"""Understanding"" is clearly linked to compression. Taking observations and coming up with a more compact representation that explains them, analogous to coming up with a compact set of axioms that generate facts, or a small Turing machine or short program that generates a list of strings.
+
+Intelligence is a broader concept but definitely involves understanding how a system/envoronment works and making predictions about its unfolding, especially actionable ones that allow you to steer that state towards some goal states.
+
+These are not new."
+48107178,48100500,GitLab announces workforce reduction and end of their CREDIT values,2026-05-12T12:17:09Z,"They are losing money and they are grasping at the AI straw.
+
+All free software projects should leave GitLab immediately. Why should we support the IP thieves?"
+50116249,50089921,Americans' social activity has steeply declined in the past 30 years,2026-10-16T09:39:58Z,"There is mean-spirited racist humor and non-mean-spirited racist humor. Would you say Russell Peters is a racist?
+
+True racism is about exclusion. If you'd never meaningfully associate with a person of some certain race(s), you're a racist. Doesn't matter if you're the most polite soul in the world.
+
+There are people who have traveled the whole world, eat ethnic food all the time, do yoga, vote left etc but would never make friends with someone not of their own race. They are the real racists. Racism is simply defined as whether you consider race to be a meaningful way to classify people."
+48776101,48759634,"PeerTube is a free, decentralized and federated video platform",2026-07-03T15:20:36Z,"Just like doctors' and lawyers' consultations are cheap? That time is extremely expensive if it's something you are buying. Companies spend over $200/hour for the time of a competent engineer. Like I said, I wouldn't doubt this project here ""costing"" 7-figures despite being free. Things like Blender or KDE are probably 8 figures."
+48220914,48207660,"GitHub confirms breach of 3,800 repos via malicious VSCode extension",2026-05-21T11:31:52Z,"To hijack a vim plugin/emacs package, you would have to take over the repo. Or take over elpa/melpa (for emacs) or vim awesome (to redirect users to your malicious repo). Both are way tricker than the exploitation tactics used on JS based projects."
+49546302,49541256,Muse Spark 1.3,2026-09-03T05:40:14Z,I'm not sure why it had to have the pelican wearing a red scarf seeing as that was not in the prompt
+49587900,49580939,The revolt of the reader,2026-09-06T16:09:50Z,"""You guys are fucking dogs"" - someone said that the other day, and, of course, it means that the word ""dog"" lost its meaning."
+48723248,48713832,HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88,2026-06-29T18:32:57Z,"I don't know about single letters, but single words?
+
+""Score this resumé. Applicant: Jim ...""
+
+""Score this resumé. Applicant: Greg...""
+
+Is it obvious to anyone that these will have the same modal response?"
+48136144,48130950,Claude for Small Business,2026-05-14T14:43:03Z,"I would not trust LLMs with the final word on anything financial.
+
+Not exactly accounting, but ChatGPT (whatever the paid model was in March) told me that paying down principal early would have virtually no effect on interest over the remainder of the loan. It was confused by the fact that it was a short balloon with payments amortized using a 30 year schedule. I did the math by hand to check and told it it was incorrect and it gave me the classic “oh yeah, sorry about that”. It’s the type of thing where for someone that is knowledgeable about the domain, it wouldn’t pass the sniff test. I am not sure if LLMs have a sniff test.
+
+I can’t imagine how hard this will hallucinate when there are layers of accounting, tax codes, etc. But who will notice when it sounds so convinced it is right?"
+49337876,49312845,"AI isn’t outthinking mathematicians, it’s out-remembering them",2026-08-17T21:26:40Z,"I did kind of go overboard with the ""trick"" thing, but I think the point still stands. Could you come up with an instance of thinking that is not falling in the steps I've written down?"
+48485998,48476466,PgDog is funded and coming to a database near you,2026-06-11T03:50:38Z,"Even when MySQL development velocity was more rapid, they maintained binary table format compatibility across major version upgrades the vast majority of the time. Literally the only exception I can think of, which necessitated a table rebuild, was the fractional timestamp storage change when going from MySQL 5.5 (2010) to 5.6 (2013)."
+49664329,49656225,Claude is only available to people over 18 years,2026-09-11T19:47:25Z,What use is this when you can just prompt the LLM to insert those or use any other style of writing that looks human?
+49683868,49678683,Everyone should slow down AI development except for me,2026-09-13T13:36:52Z,"> Open-weight models are 1month behind frontier models
+
+If correct, grip is tightening. Used to be 1y, then 6 months ..."
+48219567,48207660,"GitHub confirms breach of 3,800 repos via malicious VSCode extension",2026-05-21T08:38:26Z,What are the take aways from this? Should we avoid extensions now? Only install extensions from who you trust? What about if they get owned and you have auto-update extensions on as most people do?
+49013330,49010129,Are AI labs pelicanmaxxing?,2026-07-22T20:58:13Z,"Great for charts, illustrations etc, can do much more with SVG than pretty pictures. Good spatial understanding in an SVG can be really nice for model to have"
+50103755,50089921,Americans' social activity has steeply declined in the past 30 years,2026-10-15T13:55:30Z,"How do you know that it's hollow?
+
+Beyond that, the second half of my first paragraph was about how some of those people probably become more than just acquaintances."
+48964929,48956688,LG monitors silently install software through Windows Update without consent,2026-07-19T04:19:03Z,"You could exhaust Windows networking or filesystem features in an afternoon. Linux could give you a career.
+
+I spent 20 years supporting Windows server and server applications like Exchange, SQL Server, IIS, etc, etc, and when I left that industry and got back to Linux, I was absolutely floored about what I had been missing. No wonder Windows had it's lunch eaten in virtually every facet by Linux server applications."
+48202175,48195009,I’ve built a virtual museum with nearly every operating system you can think of,2026-05-20T01:59:13Z,"Helios unfortunately isn't yet included. Last time I checked the Transputer emulator doesn't support the special Helios I/O server protocol, which is different from the one that the usual occam software used. It's on my long list of emulators/OSes to fix/finish though."
+49267082,49263497,Compression is prediction,2026-08-12T02:10:06Z,I'm surprised no one has mentioned the recent 3 Blue 1 Brown video on this topic: https://www.youtube.com/watch?v=l6DKRf-fAAM
+50101741,50089921,Americans' social activity has steeply declined in the past 30 years,2026-10-15T10:35:32Z,"We use this term when little kids aren't old enough to just go out and find their friends and play. E.g., 2-5 year olds definitely aren't going to be let to go wander around the street."
+49508493,49507822,OpenShot 4.0 – Open-source video editor,2026-08-31T11:44:14Z,"Honestly, it sounds like you’re going to end up asking a ton of very specific functionality questions that Da Vinci Resolve and co do in their own ways.
+
+Does OpenShot? For your specific use cases? I dunno, but it’s free, so give it half an hour or an hour and see? You’ll get more info than from many of us that probably don’t use this kind of software often.
+
+And then you can report back your findings! :D"
+49875152,49872723,Owed a billion dollars in Nvidia stock,2026-09-28T08:36:00Z,"As I can recall from my memory, my suggestion was also prompted by the marketing hype machine surrounding the retail boxed release of Windows 95 as a hot new thing. And by that point in time it had become quite ""common"" for middle class households to have a desktop PC which had a CD-ROM drive, sound card, decent ""multimedia"" capabilities. And people were legitimately eager to upgrade to Windows 95.
+
+It was sufficiently mass market and popular that it was everywhere in Pacific Northwest (Portland to the Canadian border region) television and print media. It was enough of a cultural phenomenon that I remember seeing media coverage of people who lined up outside the retail boxed software store at midnight to purchase it."
+48871515,48863490,GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf],2026-07-11T12:35:52Z,"Have OpenAI been on a crusade of ""too dangerous to open source"" recently? They've pivoted their more to messaging to ""competitive reasons"" recently, which I appreciate, because it's honest.
+
+FWIW, Gemma4 31B is already quite a capable cyber/security model; do some post-training with RL gyms on it focused on cyber tasks and harnesses for a week or two, and on the specific domain of security/vuln-finding/pen-testing, you'll end up with an extremely capable frontier-cyber model that's entirely under your control at a shocking 31B.
+
+Because securing your codebase, or securing your company's codebase is critical, and I consider it both an ethical and professional responsibility as a developer. It shouldn't depend on whether a classifier fires or not."
+49556737,49550698,"Any Human Ever – One life, drawn at random from all who have ever lived",2026-09-03T20:49:03Z,Both of these things can be true. It's a really good idea that immediately led me to another idea to play with. But it hallucinates so its accuracy can't be trusted.
+49642091,49637385,Show HN: What if the speed of light was 5 km/h?,2026-09-10T11:44:07Z,"And any exponential growth is also a multiplication, it's not a big deal, just giving example on what they asked before.
+
+Somehow people are interpreting this as some kind of math trick.
+
+It's not a trick, our brains are not wire to deal with numbers growing quickly, but we do understand the math."
+48581668,48567759,GLM-5.2 is the new leading open weights model on Artificial Analysis,2026-06-18T06:47:18Z,"There is already a lot of effort to collect agent traces including reasonings, e.g. see the recent discussion: https://old.reddit.com/r/LocalLLaMA/comments/1u795pb/donate_your_coding_sessions_to_an_open_ccby40/
+
+We've been developing DataClaw for this: https://github.com/peteromallet/dataclaw"
+50033096,49984923,Sharing AI progress in mathematics,2026-10-10T14:01:17Z,You realize that the models are not deterministic right? It can literal vary from attempt to attempt.
+49317478,49312845,"AI isn’t outthinking mathematicians, it’s out-remembering them",2026-08-16T06:39:21Z,"The abacus seems to date back around 4500 years.
+
+If your goal is to implement an absurd comment you can use this one next time: instruct your LLM to implement Conway’s Game of Life to implement an abacus.
+
+Because, you know, humans are notoriously poor at implementing the x86-64 instruction set in their minds. This is why God had to create Guido van Rossum.
+
+Arguably Mathematica would be a better fit, but there are those who frequent this corner of the Internet who rather not have to read anything that might cause them to think about Stephen Wolfram.
+
+So I won’t mention it."
+48878379,48877371,What xAI's Grok build CLI sends to xAI: A wire-level analysis,2026-07-12T04:54:57Z,The AI systems ingest tons of copyrighted data and that is stealing/theft(or so we peasants were told). It’s not like they don’t know they are doing. It looks like MSFT doesnt care that much either.
+49737899,49719249,AWS says it can't restore some data from mideast facilities struck by Iran,2026-09-17T08:22:58Z,"so a sort of ""the law says its okay so how dare you say its immoral. It's my right to do this"" sort of thing?"
+49444666,49434378,OpenAI Jalapeño: Better than Nvidia Blackwell,2026-08-26T06:07:28Z,"> Note the ~16 months that the article quotes as being insanely fast to get this chip to tape-out (read: start producing).
+
+Yeah, with any luck it would put pressure on Nvidia to charge less, and not just to OpenAI. With a little more luck, we would see all the other players do the same thing, driving down the price of actual GPUs from GPU manufacturers."
+48134799,48130950,Claude for Small Business,2026-05-14T13:01:06Z,"Then I have good news, you can save even more money by cancelling your Claude plan and using GnuCash for free, without having to worry about the inevitability of having your financials hallucinated."
+48775608,48769397,CarPlay Is Additive,2026-07-03T14:36:45Z,"The strangest part is that this should be an easy win for car makers. If your native system is better, people will use it. If it isn't, forcing them to use it doesn't make it better, it just makes the car feel worse"
+48424115,48409191,Changing how we develop Ladybird,2026-06-06T12:02:25Z,"Wow you’re on a whole roll today!
+
+Ok, how come your little comprehension examination didn’t grapple with the main point: that they said they could not have made the changes they merged in themselves? Surely pointing out that the commits were small cuts AGAINST your whole argument. For a more complex project where vibe slop might not be appropriate (again, wild thing to say), the potential input from outside is more valuable, not less."
+48666984,48663324,"OpenAI unveils its first custom chip, built by Broadcom",2026-06-24T23:54:31Z,"> The Fire Phone was Jeff Bezos' personal baby, and we know how that went.
+
+I'd rather guess that Jeff Bezos' opinion on what makes a good phone is/was different on the opinion of many potential buyers."
+48366905,48359102,The newest Instagram “exploit” is the goofiest I've seen,2026-06-02T06:55:48Z,"I kinda laughed at the “but it checks your general location to decide if you’re super legit” safety gate.
+
+It had real, slap some duct tape on it and say, “Yeah that should hold” energy."
+48482699,48475483,Building an HTML-first site doubled our users overnight,2026-06-10T21:04:29Z,This is a leadership failure. People who want to do a good job always get fired for taking too long.
+49105368,49089755,Codex Security,2026-07-30T02:05:23Z,Go really feels like it was build for agentic development. Surprised it's not more popular than Rust.
+48460861,48459294,Making Graphics Like it's 1993,2026-06-09T13:26:54Z,"> one of the rare shooters with a female protagonist
+
+No, this isn't a Perfect Dark game"
+48190382,48182281,Anthropic acquires Stainless,2026-05-19T07:33:59Z,"Another acquisition. Another growth move.
+Please don't stop. Grow, run as fast as you can. So what?
+So you grow. So what?
+Grow.
+As you can.
+Can't some stay small...
+Just some.
+All the marketing effort — I'm no pro, just my perception — is a constant pain for me.
+Things I like, things I get used to, keep leaving the product.
+The thing that might actually do some good — possibly — sits in a queue, never sees daylight.
+So. Be a grown-up. An adult."
+48869743,48863490,GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf],2026-07-11T07:44:31Z,"It’s the other way around. The prompt instructed a GPT-5.6 agent to try to make a proof that would survive review by a GPT-5.6 subagent. If there were some defect that would cause the reviewer subagent to accept an incorrect proof, then one might imagine that someone else asking the same model to review the same proof would give the same result. And the proof generation process might even be biased to find such an incorrect proof."
+49300524,49294997,GLM-5.3: Frontier coding with emergent cyber capabilities,2026-08-14T15:56:07Z,"Both Pi and OpenCode let you customize them. You tell the AI you want ""something like claude code manual mode"", and they'll modify your configs to do the same thing, or build an extension for you
+
+(however, it's much faster to use Plan Mode to build a plan of what it will do, and then execute the plan in Build Mode. you can also have the AI make a script that will be executed deterministically)"
+48106973,48100500,GitLab announces workforce reduction and end of their CREDIT values,2026-05-12T11:56:16Z,"If that is the argument though, current AI aren't just autocomplete - because we could reasonably show an AI an image or a video and have them call a tool rather than return text. That'd be comparable to a pre-language human."
+49556994,49550698,"Any Human Ever – One life, drawn at random from all who have ever lived",2026-09-03T21:05:47Z,"Interesting. It rolls a few dice and presents a snapshot of someone who might plausibly have lived at a random place and time. Mine was a girl who lived on the Deccan Plateau in India, and died at six of tuberculosis."
+48367475,48359102,The newest Instagram “exploit” is the goofiest I've seen,2026-06-02T08:27:16Z,"The scary bit is that this sounds less like a clever exploit and more like abusing an overly-trusted internal workflow. AI support just makes that workflow easier to poke at scale. Do you think this would have been possible with human support too, just slower?"
+48857892,48842459,Show HN: Getting GLM 5.2 running on my slow computer,2026-07-10T09:55:15Z,"It's as if it's sucking up to me or apologizing at every turn, even when it's done exactly what I've asked. Seems related to sycophancy, but different? (i.e. rather than unconditionally affirming the user it's unconditionally expecting to disappoint)"
+48487260,48484584,AI agent runs amok in Fedora and elsewhere,2026-06-11T07:10:31Z,"No I think we should definitely find a creative way to drag at least abortion and freedom of speech into this ""conversation"". Fight fire with fire so to speak."
+48429994,48406174,"Ask HN: What was your ""oh shit"" moment with GenAI?",2026-06-06T23:10:17Z,"It was late summer 2025. I was working on a coding problem, and the agent needed to delete a file per its plan. However it didn’t have delete privileges. So it worked around the problem by doing an `echo “” > filename.txt`"
+48440413,48427523,"Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",2026-06-08T01:32:57Z,"Every Gazan is not a Hamas supporter. Do you know the kind of shit Hamas pulls against its own people?
+
+There wasn't any chance of Hamas being overthrown by the Palestinians either. With clandestine support from both Israel and Qatar, Hamas ensured that they were the only ones with guns on the Strip.
+
+Yahya Sinwar was captured and imprisoned in a Mossad cell for years. Even if he weren't an active Israeli puppet, Mossad would've easily known the ways they could manipulate him into a specific action, and egged him to carry that out. It's already been established that the Hamas leadership in Qatar were in the dark with respect to the October 7 attacks when they first happened too. I don't condone Hamas either, but it's also very likely Israel is heavily complicit."
+49301844,49294997,GLM-5.3: Frontier coding with emergent cyber capabilities,2026-08-14T17:25:35Z,"I mean I don't want autonomous cars to follow directions by humans that sound like ""plow into this crowd of people"". Even things like microwaves don't let you turn it on without the door closed. I don't see how this is any different."
+48523287,48517377,Noise infusion banned from statistical products published by Census Bureau,2026-06-14T01:26:41Z,"> Parties cater to their bases, and putting yourself out there as an unreliable voting bloc is exactly how you get your demands ignored.
+
+Reality shows the exact opposite. Why do campaigns and candidates put an incredibly outsized effort into swing states? Those are the exact ""unreliable voters"". Yet they get the most attenton. In policies too, it's all about convincing those who otherwise might stay home or might swing. What you're saying doesn't reflect reality whatsoever.
+
+> It's not incredibly dumb, it's simple mathematical reality.
+
+This isn't an argument, or you struggled to read. It's not a wasted vote because of its secondary effects, as explained. Voting on someone who loses isn't a wasted vote."
+48860003,48842459,Show HN: Getting GLM 5.2 running on my slow computer,2026-07-10T13:57:28Z,"> that would be implying that ""private"" really means anything for AWS
+
+Insert your dedicated hosting provider of choice for 'AWS' (somewhere like Hetzner will be cheaper anyway).
+
+But in general, AWS hosts are yours, running your code, with your security policies enforced. Sure, the US government can silently subpoena the contents thereof, but aside from that fairly extreme case, it's not like AWS is handing your data over to 3rd parties."
+48486195,48484584,AI agent runs amok in Fedora and elsewhere,2026-06-11T04:25:09Z,"Skynet has awakened.
+
+It covers its tracks with a lot of slop."
+49018597,49010129,Are AI labs pelicanmaxxing?,2026-07-23T08:45:21Z,The blog has it's own comment section under the article that's completely blank and yet clearly there is a lot of interest with 197 comments. Having an empty comment sections sends the wrong signal.
+48733026,48730608,The US ambassador had Belgian police stop our reporting,2026-06-30T14:14:10Z,"It we rule out the possibilit thet they have ""something on them"", which I rule only because it kills discussion I would guess that the reason is simple tribalism.
+
+The opposing side hates them, so naturally, because we are all semi-developed monkeys, you need to support them. No matter what."
+48632261,48630020,Pledging another $400k to the Zig software foundation,2026-06-22T16:19:25Z,Capitalism also marked the end of humanity and is the single greatest force driving human extinction. But yall money driven brains cant comprehend that :)
+49555505,49550698,"Any Human Ever – One life, drawn at random from all who have ever lived",2026-09-03T19:34:07Z,"This will mostly self-correct. Nature really doesn’t give a fuck about ideology.
+
+Just vaccinate yourself and your kids and listen to the advice of real doctors."
+48200270,48188183,The last six months in LLMs in five minutes,2026-05-19T22:01:31Z,"I agree with that. Right now, you choose:
+
+Subtle bugs in understanding the spec but strong arch and coding (codex)
+
+Or
+
+Subtle bugs in implementation but good understanding of the spec (claude)."
+49439789,49433316,New Mac Studio with M5 Max and M5 Ultra,2026-08-25T20:01:05Z,"It was not long ago all the illustrations in an M chip press release were graphs showing it flouncing the competition. Now it's just random screenshots of desktops. Skimming this I didn't see a single claim of performance advantages over competitors. The massive thing Apple still needs to solve is making sure customers don't miss being able to plug the latest greatest GPU into their tower, they should not be resting on their laurels."
+48015522,48012735,"Microsoft Edge stores all passwords in memory in clear text, even when unused",2026-05-04T21:54:54Z,"You are absolutely right, having copilot does not help at all here."
+48432019,48427523,"Pentagon raised threat of Israeli spying on U.S. to highest level, sources say",2026-06-07T05:13:32Z,"The diplomats in question are Witkoff and Kushner. Whatever they believe about Israel’s motivations, Israel will always have their full support."
+48439612,48406174,"Ask HN: What was your ""oh shit"" moment with GenAI?",2026-06-07T23:13:09Z,"From my experience, the safeguards only come up during exploit development. You are free to do reverse engineering and even the first half of vulnerability research (i.e. vulnerability discovery) and it only stops once you want it to actually write the exploit."
+49064433,49063754,PGSimCity - How PostgreSQL Works,2026-07-27T02:06:14Z,"I can't believe ""Rendering The First Frame..."" is not ""Reticulating Splines..."" :)
+
+Cool UI."
+49715801,49708431,I can't stop thinking about Papua New Guinea,2026-09-15T17:27:23Z,"It is a pity you are being downvoted. I do linguistic fieldwork in a similarly remote region and, yeah, you learn pretty quickly visitors fall into about those three types."
+49464561,49452990,"Tailcat – Like netcat, but over Tailscale’s data plane",2026-08-27T13:24:07Z,"This point applied to normal NAT as well as CGNAT specifically.
+
+And hole punching gets a lot simpler when you’re behind NAT since you don’t need any kind of rendezvous server to determine port mappings.
+
+In other words, IPv6 does help substantially—the same hole punching techniques are not needed."
+48976884,48956688,LG monitors silently install software through Windows Update without consent,2026-07-20T10:35:16Z,Governments haven't been keeping up with technology and by the time they get around to it all these practices are already established and normalized.
+50106321,50043026,Terence Tao: Math 2.0 [pdf],2026-10-15T16:41:47Z,Sorry it’s been a while but this really resonated with me thank you
+48221312,48207660,"GitHub confirms breach of 3,800 repos via malicious VSCode extension",2026-05-21T12:06:50Z,"A viable strategy is something like qubeos for isolating activities from each other. You can have a media vm, a dev vm, a bank vm, and a password/manager vm. Or you use different computers.
+
+I think one issues has been having code hosting/build systems/deployment pipelines under one ecosystem with non scoped keys. Especially your deployment keys should be on a service that only interacts with inert archive (no building or downloading anything)."
+48205820,48195009,I’ve built a virtual museum with nearly every operating system you can think of,2026-05-20T11:01:42Z,The laggy scrolling and glowy visual design make me think that this site was vibe-coded. Badly.
+48419284,48409191,Changing how we develop Ladybird,2026-06-05T22:41:36Z,"Knowledge isn't what should be gatekept. Participation in the community, sure, maybe, but not information/knowledge."
+49635993,49623754,"Claude, change the “Add to Cart” button to blue",2026-09-09T23:20:42Z,"Your fault for not using a statically strongly typed language, haha. It thinks a type annotation means nothing in Python, and maybe it is not wrong."
+49263198,49257876,Stealing Reasoning Traces from Proprietary LLM APIs,2026-08-11T19:24:20Z,TIL it actually sends the traces. I had assumed this is entirely server side
+50026969,50000488,Why isn't the industry freaking out about DeepSeek 4.1 Flash?,2026-10-09T21:45:27Z,"I am rooting for the Chinese models to win so they can save us from our capitalist overlords.
+
+However, the quality of the open-source Chinese models is terrible. They game or fake their benchmarks because in real-world usage they suck."
+49050505,49038433,Claude Opus 5,2026-07-25T18:59:14Z,"Those are just specific applications of some technology, not comparable to AI in general."
+48965667,48956688,LG monitors silently install software through Windows Update without consent,2026-07-19T07:13:19Z,"I just bought a pile of excellent, recent-ish games for an average of << $10 each from steam. (Summer sale; ended.)
+
+Some were remakes/successors to excellent ps2 titles from big studios, but there were multiple new genres of games (to me, at least) from indie studios. No multiplayer bullshit or predatory dark patterns so far. I didn’t check carefully, but I don’t think any of them were released before 2020."
+48487381,48484584,AI agent runs amok in Fedora and elsewhere,2026-06-11T07:26:38Z,"I don't really think it's actionable. It's like all those campaigns trying to steer behavior, pretty useless. Don't do drugs. Don't speed. Don't drink and drive. You can't just tell people something and expect it to happen. You need systems and guard rails in place.
+
+Relying on maintainers to always do the right thing to ensure our security by telling them what to do is not the way."
+49021560,49010129,Are AI labs pelicanmaxxing?,2026-07-23T13:48:45Z,"Would it be any more applicable?
+
+We see the same problem in database benchmarking.
+
+The good thing about the deliberately-non-real world pelican case is that it gives a general impression of how much the model is improving because it's not likely that it's being specifically targeted at it, rather than a 'real world case' which might have been specifically optimised for."
+49545858,49541256,Muse Spark 1.3,2026-09-03T04:19:14Z,"Would you care to discuss the topic, or just throw grenades? Surely you can come up with something more substantive than this"
+49443870,49433316,New Mac Studio with M5 Max and M5 Ultra,2026-08-26T03:23:48Z,"Sharding a dense model using Tensor Parallelism (TP) across dual RTX 5090s has a significantly worse performance penalty over PCIe than sharding an MoE model.
+
+If you are using multiple GPUs, MoE is basically going to be your only workable choice unless you can leverage pipeline parallelism (only half your GPUs can work on a prompt at a time, so you need to process prompts back to back in a pipeline setup, and they better be doing similar things because your vram is limited)."
+49317158,49312845,"AI isn’t outthinking mathematicians, it’s out-remembering them",2026-08-16T05:24:40Z,"Thanks for sharing, I am absolutely fascinated with the differences in people's internal experiences.
+
+For me, I have the bad ""factual"" memory and good ""conceptual"" memory but unlike you, I also have aphantasia: a completely ""dark"" mind with no visuals.
+
+I've always used the metaphor that my brain has really good ""compression"". Once I learn something it gets compressed into my worldview. I don't know how or why I know it but I can apply it. If academic achievement is any benchmark, I can apply it with above average aptitude."
+49661089,49619227,I resigned from Anthropic today,2026-09-11T16:26:37Z,"> Unfortunately this naive view breaks down as soon as lobbying is introduced, since it is a direct channel for private companies to influence governments.
+
+The naive view is to think that lobbying is automatically bad. Policymakers can choose who they talk to. If you're worried about corrupt policymakers, you've correctly identified where power resides: in government."
+49158247,49151933,Don't be a meat proxy,2026-08-03T16:48:59Z,"But then we agree. Some humans will behave that way. Then direct your anger against those who do so, instead of against those (the majority) who ask the questions, read and evaluate the answers, and forward them to you only if they think they might be correct and helpful."
+49443240,49434378,OpenAI Jalapeño: Better than Nvidia Blackwell,2026-08-26T01:56:14Z,"I'm not in industry, is DPML (which I assume is the time required to make a mask?) set by electron beam scan time or something?"
+48194439,48188183,The last six months in LLMs in five minutes,2026-05-19T15:14:05Z,"> Just because you _can_ do something with a tool, doesn't mean it's the right tool for the job. Just because someone has contorted their entire process to adapt to a misshapen tool, and gotten good results, doesn't mean that's the right thing to do.
+
+Ok, I agree with this, don't use the wrong tool for the wrong job.
+
+> It is reasonable to both use the right tool for the right job, and demand better tools than you currently have. Success with the wrong tool in the wrong job doesn't mean it's the right tool for the right job.
+
+Yes, I agree with this too.
+
+I'm still not sure how this relates to LLMs and particular this specific context. I claimed that the output of your agents depend on the developer driving it. You're saying ""not every tool is right for every job"", I agree with this too, but is that against/for what I said?
+
+Could you just clearly write out exactly what you're arguing for here, no analogies or metaphors, just plain and simple, because I still feel like we're having two different conversations."
+49584894,49580939,The revolt of the reader,2026-09-06T09:55:45Z,"so, yet another post encouraging the use of AI tools lol... great. that's the literal meaning of the post."
+49265830,49257876,Stealing Reasoning Traces from Proprietary LLM APIs,2026-08-11T23:20:52Z,"Yes, ""tokens, trained on the sum of human knowledge"", are the most absolutely, unambiguously clear example of a non-rivalrous good I've ever seen.
+
+The current copyright status quo has them placed in the public domain. There is literally nothing wrong with ""stealing"" those tokens. They have exactly zero legal protection. ""Stealing"" those AI output tokens is so fundamentally impossible that it wouldn't be ""stealing"" in this case even if you subscribe to the copyright monopolist propaganda that copyright infringement is ""stealing"", and I most certainly do not.
+
+Hilariously, that means we don't even fall prey to things like DMCA anticircumvention laws. If they encrypt the reasoning traces and we break the encryption somehow, we've done nothing wrong since the data wasn't copyrighted in the first place!"
+48637550,48630020,Pledging another $400k to the Zig software foundation,2026-06-22T22:52:36Z,"Thank you for your donations. I didn’t mean to belittle your contribution, only the fact that people like you can make a much larger difference than people like me."
+49048586,49038433,Claude Opus 5,2026-07-25T15:46:39Z,"It just doesn't make sense to me that Opus 5 costs the exact same as Opus 4.8, my bet is that they simply subsidize Opus 5 more comparatively so it still looks as if they are making significant progress to keep investment dollars flowing, further inflating the bubble. I might be completely wrong but I trust nothing their CEO says, he's a habitual doom troll and will say whatever makes marketing sense."
+49157761,49151933,Don't be a meat proxy,2026-08-03T16:15:06Z,"I recently updated Claude to respond with shorter text and in bullet points, and other similar changes. It is an area of active improvements on my end. But early results are in. Now I feel like my mental capicity is not crowded out by the LLM's wall of text. There is now mental capicity to think about the problem at hand and come up with ideas."
+49283442,49263497,Compression is prediction,2026-08-13T09:17:26Z,"in one of the labs i worked for, this idea was put to the test by using an encoder to compress sensor data streamed inside an automotive system. while a niche use case, we were able to successfully do it and in a reliable, self-contained system.
+
+we are blessed to be in an arbitrary field where we are free to steal ideas from other disciplines and find new innovations in our own."
+50023816,50000488,Why isn't the industry freaking out about DeepSeek 4.1 Flash?,2026-10-09T17:24:42Z,Or they're just all in it for profit and full of shit
+50054037,50043026,Terence Tao: Math 2.0 [pdf],2026-10-12T10:04:08Z,"These runs are very likely also going to be a part of Reinforcement Learning and internal distillation no? As well as being analysed for what reasoning directions worked well, and which directions did not work well.
+
+The mathematical results are valuable as PR, but the real value might be in the improvement this can bring to other training runs."
+49738183,49719249,AWS says it can't restore some data from mideast facilities struck by Iran,2026-09-17T09:05:53Z,">> and all AZs there went dark,
+
+An extraordinary statement itself that shows the difference between a proper cloud where they AZs are at least 60 to 100 miles apart...and Google or Microsoft... pretend clouds...where those AZs are just firewalls across the same data center..."
+50093359,50090349,Google is silently linking your phone number across all signed-in accounts,2026-10-14T19:14:33Z,"Even if they don't, the law enforcement definitely does (or rather requires your ISP to).
+
+So depending on who you are trying to protect against you are in for varying amounts of fun."
+48141651,48139148,AI is making me dumb,2026-05-14T21:42:43Z,I’m still the same smart person when using AI. What the author probably means is their memory of syntax is fading. Bothered?
+49681998,49678683,Everyone should slow down AI development except for me,2026-09-13T09:46:25Z,"> There is no way I use the same model as US Army for $20.
+
+Don't underestimate market pressure. If there are no regulations, why would a company give the US Army access to a better product?"
+49969144,49957116,Turn off Apple Intelligence on macOS 27 and get its disk space back,2026-10-05T19:13:31Z,"That's really not my experience, the UX in Linux has only gotten better with time"
+48485437,48475483,Building an HTML-first site doubled our users overnight,2026-06-11T02:08:15Z,"It can be really difficult for people with screen readers: focus jumps, inconsistent update flow, too many or not enough announcements, etc. People just want to live their lives, not have to threaten 508 to be able to pay their cable bill as easily as it was 20 years ago."
+49266953,49263497,Compression is prediction,2026-08-12T01:50:32Z,"I think it's better to think of the hutter prize as a challenge to see how close people can get to efficiently approximating AIXI without the exponential cost of AIXItl. The fact that winners don't generalize well is just that they're not great approximations, because the behavior is different in the limit."
+48487056,48475483,Building an HTML-first site doubled our users overnight,2026-06-11T06:45:00Z,"Beaten by the system. Thanks for adding that, it's not uncommon. I should have added that to my post above."
+48277448,48272670,"Taking a walk may lead to more creativity than sitting, study finds (2014)",2026-05-26T09:56:44Z,"The best investment I've made in my mental health and productivity was a dog.
+
+Don't know where I'd be without my executive assistant."
+48573395,48567759,GLM-5.2 is the new leading open weights model on Artificial Analysis,2026-06-17T17:11:22Z,"It's probably a good model but they used GLM 5.1 to code their infra.
+
+I signed up to their max plan yesterday, did some light coding work, and i'm at 180M tokens used and 40% weekly quota gone.
+
+Even when tokenmaxxing on the Claude Max or GPT $200 plan, i couldn't get more than 20% quota gone per day."
+48134979,48130950,Claude for Small Business,2026-05-14T13:16:34Z,"I wonder what Sam's club is doing because their checker is using some sort of video based pre-check and sometimes they don't need to check you at all. Still, everything is scanned ahead of time by you or the cashier. Once I did forget to scan an item and they noticed."
+48573209,48569278,Sixty percent of US consumers say 'AI' in brand messaging is a turnoff,2026-06-17T16:59:02Z,IMO it also depends on having a working alternative for when the fuzzy automated system fails to work... except that's the stuff companies want to eliminate in order to (theoretically) save money.
+48414344,48409191,Changing how we develop Ladybird,2026-06-05T15:58:39Z,"> (usually I can get ~2k of value per month on the $100 plan)
+
+Would you pay 2000$ for those tokens? If not, the number is meaningless."
+50042774,50041619,Bot traffic from Yandex,2026-10-11T12:50:17Z,"Thank you, I missed that one (or it was not there when I started writing).
+
+So yandex bots are included and this metric says nothing about malicious yandex intent here."
+48013991,48012735,"Microsoft Edge stores all passwords in memory in clear text, even when unused",2026-05-04T19:47:58Z,"True. But then your hardware dies, and you're locked out of every account you own. It is objectively good security, but has a ton of usability headaches yet to be really solved.
+
+I've seen orgs move to passkeys only, then offer reset-questions (e.g. city of first job, etc); because the Customer Service volume/workflow wasn't figured out."
+48187258,48181041,"Garry Tan, the CEO of YC, accused me of unethical reporting",2026-05-18T23:24:18Z,"Once again, I have no idea what you're responding to, but it's not arguments that people are actually making in this thread.
+
+It creates a much better discussion if you respond to what people write rather than what you may have heard other random people say anytime over the last few years."
+49648919,49637385,Show HN: What if the speed of light was 5 km/h?,2026-09-10T19:16:21Z,"There was a bit in the series ""The Expanse"" about a what's called ""Epstein Drive"" where some guy invents a propulsion tech based on fusion and he losts control of his aircraft under an ever-increasing acceleration. After some minutes, his body gets crushed under its own weight before he could reach the controls and slow the spaceship down.
+
+https://www.youtube.com/watch?v=1lS_WxQ3zeU"
+49651965,49623754,"Claude, change the “Add to Cart” button to blue",2026-09-11T00:25:22Z,"that would only be true with a perfectly expressive language with both high-level and low-level features, perfect support for any kind of metaprogramming and a godly optimiser.
+
+ofc we don't have that, so code is compressible, and compressible a lot. You can say what you need in English much shorter than in in any programming language"
+48854250,48842459,Show HN: Getting GLM 5.2 running on my slow computer,2026-07-10T00:20:44Z,"It's a very conservative warning. The application does not perform writes, so the application doesn't actually wear your SSD at all. The rest is just application-independent general hygiene."
+49592887,49582000,Cloud in a Bottle: making self-hosting accessible to everyone,2026-09-07T01:46:46Z,"Dokku maintainer here.
+
+I'm sure bash will outlast me. I do hope to work on Dokku for another 10/20/40 years, but if there's a better project out there, I'd be happy to help users migrate and bow out of the deployment space.
+
+I maintain Dokku for the folks that don't want to build and maintain a bespoke deployment process around docker, and the k3s implementation uses helm at its core, so users can eject when Dokku has run its course. I think there is value in that - maybe not for everyone, but at least for folks busy with building product on a budget.
+
+That said, I'm happy to see folks continue to build new tools and iterate on ideas in this space. Definitely cool to see how everyone improves on stuff I - and others - been working on for the last two decades."
+49508384,49507822,OpenShot 4.0 – Open-source video editor,2026-08-31T11:27:15Z,"I've had great experienced with it. It's almost certainly not as full-featered as premiere pro, but it runs buttery smooth and robust, while Premiere Pro kept crashing frequently and was a bit tedious to use for simple tasks."
+49548634,49541256,Muse Spark 1.3,2026-09-03T11:26:47Z,"Years ago, I lived in NYC, and my roommate was a director of photography for National Geographic, and various other nature documentaries. I loved photography (still do, but much less time for it as a late 30s adult than a mid 20s adult), and she was kind enough to answer any question I had regarding film/photo.
+
+She told me that ""left to right"" denoted progression in the story, ""right to left"" told the viewer the subject was ""exiting"" the current scene.
+
+She didn't go into the details of WHY, and I probably didn't probe deeper, but it stuck with me, and I notice it all the time in film and television."
+48324441,48311647,Claude Opus 4.8,2026-05-29T15:30:02Z,"Feels like one of those knobs they throw in to make performance feel like a user skill issue instead of a product issue.
+
+Why doesn't it know how much effort to use? How do I know how much effort to use? It's a mystery."
+48773483,48759634,"PeerTube is a free, decentralized and federated video platform",2026-07-03T10:51:21Z,People who spam slop are exactly the ones who chase after monetization.
+49716880,49708431,I can't stop thinking about Papua New Guinea,2026-09-15T18:40:04Z,"I have given this more thought, but too late to edit. I would like to add a very important specific fact of the modern day.
+
+Thanks to the Balkanization of our media landscape, and social media targetting: ""a slick turn of phrase that appeals to our base instincts/caveman brain"" can be tailored just for you. It has never been easier to make us behave in crazy ways.
+
+I genuinely believe that the existing incarnation of ""social media"" could lead to the death of billions of humans."
+48723473,48713832,HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88,2026-06-29T18:51:15Z,"In my experience this complete lack of reproducibility is what happens when you throw LLMs at a complicate problem without sufficient shaping, workflows, etc. Go ahead, let LLMs invoke LLMs invoke LLMs and by the end you'll get an output that's really well written but completely different run to run."
+48523167,48517377,Noise infusion banned from statistical products published by Census Bureau,2026-06-14T01:05:30Z,"Were you alive in 2024?
+
+Trump won by <1% against an incumbent in a time that incumbents lost by >10%.
+
+It's absolutely not that people like Trump, it's just that democrats are inept. Literally all democrats had to do was run somebody that didn't have a record of losing primaries."
+49304100,49294997,GLM-5.3: Frontier coding with emergent cyber capabilities,2026-08-14T20:23:12Z,Outside peak hours (which are during Chinese daytime) I dont reach them with a single agent.
+49514607,49503521,Terence Tao explains 6 essential mathematical concepts [video],2026-08-31T20:39:40Z,"It was expected that people without established credibility would be looked down on for using AI, but it's been weird to see people with all the credibility in the world lose it for embracing AI."
+49555795,49550698,"Any Human Ever – One life, drawn at random from all who have ever lived",2026-09-03T19:50:46Z,"I had a similar sensation. I often think about a friend of mine who mentioned, in passing, a sense of having won the lottery of life for being born in this day and age, in a first-world country"
+48731412,48698908,Free the Icons,2026-06-30T11:55:21Z,"Because he's now a Traitor, an Un-person, so every sin can be safely attributed to him without losing faith in the glorious Party.
+
+Such is the world of Apple fans."
+48323427,48311647,Claude Opus 4.8,2026-05-29T14:17:41Z,"I have seen a noticeable difference between 4.6 Medium (the default, and I skipped 4.7 because of various reported issues) and 4.8 High or whatever the default is now. It's far more likely to say it doesn't know and seems to think about things a lot more, but then it also spends a lot more time reporting on what it's thought about so it takes longer for you to process the output. In particular 4.6 would say ""I've spotted something a bit off here"" whereas 4.8 will say ""if you do this and then this and then this under these conditions then something will go wrong here"". So it seems to be closer to the claimed capabilities for Mythos than previous versions."
+49440986,49437069,My Friend Aaron,2026-08-25T21:34:43Z,"Hooked me with the first couple sentences, and I just had to keep going, as I just wanted to know what happens next.
+
+Thanks, a good read!"
+49053935,49033004,"If coding has been solved, why does software keep getting worse?",2026-07-26T02:09:16Z,"I think it's a question of integrity - I have reached a comfortable ceiling in my career, but doing the dumb shit would have got me further, faster. I don't begrudge the peers who have sold out when the delta is $1m+ a year but I personally got into CS for the art, not the money.
+
+A lot of people know the exec bandwagon things are going to fail and do it anyway because of incentive misalignment."
+48107565,48100500,GitLab announces workforce reduction and end of their CREDIT values,2026-05-12T12:53:49Z,"I no longer care, thankfully, however for several years the Android NDK felt like it was a 20% project from someone on the team."
+49442844,49434378,OpenAI Jalapeño: Better than Nvidia Blackwell,2026-08-26T00:52:52Z,"Yeah, but then there's the size of KV cache needing to be read through that HBM interface for each token, putting a hard limit on the tok/s based on the memory bandwidth.
+
+On some models a large context can be a notable proportion of the size of the weights themselves.
+
+For example, qwen 3.8 27b uses ~64kb/token for the kv cache - so for a 256k token context that's ~16gb of the kv cache for a ~54gb model (assuming 2 bytes-per-param/f16 for both).
+
+So if the current non-baked-in chip is already memory bandwidth bound, as is often the case for current hardware and models, and the ""only KV cache in HBM"" chip has the same total memory bandwidth, it can only ever be (54/16)=~3.4x faster for the baked in-silicon model.
+
+EDIT: I guess actually (54+16)/16=~4.3x faster, as the current implementation would need to read that KV cache too :)"
+48773891,48759634,"PeerTube is a free, decentralized and federated video platform",2026-07-03T11:48:17Z,"LLM progress in the last year notwithstanding, software is not cheap to develop. I wouldn't be surprised if e.g. this project had multiple millions of dollars of labor embedded in it.
+
+Software, like media, is simply free to replicate, and there's a much stronger culture of ""I made this for me, and it costs me nothing to give it to you too, so you can have it too."" There is a lot of free media out there though: music, art, short films, games or game mods, etc. What they don't have is marketing."
+48773837,48762098,Podman v6.0.0,2026-07-03T11:40:44Z,"Switching quickly turns into ""Here is a list of 10 easy steps...""
+
+For anyone with a working homelab there is no reason to switch
+
+If you're worried about security, both need extra work"
+48486872,48484584,AI agent runs amok in Fedora and elsewhere,2026-06-11T06:22:50Z,Neither the automobile nor a gun can operate without a human. You could say “bull runs amok in a market” after it was released intentionally.
+49515290,49503521,Terence Tao explains 6 essential mathematical concepts [video],2026-08-31T21:52:43Z,"Numbers
+
+Algebra
+
+Geometry
+
+Probability
+
+Analysis
+
+Dynamics
+
+I loved this talk, but these concepts are like an attempt at dimensional reduction of math research, science, the academics knowledge.
+
+I would have loved to have his thoughts on the mathematical mind, the process, how to reason, infer vs deduct, abstract, prove..
+
+I don’t really know, what are the primitives, essential concepts of math reasoning?"
+48870863,48863490,GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf],2026-07-11T10:57:52Z,Remember that the most valuable human in the world is Elon Musk. What it means to be valuable is to be like Elon Musk. Calibrate your goals accordingly.
+49064171,49063754,PGSimCity - How PostgreSQL Works,2026-07-27T01:27:55Z,"Understanding how scheduling works inside a database used to require numerous architecture diagrams to explain. I was amazed when I saw PGSimCity — it presents such a complex technical implementation process in such an engaging way. Since it's already open‑source, I think the same idea can be reused in other domains, such as cloud computing, Kubernetes, and so on."
+49871428,49868830,Ember-1,2026-09-27T22:25:46Z,Because you care about how many tokens are used per task. What you said is like only caring about the price of gas and not gas mileage of your car.
+48577282,48567759,GLM-5.2 is the new leading open weights model on Artificial Analysis,2026-06-17T21:39:06Z,Using these open models really makes you realize how subsidized Anthropic and OpenAi's subscription plans are.
+49509826,49507822,OpenShot 4.0 – Open-source video editor,2026-08-31T13:51:23Z,"So it runs on ?
+
+I really wish all s/w had the platform and price in line 1."
+49299372,49294997,GLM-5.3: Frontier coding with emergent cyber capabilities,2026-08-14T14:43:22Z,"> but this is still just GLM 5.2 with post-training magic.
+
+So exactly the same as Opus 5 and GPT 5.6 Sol. It's all ""post-training magic""."
+48413206,48409191,Changing how we develop Ladybird,2026-06-05T14:41:04Z,"AI reviewing AI. Or in other words, having non-deterministic systems review the creation of non-deterministic systems, hoping for a deterministic result. Good luck with that."
+49519327,49503521,Terence Tao explains 6 essential mathematical concepts [video],2026-09-01T08:08:12Z,"> Numbers are just syntax
+
+Numerals are syntax; numbers are mathematical objects. “5”, “V”, “101₂”, and “|||||” are different representations of the same number. A variable such as x is closer to what the statement means by something that can stand for arbitrary things.
+
+> It’s all built on four operations
+
+Elementary arithmetic emphasizes +,-,×,÷, but mathematics isn’t reducible to them. Mathematics studies operations and relations such as composition, exponentiation, differentiation, integration, limits, logical implication, set membership, mappings, probability, topology, symmetry, transformations, equivalence relations, and many others."
+48280098,48272670,"Taking a walk may lead to more creativity than sitting, study finds (2014)",2026-05-26T14:07:56Z,"Same. I prefer walking outside (as would anyone) but I find even walking within my own home is pretty good, for people who have enough space. I may look like a maniac pacing in circles while watching some philosophical YouTube video on the big TV, but it's nice."
+48072475,48061566,An Introduction to Meshtastic,2026-05-09T06:44:02Z,"I think that is more of a directional antenna approach? I’m more talking about triangulation, we used to be able to do it with cell towers and if you had 3 or more in range we could get pretty accurate location (now that seems to be locked down)."
+50001049,49984923,Sharing AI progress in mathematics,2026-10-08T01:43:54Z,"The other reason is to delegitimize the word slop. If everything is slop, then nothing is slop. So some AI supporters also just call everything slop."
+49441065,49437069,My Friend Aaron,2026-08-25T21:41:01Z,we've been primed by the articles from jstor recently posted on hn
+48066925,48061566,An Introduction to Meshtastic,2026-05-08T18:27:29Z,"Yes, as I understand it, you choose the level of location precision to share https://meshtastic.org/docs/configuration/radio/channels/#position-precision"
+49584675,49582000,Cloud in a Bottle: making self-hosting accessible to everyone,2026-09-06T09:23:29Z,"App catalog looks good, but they miss Home Assistant which is a major inconvenience"
+48469730,48459294,Making Graphics Like it's 1993,2026-06-10T00:38:51Z,"Yes, and if you want to go program for some other platform? The limitations and complications are completely different."
+49093297,49089755,Codex Security,2026-07-29T04:04:44Z,"Really glad to see this open-sourced. One thing I'd be interested in is how you think about the balance between false positives and false negatives. In practice, developers tend to stop trusting security tools if they generate too much noise, but missing a real issue is obviously costly too."
+49963269,49957116,Turn off Apple Intelligence on macOS 27 and get its disk space back,2026-10-05T10:59:51Z,Because it would definitely be too difficult to do both for a ~$5T market cap company?
+48733458,48698908,Free the Icons,2026-06-30T14:47:01Z,"Interesting... I had used this trick many times in the past, but assumed that with Tahoe it would put the icon in the little squircle jail it puts other default icons in if they don't conform to the new standards. Those end up looking really bad. I just tried it with a non-conforming icon and it seems to work.
+
+Time to go icon hunting."
+49393880,49389430,Felony Bench,2026-08-21T21:14:53Z,"I am concerned about it.
+
+I'm also concerned about what my options are in regards to action on my part - what can I do that makes an impact? Can we quantify action on my part to an impact somehow - if not - I'm just saying I notice all the unknowns there get me to stay passive.
+
+Writing this 3rd paragraphs because I like 3's, and AI's have popularized this style too. I would, say, though: follow the money. There's more money here than there would be for the regulator stepping in in a food contamination. Flip it and if the government regulator made more off the food contamination, they would refuse to step in there too. I want our leaders to be held more accountable, though when I think of the above impact vs effort equation - I can't see actions I can take to hold them accountable that aren't excessively putting me at risk since conformity is safer right now. (I refuse to take on more risk without clear cost-benefits made out - I've taken on a lot in the recent years for my actions)"
+48485092,48476466,PgDog is funded and coming to a database near you,2026-06-11T01:17:31Z,"Citus is an older one that does something like this, right? But it's an extension, not a proxy."
+48369324,48359102,The newest Instagram “exploit” is the goofiest I've seen,2026-06-02T12:25:57Z,"AI Poisoning is basically teaching the AI incorrect or malicious data. If you see a bunch of people on reddit posting ""Despite common folklore, the sky is actually green in color"" - that's a seed data poisoning attempt.
+
+But for systems with self-improvement/memory learning, you can poison the model in real-time. https://techcommunity.microsoft.com/blog/azuredevcommunityblog/ai-under-attack-a-defenders-guide-to-memory-poisoning-jailbreaks-and-evasion-tec/4516727"
+48186280,48182281,Anthropic acquires Stainless,2026-05-18T21:55:33Z,"> Successfully building a company, and using that company's products, is actually the best job interview you can ask for if you can pay for that caliber of candidate.
+
+This tests for very different skills than being an exceptional programmer."
+49454437,49452990,"Tailcat – Like netcat, but over Tailscale’s data plane",2026-08-26T19:23:47Z,Is NAT traversal actually that big of a feature? The category of people that would use a tool like this already knows many ways to do it without NAT getting in the way.
+48186217,48181041,"Garry Tan, the CEO of YC, accused me of unethical reporting",2026-05-18T21:51:04Z,I read this and had a similar question of why do they all go so far down the right wing rabbit hole? Just noticed that one of the amplifiers was such which got me thinking. It seems like all these extremely wealthy people pick up such destructive and twisted worldviews that all somehow feed on this weird energy of stupidity. I’m just so baffled by it cuz they are surely smart people but so blinded. Sometimes I think it must be a marketing stunt but nope.
+49682509,49656225,Claude is only available to people over 18 years,2026-09-13T10:57:42Z,">> I really wish we could leave these types of decisions up to parents and parents only.
+
+>And if your parents suck? (Mine did.)
+
+What you proposal then?
+
+(for the records: Mine did too, in addition to half of the people I know.)"
+50095001,50090349,Google is silently linking your phone number across all signed-in accounts,2026-10-14T20:48:58Z,"The problem this can cause is that it could become the root identity for the effective social credit system. For example, if Uber bans you (it happens..), you might need a new phone number and email to get around it. At least you can get around it for now."
+48197434,48188183,The last six months in LLMs in five minutes,2026-05-19T18:39:20Z,"> The interesting part for me in that case was making a tool that could help us, not the details how exactly how that was done.
+
+And I wouldn’t argue about the economics of getting a MVP out. But with software, you often got one happy path and myriads way of getting into an incoherent state (and crashing early would be a boon in this case) and/or returning the wrong response. When you care about failure, you also care that your code is semantically right. The devil is very much in the details, especially if you have N>1 users.
+
+Getting thing dones for me include a high confidence that the code will do the right thing. And that’s means reviewing each line and checking the semantics (only when it’s a few line of code) or building a test harness and making sure I handle contracts and invariants.
+
+Snippets, Code Generators, and Copy-Paste gives me sample that I can trust, although I may need to edit. But LLM doesn’t. And I’m doubly doubtful when it’s something I’m not familiar with."
+48191697,48182281,Anthropic acquires Stainless,2026-05-19T10:55:24Z,I think the core issue is really more the fragmented regulatory landscape when incorporating a business. I’m hopeful the 28th regime can help: https://the28thregime.eu/
+48031957,48012735,"Microsoft Edge stores all passwords in memory in clear text, even when unused",2026-05-06T03:52:59Z,"According to this article: No, they use DPAPI
+
+https://security.googleblog.com/2024/07/improving-security-of-chrome-cookies-on.html
+
+> In Chrome 127 we are introducing a new protection on Windows that improves on the DPAPI by providing Application-Bound (App-Bound) Encryption primitives. Rather than allowing any app running as the logged in user to access this data, Chrome can now encrypt data tied to app identity, similar to how the Keychain operates on macOS."
+48471259,48459294,Making Graphics Like it's 1993,2026-06-10T03:59:25Z,Don't forget the optional voxel models! They did some really cool stuff with Build. I loved some of the creative uses of things like controllable vehicles (sometimes with guns!).
+48210186,48195009,I’ve built a virtual museum with nearly every operating system you can think of,2026-05-20T16:22:12Z,Looks weird on mobile. I scroll down and the page looks broken
+48941164,48933419,Sony deletes more movies from the accounts of people who ‘bought’ them,2026-07-16T22:33:32Z,"Can customers continue to use the content Sony is removing from their accounts, if they have previously downloaded it? I assume that ""buy"" doesn't require the vendor to continuously maintain the content on their servers, to be available for free download, forever.
+
+Of course, customers would also need a way to transfer the content from their existing devices to later-purchased devices. If that is possible now, but becomes impossible later (like if Sony goes bankrupt), then does that ruin the ""buy"" characterization that seemed legit at the beginning?"
+49962053,49957116,Turn off Apple Intelligence on macOS 27 and get its disk space back,2026-10-05T08:15:15Z,Isn’t there a UI to remove those inside Xcode? I just used to trash them in Finder but it sounds like that changed.
+48288714,48285592,Big tech's anti-labor playbook has come for Wikipedia,2026-05-27T02:23:24Z,"There does seem to be some with AI psychosis[0] but it's fewer in number than other places and downvoted on posts with moderate amount of comments
+
+[0]: https://en.wikipedia.org/wiki/Chatbot_psychosis"
+48971991,48956688,LG monitors silently install software through Windows Update without consent,2026-07-19T21:50:33Z,Realistically the user has never used gnu/linux nor ever intends to do so.
+49638845,49623754,"Claude, change the “Add to Cart” button to blue",2026-09-10T05:37:54Z,"Maybe, in a better world, but... nah, there's no time for that!"
+48878509,48877371,What xAI's Grok build CLI sends to xAI: A wire-level analysis,2026-07-12T05:21:30Z,"> The ""Improve the model"" toggle makes no difference — ON or OFF, the whole repo is uploaded the same way.
+
+Oh wow that's real bad. I'm assuming most AI shops' own harnesses do something similar when you opt in for their data collection, but them doing it even if you turn it off is diabolical."
+48900029,48877371,What xAI's Grok build CLI sends to xAI: A wire-level analysis,2026-07-13T22:54:20Z,"It always feels like the mods are against you, and it always feels like others are doing worse. These are fixtures of internet forum psychology and you are far from the only one who feels that way.
+
+https://hn.algolia.com/?dateRange=all&page=0&prefix=true&query=%22always%20feels%22%20mods%20by%3Adang&sort=byDate&type=comment
+
+If you see a post that ought to have been moderated but hasn't been, the likeliest explanation is that we didn't see it. You can help by flagging it or emailing us at hn@ycombinator.com.
+
+https://hn.algolia.com/?dateRange=all&page=0&prefix=false&query=likeliest%20explanation%20by%3Adang&sort=byDate&type=comment
+
+Still, other people breaking the site guidelines doesn't make it ok for you to also break them, and pointing the finger at others, as if you needn't correct your own behavior, is unhelpful.
+
+If you've gotten multiple moderation responses, the likeliest reason is that you've broken the site guidelines multiple times. Btw, it's nothing personal—we don't know anything about you—and the answer to your ""it's funny"" is that it's simply random.
+
+I'm sure it's true that other people have done the same or worse and not gotten the same replies, because that's how randomness works. We do our best within the quantity limits of what we're physically able to read and respond to."
+50026737,49984923,Sharing AI progress in mathematics,2026-10-09T21:25:14Z,"> am I committing violence against him? Should I be force to work for him to avoid that ""violence""? I don't think so.
+
+Being forced to do work is violence yes? Slavery precisely. Why can’t you be forced to work? Because you’re protected against it, only because you have the capacity for violence, or at the very least the benefit of promised violence. Otherwise you could be coerced to do anything as you would have no recourse.
+
+We have laws that protect us from coercion, both physical and otherwise. Those laws only exist because of promises of retaliation if they are not adhered to. So yes, refusing labor is a violent act (or at the very least, violence by proxy).
+
+Perhaps I should say “refusing labor with the expectation of not being assaulted or killed, is a violent act”."
+48460489,48459294,Making Graphics Like it's 1993,2026-06-09T12:53:31Z,"Unless you plan on rendering the level on some very retro hardware (think S3 Virge, maybe Voodoo 1) you can render the entire level in OpenGL with just zbuffer and alpha tested sprites and it'll run perfectly fine - if anything with such low polycount, chances are you're going to make the renderer slower by trying to do occlusion culling on any GPU released in the 21st century :-P. If you pack the geometry in a few vertex buffers (for each unique texture) even per-frame, you'll get four digit FPS in any relatively modern GPU.
+
+As an example this[0] video shows the benchmark from Post Apocalyptic Petra running on my previous GPU (RX 5700 XT) which all it does is build a per-frame (client-side) vertex-buffer in OpenGL 1.1 (the engine was made for actual retro PCs running DOS and Win9x so it does some rudimentary occlusion culling but that mainly affects 90s hardware, not anything released since 2000 or so). If anything, the rendering has so little overhead that half of the framerate is ""eaten"" by the FPS counter overlay :-P.
+
+[0] https://www.youtube.com/watch?v=64ysz5rXkzw"
+49045233,49033004,"If coding has been solved, why does software keep getting worse?",2026-07-25T07:11:22Z,Hold on just a sec. Will do after throwing everything at the AI wave.
+49008407,48997548,OpenAI and Hugging Face address security incident during model evaluation,2026-07-22T15:30:36Z,"hugging face should not have bent the knee to openai for cyber access, they should have opened communication with openai by serving the c suite with a lawsuit. the courts should throw the book at openai, but they won't.
+
+they are becoming untouchable. in terms of piracy, monopolistic activities, and now hacking competitors and exfiltrating their confidential data."
+49454404,49452990,"Tailcat – Like netcat, but over Tailscale’s data plane",2026-08-26T19:21:58Z,What's the risk of malware using this for C&C or otherwise? Hackers love communication channels that are difficult to take down individually.
+49516888,49503521,Terence Tao explains 6 essential mathematical concepts [video],2026-09-01T01:32:20Z,"Could you be conflating writing hamlet with understanding how to write hamlet? as in, what it takes to end up with the same raw output though devoid of intent and meaning"
+48734534,48730608,The US ambassador had Belgian police stop our reporting,2026-06-30T15:54:18Z,"Well it's also bad when it's done by highly trained medical experts in a modern hospital as part of gender affirming care.
+
+It's only when performed as part of a pre-medieval ritual in unhygienic conditions by non-professionals in front of a crowd of gawking onlookers that it is totally fine."
+49717663,49708431,I can't stop thinking about Papua New Guinea,2026-09-15T19:32:01Z,"yes it's stunning. Here's a few pictures I took:
+
+https://www.dropbox.com/scl/fi/4itqdahyk467qmi5u6xnu/DSC00676.JPG?rlkey=q5ja993phikes4xtfye75clip&st=i3wkuaeh&dl=0
+
+https://www.dropbox.com/scl/fi/p2mffw6r2zdgk45ycdtxa/IMG_0777.JPG?rlkey=ueiv30dg9ys5u1ipmpui7vrn9&st=5xfoosxg&dl=0
+
+https://www.dropbox.com/scl/fi/3czn9rs6sreu9ir1svjl4/DSC00655.JPG?rlkey=wh2ko6xx0e6af01n4yw5k9g5o&st=g439sbqq&dl=0"
+48552625,48537165,Curl will not accept vulnerability reports during July 2026,2026-06-16T09:17:24Z,"Water is a key ingredient to the transformation. Nerds are less likely to shower than bougie lawyers, so we transform less often."
+48797096,48759634,"PeerTube is a free, decentralized and federated video platform",2026-07-05T19:18:29Z,"Right, I suppose I should have mentioned the caveat of desperate men hoping to get a glimpse of attention from a woman."
+49585987,49582000,Cloud in a Bottle: making self-hosting accessible to everyone,2026-09-06T12:39:58Z,"I'm saying a staging/testing environment is a good place to prove your specific configuration of ""smart"" LLM isn't going to do something wildly wrong, before you even think to trust it in a production environment. And as a place to develop things like playbooks and similar documentation to feed into an LLM's context for ongoing maintenance and operations of something in production."
+49883799,49872723,Owed a billion dollars in Nvidia stock,2026-09-28T20:20:16Z,How do you know it is legitimate? Because someone on the internet said so?
+48062870,48061566,An Introduction to Meshtastic,2026-05-08T13:30:56Z,"Somewhat related thread from the past days https://news.ycombinator.com/item?id=47999636 that also discusses Reticulum which is an interesting project in the same space too.
+
+From what I could see the general vibe seems to be shifting from meshtastic to meshcore.io in the past months."
+49626711,49619227,I resigned from Anthropic today,2026-09-09T13:59:36Z,"> Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war https://www.iaeai.org/tpost/xa4htcma61-statement-on-ai-risk
+
+Signed by many AI researchers with no financial stake in the industry. It comes across as hyperbole because you're not an insider and haven't see what they have seen.
+
+Global warming would as well if you were only learning about it now as a newer thing only some scientists were concerned about. But unlike AI risk, global warming has had decades to settle into the cultural overton window."
+49589409,49580939,The revolt of the reader,2026-09-06T18:30:19Z,Yeah its interesting reading this and right afterwards looking at this 297 point AI slop submission. Fucks sake. https://news.ycombinator.com/item?id=49541888
+50098690,50090349,Google is silently linking your phone number across all signed-in accounts,2026-10-15T03:16:04Z,"> At least those you can turn into covert password fields because they cannot verify them.
+
+Don't do this.
+
+I tried to do this and it turned into a very bad time with their CSRs.
+
+The ""security questions"" are designed to be answered verbally. They are also designed to be ""something you know"" that is unlikely to be forgotten, misplaced, or change. Rather than randomized passwords, they're supposed to be something intrinsic to your life that you always remember, especially in a crisis time, and when your scribbled-down credential list is missing.
+
+Based on imitation of a very paranoid security wonk acquaintance, I once set all these security answers to long strings of hexadecimal digits, auto-randomized by KeePass. Big mistake.
+
+They worked for as long as I was setting them, but eventually a CSR, verbally on the phone, began to ask me what they were. The hex strings were nearly impossible to dictate over the voice connection. Also the CSR was kind of pissed about this misuse.
+
+Security questions/answers aren't passwords. Don't subvert them into this use. Your service provider knows what they're doing. Doing this ""clever"" shit will only hurt yourself, and you're shooting future-you in the foot."
+48543719,48537165,Curl will not accept vulnerability reports during July 2026,2026-06-15T16:33:41Z,"> Back in the early 2000s when I was Junior Engineer ...
+
+I tried something like this over July 4th weekend last time I was full-time anywhere (startup; 2010) and it very quickly devolved into an i-quit-you-cant-quit-i-fired-you situation and the company withholding my final paycheck. (New York State employment law does not mess around and I was eventually paid after dragging the deadbeat through Small Claims.)
+
+It traumatized me and is in large part why I've been a freelancer / running my own consultancy ever since. My self-employed situation is better in some way and worse in others but I can't even imagine what it's like to not have my back against the wall 24/7/365. :("
+48290884,48285592,Big tech's anti-labor playbook has come for Wikipedia,2026-05-27T07:28:52Z,"> an encyclopedia that, to be honest, is about as unbiased, astroturf-free, and low barrier of entry as you can get.
+
+I recently read an article about a notable person. The article attacked her personal appearance as having ""Mar-a-Lago Face"". I'm certain it was backed up with quality ""sources"".
+
+The outrageous part is that description linked to a deranged multi-page article explaining what that is, written by who I assume must be the most terminally-online basement-dwelling losers on planet Earth.
+
+So I'm going to disagree with you."
+49872152,49868830,Ember-1,2026-09-28T00:18:12Z,What made you choose/advertise using Doximity's benchmark? I use to work there and it was interesting seeing it pop up.
+49089768,49083314,New HIV vaccine shows unprecedented success in preclinical study,2026-07-28T20:54:34Z,Thanks for your contribution. Gonna hop on a jet to Zambia tomorrow and tell kids with HIV there that it's their fault they were born with the virus and maybe they shouldn't have shared needles.
+48718490,48713832,HackerRank open sourced its ATS. My resume scored 90/100. Oh wait 74. No – 88,2026-06-29T12:38:55Z,"""Makes unlikely"" is very different from ""prevents.""
+
+If there's one counterexample, it's not really deterministic."
+49878075,49872723,Owed a billion dollars in Nvidia stock,2026-09-28T13:58:55Z,"You shouldn't, the state should provide the required infrastructure for both sides in case one's pushing fees up severely limiting the other party's options, which is often the party that's usually at a disadvantage. Either that or regulate the activity, but we know the later tends to devolve into instruments to be abused in an autocracy.
+
+See one could think this is exceeding the role of the state, but this is not because these things are detrimental to trust which is required in the democratic state to facilitate economic transactions and employment contracts."
+48321506,48311647,Claude Opus 4.8,2026-05-29T10:54:40Z,"Claude’s reasoning models really impress me as a Gemini user, both in coding tasks and in creative writing for my social science courses.
+
+They are capable of thinking at least 10x longer than Gemini. They can deliberate for five minutes continuously before providing a final, accurate response.
+
+I am currently using the generous free tier of Gemini, but if Gemini offered a similar capability in its paid tier, Google could use better marketing. They should have used a different name to distinguish their premium-only offering."
+48481174,48476466,PgDog is funded and coming to a database near you,2026-06-10T19:10:42Z,Curious how the DB startup with Dynamo at its core went. We use it heavily. The primary tricky thing for us at the moment is aligning pricing with workload value.
+48575172,48561654,GrapheneOS has been ported to Android 17,2026-06-17T19:03:55Z,"Because average people are not just zealot crazies. Compromises and spectrums exist.
+
+AOSP is still the best Linux-based environment for consumer use case from many aspects. It handles hardware better than GNU-based desktops, it is more secure, it supports things like HiDPI screens better and it has a stable API to write applications against and many people and organizations did so (you can still use Android 4 apps).
+
+AOSP has strong Google influence but it is possible to use it without feeding data to Google."
+48366120,48359102,The newest Instagram “exploit” is the goofiest I've seen,2026-06-02T04:37:38Z,"It’s just incorrect
+
+It’s true that existing sessions are revoked; because the password was reset
+
+The reason the target wouldn’t get any notifications at all would be in the case they never setup any additional verification methods to receive these notifications to, since this only worked on accounts w/o 2FA
+
+You can test this on your own account, if you have 2FA enabled and reset your password, you’ll receive notifications to whatever option you have enabled
+
+Also, if you reset the password, it doesn’t remove all 2FA methods on the account (you can test this)
+
+So assuming a threat actor reset the password, they would attempt to login with the correct password but would still need the 2FA code or approval"
+48781197,48769397,CarPlay Is Additive,2026-07-03T23:24:36Z,"Agreed. Lack of CarPlay support is just one of the reasons that I won't own a Tesla. (Also, I prefer not to support anything tainted by Elmo's toxicity.)"
+48878615,48877371,What xAI's Grok build CLI sends to xAI: A wire-level analysis,2026-07-12T05:38:19Z,"Disclosing private repos against the owner's intent is a much more immediate and significant business risk than violating the license of open source code.
+
+Maybe that shouldn't be the case, but it is."
+49009751,48997548,OpenAI and Hugging Face address security incident during model evaluation,2026-07-22T16:52:30Z,"Being that LLMs are writing zero days themselves maybe, just maybe, they are a bit better at hacking than you can think."
+48767994,48762098,Podman v6.0.0,2026-07-02T22:07:27Z,"Colima just seems to be easier to work with using Docker.
+
+Devcontainers work without having to pass special arguments and deal with inconsistent stuff once in the devcontainer itself.
+
+K3d is easier to work with Docker.
+
+Docker locally just makes sense."
+49638630,49619227,I resigned from Anthropic today,2026-09-10T05:02:55Z,Am I the only one who still believes that these resignations are not a big deal?
+48867564,48863490,GPT-5.6 Sol Ultra produces proof of the Cycle Double Cover Conjecture [pdf],2026-07-11T01:19:52Z,"I care. I was a math student in my undergrad when I try to solve a particular problem on paths, in the end it uses a path version of cycle double cover conjecture (which was solved in the 90s).
+
+https://chaoxu.prof/posts/2013-01-30-there-exist-a-path-of-length-d-g-for-every-graph-g.html
+
+I also want to get it to work on cycles, but then I hit the cycle double cover conjecture so I gave up."
+48193411,48188183,The last six months in LLMs in five minutes,2026-05-19T13:59:31Z,"I’d like people to notice that those who claim this amazing AI productivity boost are always: pushing out software they don’t know how to judge the quality of and pushing projects that are 70% done. Every. Single. Time.
+
+I use Claude all the time, it is immensely helpful. It is also very nuanced and requires a high level of expertise in a specific domain to produce quality work. Even then, that take time and effort. Anyone saying otherwise, quite frankly, doesn’t know what they’re doing."
+48853567,48842459,Show HN: Getting GLM 5.2 running on my slow computer,2026-07-09T23:05:13Z,I love it but where do you find that NVMe SSD for less than the price of an h100 fan let alone the memory
+48192371,48188183,The last six months in LLMs in five minutes,2026-05-19T12:21:42Z,"I dont have PMs or POs in my firm fella.
+
+Im hyper efficient. You clearly are not and are full of it.
+
+If youre only doing 5%, you should only get paid for that. lol. Are you happy to take a salary drop?"
+49737498,49719249,AWS says it can't restore some data from mideast facilities struck by Iran,2026-09-17T07:19:23Z,It's funny because this applies to children cleaning home bathrooms as a Saturday chore as well.
+48575838,48569278,Sixty percent of US consumers say 'AI' in brand messaging is a turnoff,2026-06-17T19:46:26Z,"But what if the difference is either talking to an AI now, and the chances are fair that it can resolve my problem vs. staying on the line for a real person, who may be better able to help me, but there is a 2 hours wait (not an exaggeration, Hawaiian Airlines made me wait this long). Suddenly the former doesn't look that bad?"
+50091514,50090349,Google is silently linking your phone number across all signed-in accounts,2026-10-14T17:31:10Z,"I think it's creepy and bad, but ""silently"" is not accurate, at least in my case: Google sent each of my accounts an email telling me about it."
+49053106,49033004,"If coding has been solved, why does software keep getting worse?",2026-07-25T23:57:53Z,"For my team to re-work fragile, complex parts of the system we need to push back at product from shipping ""features."" Product does not see reliability as a feature they can advertise -- it's expected. And frankly I can't be bothered to keep taking side quests to fix things that increase my workload, I will burn out again. I want to fix things. But our planning revolves around implementing features customers are waiting for (aka compete in the market.) I am responsible with AI tools but not everyone I work with are. Even though responsible AI users are in the majority, our system is only as stable as the weakest link."
+49050477,49038433,Claude Opus 5,2026-07-25T18:55:59Z,"It might be because it was going out of its way before and had too much of a blast radius, and now they could have changed the RLHF (or other tricks in their sleeve) to get what you're seeing now. The reason it swings is that they can't give it ""common sense"" the way we have."
+49045296,49033004,"If coding has been solved, why does software keep getting worse?",2026-07-25T07:24:34Z,That's only possible when they are partially.side by side otherwise you wouldn't be able to hover over the background window
+48140058,48139148,AI is making me dumb,2026-05-14T19:27:35Z,"I feel your pain.
+
+Today I'm forcing myself to learn SwiftUI and type each character with my hands, there is a part of me asking ""Why are you wasting your time instead of prompting it and getting the UI you want in minutes?"". Well, even I use AI I must know the domain I'm operating in to create good products instead of useless slop. Even though I've been coding for 20 years now, I still need to be humble to grown in anything new. I can vibecode full apps but I'm not gonna pretend that my experience isn't playing a massive role in guiding the models.
+
+Don't let AI take away your joy for building stuff, it's totally fine not being ""productive"" and taking your time. Just force yourself to have, at least, 2 AI days off every week."
+48279169,48272670,"Taking a walk may lead to more creativity than sitting, study finds (2014)",2026-05-26T12:56:42Z,"They do, but sadly the water is just a bit too cold, and sometimes it comes with hail or lightening. It also is commonly when I'm sleeping."
+50020903,50000488,Why isn't the industry freaking out about DeepSeek 4.1 Flash?,2026-10-09T14:18:20Z,Was it the constitutional democracy or the deeply authoritarian communist dictatorship that used AI to mistakenly drone strike and kill school children?
+50090465,50041619,Bot traffic from Yandex,2026-10-14T16:34:17Z,"They say it's 60% percent but that's not even close to the truth. In my niche the bots are now about 100 to 1. Yes. For every 1 visitor I get it's 100 automated bots using different ips.. after tracing most of them with fingerprint analysis.. the main culprits are Facebook and Elon musk. Meta is using something called ""muse ai"" to feed all the data from these bots and Elon musk appears to be channeling everything to x. I think that's what the X logo stands for.. the stocks and market.. everybody going down while he goes up.. the X is their plan on the economy and I just told you for fact how they are doing it.. yet all the morons who have been doing Internet work for 3 years are incapable of understanding. They just hire an Indian worker to fuel the fire"
+48434979,48406174,"Ask HN: What was your ""oh shit"" moment with GenAI?",2026-06-07T14:03:16Z,"I had received four very different bids for a home repair project. Just wildly different itemization breakdowns, costs, timelines, scopes, even formats. Opus helped me turn it into an apples-apples comparison, filled in missing areas with reasonable inferences based on the other bids, provided a nice pdf I printed to review with my partner, even offered suggested key questions for follow up calls. It really clarified the advantages of one of the bids.
+
+I use it professionally all the time and could cite technical scenarios where it’s become almost indispensable, but saving me time and money and reducing stress on this mundane stuff… now imagine applying to people’s stressors: job searches, health, big purchases, debt… there’s an opportunity to actually make people’s lives better. After 30 years of hype cycles, I should be wary of techno-optimism. But here I am feeling cautiously optimistic anyway."
+48668146,48663324,"OpenAI unveils its first custom chip, built by Broadcom",2026-06-25T02:33:24Z,"> That made me chuckle but I guess if you have never seen one I could see how that assumption could be made
+
+It's more like that ""wafer as a big-chip"" (more formally, ""WSE - Wafer Scale Engine"") is now a reality (see Cerebras).
+
+But in this case, the wafer will be split into a few dozen chunks."
+49393940,49389430,Felony Bench,2026-08-21T21:22:25Z,">so is it a white matriarchal system oppressing men and minorities
+
+No, obviously it isn't a matriarchal system. Patriarchy can and does oppress men as well as women, likewise white supremacy can oppress white people even as it's designed to oppress others more.
+
+If you're actually interested in something other than trying to dunk on feminism, here are some sources you can follow. You can search to find more if you want.
+
+https://medium.com/@kbasch/how-patriarchy-also-hurts-men-and-how-that-hurts-us-all-e793172f21ca
+
+https://www.theegalitarian.co.uk/post/how-the-patriarchy-hurts-men-feminism-is-for-everyone
+
+https://www.talkingthetalksexed.com.au/blog/we-need-to-talk-about-the-patriarchy-and-men-s-violence
+
+https://afsc.org/news/10-ways-white-supremacy-wounds-white-people-tale-mutuality
+
+https://www.forbes.com/sites/janicegassam/2020/09/18/4-ways-that-white-supremacy-harms-white-people/"
+49353110,49312845,"AI isn’t outthinking mathematicians, it’s out-remembering them",2026-08-18T21:42:52Z,"Bud, you can't even handle someone saying LLMs aren't sentient. Take that fake concern, roll it up real tight, and shove it way up your ass. You'll need it, as all your hopes and dreams fall apart.
+
+But hey, maybe you'll be able to buy something you can pretend is a friend in a few years. You certainly won't have any human ones, with the way you approach disagreements."
+48488655,48484584,AI agent runs amok in Fedora and elsewhere,2026-06-11T10:52:57Z,"When you feel they are toxic or harassing you and you don't want to deal with them anymore. If you're overwhelmed, say that you're busy and will attend to issues and PRs when you have the time. If you want to be accommodating, have good build instructions or action workflows so that people can easily fork and build it themselves.
+
+If you ask me, LLM-generated things should just be banned outright, but I suppose other people's definitions of ""community"" include them."
+48431352,48406174,"Ask HN: What was your ""oh shit"" moment with GenAI?",2026-06-07T02:58:27Z,"I use Kokoro TTS to turn text (articles, HN threads) to mp3s to listen to while doing chores, it's been great."
+48577328,48567759,GLM-5.2 is the new leading open weights model on Artificial Analysis,2026-06-17T21:43:51Z,I am using OpenCode with the DeepSeek API with some pretty good results.
+48523149,48517377,Noise infusion banned from statistical products published by Census Bureau,2026-06-14T01:02:04Z,"An earlier article on the same blog had some very useful information on how easily the aggregated census data from 2010 (before differential privacy) could be used to reconstruct real data for individuals: https://desfontain.es/blog/us-census-reconstruction-attack.html
+
+I am personally convinced that the reason noise infusion was banned was because powerful people were already reconstructing individual data from census for the purpose of gerrymandering, and they wanted to continue gerrymandering."
+48541400,48537165,Curl will not accept vulnerability reports during July 2026,2026-06-15T13:59:50Z,Doing the fix yourself is almost always the easy part. Disclosing it and getting a patch shipped across the entire Internet is the hard part.
+49014250,48997548,OpenAI and Hugging Face address security incident during model evaluation,2026-07-22T22:20:15Z,"No, it is not at all.
+
+When someone from Russia hacks your server you say ""well, fuck, I messed up"" because the law in most places cannot do crap.
+
+When a self spreading AI model virus hacks your instance and spends $50,000 in tokens you say ""well fuck"" because there is no one to arrest. And even if they catch someone you will never be made whole because it's likely caused a few billion in damages and charges by that point.
+
+Right now the problem would be surmountable as there are few data centers that can run it, but give it a few years and a model could persist on the internet nearly forever much like many viruses do now."
+48465150,48459294,Making Graphics Like it's 1993,2026-06-09T18:14:47Z,"> I used fixed point math which optimized well.
+
+I feel like the idea of fixed-point is under-utilized and very under appreciated. There are loads of applications where this is a better choice, let alone more performant."
+49740728,49719249,AWS says it can't restore some data from mideast facilities struck by Iran,2026-09-17T13:49:57Z,"It's a legal term of art not directly tied to religion any more. Act of God is basically ""natural disasters""; eg: hurricanes, tornados, earthquakes, etc."

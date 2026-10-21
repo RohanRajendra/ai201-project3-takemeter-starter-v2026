@@ -54,33 +54,96 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+Every label answers one question about a comment: **what does it rest its
+point on?** Not whether it's right, smart or polite. A sourced comment can be
+wrong, and an unsupported one can be true.
 
-**Definition:**
+### `evidence`
 
-**Example 1:**
+**Definition:** The comment backs its point with something specific a reader
+could check without taking the writer's word for it: a link, a named source, a
+quote, a version or CVE number, a date, or a number about the world.
+
+**Example 1:** *(HN item 49523310)*
+> Apparently, remote improvements became separated from telemetry in Firefox version 148: https://support.mozilla.org/en-US/kb/remote-improvements#w_what-are-remote-improvements
+
+**Example 2:** *(HN item 48059896)*
+> At the moment it doesn't seem to be.
 >
-
-**Example 2:**
+> Within an hour of be advised of, and running the mitigation for DirtyFrag, my upstream provider has blocked all WHM/cPanel/SSH/FTP/SFTP access with a heads-up on:
 >
-
-### `label_two`
-
-**Definition:**
-
-**Example 1:**
+> CVE-2026-29201
+> CVE-2026-29202
+> CVE-2026-29203
 >
+> which look like a repeat of CVE-2026-41940 a week ago.
 
-**Example 2:**
->
+### `experience`
+
+**Definition:** The comment backs its point with the writer's own first-hand
+experience: something specific they built, used, ran, or saw happen.
+
+**Example 1:** *(HN item 49014319)*
+> I worked on a system a couple years ago with a BERT-based model (64M parameters) used for classification. The rest of the system could process data at gigabytes per second, and so here tokenization at a measly few megabytes per second really slowed things down. The model inference was more expensive than tokenization, but tokenization was still >10% of total runtime.
+
+**Example 2:** *(HN item 48829152)*
+> I tried it for family location sharing a few months back and, I don't remember exactly, but I remember the UI/UX feeling a bit slow/clunky in general, eventhough setting things up was user-friendly. Definitely potential there, though.
+
+### `assertion`
+
+**Definition:** The comment makes a claim, judgment or suggestion but offers
+neither checkable support nor first-hand experience for it.
+
+**Example 1:** *(HN item 48918161)*
+> Multipass is just an apt-get or brew command away. People trust software too much these days.
+
+**Example 2:** *(HN item 49499287)*
+> This is a reach. Children can't vote. If that was a real concern you would be banning adults from social media.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `evidence` vs `experience`. Both offer support, and HN
+commenters constantly mix "here's a number" with "here's what happened to me".
+The first `experience` example above is the post that sits on this line: it is
+full of numbers (64M parameters, gigabytes per second, >10% of runtime), and
+every one of them comes from a system only the writer has seen.
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+
+**Who does the reader have to trust?** If the support can be checked by someone
+who doesn't trust the writer (a link, a quote, a version number, a dated or
+named public event, a number about the world), it's `evidence`, even when it's
+told in the first person. If the only support is the writer's own account of what happened to them, it's
+`experience`, even when it includes numbers from their own system ("our build
+went from 14 to 4 minutes"). A link the reader can follow counts as `evidence`
+even when it points to the writer's own repo, write-up or demo, because the
+reader can go and look at the thing itself.
+
+**The other rules, which keep the remaining cases consistent:**
+
+- **Precedence.** Label by the strongest support the comment offers:
+  `evidence` > `experience` > `assertion`. A comment with a link and a personal
+  story is `evidence`.
+- **`experience` vs `assertion`: is a specific thing described?**
+  `experience` needs the writer to say what they did, used or saw, and where or
+  how often: a job, a tool, a project, a device, a count of times. A summary of
+  repeated first-hand events counts ("every startup I've worked at, four now,
+  rewrote the backend"). Credentials on their own ("I've done this for 20
+  years"), "in my experience…", "I've always found…" and "I think…" with
+  nothing specific described are `assertion`.
+- **Specific enough to look up means there's a pointer:** a link, a named
+  document or source, a quote, an identifier (a version, CVE, model or bill
+  number), a date, or a number about the world (a price, a count, a
+  percentage). A fact about a named thing given with none of those ("the M2 Air
+  has no fan", "Java applets died", "Rust is memory safe") is not `evidence`,
+  however true or well known. A comparison to a past event counts only if the
+  event is pinned down by one of those pointers.
+- **The support has to support the point.** A link to something unrelated to
+  the claim doesn't make a comment `evidence`.
+- **Scope.** A comment that makes no claim at all (a pure question, a
+  thank-you, banter) doesn't fit any of the three, and was set aside rather
+  than forced into one. A rhetorical question that is really a claim is
+  labelled by that claim. How many were set aside is in The Dataset.
 
 
 

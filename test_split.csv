@@ -1,0 +1,104 @@
+text,label,note
+"> The US has hardly any factories left.
+
+Feel free to start your own factory in US, nobody is stopping you. Just keep in mind that for commoditized products (most consumer stuff, for example), prices are all that matter. ""Buy American"" is not a product feature.",assertion,"pre-labelled, checked; hn:49468013"
+"I've gone out of my way to not read my wikipedia page. Beyond this, there's a rule (suggestion??) that you not edit your own biographical page.
+
+As a result, I have no idea whether things are right, wrong, misguided, or kflooey on that page. Anyone who wants to know details can simply stop over here for coffee and a chat.
+
+Cheers, -Cliff",experience,"pre-labelled, checked; hn:48066912"
+"I really dislike this notion that because they had privately discovered a bug, they won't pay a bounty. Better to just sell it.",assertion,"pre-labelled, checked; hn:48922090"
+"> Don't pin versions, pull everything from latest
+
+Rebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",assertion,cold; hn:49158268
+"$1 million net worth is massive. You can buy a house in a remote place, invest in companies and live off of the investment perpetually without having to work.",assertion,"pre-labelled, checked; hn:49456872"
+"I don't think it's just recent primaries. Our electoral system is heavily influence by the highest bidder and has been this way for a long time. There are always exceptions, like Massie, but the overall trend is that the majority of candidates who are elected at the federal and state level support and are supported by a few big monied interests. This includes the big healthcare industries, the war machine, the pro Israel lobby, etc. It's why we do things like the war in Iran that are vastly unpopular with the general public. And don't do things that are popular like single payer healthcare.",assertion,"pre-labelled, checked; hn:49400364"
+"> My impression is that people who can work on stuff like that are the kind who just take the stuff in the world for granted.
+
+Some are also doing it for the technical challenge, especially those working on new tech rather than refining what already exists. Like the people who try to solve the great problems of mathematics/physics (or find interesting new ones) for the challenge of it (and sometimes refuse prizes & recognition if they do solve or otherwise discover something vital).
+
+This sort of person is often blinkered to the possible extreme long-term outcomes, or are able to mentally separate themselves from them (“I just made the discovery, I didn't use it to do anything bad” or “I was paid for it, follow the money source and blame them”). Of course once a genie is out of the bottle, other sorts of people are more than eager to ask it for wishes…",assertion,"pre-labelled, checked; hn:48460095"
+"Because they don’t want to have to work that hard for their money. They get more value for their effort by focusing on something else instead of trying to maximize profit for a single business.
+
+The demand curve for a business could be such that you sell 100 widgets and get $100 profit, sell 200 widgets get $101 profit. Why bother trying to sell more than 100 widgets?
+
+Maybe you can sell 50 widgets and make $90, that sounds like a pretty good deal. Instead of making 50 more widgets you could do something else and make more than $10 profit in the same time.",assertion,cold; hn:48297562
+"The debate thing was clownish, for sure.
+
+My recollection of the DNC linkage was that the Clinton campaign agreed to help the DNC in a set of ways (likely raising money for the DNC and helping Democratic candidates) in exchange for some affordances and Sanders refused to do likewise (which, to his credit is on brand). Is that not accurate? I admit it's been 10 years and there have been a lot of claims made as to why Sanders should have been given the nomination in spite of not winning more votes.",assertion,"pre-labelled, checked; hn:49392758"
+"> Now we are considering scrapping it
+
+Turns out, it was probably good that nobody spent time reviewing it.",assertion,"pre-labelled, checked; hn:49982343"
+How does this lend itself to self-hosting then? I think few people will pay that much to self host.,assertion,"pre-labelled, checked; hn:48729667"
+"How are you drawing that conclusion? He mentioned in several comments on this thread that he is Korean…?
+
+Genuinely curious.",assertion,"pre-labelled, corrected in review (was SET_ASIDE); hn:48245422"
+So many elon shills J. ust A. sking Q. uestion -ing off,assertion,"pre-labelled, checked; hn:48379463"
+"Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed.",experience,"pre-labelled, checked; hn:49207286"
+"It doesn’t really matter what Ricardo said in 1817: every US academic economist surveyed in 2018 by the Kent Clark Center disagreed that US aluminum and steel tariffs would increase the welfare of the American people ([0]), and this is with the benefit of >200 years in advances in economic scholarship and analysis since Ricardo.
+
+[0] https://kentclarkcenter.org/surveys/steel-and-aluminum-tariffs/",evidence,"pre-labelled, checked; hn:49471461"
+"It has been used before LLMs. I have no idea why LLMs prefer it, though.",assertion,"pre-labelled, checked; hn:49998018"
+"> would be impossible to scale
+
+I think education is something better scaled horizontally than vertically. More schools, with more professors instead increasing the student per professor throughput. The classes where I learned the absolute most, and had the best experience, were closer in size to 25 than 100.",experience,"pre-labelled, checked; hn:49225890"
+"This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",experience,"pre-labelled, checked; hn:48828914"
+"AA coding index has been updated to use DeepSWE, Terminal-Bench v2, and SWE-Atlas-QnA.",evidence,"pre-labelled, checked; hn:48998159"
+"Alternatively, you can easily add the bloat, discover if it has real value, and then strip it without the bad feeling of having sunk countless hours creating it. Vibe coding is excellent for making the first prototype to throw away.",assertion,"pre-labelled, checked; hn:48912184"
+"Possible, but currently I disable all large files, including videos.
+
+For video downloading, I suggest wrapping around yt-dlp. It's an awesome tool.",experience,"pre-labelled, checked; hn:48544560"
+Prompting and having the model fill out the rest makes it feel like jazz or at least an improvised result of a song,assertion,"pre-labelled, checked; hn:49380875"
+"The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.
+
+The way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid).",assertion,"pre-labelled, checked; hn:48419032"
+"Yeah, there’s no VBA support anywhere. LibreOffice has their own scripting thing, and it works ok but it’s not compatible with the VBA and VBA stuff broadly doesn’t work there.
+
+Even without the VBA though, it’s missing basically any feature added in 2019 like Lambda and filter and dynamic arrays.
+
+I wouldn’t consider myself a power user, I would say I am a “high level basic user”, and even I have noticed the shortcomings. And this is also coming from a dude who very much wants a FOSS thing to succeed over Microsoft.",evidence,"pre-labelled, checked; hn:49848224"
+"And how exactly is this situation worse than the unfair allocation of salaries and bonuses in companies today? Even within the same company, people can get paid more based on the org/division they work in (e.g. core AI teams), or even based on their (team or individual) perceived value to higher ups.
+
+At least with the Samsung union, the decision is being made bottom up vs. top down.",assertion,"pre-labelled, checked; hn:48337103"
+"The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.
+
+In case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: “alternative facts”.",evidence,"pre-labelled, checked; hn:49342333"
+I use the ever living hell out of .git/info/exclude. Works great for scripts/Makefiles I only want locally and collaborators wouldn’t care about or be able to use.,experience,"pre-labelled, checked; hn:48585606"
+"I am using a Xiaomi phone. The hardware is fine, the camera is very good compared to the average, the software absolutely sucks, bootloader unlocking is not possible and it comes full of spyware and adware that you can't disable.",experience,cold; hn:48585705
+"Mathematics is a language. If anything, it's much more well defined and formal than most others. Train on enough examples and statistical autocomplete gets you places. I'm surprised how anyone would even consider this intelligence?",assertion,"pre-labelled, checked; hn:48961277"
+"Author here. It’s ironic because this post was clearly geared towards non-hackers. But now that we’re here.. the other analogy I considered presenting was:
+
+harness = chassis,
+model = engine,
+fuel = tokens,
+agent = car
+
+I’m curious what y’all might think and whether that analogy carries more explanatory power",assertion,"pre-labelled, checked; hn:49411339"
+"They did include examples. The city’s own website has a dedicated page describing the rule with a multitude of examples[0]. What exactly do you think is missing?
+
+> - You were not clearly told the terms of the subscription.
+
+- It was hard to cancel the subscription. For example, you signed up online, but were forced to cancel your subscription on the phone, in person, or another way.
+
+- The business delayed canceling your subscription
+
+...
+
+[0] https://www.nyc.gov/main/click-to-cancel",evidence,"pre-labelled, checked; hn:50064574"
+This feels like a natural next step. Starting with a simple melody and having the system fill in the rest while still following your playing style could make it much more useful for experimentation than generating a complete piece from scratch.,assertion,"pre-labelled, checked; hn:49375275"
+"> “the x”, with x having not only no antecedent but also being a coined word or quasi-synonym for something that is already named in the code base
+
+It does the same thing if you try to get it to do analysis of text or turn data into summaries. It will invent cryptic hyphenated compound words to describe things instead of using plain language or preexisting terms.",assertion,"pre-labelled, checked; hn:49305960"
+Couldn't that simply mean that his Nazi proclivities go back all the way to at least 1999? ASCII was invented in the 1960s.,evidence,"pre-labelled, checked; hn:49540075"
+"What I think is really going on is an attempt to segment the market in favor of Google's strengths. It's a bet that models are ""good enough"" for many use cases even before they reach human-level intelligence, and Google is trying to capture workflows where quantity beats quality.
+
+They are likely deliberately avoiding the SoTA race for a few reasons:
+
+1. Their best models are marginally better than current SoTA releases. 
+2. They'd like to let Ant/OAI make mistakes with safeguards / let them get the regulatory heat. The unknown unknowns are huge with SoTA models (eg OAI accidentally hacking huggingface) and they are protecting their reputation. 
+3. They want to encourage companies to become cost conscious because they can likely win on price in the long run. Getting market share in ""quantity beats quality"" workflows forces companies to establish processes to choose the ""cheapest acceptable model"", which is a good environment for Google.",assertion,"pre-labelled, checked; hn:49007746"
+"> All your bills to get paid don't get paid. You can't pay for food or anything. Hopefully it didn't happen when rent was due.
+
+What's the difference between that and somebody's only credit card getting maxed out by fraudsters? They also can't use it until they receive a provisional credit by their bank.
+
+If your point is that a credit card separates rent from other payments, nothing is stopping you from having multiple checking accounts either.",assertion,"pre-labelled, checked; hn:50004485"

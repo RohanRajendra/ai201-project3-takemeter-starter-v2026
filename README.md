@@ -265,17 +265,42 @@ share rather than as a fixed number.
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, fine-tuned for 3-way sequence
+classification (`evidence`, `experience`, `assertion`), from notebook
+sections 1–5.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
+tokens, seed 42. Trained on **`mps` (Apple M4 GPU), torch 2.14.1**, which is
+also recorded in `results.json`. The run took under a minute: 33 optimizer
+steps, 15 seconds of training.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. This first run
+uses the notebook defaults on purpose, so it's the reference the stretch run
+below is compared against. The only notebook edits are `LABELS`, which matches
+the CSV exactly, and the name and email lines.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 70/15/15 stratified on seed 42, giving train 164, val 36,
+test 36.
 
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `evidence` | 29 | 7 | **6** |
+| `experience` | 30 | 6 | **7** |
+| `assertion` | 105 | 23 | 23 |
 
+Both minority labels have fewer than 8 posts in the test split. One post moves
+`evidence` recall by 17 points and `experience` recall by 14, so their F1s will
+jump between seeds in unit 6. That's expected from a 236-row set where
+`assertion` is 64%, and it's why criterion 2 is a floor checked on every seed
+rather than an average.
+
+**What the run produced** (`results.json`, `test_split.csv`): the model
+predicted `assertion` for all 36 test posts. That's accuracy 0.639, exactly the
+`assertion` share of the split, and F1 0.00 for `evidence` and `experience`.
+Training loss fell every epoch (1.006 → 0.884 → 0.867) and validation loss
+with it (0.902 → 0.850 → 0.827), but 33 steps at 2e-5 never moved it off the
+majority class. Unit 6 reads these numbers properly. This is noted here because
+it's the baseline for the second training run.
 
 ---
 

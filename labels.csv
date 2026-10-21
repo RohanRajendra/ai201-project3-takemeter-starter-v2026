@@ -1,0 +1,601 @@
+text,label,note
+Who's your audience? People who don't use electron - historically downvoted. People who do - won't upvote this. People who don't care.. I guess?,assertion,"pre-labelled, checked; hn:49016877"
+"At the moment it doesn't seem to be.
+
+Within an hour of be advised of, and running the mitigation for DirtyFrag, my upstream provider has blocked all WHM/cPanel/SSH/FTP/SFTP access with a heads-up on:
+
+CVE-2026-29201
+CVE-2026-29202
+CVE-2026-29203
+
+which look like a repeat of CVE-2026-41940 a week ago.",evidence,"pre-labelled, checked; hn:48059896"
+"I worked on a system a couple years ago with a BERT-based model (64M parameters) used for classification. The rest of the system could process data at gigabytes per second, and so here tokenization at a measly few megabytes per second really slowed things down. The model inference was more expensive than tokenization, but tokenization was still >10% of total runtime.",experience,"pre-labelled, checked; hn:49014319"
+"> My impression is that people who can work on stuff like that are the kind who just take the stuff in the world for granted.
+
+Some are also doing it for the technical challenge, especially those working on new tech rather than refining what already exists. Like the people who try to solve the great problems of mathematics/physics (or find interesting new ones) for the challenge of it (and sometimes refuse prizes & recognition if they do solve or otherwise discover something vital).
+
+This sort of person is often blinkered to the possible extreme long-term outcomes, or are able to mentally separate themselves from them (“I just made the discovery, I didn't use it to do anything bad” or “I was paid for it, follow the money source and blame them”). Of course once a genie is out of the bottle, other sorts of people are more than eager to ask it for wishes…",assertion,"pre-labelled, checked; hn:48460095"
+"There's an interesting distinction here where one approach is to build sandboxes that limit exposure, while the other is just allowing the program to be more secure.
+
+One approach is ""Trust No Code"" and the other is ""Trusted code should run safely"".
+
+the first one sounds better on paper, but leads to a very complicated system. That said, I haven't worked with jails much or other forms of sandboxing. It just seems to me that to make software function you need escape hatches, and the more of those you have, well, now you're back to plugging exploits with a more complicated system.
+
+It was interesting to me to hear that even though OpenBSD had designed their software to limit permissions even before pledge and unveil were released - upon release they found that a shocking amount of their software actually wasn't following their own rules.",assertion,"pre-labelled, checked; hn:48063878"
+The current situation is that the person that doesn't know programming will do it anyway. They will likely make more mistakes than an LLM will.,assertion,"pre-labelled, checked; hn:48976238"
+The other thing of course is that those beams are *massive*. They weren't dicking about when they built it. It wasn't built down to a price like things are today.,assertion,"pre-labelled, checked; hn:49821980"
+"Heaps of Learnings here [0] from getting an entire games state into a url or QR code (a pretty damn complex game, 5-10 minute games comfortably fit in a QR code such that games can be replayed exactly as they happened - no server)
+
+[0] - https://github.com/con-dog/snibble/blob/master/README.md",evidence,"pre-labelled, checked; hn:50002840"
+"When you say ""physically based rendering"" do you mean that one could build a PBR model based on the (unrolled?) xray data, render that model, and be able to see the ink?
+
+edit: I found this:
+
+https://scrollprize.org/data_browser#/samples/PHercParis4/segments
+
+The JSON seems to suggest that I'm mostly looking at ink detection output, but I could easily be using the tool wrong.
+
+But I also found this awesome explanation:
+
+https://scrollprize.org/data_fragments
+
+I guess I bunch of the training was done by using fragments of scrolls where ground truth data is available using IR photography.
+
+Also... that xray resolution is absolutely amazing!",evidence,"pre-labelled, checked; hn:48680450"
+This is a reach. Children can't vote. If that was a real concern you would be banning adults from social media.,assertion,"pre-labelled, checked; hn:49499287"
+"Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed.",experience,"pre-labelled, checked; hn:49207286"
+"agree - I was really uneasy with the lede in their v2.0 preview:
+
+""DuckDB has been an in-process database since day one. But people have asked us – very persistently – for a client/server mode, and we have finally caved""
+
+This was already satisfied by numerous projects and products, and feels like a ""me too"" attempt to capture AI-based workflows. DuckDB always felt like ""SQLite for Analytic Data"" but I fear these changes and now acquiring the org leading technical direction is where they deviate for good. AWS is so unnecessary for what DuckDB can (and should, IMO) be; MongoDB jumps to mind as a cautionary tale.",evidence,"pre-labelled, checked; hn:49451996"
+"Alternatively, they can care about principles and issues that differ from that of the other party.",assertion,"pre-labelled, checked; hn:49392295"
+"I've gone out of my way to not read my wikipedia page. Beyond this, there's a rule (suggestion??) that you not edit your own biographical page.
+
+As a result, I have no idea whether things are right, wrong, misguided, or kflooey on that page. Anyone who wants to know details can simply stop over here for coffee and a chat.
+
+Cheers, -Cliff",experience,"pre-labelled, checked; hn:48066912"
+"Apparently, remote improvements became separated from telemetry in Firefox version 148: https://support.mozilla.org/en-US/kb/remote-improvements#w_what-are-remote-improvements",evidence,"pre-labelled, checked; hn:49523310"
+"You are right, I remembered wrong. Netflix degraded the quality for me for years, according to them because of lack of DRM. It was because of lack of hardware DRM.",experience,"pre-labelled, checked; hn:49357540"
+"I think it's much simpler than that, they are indeed trying to counter against sycophancy and models lying (the decision whether or not to lie to the human user, take shortcuts, etc. comes up in their thinking traces pretty commonly IIUC) by rewarding them for giving good-and-bad feedback, fessing up to things, pointing out potential issues, etc.
+
+The problem is just that they are rewarding the behavior shallowly, ie rewarding the appearance of honesty or neutral replies, being highly detailed/thorough, even where it doesn't make sense to do so.
+
+I think this is partly due to a reliance on LLM-as-judge training runs/synthetic data during RL where they're having a model which itself doesn't epistemically understand when this behavior is necessary or valuable influence the feedback provided to the model being trained. And that's mostly a problem of scale/volume and the desire to have a tight feedback loop rather than a safety issue IMO. They just generate an absurd amount of traces during training and the only way to really evaluate/rank/steer them at the scale they're generated is through other models, and combined with some kind of honesty/truthfulness/non-sycophancy eval that isn't robust enough to prevent mode collapse, you get this.",assertion,"pre-labelled, checked; hn:49307394"
+"I tried it for family location sharing a few months back and, I don't remember exactly, but I remember the UI/UX feeling a bit slow/clunky in general, eventhough setting things up was user-friendly. Definitely potential there, though.",experience,"pre-labelled, checked; hn:48829152"
+Or if your editor is happy to store them in a subfolder that is useful. I use Sublime with the AutoProjects extension and it puts .sublime-project snd .sublime-workspace under a .sublime folder that I can have a .gitignore * underneath.,experience,"pre-labelled, checked; hn:48596300"
+"The klingon empire isn't a democracy, we don't delude ourselves that simply swapping one single person would have made a difference.",assertion,"pre-labelled, checked; hn:48591410"
+Is the solution to a positive swab really to keep swabbing until negative?,assertion,"pre-labelled, checked; hn:49817624"
+"> Still haven't found a decent thai or indian restaurant in Japan, and probably never will, given the general aversion for strong spices.
+
+are you not in Tokyo? Because “no decent Thai restaurant in Tokyo” is a wild claim
+
+You can get spicy food in Tokyo! It’s just not going to be all the restaurants. You gotta to to the right place. But you don’t need 100 good thai restaurants to eat dinner, you just need the one.",assertion,"pre-labelled, checked; hn:48243878"
+Multipass is just an apt-get or brew command away. People trust software too much these days.,assertion,"pre-labelled, checked; hn:48918161"
+"My solution for your concerns is twofold:
+
+1. Use a password-based encryption method (not tied to hardware identity) if you prioritize moving the disk around. Then it is just as readable in a spare machine.
+
+2. Use an easy to remember password/passphrase and write it down somewhere you keep paper documents, if you prioritize recovery.
+
+This still provides meaningful protection when you need to discard the drive. The random downstream recipient of the hardware will not know your password, even if you skip the step where you ""crypto-shred"" the drive by setting a new random password.",assertion,"pre-labelled, checked; hn:48543361"
+"Cool work, the weird part is effects being item based instead of track based and that selecting an effect stops the playing and you apply it blind.",experience,"pre-labelled, checked; hn:48265073"
+"My enterprise org has this model disabled because ""security.""
+
+Does this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?",experience,"pre-labelled, corrected in review (was SET_ASIDE); hn:49819380"
+"I’m not saying zed necessarily should be the one to do this, but in regards to ""why not git, jj..""; if we don’t explore the fringes, how do we know if we are at local or global optimum with current solutions?",assertion,"pre-labelled, checked; hn:49199441"
+"> Now we are considering scrapping it
+
+Turns out, it was probably good that nobody spent time reviewing it.",assertion,"pre-labelled, checked; hn:49982343"
+I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham’s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.,experience,"pre-labelled, checked; hn:48543690"
+"I wonder if this is the expectation of the majority or just the expectation of us tech people.
+
+Because I assume most people want to take a screenshot because they want to capture something they are seeing in the app, most people probably are even annoyed to have the system indicators visible there.",assertion,"pre-labelled, checked; hn:49342176"
+"You could also distill the fabulous Anticipatory Music Transformer from Stanford. https://crfm.stanford.edu/2023/06/16/anticipatory-music-transformer.html
+
+Also consider checking their decisions about representation, etc",evidence,"pre-labelled, checked; hn:49377302"
+"While everyone here is talking about output, but perhaps we also get to think about the input we give.
+
+Funnily enough, somehow as we use AI more and more, our mind is becoming bias towards how these AI's write and less how we do want to write.
+
+Whenever I write something, I pass it to claude to correct my grammar (non-native speaker) but I have to be very specific about not changing my writing style and/or the writing itself.
+
+It's annoying because even though I love recommendations, I started to put some ""rules"" around it to avoid changing the content and look like everyone else post.
+
+I love using AI for my day to day, but now I'm more careful when trying to edit text with AI because it just looks like the average text and our brain get used to it, it we don't course correct fast enough.",experience,"pre-labelled, checked; hn:48918000"
+The best pizza restaurant in Tokyo is run by an Italian. So perhaps the Italians edge out Japanese in terms of craft?,assertion,"pre-labelled, checked; hn:48256040"
+it would be nice if these benchmark reports actually specified which tasks they passed and which ones they didn't.,assertion,"pre-labelled, checked; hn:48999926"
+"> glad to see the project will continue.
+
+Well ... perhaps without the project people would get fed up with X much faster and move on to something better.
+
+So perhaps these websites only help X to exist.",assertion,"pre-labelled, checked; hn:49598211"
+"There’s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/
+
+Like it or not (I’m in “not”), this is hardly a new thing.",evidence,cold; hn:49977700
+"> Don't pin versions, pull everything from latest
+
+Rebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",assertion,cold; hn:49158268
+"Because they don’t want to have to work that hard for their money. They get more value for their effort by focusing on something else instead of trying to maximize profit for a single business.
+
+The demand curve for a business could be such that you sell 100 widgets and get $100 profit, sell 200 widgets get $101 profit. Why bother trying to sell more than 100 widgets?
+
+Maybe you can sell 50 widgets and make $90, that sounds like a pretty good deal. Instead of making 50 more widgets you could do something else and make more than $10 profit in the same time.",experience,cold; hn:48297562
+"I don't know what the disconnect is. I'm running Windows 11 Arm right now on the best laptop I've ever owned -- an Asus Zenbook A16 with OLED screen and 48 GB of RAM (all for $1699).
+
+It's super fast -- it beats a 2026 Macbook Pro rendering Blender ""Classroom"".
+
+I have a Microsoft account, I don't know what the big deal is. I follow the happy path. It's nice to have settings (and I can control which ones) sync across machines. I pay for a Office365 subscription.
+
+I don't see ads popping up anywhere. I did disable about a dozen things (those silly icons in the search bar, syncing desktop icons across machines, etc) all through exposed UI switches, no ""hacks"" or undocumented registry tweaks.
+
+I've watched coworkers go through all sorts of contortions, and downloading hacked binaries from sketchy sites, just to avoid creating the local account and I'm not sure why. I use my name and info on my longstanding Microsoft account, but you can just as easily call one ""mymaxasus_11111"", and be done with it.",experience,cold; hn:48541034
+"Someone claims to have ported it to iOS but I haven't tried it and one of the open issues says that the release build doesn't work:
+
+https://github.com/hezi/koreader-ios",evidence,cold; hn:49099519
+"I am using a Xiaomi phone. The hardware is fine, the camera is very good compared to the average, the software absolutely sucks, bootloader unlocking is not possible and it comes full of spyware and adware that you can't disable.",experience,cold; hn:48585705
+"With physical access, root access is as simple as setting init=/bin/bash in the kernel parameters from a bootloader. No need for credentials or anything.",assertion,cold; hn:48057643
+It's even more expensive to have your country's digital ID held hostage by the US or its big tech players.,assertion,cold; hn:48736759
+"This is exactly it. I'm pretty sure I found Iroh after thinking: can we ship Tailscale with our app?
+
+For environments where you want people to access your local instance, I believe Iroh will be a game changer. For us, it's to allow control over our software through phones and other devices easily.
+
+Previously, you might have to make sure they're in the same LAN network. But with Iroh, anything works.",experience,cold; hn:48548011
+"This is awesome. Congratulations!
+
+As others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",experience,cold; hn:48265006
+"There was a ton of... not exactly footguns, just things to keep in mind if you’ve wanted your site to work as you intended in all browsers. The webcompat nowadays is way better now.
+
+That said, personally I’ve never understood Dreamweaver either. By the time I tried it, I’ve already got used to Notepad++ and writing HTML by hand, so I’ve just treated it as another text editor... and IIRC it just felt way more laggy than Notepad++, with a browser preview panel that took half of my 4:3 display. Maybe I’d discover some cool features if I’ve spent some more time in it? I dunno.",experience,cold; hn:48729114
+"while it looks like outlandish fantasy today, looking forward to their competitors dumping consumer memory in a couple year's time.
+
+regardless, this industry goes through such cycles (which have killed weaker companies and made the situation worse). high time for the memory ""OPEC"" to disband.",assertion,cold; hn:48246117
+"I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it.",experience,cold; hn:50001679
+Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?,assertion,cold; hn:48058739
+It's pretty easy to find the PR considering the entire app is OSS https://github.com/bluesky-social/social-app/pull/9637,evidence,cold; hn:49348150
+"Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting.",assertion,cold; hn:48330616
+"At least in my union defined benefit pension it specifically excludes overtime since that obviously is ripe for abuse. It's just your basic calculation: average of your best 5 years of salary at 2% per year of service.
+
+Is that not the case for police unions in the states?",experience,cold; hn:48299327
+"That’s what I came here to ask. Their demo looks like Compiz back in the day: ok, cool, you have 3d effects, but… why? What does it do for me?
+
+Compiz 3d effects were ultimately a useless gimmick and I predict this is too.",assertion,cold; hn:48095986
+"I’m afraid it’s a terrible metaphor, starting with the fact that LLMs are nothing like electricity, and the relation of harnesses to them is nothing like that of electronics to electricity, save perhaps one is a prerequisite of the other.
+
+Harnesses (and the concept of agents before them) presuppose competence in LLMs which simply doesn’t exist.",assertion,cold; hn:49409699
+"Well, there's really no need to come up with such complicated (and not entirely accurate) analogies here. It's actually very simple. Paying Google is bad. Not paying is good. That's it.",assertion,cold; hn:50036534
+"These kind of rights are something which only physical persons should have, and card networks aren't infringing on the rights of real humans. Businesses aren't people, and they shouldn't have any inherent right to be provided with utilities or payment solutions. And as it stands today they don't.
+
+You as a real human should have a right to have a bank account and to send and receive money. Just as you as you as a real human should have a right to access any other basic utility.
+
+Your business should not have any such rights. If the power company doesn't want to provide your data center or steel factory with electricity, then your business shall have no right to it.
+
+If a card payment company doesn't want to provide their services to your brothel or your weapons factory or your weed shop, then your business shall have no right to it.",assertion,"pre-labelled, checked; hn:50004509"
+"> The bad PE phenomenon buyout is annoying, but businesses that become miserable for the customers and employees are not stable long-term businesses
+
+What happens when those businesses are hospitals, for example? I've read too many stories of hospitals getting bought by PE and either shutting down or staying (while offering increasingly poor service). In one outcome, it reduces the accessibility to healthcare. In the other, it forces those most unable to choose to stay with subpar care. In both cases, it's not like other health systems are rushing in to replace what has been lost. We just end up with fewer and shittier hospitals.",assertion,"pre-labelled, checked; hn:48302759"
+"Yeah clearly there are alternatives, and plenty of musicians are able to find them. If you're already an addict though, there's not much stopping you from continuing that lifestyle, other than the ability to secure the next fix.",assertion,"pre-labelled, checked; hn:49452175"
+"Pro tip: people did this long before AI was a thing.
+
+People have always loved to defer to a ""leader"" or (supposed) ""expert"". Take the hard decisions away daddy.",assertion,"pre-labelled, checked; hn:48299721"
+"An authoritarian government needs excuses too. China even claims to be a democratic country. North Korea even has the word Democratic in its name. ""Protecting children"" is a common excuse China uses. https://en.wikipedia.org/wiki/Very_erotic_very_violent is a famous example of them trying to justify internet censorship under the name of ""protecting children"".",evidence,"pre-labelled, checked; hn:48081944"
+"I don't think it's just recent primaries. Our electoral system is heavily influence by the highest bidder and has been this way for a long time. There are always exceptions, like Massie, but the overall trend is that the majority of candidates who are elected at the federal and state level support and are supported by a few big monied interests. This includes the big healthcare industries, the war machine, the pro Israel lobby, etc. It's why we do things like the war in Iran that are vastly unpopular with the general public. And don't do things that are popular like single payer healthcare.",assertion,"pre-labelled, checked; hn:49400364"
+"AA coding index has been updated to use DeepSWE, Terminal-Bench v2, and SWE-Atlas-QnA.",evidence,"pre-labelled, checked; hn:48998159"
+"Gruber himself has misled his readers without a retraction for many years, but this one he gets to blame on someone else, so it's no skin off his back.",assertion,"pre-labelled, checked; hn:49234141"
+"I have always disliked public speaking and oral defense since I was a child, to the point of fairly profound anxiety. But please withhold you woe—these people are, as I am today, adults. Masters students. Coddling them and holding low expectations has proven to be a sort of “killing them with kindness” approach to handling modern youth. People need to be encouraged (and required) to do things they don’t like to become proper functioning adults. I didnt like it, and I still don’t, as it the case with most everyone. But we all grow from it.",assertion,"pre-labelled, checked; hn:49225418"
+This would be great to be able to use via Web Midi. That size LLM will run well in a browser.,assertion,"pre-labelled, checked; hn:49383191"
+"Again, you're not wrong, but none of those things are insurmountable. If the team is really so stressed it cannot spend 30 minutes, over the many year of the existence of that bug, that seems like a development environment close to hell.
+
+Knowledge loss is precisely my point: there is very little a-priori knowledge needed to solve this, the guy who found the bug proves that.",assertion,"pre-labelled, checked; hn:48335137"
+"Not quite, the EU parliament can't propose new laws nor repeal existing ones, only amend them and vote on proposals from the commission.
+
+The Stop Killing Games campaign, for example, has noticed that the EU commission keeps repeating lobbyist lies and has no expectations of new laws actually passing, so they're focusing on amending existing law through parliament.",assertion,"pre-labelled, checked; hn:48822769"
+"You are right, but I guess a lot of people recognise PowerPoint as a brand. Maybe I can bill this as better-than-powerpoint!",assertion,"pre-labelled, checked; hn:49010335"
+"I use Jobs [0] to manage this—it's an agent-first CLI to track issues and tasks. A single `job orient` command gives the agent the current task in the context of the larger plan. It's a replacement for Plan Mode and issue trackers, and it has allowed me to execute massive plans in parallel with minimal oversight. There's a web UI, but it's a work in progress.
+
+[0]: https://github.com/bensyverson/jobs",evidence,"pre-labelled, checked; hn:49859889"
+"It doesn’t really matter what Ricardo said in 1817: every US academic economist surveyed in 2018 by the Kent Clark Center disagreed that US aluminum and steel tariffs would increase the welfare of the American people ([0]), and this is with the benefit of >200 years in advances in economic scholarship and analysis since Ricardo.
+
+[0] https://kentclarkcenter.org/surveys/steel-and-aluminum-tariffs/",evidence,"pre-labelled, checked; hn:49471461"
+"Possible, but currently I disable all large files, including videos.
+
+For video downloading, I suggest wrapping around yt-dlp. It's an awesome tool.",experience,"pre-labelled, checked; hn:48544560"
+"Curiously, the Mac App Store sandbox has a com.apple.security.network.client entitlement that a developer must justify to Apple, whereas the iOS App Store does not, allowing unrestricted access to the internet.",assertion,"pre-labelled, checked; hn:48618365"
+"Is it really radical or exclusionary to say no racists allowed, no sexists allowed? I don't think so.",assertion,"pre-labelled, checked; hn:49489634"
+"Perhaps I am doing it wrong, but the deepseek llms fail so hard for any complex task and don't compare to the paid models. It keeps forgetting basic instructions after two responses",experience,"pre-labelled, checked; hn:49220808"
+This is a lovely toy project. But please do not do this for real; imperfections - even minute imperfections - in data visualisations have consequences. 'Non-techy' people take for granted shapes and lines over numbers and sequences simply because computers are accurate. Correctness of data is a separate matter of course,assertion,"pre-labelled, checked; hn:48261770"
+I’m a fan of paying for search with money rather than my privacy.,assertion,"pre-labelled, checked; hn:49974630"
+"Going on a slight tangent, I've found that Anthropic (for my work) costs about 4x as much as OpenAI give or take, specifically Opus vs Astra",experience,"pre-labelled, checked; hn:50001421"
+"The fact that Samsung is kind of famous for just entering new industries left and right, and continuing to produce mediocre products while gaining enough experience to become industry leaders comes to mind. I feel like the blog post could apply to many countries",assertion,"pre-labelled, checked; hn:48264252"
+But Jensen recently proposed a tokenization of GPU power which would be definition be financially rewarded by limiting the supply of GPUs. So I'm not sure how true your proposition will remain moving forward.,assertion,"pre-labelled, checked; hn:49690277"
+"See my comment upthread, it helps a bit, but does not close this hole since apps within the same profile can communicate through IPC, so other apps could provide network access on their behalf. I think the best example is probably Play Services, which provides functionality for a lot of apps and will communicate with Google, etc.
+
+(Yes, you can disable network access to Play Services, but it sometimes breaks things and the general point of IPC as a hole still stands.)",assertion,"pre-labelled, checked; hn:48616930"
+"The generation of elites fostered by academic ""meritocracy"" have little achievements and clearly are unable to solve or even perceive modern problems. In contrast, those who were fostered in closed patronage networks navigated their countries in times of great uncertainty and built many of the institutions we rely on today.",assertion,"pre-labelled, checked; hn:48516950"
+"I really dislike this notion that because they had privately discovered a bug, they won't pay a bounty. Better to just sell it.",assertion,"pre-labelled, checked; hn:48922090"
+I've been getting a little frustrated with having to rearchitect things any time I want to try a new harness. Wrote about my most recent experiments with separating conversation from control loop here and using MCP as the seam here: https://demianbrecht.com/posts/the-harness-within-the-harness/. This allows me to build a spectrum of agentic to entirely deterministic tools and be able to port them from one harness to another with only a minimal amount of harness-specific config.,evidence,"pre-labelled, checked; hn:49472184"
+"With MIT there isn't much to goan with business comptiable licensing.
+
+There the question turns to ""you may sue me, if it breaks"" as reasoning. In reality sueing will rarely work, but having a business contract satisfies the company's board and insurance about using the software over an ""AS IS""-license alone.",assertion,"pre-labelled, checked; hn:49457582"
+"Nice idea!
+fwiw, false positives and all, but the Windows 11 default Windows Security doesn't like it:
+`leakless.exe: Operation did not complete successfully because the file contains a virus or potentially unwanted software.`",experience,"pre-labelled, checked; hn:48530797"
+"openBVE's not directly Japanese, it's an open-source re-implementation of the original BVE 2 and 4, which is.",evidence,"pre-labelled, checked; hn:48862663"
+"LinkedIn’s job screen in the app is a good example of this different presentation.
+
+I’ve noticed a certain AI recruitment company gets “highlighted” (darkened white background of the screen, but their logo is pure white and REALLY stands out), but when I screenshot it, it reverts to normal, like there’s no blatant special advertising.",experience,"pre-labelled, checked; hn:49341806"
+"Agree on the animation.
+
+As an aside, I've seen folks mention respecting reduced animation hints and such in the past and was always curious about this because I've never had any negative experiences with animations... until now!
+
+Something about the animations on this site did my brain in while scrolling through the papers, and now I ""get it.""",experience,"pre-labelled, checked; hn:48821915"
+"I don't think that's accurate. If tokenization takes say 10ms and the rest of the inference steps take 50 ms then, improving tokenization will improve the time to first token but won't affect throughput much. After the first token, the inference steps effectively hide the tokenization time.",assertion,"pre-labelled, checked; hn:49015657"
+"If your diffs are too large to review your project structure needs change. I go by the broad statement that EVERY line should be read, understood and explainable by the developer.
+
+For critical files like package-lock.json I'd also expect developers to explain why a library was added or a version was changed and the impact of the version change. The lack of such basic hygiene is why supply chain attacks are so common these days.",assertion,"pre-labelled, checked; hn:48602461"
+It really reads like an OpenClaw agent instructed to consider itself a real human. The number of upvotes on this post is also REALLY high considering the number of comments calling out the content. Feels like shenanigans.,assertion,"pre-labelled, checked; hn:49212937"
+"> “the x”, with x having not only no antecedent but also being a coined word or quasi-synonym for something that is already named in the code base
+
+It does the same thing if you try to get it to do analysis of text or turn data into summaries. It will invent cryptic hyphenated compound words to describe things instead of using plain language or preexisting terms.",assertion,"pre-labelled, checked; hn:49305960"
+"Yes, yes, yes. Thank you for posting this. It drives me absolutely freaking crazy when people do the ""Oh, I'm just not _____,"" having essentially decided they are not _____, and therefore will never learn or change.
+
+Like every time I hear ""Oh I'm just not a math person."" It's not that I expect everyone to like math because I do, not at all. But I do expect people to not artificially limit themselves. :/",assertion,"pre-labelled, checked; hn:49226156"
+I mean if you want it to plan something without writing code first you literally just need to ask it to plan out the implementation first it's not exactly a difficult concept,assertion,"pre-labelled, checked; hn:49855439"
+"During Trump 1.0, retaliatory tariffs were targeted at swing states. E.g., on Harley-Davidsons manufactured in Wisconsin. The goal was to make it politically painful to the president and undermine his reelection chances.
+
+I imagine Carney is picking industries that are assymetricly painful to the USA or, since Trump isn’t up for re-election, congressional Republicans.",evidence,"pre-labelled, checked; hn:49489231"
+Audio and Video professionals jumped ship around the time Apple canned all the pro software,assertion,"pre-labelled, checked; hn:48141468"
+"That's great and all, but what they should have done was just scrapped the age-verification stuff entirely. You can't really justify having that kind of restriction on Windows and MacOS but not on Linux.",assertion,"pre-labelled, checked; hn:49505701"
+i mostly watch YT via the apple tv app where you can't,experience,"pre-labelled, checked; hn:50022557"
+"Unless even factoring in those advantages, they are still massively overvalued, which seems to be their fear.",assertion,"pre-labelled, checked; hn:49467299"
+"Amazing, congrats on the release.
+
+I've been drawing a lot of inspiration from Iroh, while working on my own https://github.com/connet-dev/connet. While peers in connet communicate peer to peer, I have a long way to cover peer discovery and transparent connection migration.
+
+""Tailscale at the application layer, instead of the network layer"" (as sibling comment describes it) is a great way of thinking about it. In my mind, with the right apps, Iroh (and connet) could really democratize secure self-hosting.",evidence,"pre-labelled, checked; hn:48549322"
+"This does look pretty incredible, but don't forget that incredible token thoroughput can only necessarily solve certain bottlenecks. If your e2e tests take an hour, they'll still take an hour after Ultracode. If the agent runs a 10 minute typecheck after a change, that will still take 10 minutes. grep over a massive codebase is still just as slow, etc. I say this not to take away from this accomplishment but just to ensure everyone here keeps a clear head about what it means - 14x faster tokens does not mean it completes every task 14x faster.
+
+I suspect Humanity's Last Exam is without tool-calls, making it kind of the perfect benchmark to highlight how fast Ultrafast is, but not really the same as the everyday work you or I do.",assertion,"pre-labelled, checked; hn:49291731"
+"Anna's Archive has huge data stores behind it, Nitter doesn't and is easy to replicate. You, yes you, can and should set one up right now. They can't get all of us. If you post it to #nitter:matrix.org it might even get included on the public instance lists.",assertion,"pre-labelled, checked; hn:49592204"
+"> Require stores and publishers to use language that reflects the nature of the transaction.
+
+After this law is made and they change the word without changing anything else, that won't save the past. They'll probably even market test some nonsense word that won't even make people feel like they're being ripped off.",assertion,"pre-labelled, checked; hn:49176449"
+"> Wtf. I've always wanted this, and it was right there.
+
+Haha, same! I was literally looking for this feature last week without realising.
+
+What could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",experience,"pre-labelled, checked; hn:48595928"
+dense small models do not like quantization. i find 27b fp8 to be smarter albeit less knowledgable versus the 122B,experience,"pre-labelled, checked; hn:48974634"
+"They look really good. I really enjoy looking at midcentury engineering charts/diagrams and stuff like jeppesen charts. NASA has a lot of good ones. The way the text looks, the line economy, the general aesthetic. Well worth the effort imo!",assertion,"pre-labelled, checked; hn:48256105"
+"Claude Design absolutely loves creating phrases like ""Share the thread, not the PR"". The amount of ""do the xyz, not the abc"" subheadings on docs in my workplace has exploded in the last 6 months, and it gets a bit tiring to see. I think it's a hard-coded alternative to em dashes or something.",experience,"pre-labelled, checked; hn:49196022"
+"This is not using an eGPU with macOS, ie you can't run your chrome on macOS with its GPU acceleration coming from this eGPU. This is tunneling that eGPU to a Linux VM.",assertion,"pre-labelled, checked; hn:48141570"
+"+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",assertion,"pre-labelled, checked; hn:48925372"
+13B is a lot for an online platform that hosts weights. What's the special secret sauce that makes this so valuable? The fact that it's the go-to place for public weights?,assertion,"pre-labelled, checked; hn:49473884"
+"> some portion of people are always going to be particularly forceful about putting forth their opinion. Maybe it's a bad day, maybe it's habit, varies from person to person and day to day, etc.
+
+I have no problem that someone had a bad reaction to this and needs to vent, I have a problem that the community deems it the most noteworthy comment and keeps it voted to the very top of the thread.",assertion,"pre-labelled, checked; hn:48831071"
+"When my daughter turned five and received her final book in the mail, it came with a letter that still makes me tear up.",experience,"pre-labelled, checked; hn:49485882"
+"Mathematics is a language. If anything, it's much more well defined and formal than most others. Train on enough examples and statistical autocomplete gets you places. I'm surprised how anyone would even consider this intelligence?",assertion,"pre-labelled, checked; hn:48961277"
+"I agree Orca is packed with functionality but I don’t know what “weight” or “complexity” is. It’s just an app on my machine, not some software I’m maintaining. It can be the most complex system for all I care behind the scenes, as long as it runs fast and satisfies my needs I’m pleased - which so far it has been and more. I want to spend as little time thinking about my dev environment and the most amount of time thinking about what I’m developing.
+
+To each their own though, I’ve heard great things about Herdr setups.",experience,"pre-labelled, checked; hn:49980410"
+"There is like 1 or 2 actual ""video game journalists"" everyone else is just a glorified blogger.",assertion,"pre-labelled, checked; hn:48857635"
+"That may be your preference, but it's quite contrary to mine.
+
+I have successfully used AI to generate generates ""concept art"" and logos for projects, presentations, and publications. It seems to make the outcomes more approachable, more understandable, and certainly more aesthetically pleasing.
+
+It is not a matter of replacing human effort or skill, and certainly not a matter of adding cheap ornamentation. If AI weren't available, I usually wouldn't have the time, money, energy, or will to pursue those illustrations. I say this as someone who has historically spent what seems like a vast amount of time, energy, and money sourcing art. In a former life as as publisher I even hired full-time artists and insisted on custom artwork. But my current work no longer has that luxury. I still want the best possible looks, and the best possible outcomes.",experience,"pre-labelled, checked; hn:49172213"
+"What do you mean? AI is being trained on all data available, so obviously it’s being trained on data from 2017/2018 as well.
+
+Or do you mean that the patterns that AI is showing today were already present in communication around that time?
+
+That seems obvious as well, as AI has a lot of repetitive patterns that come from all kinds of periods, of which “load-bearing” is just one.",assertion,"pre-labelled, checked; hn:48914036"
+"""Create money"" here doesn't mean literally fluffing the balance sheet like when the fed prints money (which would have accounting differences), it means spending the same money more rapidly than otherwise. This is NVidia's personal contribution to increasing the economy's Money Multiplier [https://en.wikipedia.org/wiki/Money_multiplier], which effectively increases the money supply from the broader economy's perspective.",evidence,"pre-labelled, checked; hn:49678463"
+"The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.
+
+The way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid).",assertion,"pre-labelled, checked; hn:48419032"
+"I enjoyed reading this. It has a ""butterfly effect"" kind of vibe how such a random trivial-sounding pursuit can lead to something consequential. It's also mind-opening to realize how many strange human activities are happening in the background.",assertion,"pre-labelled, checked; hn:49367969"
+"Looking at the top comment about Google right now. Big difference between ""their products/processes suck"" vs. ""these people and their companies and government are an insidious evil"".
+
+Ah, the ol' gaslighting you into thinking you're gaslighting me trick.",assertion,"pre-labelled, checked; hn:48996705"
+"I think the PPP calculations may suffer from the same problem as the USA inflation rate being nominally low. Housing, food and medicine are all ludicrously cheap outside of tier 1 cities.",assertion,"pre-labelled, checked; hn:48580970"
+"California AB1043 is the only reason that app providers have to give a shit about whether parental controls are enabled btw. Before these laws, most apps were openly ignoring parental controls.",evidence,"pre-labelled, checked; hn:49500302"
+But is the UI harder to use than building housing in San Francisco?,assertion,"pre-labelled, checked; hn:50037808"
+"This sounds like such a fun project, especially to share with like minded friends.",assertion,"pre-labelled, checked; hn:49818174"
+"Time to first token is observable by a human, and they’re reporting up to 10% reduction there.
+
+Plus, inference is not the only place tokenization happens. This can make a big difference during development of ML models.",evidence,"pre-labelled, checked; hn:49017465"
+Couldn't that simply mean that his Nazi proclivities go back all the way to at least 1999? ASCII was invented in the 1960s.,evidence,"pre-labelled, checked; hn:49540075"
+"Point out what verbatim piece of text forbids any and all usage of LLMs for coding and having that project on Codeberg?
+
+Literally the first ""informal guidelines"" (subject to change of course) states:
+
+> Projects who have an active community that cares about and maintains the software
+
+You can use LLMs for development + fulfill this requirement, contrary to popular belief.
+
+They want to get rid of slop projects and vibe coders, not any project that has any developer that used any LLM. But again, requires you to read through the actual text to actually get their intention here.",evidence,"pre-labelled, checked; hn:49845744"
+"One trick I’ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn’t know about .git/config though!",experience,"pre-labelled, checked; hn:48593831"
+"> but it wasn't until relatively recently that I thought about it seriously that it occurred to me that a touring celebrity musician's life can be stressful and the drugs can be (or start out as) a pressure valve release
+
+The 2017 documentary about Avicii [0] does a great job of showing this specific case. He was an introvert so he started drinking to be more comfortable on stage. As he got more famous, the pressure to create more hit records grew and grew. David Guetta explains it better than I could and he's world famous in his own right.
+
+Highly recommend watching it and consider it MUCH better than the 2024 documentary.
+
+0 - https://www.imdb.com/title/tt7357302/",evidence,"pre-labelled, checked; hn:49450075"
+"He has been emailing the CEO for six months with no replies. This is has also been posted here before with not a single pip or comment ... :-)
+
+And these customers absolute lack of technical due diligence, on this nth example, of move fast and break things...makes them deserve what they are getting.",assertion,"pre-labelled, checked; hn:49243631"
+"It's an opt-in feature. https://techcrunch.com/2025/09/08/signal-introduces-free-and-paid-backup-plans-for-your-chats/
+
+A service that advertises itself as privacy focused refusing to update their privacy policy while adding features like this seems like a pretty big dead canary.",evidence,"pre-labelled, checked; hn:48455681"
+"Dude the writing is on the wall, git had a good run but it's time for something else. Lore is also solid.",assertion,"pre-labelled, checked; hn:49193361"
+"You can absolutely return it within the 14 day window, even unpacked.
+
+During the reflection period, you may open the packaging. You may try or fit the product, just like in a normal store. But you are not allowed to do more than what is needed to judge the product. For instance, you can try pants. But you cannot wear the pants for several days and then return it. If you do this anyway and the product loses value? Then the seller may charge you the damage. The seller needs to inform you of this before you buy the product.
+
+https://consument.acm.nl/aankoop-dienst-annuleren/bedenktijd
+
+I have sent back products within the 14 days, including smartphones that I tried and decided that I don't like it. Some sellers also extend the 14 days to 30 days.
+
+Changing the terms later is a completely valid point though and it should be possible to reject any updated terms IMO.",evidence,"pre-labelled, checked; hn:49846264"
+"With Safari and the very first free-to-use extension I picked years ago (AdGuard, IIRC), I don't see any YouTube ads on iOS.",experience,"pre-labelled, checked; hn:49523238"
+"That's great if you're talking to a high schooler that has never been politically active, but I'm literally a democratic party operative. I've attend state conventions, state nominating conventions, platform conventions, DNC twice. This is not the democratic party I want to part of and why I'm extremely thankful people-led organizations like WFP and DSA are actively trying to change things for the better.
+
+None of what you are describing has any real momentum behind it and for how many decades will you let politicians fails you until you do something in response?
+
+Like bro, the democratic party isn't an opposition party. There is a reason why the party has majority unfavorability rating [1] throughout Trump's entire second term. How do you square this?
+
+This is a fucking terrible sign and it's why progressive candidates have seen a massive insurgency this cycle and why the corporate do-nothing dems are so scared shitless that they might have to actually answer why they are okay with genocide + corporate welfare programs while doing nothing to help people materially.
+
+You say no one is excusing them, then spend your entire comment excusing them.
+
+What do you actually do politically?
+
+[1] https://fiftyplusone.news/polls/favorability/democratic-party",evidence,"pre-labelled, checked; hn:49581079"
+"They did include examples. The city’s own website has a dedicated page describing the rule with a multitude of examples[0]. What exactly do you think is missing?
+
+> - You were not clearly told the terms of the subscription.
+
+- It was hard to cancel the subscription. For example, you signed up online, but were forced to cancel your subscription on the phone, in person, or another way.
+
+- The business delayed canceling your subscription
+
+...
+
+[0] https://www.nyc.gov/main/click-to-cancel",evidence,"pre-labelled, checked; hn:50064574"
+"Facebook is intentionally designed to be as addictive as possible. It's not just FOMO, https://news.ycombinator.com/item?id=24579498",evidence,"pre-labelled, checked; hn:49455153"
+So you agree the term remains vague and thus open to criticism.,assertion,"pre-labelled, checked; hn:49816919"
+"> Your reasoning makes me sad as instead of questioning what constitutes true wealth, it seems you are guided by an exclusively materialistic view of it and join the destructive behaviour you see around you out of fear of not having enough.
+
+unfortunately that is the state of our society right now and it is hard to see this changing.",assertion,"pre-labelled, checked; hn:47997749"
+"It is really trendy? I don't think important, irreplaceable or integral are semantically equivalent. Required and necessary almost get there.
+
+The point is that if you want to remove it or change it, you need to put something else in place that handles the work it is doing. So it is more that it is serving a required/necessary function, without being any of those other things in and of itself. It's more about ""be careful when changing this.""",assertion,"pre-labelled, checked; hn:49026264"
+"It doesn't have to go through Google. Lots of us support the people they follow through patreon et al, I don't need to make the gigacorp even richer than it is. They have enough.",assertion,"pre-labelled, checked; hn:49523880"
+"> it definitely trades user-friendliness for power and flexibility
+
+As far as I can tell, the workaround for this is sensible defaults or maybe a setup wizard on first run.",assertion,"pre-labelled, checked; hn:49104722"
+"Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",experience,"pre-labelled, checked; hn:48270492"
+"And how exactly is this situation worse than the unfair allocation of salaries and bonuses in companies today? Even within the same company, people can get paid more based on the org/division they work in (e.g. core AI teams), or even based on their (team or individual) perceived value to higher ups.
+
+At least with the Samsung union, the decision is being made bottom up vs. top down.",assertion,"pre-labelled, checked; hn:48337103"
+How does this lend itself to self-hosting then? I think few people will pay that much to self host.,assertion,"pre-labelled, checked; hn:48729667"
+"Can someone give me exact time when SOTA stop being good? Is it a day, week or a month? As such can I consider anything older than that time period to automatically be crap?",assertion,"pre-labelled, checked; hn:49244881"
+"That's for a single page, this handles the whole site. Also the browser Save As options often work poorly.",assertion,"pre-labelled, checked; hn:48530706"
+"The thing is, people liked old Twitter and then it got taken away from them with all of the changes to X, so there's merit in a clone of what was. Many such cases, WoW Classic's popularity as a random example.",assertion,"pre-labelled, checked; hn:49457189"
+"What I think is really going on is an attempt to segment the market in favor of Google's strengths. It's a bet that models are ""good enough"" for many use cases even before they reach human-level intelligence, and Google is trying to capture workflows where quantity beats quality.
+
+They are likely deliberately avoiding the SoTA race for a few reasons:
+
+1. Their best models are marginally better than current SoTA releases. 
+2. They'd like to let Ant/OAI make mistakes with safeguards / let them get the regulatory heat. The unknown unknowns are huge with SoTA models (eg OAI accidentally hacking huggingface) and they are protecting their reputation. 
+3. They want to encourage companies to become cost conscious because they can likely win on price in the long run. Getting market share in ""quantity beats quality"" workflows forces companies to establish processes to choose the ""cheapest acceptable model"", which is a good environment for Google.",assertion,"pre-labelled, checked; hn:49007746"
+"> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.
+
+So in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.
+
+> Then Nadella took over as CEO. The stock went up by a factor of 10
+
+The stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?
+
+> It's similar to military generals.
+
+Great analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",evidence,"pre-labelled, checked; hn:48278487"
+"Like for an espresso machine or a printer, the incentive is put on the consumables. Peoples trust Steam and their frequent sales, not so much XBox and the rest of the platforms, so if you want to frequently buy a plethora of games, old and new and indie and AAA, it would probably still be cheaper to get a steam machine than the next console with their limited catalogue and fixed prices.",assertion,"pre-labelled, checked; hn:49179187"
+"I think the audio is missing a lot of the hiccups, delays, and quirks that come with humans in meetings but the rest is pretty good!",assertion,"pre-labelled, checked; hn:50033412"
+"A more realistic scenario that surely must have been considered is this:
+
+They make a strategic investment in the DRAM maker. It's the same idea as buying an equity stake or entering a JV with a flat-panel maker. Or deploying cash to provide the latest EUV tooling to TSMC.
+
+Large famous-brand computer maker has no expertise in running a fab.
+
+I could punch holes in this idea right away. But it seems better than ""tilting up your own fab"".",assertion,"pre-labelled, checked; hn:48281320"
+"What a lovely blog in general: some really fun retro-computing projects, written up in a very thoughtful, human way. Feels like a throwback to the earlier hacking spirit of the internet. Thank you, Colin: your ""experiment with writing"" is a success as far as I'm concerned!",assertion,"pre-labelled, checked; hn:49818426"
+"Does it just use ""here"" / viewing box as a bias, not a hard cutoff? Personally I definitely expect ""here"" to mean ""absolutely no results outside my window under any circumstances"" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",assertion,"pre-labelled, corrected in review (was SET_ASIDE); hn:48849796"
+"I personally don’t like memory, so I disable it on all platforms.",assertion,"pre-labelled, checked; hn:48924776"
+This feels like a natural next step. Starting with a simple melody and having the system fill in the rest while still following your playing style could make it much more useful for experimentation than generating a complete piece from scratch.,assertion,"pre-labelled, checked; hn:49375275"
+"Google isn't allowed to, it was always Debian. If Debian doesn't, Google has to assume the most restrictive category, or deny service altogether.",assertion,"pre-labelled, checked; hn:49500391"
+"Any text, code, image, video or audio they/anybody has ever uploaded to the public internet? Is this a real question?",assertion,"pre-labelled, checked; hn:48589145"
+"$1 million net worth is massive. You can buy a house in a remote place, invest in companies and live off of the investment perpetually without having to work.",assertion,"pre-labelled, checked; hn:49456872"
+"https://github.com/datafusion-contrib/datafusion-ducklake is more established, and linked to directly from the ducklake docs",evidence,"pre-labelled, checked; hn:49456933"
+"> The US has hardly any factories left.
+
+Feel free to start your own factory in US, nobody is stopping you. Just keep in mind that for commoditized products (most consumer stuff, for example), prices are all that matter. ""Buy American"" is not a product feature.",assertion,"pre-labelled, checked; hn:49468013"
+"I think the discouragement started long before AI, probably before GUI, based on the terminal-like website you host.",assertion,"pre-labelled, checked; hn:49172089"
+"why intel and amd ? these are cerebras wafers?
+
+i know people are joking about the sol ultrafast prices (its unlikely to be accessible for average joes) but this shows scaling wafer cores works for inference boost
+
+which makes me very excited, sol ultrafast will be as slow as it will get if that makes sense. at these token speeds , we will see a much deeper economic impact.",assertion,"pre-labelled, checked; hn:49291676"
+"Alternatively, you can easily add the bloat, discover if it has real value, and then strip it without the bad feeling of having sunk countless hours creating it. Vibe coding is excellent for making the first prototype to throw away.",assertion,"pre-labelled, checked; hn:48912184"
+Implicitly its payment via data but most people don't understand. Theres an asymmetry in the transaction to me.,assertion,"pre-labelled, checked; hn:49475436"
+"How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",assertion,"pre-labelled, checked; hn:48552314"
+You’ve just described a significant amount of ITAR. Am Canadian but have to deal with it occasionally. MWIR/LWIR imagers are another prime example. I can order way better (spec-wise at least) IR sensors from AliExpress than I can from the US. Something about high frame rate IR being useful for some kind of guidance towards hot things shrug,experience,"pre-labelled, checked; hn:49369803"
+"Is this HN? Aren't people supposed to tinker with tech for no reason other than seeing if they can? Is everything that involves a transformer now just AI BAD? Is that what the world has devolved into? Each side screaming ""Orange Man Bad"" and endless variations at each other?",assertion,"pre-labelled, checked; hn:49373715"
+Prove to me that people deserve to be free and not micromanaged on a day to day basis.,assertion,"pre-labelled, checked; hn:48081959"
+"It bugs me so much when eReaders re-render the ebook and everything moves slightly. I lose my eye muscle memory of where things were.
+
+Until now, I had not thought to try to lock down the settings that lead to accidental reflows. It sounds less difficult in KOReader than I expected. I may try to stabilize it for my next ebook I can get into KOReader.",experience,"pre-labelled, checked; hn:49105546"
+"I like this a lot and am going to experiment w/ incorporating in my early literacy app.
+
+Heads up: the ""See it live in the showcase → "" links in the API documentation do not go back to the showcase - they just reload the same current API section.
+
+Question: maybe I've missed it, but what exists here wrt distribution / packaging / bundling / source availability? I see MIT listed, but no repo. I see src=""https://jelly-ui.com/package.js"" as a sourcing import, but obviously I'm not going to bundle foreign assets into my app.",experience,"pre-labelled, checked; hn:48992235"
+Nicely done! Glad to see real hacking is still alive in the age of AI.,assertion,"pre-labelled, checked; hn:48137707"
+"I’m not arguing that social media is a net benefit to society, but you’re acting like it’s all downsides. It’s been an extreme economic enabler for a lot of people. There are many people earning money independently who would have really struggled to put themselves in a position to do that 20 years ago. For independent businesses or artists it’s an invaluable promotional platform.",assertion,"pre-labelled, checked; hn:48685601"
+"> Also Nvidia isn’t really creating money
+
+That’s what loans are.
+
+https://en.wikipedia.org/wiki/Money_creation",evidence,"pre-labelled, checked; hn:49682695"
+"I just sent you a long article which you could not have read in the time it took you to reply. I would suggest you start there and read that article, which outlines several cases where the author was able to create contrived false positives and negatives.",assertion,"pre-labelled, checked; hn:49213365"
+"While you can use the hotline in private, you can't object to any matter in public.",assertion,"pre-labelled, checked; hn:48820823"
+What's wrong with the name? It stands for GNU Image Manipulation Program.,assertion,"pre-labelled, checked; hn:49475254"
+"The debate thing was clownish, for sure.
+
+My recollection of the DNC linkage was that the Clinton campaign agreed to help the DNC in a set of ways (likely raising money for the DNC and helping Democratic candidates) in exchange for some affordances and Sanders refused to do likewise (which, to his credit is on brand). Is that not accurate? I admit it's been 10 years and there have been a lot of claims made as to why Sanders should have been given the nomination in spite of not winning more votes.",assertion,"pre-labelled, checked; hn:49392758"
+Am I missing something? Where does it say that the researcher that found Dirty Frag used LLM to find it? Have you read the original report from the researcher?,assertion,"pre-labelled, checked; hn:48064159"
+"Life in EU seems like a mother-in-law simulator.
+
+Like cool you get leftovers you can warm up (never something fresh, innovative), but then you also have to deal with the drama and cringe.",assertion,"pre-labelled, checked; hn:48824991"
+This is exactly how I remember my early webdev days. Before Dreamweaver we were using NetObjects Fusion.,experience,"pre-labelled, checked; hn:48741681"
+"> Domestic China is the only very large audience for their own models
+
+I don't think so. US models are very expensive, and not available in every country. I am not willing to pay $50/1M tokens for writing my pet projects.",evidence,"pre-labelled, checked; hn:48997783"
+"This is just finally bringing the magical ""the computer did it"" to the masses!
+
+When companies like Amazon accept, warehouse, bill for and ship unsafe Chinese trash, well, at every step it was just a computer. Google, X and others will happily show state funded scam advertisements from fake accounts and there is no one accountable, because it's just the computer handling those.
+
+Now with AI, everyone can claim this magical legal immunity for themselves.",assertion,"pre-labelled, checked; hn:49235070"
+"I wish we would call them ""taxes on imports"" instead to reflect what is actually happening.",assertion,"pre-labelled, checked; hn:49467888"
+"What method did you use to generate that one?
+
+I tried using their OpenAI-compatible API and got one that's a lot less fun (no animation) - https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F735f2cf19b795517cb2ff6cae1c71c64",evidence,"pre-labelled, checked; hn:48983936"
+"Author here. It’s ironic because this post was clearly geared towards non-hackers. But now that we’re here.. the other analogy I considered presenting was:
+
+harness = chassis,
+model = engine,
+fuel = tokens,
+agent = car
+
+I’m curious what y’all might think and whether that analogy carries more explanatory power",assertion,"pre-labelled, checked; hn:49411339"
+Dunno if admitting defeat like that is a sign of strength or weakness.,assertion,"pre-labelled, checked; hn:49128985"
+"The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.
+
+In case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: “alternative facts”.",evidence,"pre-labelled, checked; hn:49342333"
+"So in a thread about the release of Opus 5.5, this is your contribution? Why?",assertion,"pre-labelled, checked; hn:49816855"
+In what scenario is Sunoco going to try to steal all my money?,assertion,"pre-labelled, checked; hn:50000266"
+"> … only for the run to crash over some minor bug after that
+
+Ah, Python.",assertion,"pre-labelled, checked; hn:49017436"
+"Honestly, I didn't even know this was a problem that needed to be solved.",assertion,"pre-labelled, checked; hn:49121477"
+"This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",experience,"pre-labelled, checked; hn:48828914"
+"I think you meant ESOP (Employee Stock Ownership Program), not ESPP. I work for a 100% ESOP company and it’s been very beneficial to me and also the former owners were able to cash out without selling to the devil.
+
+https://en.wikipedia.org/wiki/Employee_stock_ownership_plan
+
+An ESOP is where a portion of or an entire company is sold to the employees. Our company took out loans to acquire the shares from the former owners and shares are disbursed to employees yearly instead of purchased by employees. It took 5 years to fully buy out the former owners, so we’re a 100% ESOP now and we just finished paying off the loans taken out to buy out the former owners.
+
+An ESPP just gives employees of a company the option to buy shares at a discount.",evidence,"pre-labelled, checked; hn:48301667"
+Is it a small business if they're doing business in every US state or country?,assertion,"pre-labelled, checked; hn:50053544"
+Maybe you should be more explicit about what you think really happened.,assertion,"pre-labelled, checked; hn:49596994"
+"> All your bills to get paid don't get paid. You can't pay for food or anything. Hopefully it didn't happen when rent was due.
+
+What's the difference between that and somebody's only credit card getting maxed out by fraudsters? They also can't use it until they receive a provisional credit by their bank.
+
+If your point is that a credit card separates rent from other payments, nothing is stopping you from having multiple checking accounts either.",assertion,"pre-labelled, checked; hn:50004485"
+"I just had a great chat with Michael, who was having a hard time because his girlfriend didn’t come with him to Burning man. Great chat!",experience,"pre-labelled, checked; hn:49515553"
+"It has been used before LLMs. I have no idea why LLMs prefer it, though.",assertion,"pre-labelled, checked; hn:49998018"
+On long drives I wouldn't mind some kind of localized voice chat similar to what truckers have,assertion,"pre-labelled, checked; hn:50042277"
+"I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say ""right to free assembly was to give richer corporations more sway.""
+
+Fundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.
+
+Citizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",assertion,"pre-labelled, checked; hn:49467243"
+"May be you can add AI to your page, nobody make slides by hand now.",assertion,"pre-labelled, checked; hn:49017871"
+"The toxic behaviour by hn commenters in that thread is absolutely shameful. Whether you feel strongly about it or not, there is a civil way to discuss things and that isn't it.",assertion,"pre-labelled, checked; hn:47998648"
+I use the ever living hell out of .git/info/exclude. Works great for scripts/Makefiles I only want locally and collaborators wouldn’t care about or be able to use.,experience,"pre-labelled, checked; hn:48585606"
+"There's been a market for a while. In thinking of Azul Java, which is just OpenJDK but with someone to point the finger at, and costs money.",assertion,"pre-labelled, checked; hn:49159930"
+"Some banks in some parts of the EU have - SEPA instant was only mandated in January 2025, only for Euro payments.",evidence,"pre-labelled, checked; hn:48417893"
+"Yeah what's worse...
+
+I have a LG modern TV. Smart shit. I also use a Linux install on a NUC. HDMI.
+
+For some godsdamned reason, the TV was able to initiate an IP bridge with the Linux NUC and get an IP address on my network.
+
+Nobody typed it in the TV. And I'm unsure how it did so itself.
+
+What I do know is that Mikrotik allows DHCP-server blocks of wildcard MAC addresses. Blocked the whole fucking 24 bits of their allocation.
+
+AND if it does get back online, I also shitcanned its routing on the IP side based on hostname.",experience,"pre-labelled, checked; hn:48618246"
+This is so cool I'm sad I can't think of any use case for me,assertion,"pre-labelled, checked; hn:48097752"
+"Yeah, there’s no VBA support anywhere. LibreOffice has their own scripting thing, and it works ok but it’s not compatible with the VBA and VBA stuff broadly doesn’t work there.
+
+Even without the VBA though, it’s missing basically any feature added in 2019 like Lambda and filter and dynamic arrays.
+
+I wouldn’t consider myself a power user, I would say I am a “high level basic user”, and even I have noticed the shortcomings. And this is also coming from a dude who very much wants a FOSS thing to succeed over Microsoft.",evidence,"pre-labelled, checked; hn:49848224"
+"It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).
+
+Sorry still working on improving the UX :)
+
+EDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",evidence,"pre-labelled, checked; hn:48262246"
+"> would be impossible to scale
+
+I think education is something better scaled horizontally than vertically. More schools, with more professors instead increasing the student per professor throughput. The classes where I learned the absolute most, and had the best experience, were closer in size to 25 than 100.",experience,"pre-labelled, checked; hn:49225890"
+"hmm that's true, in the presentation they don't focus for more than 5 seconds on the backend lol",assertion,"pre-labelled, checked; hn:49213430"
+"My problem is. People do not even use their brains no more. Just copy that someone else made. They are essentially stealing, like mindless zombies. Why do we even have AI if people are at such low level mental capacity?",assertion,"pre-labelled, checked; hn:49478668"
+"Again, at this point, they're taking things too far,age gates shouldn't need to be an impenetrable fortress (notwithstanding the question of whether they should exist in the first place).
+
+It should simply be the adult account on the device is notified if the device is rooted, effectively no longer in child mode. Go crazy with the warnings on both devices if you want as they've opted in at that point.",assertion,"pre-labelled, checked; hn:48732393"
+"Thank you! We can decide to just... you know... do things.
+
+Like, am I crazy here? The rules that we live by are largely made up and the points don't matter - we can decide to live in a better world if we want to. It's hard, and there are obstacles, for sure, but this appeal to doom for the sake of doom just... why? We have made unfathomable progress over the last century and if we keep trying we can make progress like that over the next century too!",assertion,"pre-labelled, checked; hn:48962585"
+So many elon shills J. ust A. sking Q. uestion -ing off,assertion,"pre-labelled, checked; hn:48379463"
+"I don't know what the situation is like for Kindle, but there are atleast two open source alternatives for Kobo. KOReader is the Swiss Army knife, Plato is easier to use.
+
+A few people are suggesting that KOReader is symptomatic if the issues with open source software. The reality is it targets a particular group of users.",assertion,"pre-labelled, checked; hn:49098211"
+"You joke but it's really easy to develop viruses at home. You can order everything you need online, and it's not expensive nor does it require a particular skill set.
+
+God I wish people on HN would just shut up with snarky takes about things they don't understand. This place used to be better.",assertion,"pre-labelled, checked; hn:49825161"
+"They still hold a fairly large amount of money in index funds ""about 19.2 percent for public pension plans and 11.2 percent for corporate plans"" [0 (2015)] That's a significant sum of money that will be forced into purchasing SpaceX well before it normally would be.
+
+[0] https://www.nytimes.com/2015/03/04/business/pension-funds-trail-individuals-in-embracing-index-funds.html",evidence,"pre-labelled, checked; hn:48375757"
+"I'm getting the impression that LLMs are just not very good at ""reasoning"" about time. I have definitely had success getting a coding agent to produce decent concurrent code, but I had to basically lead it by the nose, and I strongly suspect that in most cases it would have taken less time to just do it the old fashioned way.",experience,"pre-labelled, checked; hn:48175023"
+Was it ever? I thought that whole thing was paused. Still unclear if personal use of agent sdk inside a harness is allowed.,assertion,"pre-labelled, checked; hn:50000334"
+"How are you drawing that conclusion? He mentioned in several comments on this thread that he is Korean…?
+
+Genuinely curious.",assertion,"pre-labelled, corrected in review (was SET_ASIDE); hn:48245422"
+"Not sure that last one rings true. There are entire languages with no allowed unused variables (some without prepending a _ to the names) that people love to develop with.
+
+In the industry, how often is it that a tool/language is picked up for the ease of developing that tool, vs ease of using that tool?",assertion,"pre-labelled, checked; hn:48901853"
+"I think it's time to bring back the IBM classic.
+
+> A computer can never be held accountable. Therefore a computer must never make a management decision",evidence,"pre-labelled, checked; hn:49233430"
+This is weird I didn't imply or say any of these things that you're arguing against right now.,assertion,"pre-labelled, checked; hn:49164548"
+"What a load of absolute nonsense.
+
+I’m convinced many of you barely go outside and have the capacity for original thoughts.
+
+Sloppity slop slop.",assertion,"pre-labelled, checked; hn:48961542"
+"Folks are heavily discounting cloudflare here and it would outshine AWS shortly and here's why:
+
+1. Due to AI, most of the software is going to be personal apps.
+
+2. For personal apps, (even most commercial SaaS) SQLite is all you need.
+
+3. The Javascript ecosystem is huge in terms of components, libraries. ShadCN and what not.
+
+4. Cloudflare has workers, durable objects which is isolated SQLite, D1 which is isolated SQLite
+
+5. You can run crons, long running jobs, cloudlflare has emails.
+
+6. Cloudlflare has best in class open weigh AI models as API for cheap.
+
+7. Cloudflare has amazing CLI wrnagler but upcoming cf is purpose built for agentic workflows.
+
+8. The built in AI assistant is really really good in guiding you how to setup, architecture and work around limitations etc.
+
+Combine all the above, in next 5 years Cloureflare is going to get stronger with more workloads deployed to it then all three hyper clouds combined.",assertion,"pre-labelled, checked; hn:49975432"
+Prompting and having the model fill out the rest makes it feel like jazz or at least an improvised result of a song,assertion,"pre-labelled, checked; hn:49380875"
+"Later rebranded as Mirai. I remember playing with a pirated copy of Nichimen Mirai somewhere in 2001 (I think), it looked weirdly Ediacaran in the Cambrian explosion of the late 90s.",experience,"pre-labelled, checked; hn:48097660"

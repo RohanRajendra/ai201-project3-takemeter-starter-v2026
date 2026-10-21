@@ -42,7 +42,16 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-
+TakeMeter sorts **Hacker News comments** by what they rest their point on. A
+comment is `evidence` if it points to something a reader can check without
+trusting the writer (a link, a quote, a version or CVE number, a date, a
+figure). It is `experience` if it rests on something specific the writer
+built, used or saw. It is `assertion` if it offers neither. The labels say
+nothing about whether a comment is right. They say how much of it a reader
+would have to take on faith, which is the difference HN regulars pick up in a
+sentence: a sourced correction, a war story, or a confident one-liner. Comments
+that make no claim at all (pure questions, thanks, banter) are outside the
+three labels and were set aside.
 
 ---
 
@@ -54,33 +63,122 @@
      The decision rule is worth a point on its own and it's the thing most
      people leave out. Every taxonomy has a hardest boundary. Name yours. -->
 
-### `label_one`
+Every label answers one question about a comment: **what does it rest its
+point on?** Not whether it's right, smart or polite. A sourced comment can be
+wrong, and an unsupported one can be true.
 
-**Definition:**
+### `evidence`
 
-**Example 1:**
+**Definition:** The comment backs its point with something specific a reader
+could check without taking the writer's word for it: a link, a named source, a
+quote, a version or CVE number, a date, or a number about the world.
+
+**Example 1:** *(HN item 49523310)*
+> Apparently, remote improvements became separated from telemetry in Firefox version 148: https://support.mozilla.org/en-US/kb/remote-improvements#w_what-are-remote-improvements
+
+**Example 2:** *(HN item 48059896)*
+> At the moment it doesn't seem to be.
 >
-
-**Example 2:**
+> Within an hour of be advised of, and running the mitigation for DirtyFrag, my upstream provider has blocked all WHM/cPanel/SSH/FTP/SFTP access with a heads-up on:
 >
-
-### `label_two`
-
-**Definition:**
-
-**Example 1:**
+> CVE-2026-29201
+> CVE-2026-29202
+> CVE-2026-29203
 >
+> which look like a repeat of CVE-2026-41940 a week ago.
 
-**Example 2:**
->
+### `experience`
+
+**Definition:** The comment backs its point with the writer's own first-hand
+experience: something specific they built, used, ran, or saw happen.
+
+**Example 1:** *(HN item 49014319)*
+> I worked on a system a couple years ago with a BERT-based model (64M parameters) used for classification. The rest of the system could process data at gigabytes per second, and so here tokenization at a measly few megabytes per second really slowed things down. The model inference was more expensive than tokenization, but tokenization was still >10% of total runtime.
+
+**Example 2:** *(HN item 48829152)*
+> I tried it for family location sharing a few months back and, I don't remember exactly, but I remember the UI/UX feeling a bit slow/clunky in general, eventhough setting things up was user-friendly. Definitely potential there, though.
+
+### `assertion`
+
+**Definition:** The comment makes a claim, judgment or suggestion but offers
+neither checkable support nor first-hand experience for it.
+
+**Example 1:** *(HN item 48918161)*
+> Multipass is just an apt-get or brew command away. People trust software too much these days.
+
+**Example 2:** *(HN item 49499287)*
+> This is a reach. Children can't vote. If that was a real concern you would be banning adults from social media.
+
+### `question` *(stretch: the fourth label)*
+
+Added after the core was built and kept out of `labels.csv` (see Stretch
+Features). Its rows are in `labels_stretch.csv`.
+
+**Definition:** The comment asks for information, clarification or help the
+writer doesn't have, and makes no claim of its own.
+
+**Example 1:** *(HN item 48689514)*
+> I'm curious prior to this has there been any research/attempts at chemical methods to strengthen the structure and allow it to be unrolled?
+
+**Example 2:** *(HN item 48460570)*
+> Sorry to be off topic, but I have a question: has anyone installed the latest beta iOS and macOS, and if so what is the current status of Gemini integration?
+
+**Boundary with the other three:** the Scope rule decides it. Only a pure
+question or request is `question`. A question that also states a separate
+claim, including a first-hand premise or a "surely…" aside, gets the label for
+that claim. A rhetorical question that is really a claim is labelled by the
+claim. This is why adding the label changed none of the 231 core rows.
 
 ### The hardest boundary
 
-**Which two labels:**
+**Which two labels:** `evidence` vs `experience`. Both offer support, and HN
+commenters constantly mix "here's a number" with "here's what happened to me".
+The first `experience` example above is the post that sits on this line: it is
+full of numbers (64M parameters, gigabytes per second, >10% of runtime), and
+every one of them comes from a system only the writer has seen.
 
 **The decision rule I used every time:**
-<!-- e.g. "If the post names a specific checkable fact, it's `analysis`, even
-     if the tone is heated." -->
+
+**Who does the reader have to trust?** If the support can be checked by someone
+who doesn't trust the writer (a link, a quote, a version number, a public
+event pinned to a date, a number about the world), it's `evidence`, even when
+it's told in the first person. If the only support is the writer's own account of what happened to them, it's
+`experience`, even when it includes numbers from their own system ("our build
+went from 14 to 4 minutes"). A link the reader can follow counts as `evidence`
+even when it points to the writer's own repo, write-up or demo, because the
+reader can go and look at the thing itself.
+
+**The other rules, which keep the remaining cases consistent:**
+
+- **Precedence.** Label by the strongest support the comment offers:
+  `evidence` > `experience` > `assertion`. A comment with a link and a personal
+  story is `evidence`.
+- **`experience` vs `assertion`: is a specific thing described?**
+  `experience` needs the writer to say what they did, used or saw, and where or
+  how often: a job, a tool, a project, a device, a count of times. A summary of
+  repeated first-hand events counts ("every startup I've worked at, four now,
+  rewrote the backend"). Credentials on their own ("I've done this for 20
+  years"), "in my experience…", "I've always found…" and "I think…" with
+  nothing specific described are `assertion`.
+- **Specific enough to look up means there's a pointer:** a link, a named
+  document or source, a quote, an identifier (a version, CVE, model or bill
+  number), a date, or a number about the world (a price, a count, a
+  percentage). A fact about a named thing given with none of those ("the M2 Air
+  has no fan", "Java applets died", "Rust is memory safe") is not `evidence`,
+  however true or well known. A comparison to a past event counts only if the
+  event is pinned down by one of those pointers. A named period that pins the
+  event counts as a date ("during Trump's first term"); "recently" does not.
+  Identifiers mean the kinds listed. A config key, API name or kernel parameter
+  on its own is a fact about a named thing, not a pointer.
+- **The support has to support the point.** A link to something unrelated to
+  the claim doesn't make a comment `evidence`.
+- **Scope.** A comment that makes no claim at all (a pure question, a
+  thank-you, banter) doesn't fit any of the three, and was set aside rather
+  than forced into one. A rhetorical question that is really a claim is
+  labelled by that claim. A question that also states a separate claim is in
+  scope and labelled by that claim. Posts not written in English are set aside,
+  because neither labeller nor model can judge what they rest on. How many were
+  set aside is in The Dataset.
 
 
 
@@ -91,45 +189,109 @@
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Hacker News comments, pulled with
+`collect_hn.py` through the public Algolia HN Search API (no account, no key).
+It takes a random sample of 90 well-discussed stories posted between 2026-05-01
+and 2026-10-15 (150+ points, 60+ comments), and at most 5 comments from each,
+so no single thread dominates. Comments are kept whole, never trimmed. Comments
+under 12 or over 200 words, code-block comments, and mostly-quoted replies are
+skipped. That gives a 450-comment pool in `data/hn_candidates.csv`, already in
+random order. I labelled the first 256 in pool order. 231 went into
+`labels.csv`, and **25 were set aside** under the Scope rule: 12 pure questions
+or requests, 7 thank-yous, banter or personal asides, and 1 post not in
+English, plus 5 that I judged to make no claim during the cold pass. The set-aside posts are in `data/set_aside.csv` with the reason for
+each. The HN item id for every labelled post is in its `note` column
+(`hn:<id>`), so each one can be traced back to its source.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** In three passes, all against the written taxonomy
+above.
+
+1. **Cold, 20 rows (`cold` in `note`).** I labelled these by hand, blind,
+   with `label_cold.py`. It shows one post at a time with the rules on screen
+   and hides any existing label. Nothing else was looked up or consulted. I
+   went through the cold set twice, and the second pass is the one recorded.
+   5 of the 25 cold posts I judged to make no claim, so they were set aside.
+2. **AI pre-labels, 211 rows.** Claude pre-labelled every remaining post with a
+   label and a one-line reason naming the rule that decided it.
+3. **Review of every pre-label, by an agent standing in for me.** A second
+   Claude agent, set up to apply only my written rules, read each pre-labelled
+   post in full and judged it before looking at the pre-label. It accepted 208
+   (`pre-labelled, checked`) and corrected 3 (`pre-labelled, corrected in
+   review (was …)`). I set the rule that any disagreement going past three
+   rounds would come back to me, and none did; every one was settled within
+   two. All three corrections came from one line tightened in review: a
+   question that also states a separate claim is in scope, not set aside. One
+   more post (in Italian) led to a new Scope line, setting aside posts not
+   written in English.
+
+Four rule clarifications came out of labelling and are now in the taxonomy
+above: a named period counts as a date, a config key or API name on its own
+isn't a pointer, and the two Scope lines above.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `assertion` | 146 | 63.2% |
+| `experience` | 45 | 19.5% |
+| `evidence` | 40 | 17.3% |
+| **Total** | **231** | 100% |
 
-**Three hard cases**
+No label is above the 70% cap. `assertion` is above the notebook's 60%
+"getting lopsided" warning, which matches the reading in Milestone 1: most HN
+comments make a claim and back it with nothing. Always guessing `assertion`
+would already score about 0.63, so criterion 1 is written relative to that
+share rather than as a fixed number.
+
+**Hard cases**
 
 <!-- Any post that made you pause: what it was, which two labels it could have
      been, and what you chose. These are worth more than the easy 190. -->
 
-**1.**
-> *The post:*
+**1. A named period, with no date** *(HN item 49489231)*
+> *The post:* "During Trump 1.0, retaliatory tariffs were targeted at swing states. E.g., on Harley-Davidsons manufactured in Wisconsin. The goal was to make it politically painful to the president and undermine his reelection chances. I imagine Carney is picking industries that are assymetricly painful to the USA…"
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `assertion`.
 >
-> *I chose, because:*
+> *I chose `evidence`, because:* the pointer rule needs a date, and "Trump 1.0"
+> isn't one. But it pins the event to a four-year window, and with Harley-Davidson
+> and Wisconsin named, a reader can look up exactly which tariffs are meant.
+> "Jensen recently proposed…" (HN item 49690277) has no such anchor and stayed
+> `assertion`. This post is why the taxonomy now says a named period that pins
+> the event counts as a date, and "recently" does not.
 
-**2.**
-> *The post:*
+**2. A quoted error message from the writer's own machine** *(HN item 48530797)*
+> *The post:* "Nice idea! fwiw, false positives and all, but the Windows 11 default Windows Security doesn't like it: `leakless.exe: Operation did not complete successfully because the file contains a virus or potentially unwanted software.`"
 >
-> *Could have been:*
+> *Could have been:* `evidence` (a verbatim quote, a named product) or `experience`.
 >
-> *I chose, because:*
+> *I chose `experience`, because:* Rule 1 asks who the reader has to trust. The
+> quote isn't from a public source. It's what appeared on the writer's own
+> screen when they ran the file, so the reader is taking their word for it.
+> Quoting text only makes a post `evidence` when the source is something the
+> reader can go and look at.
 
-**3.**
-> *The post:*
+**3. First-hand details that don't back the point** *(HN item 48419032)*
+> *The post:* "The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic. … (no judging I grew up poor and had to hide from debt collectors when I was a kid)."
 >
-> *Could have been:*
+> *Could have been:* `experience` or `assertion`.
 >
-> *I chose, because:*
+> *I chose `assertion`, because:* the post has real first-hand specifics ("a
+> few times a year", "grew up poor"), which Rule 2 would count. But none of
+> them is the reason groceries on a card is "moronic". They're asides.
+> `experience` means the experience backs the point, the same test Rule 3
+> applies to links. The same call covered "I personally don't like memory, so I
+> disable it on all platforms" (HN item 48924776).
+
+**4. A question with a first-hand premise** *(HN item 49819380)*
+> *The post:* "My enterprise org has this model disabled because "security." Does this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?"
+>
+> *Could have been:* set aside as a question, or `experience`.
+>
+> *I chose `experience`, because:* it isn't a pure question. Its first sentence
+> states a first-hand fact, with scare quotes that carry a judgment. It was
+> pre-labelled as set aside and corrected in review. That correction became the
+> Scope line "a question that also states a separate claim is in scope".
 
 ---
 
@@ -137,17 +299,42 @@ Say so plainly — the disclosure is required, not penalised. -->
 
 <!-- Your starting model, your settings, and anything you changed and why. -->
 
-**Base model:**
+**Base model:** `distilbert-base-uncased`, fine-tuned for 3-way sequence
+classification (`evidence`, `experience`, `assertion`), from notebook
+sections 1–5.
 
-**Settings:** <!-- epochs, learning rate, batch size, seed -->
+**Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
+tokens, seed 42. Trained on **`mps` (Apple M4 GPU), torch 2.14.1**, which is
+also recorded in `results.json`. The run took under a minute: 33 optimizer
+steps, 17 seconds of training.
 
-**Anything I changed from the defaults, and why:**
+**Anything I changed from the defaults, and why:** Nothing. This first run
+uses the notebook defaults on purpose, so it's the reference the stretch run
+below is compared against. The only notebook edits are `LABELS`, which matches
+the CSV exactly, and the name and email lines.
 
-**Split sizes:** <!-- train / val / test, and per-label counts in the test
-split. If a label had fewer than about 8 in test, say so — it explains a lot
-of next unit's variance. -->
+**Split sizes:** 70/15/15 stratified on seed 42, giving train 161, val 35,
+test 35.
 
+| Label | Train | Val | Test |
+|---|---|---|---|
+| `evidence` | 28 | 6 | **6** |
+| `experience` | 31 | 7 | **7** |
+| `assertion` | 102 | 22 | 22 |
 
+Both minority labels have fewer than 8 posts in the test split. One post moves
+`evidence` recall by 17 points and `experience` recall by 14, so their F1s will
+jump between seeds in unit 6. That's expected from a 231-row set where
+`assertion` is 63%, and it's why criterion 2 is a floor checked on every seed
+rather than an average.
+
+**What the run produced** (`results.json`, `test_split.csv`): the model
+predicted `assertion` for all 35 test posts. That's accuracy 0.629 (22 of
+35), exactly the `assertion` share of the split, and F1 0.00 for `evidence`
+and `experience`. Training loss fell every epoch (1.003 → 0.852 → 0.797) and
+validation loss with it (0.913 → 0.862 → 0.838), but 33 steps at 2e-5 never moved it off the
+majority class. Unit 6 reads these numbers properly. This is noted here because
+it's the baseline for the second training run.
 
 ---
 
@@ -160,19 +347,266 @@ of next unit's variance. -->
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
-**Moment 1**
+**Moment 1: the easy/hard check on my criteria**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* With targets drafted for all five criteria, I asked
+  Claude for one reason each target might turn out too easy and one it might
+  turn out too hard. I told it not to say which was more likely and not to
+  suggest numbers.
+- *What came back:* For accuracy ≥ 0.65, it pointed out that my 55%
+  `assertion` estimate came from only 33 posts. If the real share landed near
+  65%, a fixed 0.65 would just be the score for always guessing `assertion`.
+- *What I changed:* I made criterion 1 relative: at least 0.65 **and** at least
+  0.10 above that seed's `assertion` share. The real share came out at 63%,
+  and the first run scored 0.629 by predicting `assertion` for every post. The
+  fixed version would nearly have passed a model that learned nothing.
 
-**Moment 2**
+**Moment 2: stress-testing the taxonomy**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Eight posts written to sit on my label boundaries,
+  classified using only my written rules, each marked CLEAN or UNCLEAR.
+- *What came back:* Two were UNCLEAR: a summary of repeated experience
+  ("every startup I've worked at, four now…"), and a link to the writer's own
+  write-up. A second round exposed an overlap: a well-known fact about a named
+  thing ("the M2 Air has no fan") could be read as either `evidence` or
+  `assertion`.
+- *What I changed:* I rewrote Rule 2 to count summaries of repeated first-hand
+  events, ruled that links to your own work count as `evidence`, and added the
+  pointer rule (evidence needs a link, source, quote, identifier, date or
+  figure). After three rounds, 14 of 14 posts were clean. The full record is in
+  `stress_test.md`.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** Claude pre-labelled 211 of the 231 rows, each
+with a one-line reason naming the rule that decided it. I didn't review those
+one by one. I had a Claude agent review every pre-label as my stand-in,
+applying only my written rules and judging each post before seeing its
+pre-label. It corrected 3 and accepted the rest. I set the rule that any
+disagreement going past three rounds came back to me, and none did. I
+labelled the 20 `cold` rows by hand, blind, with `label_cold.py`. The criteria
+targets and reasons were drafted by the same agent from my scaffold, then
+checked over three rubric rounds and three easy/hard rounds before I filed
+them. Claude also wrote `collect_hn.py`, drafted the taxonomy and the README
+text, and ran the notebook. The 93 stretch rows in `labels_stretch.csv` were
+made the same way: Claude pre-labelled 112 candidates and the same agent
+reviewed every one, correcting 15. Claude also wrote `stretch_runs.py` and ran
+the stretch runs.
+
+---
+
+## Stretch Features
+
+**Declared before building.** This section was committed before any stretch
+data was collected or any stretch run was made. Results are added under each
+item once it's built.
+
+**Everything stretch lives alongside the core, not in it.** `labels.csv`, the
+notebook's defaults, `results.json` and `test_split.csv` stay exactly as they
+were at the end of Milestone 6, so unit 6 tests the setup the criteria were
+written for. Stretch data goes in `labels_stretch.csv` (with a `stretch` column
+saying which item each row belongs to), stretch runs in `stretch_runs.py`
+(which reuses the notebook's own split, train and evaluate functions
+unchanged), and stretch results in `results_stretch_*.json`. Every run uses
+seed 42.
+
+### 1. A second training run with one hyperparameter changed
+
+- **The change:** `EPOCHS` 3 → 10. Nothing else changes: same 231 rows, same
+  seed-42 split, same learning rate, batch size and max length.
+- **Why this one:** run 1 took only 33 optimizer steps and predicted
+  `assertion` for every test post, while training and validation loss were
+  still falling. More passes over the same data is the most direct test of
+  whether the model was under-trained or can't learn the distinction at all.
+- **What I'll report:** accuracy, macro F1, per-label F1 and the confidence
+  gap, against run 1, with the size of every change.
+
+**Result: built.** `python stretch_runs.py epochs` → `results_stretch_epochs.json`.
+Same 161 / 35 / 35 split and the same 35 test posts as `results.json`. Before
+using the runner I checked it: run with 3 epochs, it reproduces `results.json`
+exactly, down to the confusion matrix.
+
+| Measure | Run 1 (3 epochs) | Run 2 (10 epochs) | Change |
+|---|---|---|---|
+| Accuracy | 0.629 | 0.771 | **+0.143** (22 → 27 of 35 right) |
+| Macro F1 | 0.257 | 0.651 | **+0.394** |
+| F1 — `evidence` (n=6) | 0.000 | 0.727 | +0.727 (P 0.80, R 0.67) |
+| F1 — `experience` (n=7) | 0.000 | 0.333 | +0.333 (P 0.40, R 0.29) |
+| F1 — `assertion` (n=22) | 0.772 | 0.894 | +0.122 (precision 0.63 → 0.84) |
+| Confidence gap (most − least sure third) | 0.545 | 0.455 | −0.091 |
+| Mean confidence when right | 0.641 | 0.802 | +0.161 |
+
+**What moved, and what it says:**
+
+- **The model got off the majority class.** Run 1 predicted `assertion` 35
+  times out of 35. On the validation split, run 2 was still doing that after
+  epoch 2 (30 optimizer steps, about where run 1 stopped). It first predicted a
+  minority label at epoch 3. Validation macro F1 was 0.26 at epochs 1–2, 0.49 at
+  epoch 3, 0.76 at epoch 5 and 0.81 at epoch 10. So run 1 was under-trained, not unable to learn the
+  distinction.
+- **`evidence` was learned first and best.** 4 of 6 found, with 1 false alarm.
+  The pointers (links, figures, version numbers) are surface cues, as the
+  criteria context predicted.
+- **`experience` is still the weak label, and the errors run toward
+  `assertion`.** 4 of the 7 real `experience` posts were called `assertion`,
+  while only 1 `assertion` was called `experience`. That's the Rule 2 boundary
+  (is a specific thing described?), and it has no surface cue beyond "I".
+- **The hardest boundary shows up too.** 2 of the 6 `evidence` posts were
+  called `experience`. Those are first-person posts with a pointer, exactly the
+  line Rule 1 draws.
+- **The confidence gap shrank, but run 1's gap meant nothing.** Run 1 was
+  "right" only on `assertion` posts. In run 2 both thirds are better (1.00 and
+  0.55, against 0.82 and 0.27), and the model is surer when it's right.
+
+These are one seed on 35 test posts, so a single post moves `experience` F1 by
+roughly 0.1–0.15. They show the direction, not a stable number. That's unit 6's
+three-seed job, and the notebook's default stays at 3 epochs, so unit 6 starts
+from the run the criteria were written against.
+
+### 2. A fourth label, `question`
+
+- **What it captures:** comments that make no claim and only ask for
+  something. 12 of the 256 posts I labelled were pure questions or requests
+  and had to be set aside, because the three labels describe how a claim is
+  supported and these make none. A three-label model still has to put them
+  somewhere.
+- **Definition (to be added to the taxonomy):** the comment asks for
+  information, clarification or help the writer doesn't have, and makes no
+  claim of its own.
+- **Boundary rule:** the existing Scope line decides it. A question that also
+  states a separate claim is labelled by that claim, and only a pure question
+  is `question`. So none of the 231 existing rows change label.
+- **Data:** the set-aside pure questions, plus pure questions from the
+  unlabelled rest of the pool (and a fresh pull if needed), labelled with the
+  same pre-label-and-review workflow. Target at least 40 `question` rows.
+- **What I'll report:** the four-label run (run 1's data plus the `question`
+  rows, run 2's settings), with per-label F1 including `question`, and what
+  happened to the other three labels.
+
+**Result: built.** `python stretch_runs.py question` → `results_stretch_question.json`.
+The 43 `question` rows in `labels_stretch.csv` come from four places:
+
+| Source | Rows |
+|---|---|
+| Pure questions I had set aside from the core pool (`data/set_aside.csv`) | 11 |
+| Unlabelled rest of the core pool (rows 256–449 of `data/hn_candidates.csv`) | 10 |
+| Fresh pull 1 (`data/hn_extra_pool.csv`, 120 new stories) | 13 |
+| Fresh pull 2 (`data/hn_question_pool.csv`, 80 more new stories) | 9 |
+
+The candidates were posts with a "?" in them, pre-labelled and then reviewed
+under the rules, like the core. 45 were proposed and 2 were corrected to
+`assertion` in review: one rhetorical question, and one question wrapped in
+"surely…" claims. The questions were split 70/15/15 on their own (seed 42) and
+added to the core split, so the test set is the same 35 core posts plus 7
+held-out questions.
+
+| Label | Precision | Recall | F1 | Test n |
+|---|---|---|---|---|
+| `evidence` | 0.667 | 0.667 | 0.667 | 6 |
+| `experience` | 1.000 | 0.429 | 0.600 | 7 |
+| `assertion` | 0.759 | 1.000 | 0.863 | 22 |
+| `question` | 0.750 | 0.429 | 0.545 | 7 |
+| **All 42** | | | macro 0.669 | accuracy 0.762 |
+
+**What it captures that the three missed:** about 1 in 7 of the comments I
+read in Milestone 1, and 12 of the 256 I labelled, were pure questions or
+requests that make no claim at all. A
+three-label model has to call every one of them `evidence`, `experience` or
+`assertion`, and its scores never show those mistakes, because the questions
+were never in its test set. With the fourth label they're measurable: the model
+finds 3 of the 7 held-out questions, and 3 of the 4 it misses go to
+`assertion`. That's the expected direction, since a short question looks like a
+short unsupported claim.
+
+**What happened to the other three labels** (the same 35 core test posts, so
+this compares directly with run 2):
+
+| Measure, on the 35 core posts | Run 2 (3 labels) | Run 4 (4 labels) | Change |
+|---|---|---|---|
+| Accuracy | 0.771 | 0.829 | +0.057 (27 → 29 right) |
+| Macro F1 over the 3 core labels | 0.651 | 0.748 | +0.097 |
+| F1 — `evidence` | 0.727 | 0.727 | 0 |
+| F1 — `experience` | 0.333 | 0.600 | +0.267 |
+| F1 — `assertion` | 0.894 | 0.917 | +0.023 |
+
+The core labels didn't get worse, and `experience` got better: 3 of 7 found
+with no false alarms, against 2 of 7 with 3 false alarms in run 2. I wouldn't
+read much into that. It's two posts on one seed, and the four-label model also
+trained on 29 more posts. One real `experience` post was called `question`,
+which is the new boundary showing up.
+
+
+### 3. 50 extra examples for the thinnest label
+
+- **Which label:** `evidence`, with 40 rows (17.3%), the thinnest of the three.
+- **Where they'll come from:** a fresh `collect_hn.py` pull from different
+  stories (new seed, excluding every comment already in the pool). Candidates
+  get pre-filtered to comments with a link, a number or a quote, to save
+  reading, then labelled with the same workflow. The first 50 that come out
+  `evidence` are kept; the filter only decides what gets read, not the label.
+- **A fair comparison:** the 50 new rows go into the training split only. The
+  model is tested on exactly the same 35 test posts as run 2, with the same
+  settings, so the only thing that changes is the extra `evidence` data.
+- **What I'll report:** `evidence` precision, recall and F1 against run 2, plus
+  whatever happens to the other labels.
+
+**Result: built.** `python stretch_runs.py extra` → `results_stretch_extra.json`.
+
+**Where the 50 came from:** 43 from fresh pull 1 (`data/hn_extra_pool.csv`,
+120 stories not in the core pool) and 7 from fresh pull 2
+(`data/hn_question_pool.csv`, 80 more). `collect_hn.py` now has an `--exclude`
+option that skips every story and comment already pulled, so the three pools
+share no stories. Two changes from the declared plan:
+- **The filter got stricter partway through.** The first 55 candidates under
+  "any digit or quote mark" gave only 11 `evidence` posts, so for the rest I
+  read only posts with a link, a %/$ figure or a year, or a quoted phrase of 3
+  or more words. The filter still only decided what got read; every label came
+  from the rules.
+- **More candidates than planned.** 67 `evidence` candidates were pre-labelled
+  and reviewed. The review overrode 13 of the first 56, mostly links that only
+  name the subject, define a word, or back a side remark rather than the claim,
+  and those 13 were dropped. That left 43, and 7 more from pull 2 made 50.
+
+The 50 were added to the **training split only** (`evidence` goes from 28 to
+78 training posts, 17% → 37% of training). Validation, test and settings are
+identical to run 2.
+
+| Measure, same 35 test posts | Run 2 (10 epochs) | Run 3 (+ 50 `evidence`) | Change |
+|---|---|---|---|
+| `evidence` precision | 0.800 | 0.667 | −0.133 |
+| `evidence` recall | 0.667 | 0.667 | 0 (4 of 6 both times) |
+| `evidence` F1 | 0.727 | 0.667 | **−0.061** |
+| `experience` F1 | 0.333 | 0.429 | +0.095 |
+| `assertion` F1 | 0.894 | 0.818 | −0.076 (recall 21 → 18 of 22) |
+| Accuracy | 0.771 | 0.714 | −0.057 (27 → 25 right) |
+| Macro F1 | 0.651 | 0.638 | −0.013 |
+
+**What happened to `evidence`'s numbers: nothing good.** The model found 4 of
+the 6 test `evidence` posts with and without the extra 50, and picked up one
+more false alarm, an `assertion` post called `evidence`. The
+bigger effect was on `assertion`. Tripling `evidence` in training shrank
+`assertion`'s share from 63% to 48%, the model called `assertion` less often,
+and 3 real `assertion` posts went to `experience` and 1 to `evidence`.
+
+**What I take from it:** `evidence` wasn't short of examples. Its surface cues
+were learnable from 28. In run 2 both misses went to `experience`, the Rule 1
+boundary (first person plus a pointer). In run 3 one went to `experience` and
+one to `assertion`. 50 more link-heavy posts don't teach where Rule 1 draws
+its line. The extra rows also arrived
+through a filter that favours links, so they may have taught "link means
+`evidence`" more strongly than the rules mean it. With 6 test posts every
+change here is one post, and one seed. A stable answer needs unit 6's three
+seeds.
+
+**Known soft spots the stretch review turned up** (written down, not fixed, so
+the core stays frozen for unit 6):
+- **Praise in front of a question.** "Neat!!! Does this work with mailto…?"
+  went in as `question`, while a standalone "This is so cool…" post in the core
+  is `assertion`. I treat praise as a judgment only when it's the whole point
+  of the post.
+- **A suggestion plus a link to the thing suggested.** One core row (HN item
+  49377302: "You could also distill the Anticipatory Music Transformer… [link]")
+  is `evidence`. Under the stricter line the stretch review used, where the
+  link has to let the reader check the claim, it would probably be
+  `assertion`.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

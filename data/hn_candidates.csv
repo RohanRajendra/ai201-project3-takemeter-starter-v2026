@@ -1,0 +1,1219 @@
+hn_id,story_id,story_title,created_at,text
+49016877,49008211,Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab),2026-07-23T04:18:27Z,Who's your audience? People who don't use electron - historically downvoted. People who do - won't upvote this. People who don't care.. I guess?
+48298769,48292224,I'm Tired of Talking to AI,2026-05-27T18:53:26Z,"> who I regarded as generally low quality
+
+how did you come up with this assessment"
+48059896,48053623,Dirty Frag: Universal Linux LPE,2026-05-08T07:35:32Z,"At the moment it doesn't seem to be.
+
+Within an hour of be advised of, and running the mitigation for DirtyFrag, my upstream provider has blocked all WHM/cPanel/SSH/FTP/SFTP access with a heads-up on:
+
+CVE-2026-29201
+CVE-2026-29202
+CVE-2026-29203
+
+which look like a repeat of CVE-2026-41940 a week ago."
+49014319,49010167,GigaToken: ~1000x faster Language model tokenization,2026-07-22T22:27:11Z,"I worked on a system a couple years ago with a BERT-based model (64M parameters) used for classification. The rest of the system could process data at gigabytes per second, and so here tokenization at a measly few megabytes per second really slowed things down. The model inference was more expensive than tokenization, but tokenization was still >10% of total runtime."
+48460095,48450646,Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf],2026-06-09T12:15:05Z,"> My impression is that people who can work on stuff like that are the kind who just take the stuff in the world for granted.
+
+Some are also doing it for the technical challenge, especially those working on new tech rather than refining what already exists. Like the people who try to solve the great problems of mathematics/physics (or find interesting new ones) for the challenge of it (and sometimes refuse prizes & recognition if they do solve or otherwise discover something vital).
+
+This sort of person is often blinkered to the possible extreme long-term outcomes, or are able to mentally separate themselves from them (“I just made the discovery, I didn't use it to do anything bad” or “I was paid for it, follow the money source and blame them”). Of course once a genie is out of the bottle, other sorts of people are more than eager to ask it for wishes…"
+48063878,48056227,Maybe you shouldn't install new software for a bit,2026-05-08T14:36:49Z,"There's an interesting distinction here where one approach is to build sandboxes that limit exposure, while the other is just allowing the program to be more secure.
+
+One approach is ""Trust No Code"" and the other is ""Trusted code should run safely"".
+
+the first one sounds better on paper, but leads to a very complicated system. That said, I haven't worked with jails much or other forms of sandboxing. It just seems to me that to make software function you need escape hatches, and the more of those you have, well, now you're back to plugging exploits with a more complicated system.
+
+It was interesting to me to hear that even though OpenBSD had designed their software to limit permissions even before pledge and unveil were released - upon release they found that a shocking amount of their software actually wasn't following their own rules."
+48976238,48968606,"Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",2026-07-20T09:21:07Z,The current situation is that the person that doesn't know programming will do it anyway. They will likely make more mistakes than an LLM will.
+49821980,49817469,Fixing the Portobello Police Station Clock,2026-09-23T20:23:21Z,The other thing of course is that those beams are *massive*. They weren't dicking about when they built it. It wasn't built down to a price like things are today.
+50002840,49994443,Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app,2026-10-08T07:30:26Z,"Heaps of Learnings here [0] from getting an entire games state into a url or QR code (a pretty damn complex game, 5-10 minute games comfortably fit in a QR code such that games can be replayed exactly as they happened - no server)
+
+[0] - https://github.com/con-dog/snibble/blob/master/README.md"
+48680450,48675179,An entire Herculaneum scroll has been read for the first time,2026-06-25T23:18:37Z,"When you say ""physically based rendering"" do you mean that one could build a PBR model based on the (unrolled?) xray data, render that model, and be able to see the ink?
+
+edit: I found this:
+
+https://scrollprize.org/data_browser#/samples/PHercParis4/segments
+
+The JSON seems to suggest that I'm mostly looking at ink detection output, but I could easily be using the tool wrong.
+
+But I also found this awesome explanation:
+
+https://scrollprize.org/data_fragments
+
+I guess I bunch of the training was done by using fragments of scrolls where ground truth data is available using IR photography.
+
+Also... that xray resolution is absolutely amazing!"
+49592192,49588988,Nitter and XCancel resume service after legal advice,2026-09-06T23:57:40Z,What would an average person lose if everybody used more open platforms?
+49499287,49495372,California lawmakers unanimously pass Linux exemption from age-verification law,2026-08-30T15:03:44Z,This is a reach. Children can't vote. If that was a real concern you would be banning adults from social media.
+49207286,49187256,Zed DeltaDB,2026-08-07T08:05:14Z,"Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed."
+49451996,49448321,AWS Acquires DuckLabs,2026-08-26T16:37:46Z,"agree - I was really uneasy with the lede in their v2.0 preview:
+
+""DuckDB has been an in-process database since day one. But people have asked us – very persistently – for a client/server mode, and we have finally caved""
+
+This was already satisfied by numerous projects and products, and feels like a ""me too"" attempt to capture AI-based workflows. DuckDB always felt like ""SQLite for Analytic Data"" but I fear these changes and now acquiring the org leading technical direction is where they deviate for good. AWS is so unnecessary for what DuckDB can (and should, IMO) be; MongoDB jumps to mind as a cautionary tale."
+49392295,49387497,Grand jury declines to indict Ohio man charged with destroying Flock camera,2026-08-21T18:44:53Z,"Alternatively, they can care about principles and issues that differ from that of the other party."
+48066912,48037336,Rumors of my death are slightly exaggerated,2026-05-08T18:26:02Z,"I've gone out of my way to not read my wikipedia page. Beyond this, there's a rule (suggestion??) that you not edit your own biographical page.
+
+As a result, I have no idea whether things are right, wrong, misguided, or kflooey on that page. Anyone who wants to know details can simply stop over here for coffee and a chat.
+
+Cheers, -Cliff"
+49523310,49521973,Introducing Ad Blocker for Firefox on iOS,2026-09-01T15:29:51Z,"Apparently, remote improvements became separated from telemetry in Firefox version 148: https://support.mozilla.org/en-US/kb/remote-improvements#w_what-are-remote-improvements"
+49357540,49338459,How Bluesky draws its logo on screenshots,2026-08-19T06:14:42Z,"You are right, I remembered wrong. Netflix degraded the quality for me for years, according to them because of lack of DRM. It was because of lack of hardware DRM."
+49307394,49296740,Why does Opus 5 feel worse to work with?,2026-08-15T03:38:59Z,"I think it's much simpler than that, they are indeed trying to counter against sycophancy and models lying (the decision whether or not to lie to the human user, take shortcuts, etc. comes up in their thinking traces pretty commonly IIUC) by rewarding them for giving good-and-bad feedback, fessing up to things, pointing out potential issues, etc.
+
+The problem is just that they are rewarding the behavior shallowly, ie rewarding the appearance of honesty or neutral replies, being highly detailed/thorough, even where it doesn't make sense to do so.
+
+I think this is partly due to a reliance on LLM-as-judge training runs/synthetic data during RL where they're having a model which itself doesn't epistemically understand when this behavior is necessary or valuable influence the feedback provided to the model being trained. And that's mostly a problem of scale/volume and the desire to have a tight feedback loop rather than a safety issue IMO. They just generate an absurd amount of traces during training and the only way to really evaluate/rank/steer them at the scale they're generated is through other models, and combined with some kind of honesty/truthfulness/non-sycophancy eval that isn't robust enough to prevent mode collapse, you get this."
+48829152,48808928,CoMaps – FOSS Offline Maps,2026-07-08T08:25:35Z,"I tried it for family location sharing a few months back and, I don't remember exactly, but I remember the UI/UX feeling a bit slow/clunky in general, eventhough setting things up was user-friendly. Definitely potential there, though."
+48596300,48583356,.gitignore Isn't the only way to ignore files in Git,2026-06-19T08:37:46Z,Or if your editor is happy to store them in a subfolder that is useful. I use Sublime with the AutoProjects extension and it puts .sublime-project snd .sublime-workspace under a .sublime folder that I can have a .gitignore * underneath.
+48591410,48565498,"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",2026-06-18T20:52:14Z,"The klingon empire isn't a democracy, we don't delude ourselves that simply swapping one single person would have made a difference."
+49817624,49817469,Fixing the Portobello Police Station Clock,2026-09-23T15:30:05Z,Is the solution to a positive swab really to keep swabbing until negative?
+48071160,48056227,Maybe you shouldn't install new software for a bit,2026-05-09T02:27:40Z,I used to ride a 600R ... yes- that's where my handle comes from ;)
+48243878,48237163,Why Japanese companies do so many different things,2026-05-23T02:13:02Z,"> Still haven't found a decent thai or indian restaurant in Japan, and probably never will, given the general aversion for strong spices.
+
+are you not in Tokyo? Because “no decent Thai restaurant in Tokyo” is a wild claim
+
+You can get spicy food in Tokyo! It’s just not going to be all the restaurants. You gotta to to the right place. But you don’t need 100 good thai restaurants to eat dinner, you just need the one."
+48918161,48916975,"I tricked Claude into leaking your deepest, darkest secrets",2026-07-15T09:10:48Z,Multipass is just an apt-get or brew command away. People trust software too much these days.
+48543361,48533101,Windows 11 users are tired of MS account requirements creeping into everything,2026-06-15T16:09:00Z,"My solution for your concerns is twofold:
+
+1. Use a password-based encryption method (not tied to hardware identity) if you prioritize moving the disk around. Then it is just as readable in a spare machine.
+
+2. Use an easy to remember password/passphrase and write it down somewhere you keep paper documents, if you prioritize recovery.
+
+This still provides meaningful protection when you need to discard the drive. The random downstream recipient of the hardware will not know your password, even if you skip the step where you ""crypto-shred"" the drive by setting a new random password."
+48265073,48258015,"Show HN: Audiomass – a free, open-source multitrack audio editor for the web",2026-05-25T09:45:59Z,"Cool work, the weird part is effects being item based instead of track based and that selecting an effect stops the playing and you apply it blind."
+49819380,49803892,Claude Opus 5.5,2026-09-23T17:16:00Z,"My enterprise org has this model disabled because ""security.""
+
+Does this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?"
+48689514,48675179,An entire Herculaneum scroll has been read for the first time,2026-06-26T17:40:42Z,I'm curious prior to this has there been any research/attempts at chemical methods to strengthen the structure and allow it to be unrolled?
+49199441,49187256,Zed DeltaDB,2026-08-06T17:08:39Z,"I’m not saying zed necessarily should be the one to do this, but in regards to ""why not git, jj..""; if we don’t explore the fringes, how do we know if we are at local or global optimum with current solutions?"
+49982343,49977072,"JetBrains reports revenue growth, net financial loss for 2025",2026-10-06T18:39:26Z,"> Now we are considering scrapping it
+
+Turns out, it was probably good that nobody spent time reviewing it."
+48543690,48529990,Show HN: Kage – Shadow any website to a single binary for offline viewing,2026-06-15T16:31:57Z,I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham’s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.
+49342176,49338459,How Bluesky draws its logo on screenshots,2026-08-18T06:45:17Z,"I wonder if this is the expectation of the majority or just the expectation of us tech people.
+
+Because I assume most people want to take a screenshot because they want to capture something they are seeing in the app, most people probably are even annoyed to have the system indicators visible there."
+49377302,49373456,Show HN: I trained a 125M model to autocomplete piano on-device,2026-08-20T17:05:59Z,"You could also distill the fabulous Anticipatory Music Transformer from Stanford. https://crfm.stanford.edu/2023/06/16/anticipatory-music-transformer.html
+
+Also consider checking their decisions about representation, etc"
+48734240,48730729,European digital ID wallets rely on safety services of Google and Apple,2026-06-30T15:35:34Z,"How do the apps bootstrap identity? Do they just use Apple/google (that seems really bad), or do they have you do some verification and input a token into the app somehow?"
+48918000,48905248,How to stop Claude from saying load-bearing,2026-07-15T08:46:30Z,"While everyone here is talking about output, but perhaps we also get to think about the input we give.
+
+Funnily enough, somehow as we use AI more and more, our mind is becoming bias towards how these AI's write and less how we do want to write.
+
+Whenever I write something, I pass it to claude to correct my grammar (non-native speaker) but I have to be very specific about not changing my writing style and/or the writing itself.
+
+It's annoying because even though I love recommendations, I started to put some ""rules"" around it to avoid changing the content and look like everyone else post.
+
+I love using AI for my day to day, but now I'm more careful when trying to edit text with AI because it just looks like the average text and our brain get used to it, it we don't course correct fast enough."
+48256040,48237163,Why Japanese companies do so many different things,2026-05-24T10:15:06Z,The best pizza restaurant in Tokyo is run by an Italian. So perhaps the Italians edge out Japanese in terms of craft?
+48999926,48993414,"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",2026-07-21T23:45:48Z,it would be nice if these benchmark reports actually specified which tasks they passed and which ones they didn't.
+49598211,49588988,Nitter and XCancel resume service after legal advice,2026-09-07T13:27:19Z,"> glad to see the project will continue.
+
+Well ... perhaps without the project people would get fed up with X much faster and move on to something better.
+
+So perhaps these websites only help X to exist."
+49977700,49963171,Web Search API,2026-10-06T12:55:00Z,"There’s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/
+
+Like it or not (I’m in “not”), this is hardly a new thing."
+49372184,49360015,A joke domain purchase turned in geopolitical warfare,2026-08-20T09:07:40Z,"I did not say otherwise. I also said ""it can"", not ""it has"".
+This is humor..."
+49158268,49154332,SQLite Critical CVEs or LLM Slop?,2026-08-03T16:50:19Z,"> Don't pin versions, pull everything from latest
+
+Rebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!"
+48681616,48675179,An entire Herculaneum scroll has been read for the first time,2026-06-26T02:18:36Z,"I am researching for a talk on the philosophy of code, the similarities of engineering and art, and why we enjoy reading old code. This amazing work you folks have done may be an interesting tangent.
+
+The biggest question I have for you is why you imagine we are so interested in reading these old scrolls. Surely some of it is to see whether or not, technically, we can. Surely some of it is to get a glimpse into the human expression inscribed on them. Are we looking to learn anything, or just to connect with our ancestors? I'd like to hear your take on it, both for why you think it's important and, if you know, why your colleagues feel similarly."
+48297562,48292941,Private equity bought America's essential services,2026-05-27T17:31:11Z,"Because they don’t want to have to work that hard for their money. They get more value for their effort by focusing on something else instead of trying to maximize profit for a single business.
+
+The demand curve for a business could be such that you sell 100 widgets and get $100 profit, sell 200 widgets get $101 profit. Why bother trying to sell more than 100 widgets?
+
+Maybe you can sell 50 widgets and make $90, that sounds like a pretty good deal. Instead of making 50 more widgets you could do something else and make more than $10 profit in the same time."
+48541034,48533101,Windows 11 users are tired of MS account requirements creeping into everything,2026-06-15T13:32:36Z,"I don't know what the disconnect is. I'm running Windows 11 Arm right now on the best laptop I've ever owned -- an Asus Zenbook A16 with OLED screen and 48 GB of RAM (all for $1699).
+
+It's super fast -- it beats a 2026 Macbook Pro rendering Blender ""Classroom"".
+
+I have a Microsoft account, I don't know what the big deal is. I follow the happy path. It's nice to have settings (and I can control which ones) sync across machines. I pay for a Office365 subscription.
+
+I don't see ads popping up anywhere. I did disable about a dozen things (those silly icons in the search bar, syncing desktop icons across machines, etc) all through exposed UI switches, no ""hacks"" or undocumented registry tweaks.
+
+I've watched coworkers go through all sorts of contortions, and downloading hacked binaries from sketchy sites, just to avoid creating the local account and I'm not sure why. I use my name and info on my longstanding Microsoft account, but you can just as easily call one ""mymaxasus_11111"", and be done with it."
+49099519,49095865,KOReader,2026-07-29T16:22:24Z,"Someone claims to have ported it to iOS but I haven't tried it and one of the open issues says that the release build doesn't work:
+
+https://github.com/hezi/koreader-ios"
+49124111,49112744,Read this before you buy that TV streaming stick,2026-07-31T15:08:05Z,"What is the alternative? Trust has been built, as long as the trust is not eroded it is safer than any other retailer?"
+48585705,48565498,"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",2026-06-18T14:14:01Z,"I am using a Xiaomi phone. The hardware is fine, the camera is very good compared to the average, the software absolutely sucks, bootloader unlocking is not possible and it comes full of spyware and adware that you can't disable."
+48057643,48053623,Dirty Frag: Universal Linux LPE,2026-05-08T02:08:44Z,"With physical access, root access is as simple as setting init=/bin/bash in the kernel parameters from a bootloader. No need for credentials or anything."
+48736759,48730729,European digital ID wallets rely on safety services of Google and Apple,2026-06-30T18:07:47Z,It's even more expensive to have your country's digital ID held hostage by the US or its big tech players.
+48548011,48542480,Iroh 1.0,2026-06-15T22:40:15Z,"This is exactly it. I'm pretty sure I found Iroh after thinking: can we ship Tailscale with our app?
+
+For environments where you want people to access your local instance, I believe Iroh will be a game changer. For us, it's to allow control over our software through phones and other devices easily.
+
+Previously, you might have to make sure they're in the same LAN network. But with Iroh, anything works."
+48265006,48258015,"Show HN: Audiomass – a free, open-source multitrack audio editor for the web",2026-05-25T09:33:37Z,"This is awesome. Congratulations!
+
+As others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best."
+48729114,48724230,.self: A new top-level domain designed to support self-hosting,2026-06-30T06:18:36Z,"There was a ton of... not exactly footguns, just things to keep in mind if you’ve wanted your site to work as you intended in all browsers. The webcompat nowadays is way better now.
+
+That said, personally I’ve never understood Dreamweaver either. By the time I tried it, I’ve already got used to Notepad++ and writing HTML by hand, so I’ve just treated it as another text editor... and IIRC it just felt way more laggy than Notepad++, with a browser preview panel that took half of my 4:3 display. Maybe I’d discover some cool features if I’ve spent some more time in it? I dunno."
+48246117,48229319,The memory shortage is causing a repricing of consumer electronics,2026-05-23T09:16:29Z,"while it looks like outlandish fantasy today, looking forward to their competitors dumping consumer memory in a couple year's time.
+
+regardless, this industry goes through such cycles (which have killed weaker companies and made the situation worse). high time for the memory ""OPEC"" to disband."
+50001679,49996437,Claude Haiku 5.5,2026-10-08T03:49:26Z,"I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it."
+48058739,48053623,Dirty Frag: Universal Linux LPE,2026-05-08T04:57:15Z,Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?
+49377610,49360015,A joke domain purchase turned in geopolitical warfare,2026-08-20T17:30:00Z,"I'd rather not engage in politics in HN, I'm surprised the article made it here to begin with like it's Reddit. Also, if people already made up their mind then there's no reason for me to waste my time trying to explain anything, it will take a stand alone post with multiple pages if were really to go that route. I will say this, my position is similar to what Mearsheimer has been talking about when it comes to this conflict. Any of his lectures will brief you in on the nuance."
+47997688,47989883,VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage,2026-05-03T15:07:39Z,"And your reasoning is exactly what makes it a winning strategy. ""If other people do it, then why not me?"" That makes it that they are no longer other people, you yourself are a part of that group now. One could argue that it is an even worse position. It literally makes you an enabler of the problem you see in the world, while at the same time you acknowledge it as an even existential problem. 
+When we are with billions, we cannot all be 'truly' wealthy in a material sense and by definition your wealth will come at the expense of others. Your reasoning makes me sad as instead of questioning what constitutes true wealth, it seems you are guided by an exclusively materialistic view of it and join the destructive behaviour you see around you out of fear of not having enough."
+49348150,49338459,How Bluesky draws its logo on screenshots,2026-08-18T16:27:26Z,It's pretty easy to find the PR considering the entire app is OSS https://github.com/bluesky-social/social-app/pull/9637
+48330616,48324499,GTA 6 Developers Unionize,2026-05-29T23:15:56Z,"Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting."
+48299327,48292941,Private equity bought America's essential services,2026-05-27T19:31:13Z,"At least in my union defined benefit pension it specifically excludes overtime since that obviously is ripe for abuse. It's just your basic calculation: average of your best 5 years of salary at 2% per year of service.
+
+Is that not the case for police unions in the states?"
+48095986,48093100,Ratty – A terminal emulator with inline 3D graphics,2026-05-11T15:04:55Z,"That’s what I came here to ask. Their demo looks like Compiz back in the day: ok, cool, you have 3d effects, but… why? What does it do for me?
+
+Compiz 3d effects were ultimately a useless gimmick and I predict this is too."
+49409699,49409092,What Is a Harness?,2026-08-23T15:37:46Z,"I’m afraid it’s a terrible metaphor, starting with the fact that LLMs are nothing like electricity, and the relation of harnesses to them is nothing like that of electronics to electricity, save perhaps one is a prerequisite of the other.
+
+Harnesses (and the concept of agents before them) presuppose competence in LLMs which simply doesn’t exist."
+49244971,49242739,Tl;dv: Over 180k meetings left wide open,2026-08-10T15:27:34Z,"""Because the common denominator between both of these distinct incidents was Firebase, we are taking the additional step of immediately removing it from our tech stack altogether to definitively eliminate the risk of similar vulnerabilities in the future."" - from their post-mortem.
+
+Thank god the root cause was definitively identified! /s"
+50036534,50018088,"Sorry, I'm in a meeting",2026-10-10T19:54:19Z,"Well, there's really no need to come up with such complicated (and not entirely accurate) analogies here. It's actually very simple. Paying Google is bad. Not paying is good. That's it."
+50004509,49993914,"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",2026-10-08T11:25:32Z,"These kind of rights are something which only physical persons should have, and card networks aren't infringing on the rights of real humans. Businesses aren't people, and they shouldn't have any inherent right to be provided with utilities or payment solutions. And as it stands today they don't.
+
+You as a real human should have a right to have a bank account and to send and receive money. Just as you as you as a real human should have a right to access any other basic utility.
+
+Your business should not have any such rights. If the power company doesn't want to provide your data center or steel factory with electricity, then your business shall have no right to it.
+
+If a card payment company doesn't want to provide their services to your brothel or your weapons factory or your weed shop, then your business shall have no right to it."
+48302759,48292941,Private equity bought America's essential services,2026-05-28T00:43:02Z,"> The bad PE phenomenon buyout is annoying, but businesses that become miserable for the customers and employees are not stable long-term businesses
+
+What happens when those businesses are hospitals, for example? I've read too many stories of hospitals getting bought by PE and either shutting down or staying (while offering increasingly poor service). In one outcome, it reduces the accessibility to healthcare. In the other, it forces those most unable to choose to stay with subpar care. In both cases, it's not like other health systems are rushing in to replace what has been lost. We just end up with fewer and shittier hospitals."
+49452175,49438052,Dolly Parton has died,2026-08-26T16:48:55Z,"Yeah clearly there are alternatives, and plenty of musicians are able to find them. If you're already an addict though, there's not much stopping you from continuing that lifestyle, other than the ability to secure the next fix."
+48299721,48292224,I'm Tired of Talking to AI,2026-05-27T19:58:24Z,"Pro tip: people did this long before AI was a thing.
+
+People have always loved to defer to a ""leader"" or (supposed) ""expert"". Take the hard decisions away daddy."
+48081944,48072190,"EU Parliamentary Research Service calls VPNs ""a loophole that needs closing""",2026-05-10T08:03:40Z,"An authoritarian government needs excuses too. China even claims to be a democratic country. North Korea even has the word Democratic in its name. ""Protecting children"" is a common excuse China uses. https://en.wikipedia.org/wiki/Very_erotic_very_violent is a famous example of them trying to justify internet censorship under the name of ""protecting children""."
+49400364,49387497,Grand jury declines to indict Ohio man charged with destroying Flock camera,2026-08-22T14:50:06Z,"I don't think it's just recent primaries. Our electoral system is heavily influence by the highest bidder and has been this way for a long time. There are always exceptions, like Massie, but the overall trend is that the majority of candidates who are elected at the federal and state level support and are supported by a few big monied interests. This includes the big healthcare industries, the war machine, the pro Israel lobby, etc. It's why we do things like the war in Iran that are vastly unpopular with the general public. And don't do things that are popular like single payer healthcare."
+48998159,48993414,"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",2026-07-21T20:53:52Z,"AA coding index has been updated to use DeepSWE, Terminal-Bench v2, and SWE-Atlas-QnA."
+49523759,49521973,Introducing Ad Blocker for Firefox on iOS,2026-09-01T15:56:06Z,"Thanks to your comment, I just installed it and set it up. Thanks!"
+49234141,49231154,Mea Culpa – Dark Hours,2026-08-09T18:28:59Z,"Gruber himself has misled his readers without a retraction for many years, but this one he gets to blame on someone else, so it's no skin off his back."
+49225418,49224294,Danish high schoolers will have to verbally defend written assignments,2026-08-08T20:09:57Z,"I have always disliked public speaking and oral defense since I was a child, to the point of fairly profound anxiety. But please withhold you woe—these people are, as I am today, adults. Masters students. Coddling them and holding low expectations has proven to be a sort of “killing them with kindness” approach to handling modern youth. People need to be encouraged (and required) to do things they don’t like to become proper functioning adults. I didnt like it, and I still don’t, as it the case with most everyone. But we all grow from it."
+49383191,49373456,Show HN: I trained a 125M model to autocomplete piano on-device,2026-08-21T02:58:08Z,This would be great to be able to use via Web Midi. That size LLM will run well in a browser.
+48335137,48324499,GTA 6 Developers Unionize,2026-05-30T11:41:51Z,"Again, you're not wrong, but none of those things are insurmountable. If the team is really so stressed it cannot spend 30 minutes, over the many year of the existence of that bug, that seems like a development environment close to hell.
+
+Knowledge loss is precisely my point: there is very little a-priori knowledge needed to solve this, the guy who found the bug proves that."
+48822769,48819008,Chat Control passed first round in EU Parliament,2026-07-07T19:46:43Z,"Not quite, the EU parliament can't propose new laws nor repeal existing ones, only amend them and vote on proposals from the commission.
+
+The Stop Killing Games campaign, for example, has noticed that the EU commission keeps repeating lobbyist lies and has no expectations of new laws actually passing, so they're focusing on amending existing law through parliament."
+49010335,49008211,Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab),2026-07-22T17:29:59Z,"You are right, but I guess a lot of people recognise PowerPoint as a brand. Maybe I can bill this as better-than-powerpoint!"
+49859889,49840054,Plan mode is dead,2026-09-26T19:46:25Z,"I use Jobs [0] to manage this—it's an agent-first CLI to track issues and tasks. A single `job orient` command gives the agent the current task in the context of the larger plan. It's a replacement for Plan Mode and issue trackers, and it has allowed me to execute massive plans in parallel with minimal oversight. There's a web UI, but it's a work in progress.
+
+[0]: https://github.com/bensyverson/jobs"
+49471461,49464896,Trade (and Tariffs),2026-08-27T21:23:48Z,"It doesn’t really matter what Ricardo said in 1817: every US academic economist surveyed in 2018 by the Kent Clark Center disagreed that US aluminum and steel tariffs would increase the welfare of the American people ([0]), and this is with the benefit of >200 years in advances in economic scholarship and analysis since Ricardo.
+
+[0] https://kentclarkcenter.org/surveys/steel-and-aluminum-tariffs/"
+48544560,48529990,Show HN: Kage – Shadow any website to a single binary for offline viewing,2026-06-15T17:37:05Z,"Possible, but currently I disable all large files, including videos.
+
+For video downloading, I suggest wrapping around yt-dlp. It's an awesome tool."
+48618365,48608645,Loupe – A iOS app that raises awareness about what native apps can see,2026-06-21T12:31:45Z,"Curiously, the Mac App Store sandbox has a com.apple.security.network.client entitlement that a developer must justify to Apple, whereas the iOS App Store does not, allowing unrestricted access to the internet."
+49489634,49477854,U.S. sanctions against the A/I Collective,2026-08-29T13:12:28Z,"Is it really radical or exclusionary to say no racists allowed, no sexists allowed? I don't think so."
+49220808,49214008,DeepSeek V4 Flash 0731,2026-08-08T11:31:18Z,"Perhaps I am doing it wrong, but the deepseek llms fail so hard for any complex task and don't compare to the paid models. It keeps forgetting basic instructions after two responses"
+48261770,48223997,I spent 50 hours drawing a line graph,2026-05-24T22:46:45Z,This is a lovely toy project. But please do not do this for real; imperfections - even minute imperfections - in data visualisations have consequences. 'Non-techy' people take for granted shapes and lines over numbers and sequences simply because computers are accurate. Correctness of data is a separate matter of course
+49974630,49963171,Web Search API,2026-10-06T05:39:40Z,I’m a fan of paying for search with money rather than my privacy.
+50001421,49996437,Claude Haiku 5.5,2026-10-08T02:51:35Z,"Going on a slight tangent, I've found that Anthropic (for my work) costs about 4x as much as OpenAI give or take, specifically Opus vs Astra"
+48264252,48237163,Why Japanese companies do so many different things,2026-05-25T07:11:09Z,"The fact that Samsung is kind of famous for just entering new industries left and right, and continuing to produce mediocre products while gaining enough experience to become industry leaders comes to mind. I feel like the blog post could apply to many countries"
+49690277,49673098,Nvidia is the central bank of AI,2026-09-14T00:26:23Z,But Jensen recently proposed a tokenization of GPU power which would be definition be financially rewarded by limiting the supply of GPUs. So I'm not sure how true your proposition will remain moving forward.
+48616930,48608645,Loupe – A iOS app that raises awareness about what native apps can see,2026-06-21T08:46:56Z,"See my comment upthread, it helps a bit, but does not close this hole since apps within the same profile can communicate through IPC, so other apps could provide network access on their behalf. I think the best example is probably Play Services, which provides functionality for a lot of apps and will communicate with Google, etc.
+
+(Yes, you can disable network access to Play Services, but it sometimes breaks things and the general point of IPC as a hole still stands.)"
+48516950,48324712,The dead economy theory,2026-06-13T13:09:48Z,"The generation of elites fostered by academic ""meritocracy"" have little achievements and clearly are unable to solve or even perceive modern problems. In contrast, those who were fostered in closed patronage networks navigated their countries in times of great uncertainty and built many of the institutions we rely on today."
+48922090,48916975,"I tricked Claude into leaking your deepest, darkest secrets",2026-07-15T15:12:43Z,"I really dislike this notion that because they had privately discovered a bug, they won't pay a bounty. Better to just sell it."
+49472184,49409092,What Is a Harness?,2026-08-27T22:37:17Z,I've been getting a little frustrated with having to rearchitect things any time I want to try a new harness. Wrote about my most recent experiments with separating conversation from control loop here and using MCP as the seam here: https://demianbrecht.com/posts/the-harness-within-the-harness/. This allows me to build a spectrum of agentic to entirely deterministic tools and be able to port them from one harness to another with only a minimal amount of harness-specific config.
+49457582,49448321,AWS Acquires DuckLabs,2026-08-27T00:01:36Z,"With MIT there isn't much to goan with business comptiable licensing.
+
+There the question turns to ""you may sue me, if it breaks"" as reasoning. In reality sueing will rarely work, but having a business contract satisfies the company's board and insurance about using the software over an ""AS IS""-license alone."
+48530797,48529990,Show HN: Kage – Shadow any website to a single binary for offline viewing,2026-06-14T18:26:06Z,"Nice idea!
+fwiw, false positives and all, but the Windows 11 default Windows Security doesn't like it:
+`leakless.exe: Operation did not complete successfully because the file contains a virus or potentially unwanted software.`"
+48862663,48792383,Train sim created by just one person is being called the best ever made,2026-07-10T17:17:06Z,"openBVE's not directly Japanese, it's an open-source re-implementation of the original BVE 2 and 4, which is."
+49341806,49338459,How Bluesky draws its logo on screenshots,2026-08-18T05:55:47Z,"LinkedIn’s job screen in the app is a good example of this different presentation.
+
+I’ve noticed a certain AI recruitment company gets “highlighted” (darkened white background of the screen, but their logo is pure white and REALLY stands out), but when I screenshot it, it reverts to normal, like there’s no blatant special advertising."
+48821915,48819608,"30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",2026-07-07T18:48:42Z,"Agree on the animation.
+
+As an aside, I've seen folks mention respecting reduced animation hints and such in the past and was always curious about this because I've never had any negative experiences with animations... until now!
+
+Something about the animations on this site did my brain in while scrolling through the papers, and now I ""get it."""
+49015657,49010167,GigaToken: ~1000x faster Language model tokenization,2026-07-23T01:20:19Z,"I don't think that's accurate. If tokenization takes say 10ms and the rest of the inference steps take 50 ms then, improving tokenization will improve the time to first token but won't affect throughput much. After the first token, the inference steps effectively hide the tokenization time."
+48602461,48583356,.gitignore Isn't the only way to ignore files in Git,2026-06-19T19:46:50Z,"If your diffs are too large to review your project structure needs change. I go by the broad statement that EVERY line should be read, understood and explainable by the developer.
+
+For critical files like package-lock.json I'd also expect developers to explain why a library was added or a version was changed and the impact of the version change. The lack of such basic hygiene is why supply chain attacks are so common these days."
+49212937,49199346,Taste Is All That's Left,2026-08-07T16:32:52Z,It really reads like an OpenClaw agent instructed to consider itself a real human. The number of upvotes on this post is also REALLY high considering the number of comments calling out the content. Feels like shenanigans.
+49305960,49296740,Why does Opus 5 feel worse to work with?,2026-08-14T23:45:23Z,"> “the x”, with x having not only no antecedent but also being a coined word or quasi-synonym for something that is already named in the code base
+
+It does the same thing if you try to get it to do analysis of text or turn data into summaries. It will invent cryptic hyphenated compound words to describe things instead of using plain language or preexisting terms."
+48067083,48037336,Rumors of my death are slightly exaggerated,2026-05-08T18:42:34Z,"Dear Zombie Cliff, thanks for not eating me for my cranium is devoid of matter."
+49226156,49224294,Danish high schoolers will have to verbally defend written assignments,2026-08-08T21:40:19Z,"Yes, yes, yes. Thank you for posting this. It drives me absolutely freaking crazy when people do the ""Oh, I'm just not _____,"" having essentially decided they are not _____, and therefore will never learn or change.
+
+Like every time I hear ""Oh I'm just not a math person."" It's not that I expect everyone to like math because I do, not at all. But I do expect people to not artificially limit themselves. :/"
+49855439,49840054,Plan mode is dead,2026-09-26T11:17:17Z,I mean if you want it to plan something without writing code first you literally just need to ask it to plan out the implementation first it's not exactly a difficult concept
+48530422,48529990,Show HN: Kage – Shadow any website to a single binary for offline viewing,2026-06-14T17:57:34Z,"Could you help create a new issue for that? I will do it later. It is already 1:00 AM my time, but I am happy that anyone is interested in it. : )"
+48835090,48819008,Chat Control passed first round in EU Parliament,2026-07-08T17:58:32Z,"""perché uno uomo che voglia fare in tutte le parte professione di buono, conviene rovini infra tanti che non sono buoni."""
+49489231,49464896,Trade (and Tariffs),2026-08-29T12:08:53Z,"During Trump 1.0, retaliatory tariffs were targeted at swing states. E.g., on Harley-Davidsons manufactured in Wisconsin. The goal was to make it politically painful to the president and undermine his reelection chances.
+
+I imagine Carney is picking industries that are assymetricly painful to the USA or, since Trump isn’t up for re-election, congressional Republicans."
+48141468,48137145,RTX 5090 and M4 MacBook Air: Can It Game?,2026-05-14T21:25:28Z,Audio and Video professionals jumped ship around the time Apple canned all the pro software
+49505701,49495372,California lawmakers unanimously pass Linux exemption from age-verification law,2026-08-31T04:47:10Z,"That's great and all, but what they should have done was just scrapped the age-verification stuff entirely. You can't really justify having that kind of restriction on Windows and MacOS but not on Linux."
+50022557,50018088,"Sorry, I'm in a meeting",2026-10-09T16:06:42Z,i mostly watch YT via the apple tv app where you can't
+49467299,49458161,Nvidia agrees to acquire Hugging Face for $13B,2026-08-27T16:20:32Z,"Unless even factoring in those advantages, they are still massively overvalued, which seems to be their fear."
+48549322,48542480,Iroh 1.0,2026-06-16T01:18:11Z,"Amazing, congrats on the release.
+
+I've been drawing a lot of inspiration from Iroh, while working on my own https://github.com/connet-dev/connet. While peers in connet communicate peer to peer, I have a long way to cover peer discovery and transparent connection migration.
+
+""Tailscale at the application layer, instead of the network layer"" (as sibling comment describes it) is a great way of thinking about it. In my mind, with the right apps, Iroh (and connet) could really democratize secure self-hosting."
+49291731,49289844,Accelerating GPT-5.6 Sol Ultrafast,2026-08-13T20:55:33Z,"This does look pretty incredible, but don't forget that incredible token thoroughput can only necessarily solve certain bottlenecks. If your e2e tests take an hour, they'll still take an hour after Ultracode. If the agent runs a 10 minute typecheck after a change, that will still take 10 minutes. grep over a massive codebase is still just as slow, etc. I say this not to take away from this accomplishment but just to ensure everyone here keeps a clear head about what it means - 14x faster tokens does not mean it completes every task 14x faster.
+
+I suspect Humanity's Last Exam is without tool-calls, making it kind of the perfect benchmark to highlight how fast Ultrafast is, but not really the same as the everyday work you or I do."
+49592204,49588988,Nitter and XCancel resume service after legal advice,2026-09-06T23:59:10Z,"Anna's Archive has huge data stores behind it, Nitter doesn't and is easy to replicate. You, yes you, can and should set one up right now. They can't get all of us. If you post it to #nitter:matrix.org it might even get included on the public instance lists."
+49176449,49167448,Xbox goes down. You can't play games you own on disc,2026-08-04T22:58:27Z,"> Require stores and publishers to use language that reflects the nature of the transaction.
+
+After this law is made and they change the word without changing anything else, that won't save the past. They'll probably even market test some nonsense word that won't even make people feel like they're being ripped off."
+48595928,48583356,.gitignore Isn't the only way to ignore files in Git,2026-06-19T07:45:06Z,"> Wtf. I've always wanted this, and it was right there.
+
+Haha, same! I was literally looking for this feature last week without realising.
+
+What could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly."
+48974634,48966120,Qwen 3.8,2026-07-20T05:24:06Z,dense small models do not like quantization. i find 27b fp8 to be smarter albeit less knowledgable versus the 122B
+48256105,48223997,I spent 50 hours drawing a line graph,2026-05-24T10:30:18Z,"They look really good. I really enjoy looking at midcentury engineering charts/diagrams and stuff like jeppesen charts. NASA has a lot of good ones. The way the text looks, the line economy, the general aesthetic. Well worth the effort imo!"
+49196022,49187256,Zed DeltaDB,2026-08-06T12:56:00Z,"Claude Design absolutely loves creating phrases like ""Share the thread, not the PR"". The amount of ""do the xyz, not the abc"" subheadings on docs in my workplace has exploded in the last 6 months, and it gets a bit tiring to see. I think it's a hard-coded alternative to em dashes or something."
+48141570,48137145,RTX 5090 and M4 MacBook Air: Can It Game?,2026-05-14T21:33:24Z,"This is not using an eGPU with macOS, ie you can't run your chrome on macOS with its GPU acceleration coming from this eGPU. This is tunneling that eGPU to a Linux VM."
+48925372,48916975,"I tricked Claude into leaking your deepest, darkest secrets",2026-07-15T18:49:00Z,"+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility."
+49473884,49458161,Nvidia agrees to acquire Hugging Face for $13B,2026-08-28T03:04:33Z,13B is a lot for an online platform that hosts weights. What's the special secret sauce that makes this so valuable? The fact that it's the go-to place for public weights?
+48831071,48819608,"30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",2026-07-08T12:28:40Z,"> some portion of people are always going to be particularly forceful about putting forth their opinion. Maybe it's a bad day, maybe it's habit, varies from person to person and day to day, etc.
+
+I have no problem that someone had a bad reaction to this and needs to vent, I have a problem that the community deems it the most noteworthy comment and keeps it voted to the very top of the thread."
+49485882,49438052,Dolly Parton has died,2026-08-29T00:52:12Z,"When my daughter turned five and received her final book in the mail, it came with a letter that still makes me tear up."
+48961277,48957779,GPT-5.6 used a prompt to close a 30-year gap in convex optimization,2026-07-18T19:16:31Z,"Mathematics is a language. If anything, it's much more well defined and formal than most others. Train on enough examples and statistical autocomplete gets you places. I'm surprised how anyone would even consider this intelligence?"
+49980410,49977072,"JetBrains reports revenue growth, net financial loss for 2025",2026-10-06T15:58:56Z,"I agree Orca is packed with functionality but I don’t know what “weight” or “complexity” is. It’s just an app on my machine, not some software I’m maintaining. It can be the most complex system for all I care behind the scenes, as long as it runs fast and satisfies my needs I’m pleased - which so far it has been and more. I want to spend as little time thinking about my dev environment and the most amount of time thinking about what I’m developing.
+
+To each their own though, I’ve heard great things about Herdr setups."
+48857635,48792383,Train sim created by just one person is being called the best ever made,2026-07-10T09:17:32Z,"There is like 1 or 2 actual ""video game journalists"" everyone else is just a glorified blogger."
+49172213,49167113,AI-Generated Images Discourage Me from Reading Your Blog,2026-08-04T17:41:01Z,"That may be your preference, but it's quite contrary to mine.
+
+I have successfully used AI to generate generates ""concept art"" and logos for projects, presentations, and publications. It seems to make the outcomes more approachable, more understandable, and certainly more aesthetically pleasing.
+
+It is not a matter of replacing human effort or skill, and certainly not a matter of adding cheap ornamentation. If AI weren't available, I usually wouldn't have the time, money, energy, or will to pursue those illustrations. I say this as someone who has historically spent what seems like a vast amount of time, energy, and money sourcing art. In a former life as as publisher I even hired full-time artists and insisted on custom artwork. But my current work no longer has that luxury. I still want the best possible looks, and the best possible outcomes."
+48914036,48905248,How to stop Claude from saying load-bearing,2026-07-14T23:01:49Z,"What do you mean? AI is being trained on all data available, so obviously it’s being trained on data from 2017/2018 as well.
+
+Or do you mean that the patterns that AI is showing today were already present in communication around that time?
+
+That seems obvious as well, as AI has a lot of repetitive patterns that come from all kinds of periods, of which “load-bearing” is just one."
+49678463,49673098,Nvidia is the central bank of AI,2026-09-12T23:50:49Z,"""Create money"" here doesn't mean literally fluffing the balance sheet like when the fed prints money (which would have accounting differences), it means spending the same money more rapidly than otherwise. This is NVidia's personal contribution to increasing the economy's Money Multiplier [https://en.wikipedia.org/wiki/Money_multiplier], which effectively increases the money supply from the broader economy's perspective."
+48419032,48415217,Gov.uk has replaced Stripe with Dutch provider Adyen,2026-06-05T22:14:14Z,"The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.
+
+The way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid)."
+49367969,49360015,A joke domain purchase turned in geopolitical warfare,2026-08-19T22:25:05Z,"I enjoyed reading this. It has a ""butterfly effect"" kind of vibe how such a random trivial-sounding pursuit can lead to something consequential. It's also mind-opening to realize how many strange human activities are happening in the background."
+48996705,48966120,Qwen 3.8,2026-07-21T19:08:18Z,"Looking at the top comment about Google right now. Big difference between ""their products/processes suck"" vs. ""these people and their companies and government are an insidious evil"".
+
+Ah, the ol' gaslighting you into thinking you're gaslighting me trick."
+48580970,48565498,"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",2026-06-18T04:53:50Z,"I think the PPP calculations may suffer from the same problem as the USA inflation rate being nominally low. Housing, food and medicine are all ludicrously cheap outside of tier 1 cities."
+49184364,49167113,AI-Generated Images Discourage Me from Reading Your Blog,2026-08-05T15:33:43Z,"Knowing how to, perhaps. Learning how to, sadly not. But my wife is an artist / creative director so there’s some adjacency there."
+49500302,49495372,California lawmakers unanimously pass Linux exemption from age-verification law,2026-08-30T16:47:02Z,"California AB1043 is the only reason that app providers have to give a shit about whether parental controls are enabled btw. Before these laws, most apps were openly ignoring parental controls."
+50037808,50036864,A city-building game in which the city would prefer you didn't,2026-10-10T22:25:50Z,But is the UI harder to use than building housing in San Francisco?
+49818174,49817469,Fixing the Portobello Police Station Clock,2026-09-23T16:06:00Z,"This sounds like such a fun project, especially to share with like minded friends."
+49017465,49010167,GigaToken: ~1000x faster Language model tokenization,2026-07-23T06:03:43Z,"Time to first token is observable by a human, and they’re reporting up to 10% reduction there.
+
+Plus, inference is not the only place tokenization happens. This can make a big difference during development of ML models."
+49540075,49437283,Nitter and XCancel receive cease and desist notices,2026-09-02T18:06:08Z,Couldn't that simply mean that his Nazi proclivities go back all the way to at least 1999? ASCII was invented in the 1960s.
+49845744,49841563,Dutch governments builds alternative for Microsoft based on NixOS,2026-09-25T15:10:18Z,"Point out what verbatim piece of text forbids any and all usage of LLMs for coding and having that project on Codeberg?
+
+Literally the first ""informal guidelines"" (subject to change of course) states:
+
+> Projects who have an active community that cares about and maintains the software
+
+You can use LLMs for development + fulfill this requirement, contrary to popular belief.
+
+They want to get rid of slop projects and vibe coders, not any project that has any developer that used any LLM. But again, requires you to read through the actual text to actually get their intention here."
+48593831,48583356,.gitignore Isn't the only way to ignore files in Git,2026-06-19T01:24:48Z,"One trick I’ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn’t know about .git/config though!"
+49450075,49438052,Dolly Parton has died,2026-08-26T14:41:56Z,"> but it wasn't until relatively recently that I thought about it seriously that it occurred to me that a touring celebrity musician's life can be stressful and the drugs can be (or start out as) a pressure valve release
+
+The 2017 documentary about Avicii [0] does a great job of showing this specific case. He was an introvert so he started drinking to be more comfortable on stage. As he got more famous, the pressure to create more hit records grew and grew. David Guetta explains it better than I could and he's world famous in his own right.
+
+Highly recommend watching it and consider it MUCH better than the 2024 documentary.
+
+0 - https://www.imdb.com/title/tt7357302/"
+49243631,49242739,Tl;dv: Over 180k meetings left wide open,2026-08-10T13:49:13Z,"He has been emailing the CEO for six months with no replies. This is has also been posted here before with not a single pip or comment ... :-)
+
+And these customers absolute lack of technical due diligence, on this nth example, of move fast and break things...makes them deserve what they are getting."
+48455681,48450646,Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf],2026-06-09T02:51:51Z,"It's an opt-in feature. https://techcrunch.com/2025/09/08/signal-introduces-free-and-paid-backup-plans-for-your-chats/
+
+A service that advertises itself as privacy focused refusing to update their privacy policy while adding features like this seems like a pretty big dead canary."
+49193361,49187256,Zed DeltaDB,2026-08-06T06:50:42Z,"Dude the writing is on the wall, git had a good run but it's time for something else. Lore is also solid."
+49846264,49841563,Dutch governments builds alternative for Microsoft based on NixOS,2026-09-25T15:54:04Z,"You can absolutely return it within the 14 day window, even unpacked.
+
+During the reflection period, you may open the packaging. You may try or fit the product, just like in a normal store. But you are not allowed to do more than what is needed to judge the product. For instance, you can try pants. But you cannot wear the pants for several days and then return it. If you do this anyway and the product loses value? Then the seller may charge you the damage. The seller needs to inform you of this before you buy the product.
+
+https://consument.acm.nl/aankoop-dienst-annuleren/bedenktijd
+
+I have sent back products within the 14 days, including smartphones that I tried and decided that I don't like it. Some sellers also extend the 14 days to 30 days.
+
+Changing the terms later is a completely valid point though and it should be possible to reject any updated terms IMO."
+49523238,49521973,Introducing Ad Blocker for Firefox on iOS,2026-09-01T15:25:31Z,"With Safari and the very first free-to-use extension I picked years ago (AdGuard, IIRC), I don't see any YouTube ads on iOS."
+49581079,49570772,Record-High 89% in U.S. Say Government Corruption Widespread,2026-09-05T21:55:03Z,"That's great if you're talking to a high schooler that has never been politically active, but I'm literally a democratic party operative. I've attend state conventions, state nominating conventions, platform conventions, DNC twice. This is not the democratic party I want to part of and why I'm extremely thankful people-led organizations like WFP and DSA are actively trying to change things for the better.
+
+None of what you are describing has any real momentum behind it and for how many decades will you let politicians fails you until you do something in response?
+
+Like bro, the democratic party isn't an opposition party. There is a reason why the party has majority unfavorability rating [1] throughout Trump's entire second term. How do you square this?
+
+This is a fucking terrible sign and it's why progressive candidates have seen a massive insurgency this cycle and why the corporate do-nothing dems are so scared shitless that they might have to actually answer why they are okay with genocide + corporate welfare programs while doing nothing to help people materially.
+
+You say no one is excusing them, then spend your entire comment excusing them.
+
+What do you actually do politically?
+
+[1] https://fiftyplusone.news/polls/favorability/democratic-party"
+50064574,50045946,"NYC's ""Click to Cancel"" rule is now in effect",2026-10-12T23:40:08Z,"They did include examples. The city’s own website has a dedicated page describing the rule with a multitude of examples[0]. What exactly do you think is missing?
+
+> - You were not clearly told the terms of the subscription.
+
+- It was hard to cancel the subscription. For example, you signed up online, but were forced to cancel your subscription on the phone, in person, or another way.
+
+- The business delayed canceling your subscription
+
+...
+
+[0] https://www.nyc.gov/main/click-to-cancel"
+49455153,49448819,Meta reaches $17B settlement over social media harms to children,2026-08-26T20:10:52Z,"Facebook is intentionally designed to be as addictive as possible. It's not just FOMO, https://news.ycombinator.com/item?id=24579498"
+49816919,49803892,Claude Opus 5.5,2026-09-23T14:41:57Z,So you agree the term remains vague and thus open to criticism.
+47997749,47989883,VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage,2026-05-03T15:12:24Z,"> Your reasoning makes me sad as instead of questioning what constitutes true wealth, it seems you are guided by an exclusively materialistic view of it and join the destructive behaviour you see around you out of fear of not having enough.
+
+unfortunately that is the state of our society right now and it is hard to see this changing."
+49026264,48905248,How to stop Claude from saying load-bearing,2026-07-23T18:44:30Z,"It is really trendy? I don't think important, irreplaceable or integral are semantically equivalent. Required and necessary almost get there.
+
+The point is that if you want to remove it or change it, you need to put something else in place that handles the work it is doing. So it is more that it is serving a required/necessary function, without being any of those other things in and of itself. It's more about ""be careful when changing this."""
+49523880,49521973,Introducing Ad Blocker for Firefox on iOS,2026-09-01T16:03:28Z,"It doesn't have to go through Google. Lots of us support the people they follow through patreon et al, I don't need to make the gigacorp even richer than it is. They have enough."
+49104722,49095865,KOReader,2026-07-30T00:16:37Z,"> it definitely trades user-friendliness for power and flexibility
+
+As far as I can tell, the workaround for this is sensible defaults or maybe a setup wizard on first run."
+48445842,48364055,"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",2026-06-08T14:25:17Z,"If you're willing, could you go on (expand your point), or link to a treatise that supports your position?"
+48270492,48223997,I spent 50 hours drawing a line graph,2026-05-25T19:12:01Z,"Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts.."
+48337103,48324499,GTA 6 Developers Unionize,2026-05-30T15:11:48Z,"And how exactly is this situation worse than the unfair allocation of salaries and bonuses in companies today? Even within the same company, people can get paid more based on the org/division they work in (e.g. core AI teams), or even based on their (team or individual) perceived value to higher ups.
+
+At least with the Samsung union, the decision is being made bottom up vs. top down."
+48729667,48724230,.self: A new top-level domain designed to support self-hosting,2026-06-30T07:47:08Z,How does this lend itself to self-hosting then? I think few people will pay that much to self host.
+49244881,49242739,Tl;dv: Over 180k meetings left wide open,2026-08-10T15:21:02Z,"Can someone give me exact time when SOTA stop being good? Is it a day, week or a month? As such can I consider anything older than that time period to automatically be crap?"
+48530706,48529990,Show HN: Kage – Shadow any website to a single binary for offline viewing,2026-06-14T18:19:44Z,"That's for a single page, this handles the whole site. Also the browser Save As options often work poorly."
+49457189,49437283,Nitter and XCancel receive cease and desist notices,2026-08-26T23:11:51Z,"The thing is, people liked old Twitter and then it got taken away from them with all of the changes to X, so there's merit in a clone of what was. Many such cases, WoW Classic's popularity as a random example."
+49007746,48993414,"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",2026-07-22T14:51:11Z,"What I think is really going on is an attempt to segment the market in favor of Google's strengths. It's a bet that models are ""good enough"" for many use cases even before they reach human-level intelligence, and Google is trying to capture workflows where quantity beats quality.
+
+They are likely deliberately avoiding the SoTA race for a few reasons:
+
+1. Their best models are marginally better than current SoTA releases. 
+2. They'd like to let Ant/OAI make mistakes with safeguards / let them get the regulatory heat. The unknown unknowns are huge with SoTA models (eg OAI accidentally hacking huggingface) and they are protecting their reputation. 
+3. They want to encourage companies to become cost conscious because they can likely win on price in the long run. Getting market share in ""quantity beats quality"" workflows forces companies to establish processes to choose the ""cheapest acceptable model"", which is a good environment for Google."
+48278487,48229319,The memory shortage is causing a repricing of consumer electronics,2026-05-26T11:57:02Z,"> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.
+
+So in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.
+
+> Then Nadella took over as CEO. The stock went up by a factor of 10
+
+The stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?
+
+> It's similar to military generals.
+
+Great analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?"
+49179187,49167448,Xbox goes down. You can't play games you own on disc,2026-08-05T06:14:39Z,"Like for an espresso machine or a printer, the incentive is put on the consumables. Peoples trust Steam and their frequent sales, not so much XBox and the rest of the platforms, so if you want to frequently buy a plethora of games, old and new and indie and AAA, it would probably still be cheaper to get a steam machine than the next console with their limited catalogue and fixed prices."
+50033412,50018088,"Sorry, I'm in a meeting",2026-10-10T14:33:15Z,"I think the audio is missing a lot of the hiccups, delays, and quirks that come with humans in meetings but the rest is pretty good!"
+48281320,48229319,The memory shortage is causing a repricing of consumer electronics,2026-05-26T15:44:11Z,"A more realistic scenario that surely must have been considered is this:
+
+They make a strategic investment in the DRAM maker. It's the same idea as buying an equity stake or entering a JV with a flat-panel maker. Or deploying cash to provide the latest EUV tooling to TSMC.
+
+Large famous-brand computer maker has no expertise in running a fab.
+
+I could punch holes in this idea right away. But it seems better than ""tilting up your own fab""."
+49818426,49817469,Fixing the Portobello Police Station Clock,2026-09-23T16:21:04Z,"What a lovely blog in general: some really fun retro-computing projects, written up in a very thoughtful, human way. Feels like a throwback to the earlier hacking spirit of the internet. Thank you, Colin: your ""experiment with writing"" is a success as far as I'm concerned!"
+48849796,48808928,CoMaps – FOSS Offline Maps,2026-07-09T17:47:39Z,"Does it just use ""here"" / viewing box as a bias, not a hard cutoff? Personally I definitely expect ""here"" to mean ""absolutely no results outside my window under any circumstances"" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme."
+48924776,48916975,"I tricked Claude into leaking your deepest, darkest secrets",2026-07-15T18:02:27Z,"I personally don’t like memory, so I disable it on all platforms."
+49375275,49373456,Show HN: I trained a 125M model to autocomplete piano on-device,2026-08-20T14:40:32Z,This feels like a natural next step. Starting with a simple melody and having the system fill in the rest while still following your playing style could make it much more useful for experimentation than generating a complete piece from scratch.
+49500391,49495372,California lawmakers unanimously pass Linux exemption from age-verification law,2026-08-30T16:55:40Z,"Google isn't allowed to, it was always Debian. If Debian doesn't, Google has to assume the most restrictive category, or deny service altogether."
+49522036,49510514,Playa Phone,2026-09-01T13:52:53Z,"You need to have a rotary dial on it. ;)
+
+Good show!"
+48589145,48565498,"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",2026-06-18T18:06:23Z,"Any text, code, image, video or audio they/anybody has ever uploaded to the public internet? Is this a real question?"
+48067238,48037336,Rumors of my death are slightly exaggerated,2026-05-08T18:56:45Z,"Hi Cliff,
+
+You captured my imagination as a teenager when I read The Cuckoo’s Egg. I’m so sorry to hear of these terrible news but I appreciate the update. Here’s hoping to a _prompt_ recovery!"
+49456872,49448321,AWS Acquires DuckLabs,2026-08-26T22:38:15Z,"$1 million net worth is massive. You can buy a house in a remote place, invest in companies and live off of the investment perpetually without having to work."
+49456933,49448321,AWS Acquires DuckLabs,2026-08-26T22:44:25Z,"https://github.com/datafusion-contrib/datafusion-ducklake is more established, and linked to directly from the ducklake docs"
+49468013,49464896,Trade (and Tariffs),2026-08-27T17:13:24Z,"> The US has hardly any factories left.
+
+Feel free to start your own factory in US, nobody is stopping you. Just keep in mind that for commoditized products (most consumer stuff, for example), prices are all that matter. ""Buy American"" is not a product feature."
+49172089,49167113,AI-Generated Images Discourage Me from Reading Your Blog,2026-08-04T17:31:15Z,"I think the discouragement started long before AI, probably before GUI, based on the terminal-like website you host."
+49291676,49289844,Accelerating GPT-5.6 Sol Ultrafast,2026-08-13T20:50:04Z,"why intel and amd ? these are cerebras wafers?
+
+i know people are joking about the sol ultrafast prices (its unlikely to be accessible for average joes) but this shows scaling wafer cores works for inference boost
+
+which makes me very excited, sol ultrafast will be as slow as it will get if that makes sense. at these token speeds , we will see a much deeper economic impact."
+48551170,48542480,Iroh 1.0,2026-06-16T06:06:28Z,"Correct me if I'm wrong but assuming there is only Alice and Bob in the network, each with their key-as-address, and they are both behind a CGNAT, Iroh will still need a third party to host the relay?"
+48912184,48889637,"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",2026-07-14T19:56:10Z,"Alternatively, you can easily add the bloat, discover if it has real value, and then strip it without the bad feeling of having sunk countless hours creating it. Vibe coding is excellent for making the first prototype to throw away."
+49475436,49437283,Nitter and XCancel receive cease and desist notices,2026-08-28T07:23:29Z,Implicitly its payment via data but most people don't understand. Theres an asymmetry in the transaction to me.
+48552314,48542480,Iroh 1.0,2026-06-16T08:35:32Z,"How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)"
+49369803,49360015,A joke domain purchase turned in geopolitical warfare,2026-08-20T02:39:49Z,You’ve just described a significant amount of ITAR. Am Canadian but have to deal with it occasionally. MWIR/LWIR imagers are another prime example. I can order way better (spec-wise at least) IR sensors from AliExpress than I can from the US. Something about high frame rate IR being useful for some kind of guidance towards hot things shrug
+49373715,49373456,Show HN: I trained a 125M model to autocomplete piano on-device,2026-08-20T12:30:26Z,"Is this HN? Aren't people supposed to tinker with tech for no reason other than seeing if they can? Is everything that involves a transformer now just AI BAD? Is that what the world has devolved into? Each side screaming ""Orange Man Bad"" and endless variations at each other?"
+48081959,48072190,"EU Parliamentary Research Service calls VPNs ""a loophole that needs closing""",2026-05-10T08:05:59Z,Prove to me that people deserve to be free and not micromanaged on a day to day basis.
+49105546,49095865,KOReader,2026-07-30T02:37:21Z,"It bugs me so much when eReaders re-render the ebook and everything moves slightly. I lose my eye muscle memory of where things were.
+
+Until now, I had not thought to try to lock down the settings that lead to accidental reflows. It sounds less difficult in KOReader than I expected. I may try to stabilize it for my next ebook I can get into KOReader."
+48992235,48981620,Jelly UI: Soft-body physics for native HTML form controls,2026-07-21T13:41:49Z,"I like this a lot and am going to experiment w/ incorporating in my early literacy app.
+
+Heads up: the ""See it live in the showcase → "" links in the API documentation do not go back to the showcase - they just reload the same current API section.
+
+Question: maybe I've missed it, but what exists here wrt distribution / packaging / bundling / source availability? I see MIT listed, but no repo. I see src=""https://jelly-ui.com/package.js"" as a sourcing import, but obviously I'm not going to bundle foreign assets into my app."
+48137707,48137145,RTX 5090 and M4 MacBook Air: Can It Game?,2026-05-14T16:31:06Z,Nicely done! Glad to see real hacking is still alive in the age of AI.
+50003374,49996437,Claude Haiku 5.5,2026-10-08T08:45:27Z,"Appreciate providing this benchmark. I am curious, do you think that as new models (from the same company) are released and you repeat the benchmark, they adapt/extend their training data to include your dataset, thus polluting the benchmark results? Would you be doing anything to combat this?"
+48685601,48675179,An entire Herculaneum scroll has been read for the first time,2026-06-26T11:57:56Z,"I’m not arguing that social media is a net benefit to society, but you’re acting like it’s all downsides. It’s been an extreme economic enabler for a lot of people. There are many people earning money independently who would have really struggled to put themselves in a position to do that 20 years ago. For independent businesses or artists it’s an invaluable promotional platform."
+49682695,49673098,Nvidia is the central bank of AI,2026-09-13T11:20:24Z,"> Also Nvidia isn’t really creating money
+
+That’s what loans are.
+
+https://en.wikipedia.org/wiki/Money_creation"
+49213365,49199346,Taste Is All That's Left,2026-08-07T17:05:13Z,"I just sent you a long article which you could not have read in the time it took you to reply. I would suggest you start there and read that article, which outlines several cases where the author was able to create contrived false positives and negatives."
+48820823,48819008,Chat Control passed first round in EU Parliament,2026-07-07T17:22:03Z,"While you can use the hotline in private, you can't object to any matter in public."
+49475254,49437283,Nitter and XCancel receive cease and desist notices,2026-08-28T06:57:43Z,What's wrong with the name? It stands for GNU Image Manipulation Program.
+49392758,49387497,Grand jury declines to indict Ohio man charged with destroying Flock camera,2026-08-21T19:24:43Z,"The debate thing was clownish, for sure.
+
+My recollection of the DNC linkage was that the Clinton campaign agreed to help the DNC in a set of ways (likely raising money for the DNC and helping Democratic candidates) in exchange for some affordances and Sanders refused to do likewise (which, to his credit is on brand). Is that not accurate? I admit it's been 10 years and there have been a lot of claims made as to why Sanders should have been given the nomination in spite of not winning more votes."
+48064159,48053623,Dirty Frag: Universal Linux LPE,2026-05-08T14:58:07Z,Am I missing something? Where does it say that the researcher that found Dirty Frag used LLM to find it? Have you read the original report from the researcher?
+48824991,48819008,Chat Control passed first round in EU Parliament,2026-07-07T22:39:12Z,"Life in EU seems like a mother-in-law simulator.
+
+Like cool you get leftovers you can warm up (never something fresh, innovative), but then you also have to deal with the drama and cringe."
+48741681,48724230,.self: A new top-level domain designed to support self-hosting,2026-07-01T02:33:08Z,This is exactly how I remember my early webdev days. Before Dreamweaver we were using NetObjects Fusion.
+48997783,48993414,"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",2026-07-21T20:27:23Z,"> Domestic China is the only very large audience for their own models
+
+I don't think so. US models are very expensive, and not available in every country. I am not willing to pay $50/1M tokens for writing my pet projects."
+49235070,49231154,Mea Culpa – Dark Hours,2026-08-09T19:48:11Z,"This is just finally bringing the magical ""the computer did it"" to the masses!
+
+When companies like Amazon accept, warehouse, bill for and ship unsafe Chinese trash, well, at every step it was just a computer. Google, X and others will happily show state funded scam advertisements from fake accounts and there is no one accountable, because it's just the computer handling those.
+
+Now with AI, everyone can claim this magical legal immunity for themselves."
+49467888,49464896,Trade (and Tariffs),2026-08-27T17:03:20Z,"I wish we would call them ""taxes on imports"" instead to reflect what is actually happening."
+48983936,48966120,Qwen 3.8,2026-07-20T19:45:50Z,"What method did you use to generate that one?
+
+I tried using their OpenAI-compatible API and got one that's a lot less fun (no animation) - https://tools.simonwillison.net/markdown-svg-renderer#url=https%3A%2F%2Fgist.github.com%2Fsimonw%2F735f2cf19b795517cb2ff6cae1c71c64"
+49411339,49409092,What Is a Harness?,2026-08-23T18:48:06Z,"Author here. It’s ironic because this post was clearly geared towards non-hackers. But now that we’re here.. the other analogy I considered presenting was:
+
+harness = chassis,
+model = engine,
+fuel = tokens,
+agent = car
+
+I’m curious what y’all might think and whether that analogy carries more explanatory power"
+49128985,49112744,Read this before you buy that TV streaming stick,2026-07-31T21:55:10Z,Dunno if admitting defeat like that is a sign of strength or weakness.
+49342333,49296740,Why does Opus 5 feel worse to work with?,2026-08-18T07:05:33Z,"The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.
+
+In case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: “alternative facts”."
+49816855,49803892,Claude Opus 5.5,2026-09-23T14:36:21Z,"So in a thread about the release of Opus 5.5, this is your contribution? Why?"
+50000266,49993914,"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",2026-10-07T23:41:34Z,In what scenario is Sunoco going to try to steal all my money?
+49017436,49010167,GigaToken: ~1000x faster Language model tokenization,2026-07-23T05:57:52Z,"> … only for the run to crash over some minor bug after that
+
+Ah, Python."
+49121477,49112232,Stacked PRs are now live on GitHub,2026-07-31T10:46:35Z,"Honestly, I didn't even know this was a problem that needed to be solved."
+48828914,48819608,"30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",2026-07-08T07:55:09Z,"This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones)."
+48301667,48292941,Private equity bought America's essential services,2026-05-27T22:32:07Z,"I think you meant ESOP (Employee Stock Ownership Program), not ESPP. I work for a 100% ESOP company and it’s been very beneficial to me and also the former owners were able to cash out without selling to the devil.
+
+https://en.wikipedia.org/wiki/Employee_stock_ownership_plan
+
+An ESOP is where a portion of or an entire company is sold to the employees. Our company took out loans to acquire the shares from the former owners and shares are disbursed to employees yearly instead of purchased by employees. It took 5 years to fully buy out the former owners, so we’re a 100% ESOP now and we just finished paying off the loans taken out to buy out the former owners.
+
+An ESPP just gives employees of a company the option to buy shares at a discount."
+50053544,50045946,"NYC's ""Click to Cancel"" rule is now in effect",2026-10-12T09:11:32Z,Is it a small business if they're doing business in every US state or country?
+49596994,49570772,Record-High 89% in U.S. Say Government Corruption Widespread,2026-09-07T11:24:43Z,Maybe you should be more explicit about what you think really happened.
+50004485,49993914,"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",2026-10-08T11:22:18Z,"> All your bills to get paid don't get paid. You can't pay for food or anything. Hopefully it didn't happen when rent was due.
+
+What's the difference between that and somebody's only credit card getting maxed out by fraudsters? They also can't use it until they receive a provisional credit by their bank.
+
+If your point is that a credit card separates rent from other payments, nothing is stopping you from having multiple checking accounts either."
+49515553,49510514,Playa Phone,2026-08-31T22:21:32Z,"I just had a great chat with Michael, who was having a hard time because his girlfriend didn’t come with him to Burning man. Great chat!"
+49998018,49994443,Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app,2026-10-07T19:57:21Z,"It has been used before LLMs. I have no idea why LLMs prefer it, though."
+50042277,49994443,Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app,2026-10-11T11:53:47Z,On long drives I wouldn't mind some kind of localized voice chat similar to what truckers have
+49467243,49458161,Nvidia agrees to acquire Hugging Face for $13B,2026-08-27T16:16:59Z,"I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say ""right to free assembly was to give richer corporations more sway.""
+
+Fundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.
+
+Citizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate."
+48460570,48450142,Apple reveals new AI architecture built around Google Gemini models,2026-06-09T13:02:12Z,"Sorry to be off topic, but I have a question: has anyone installed the latest beta iOS and macOS, and if so what is the current status of Gemini integration?"
+49017871,49008211,Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab),2026-07-23T07:02:45Z,"May be you can add AI to your page, nobody make slides by hand now."
+47998648,47989883,VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage,2026-05-03T16:33:46Z,"The toxic behaviour by hn commenters in that thread is absolutely shameful. Whether you feel strongly about it or not, there is a civil way to discuss things and that isn't it."
+48585606,48583356,.gitignore Isn't the only way to ignore files in Git,2026-06-18T14:07:36Z,I use the ever living hell out of .git/info/exclude. Works great for scripts/Makefiles I only want locally and collaborators wouldn’t care about or be able to use.
+49159930,49154332,SQLite Critical CVEs or LLM Slop?,2026-08-03T18:53:24Z,"There's been a market for a while. In thinking of Azul Java, which is just OpenJDK but with someone to point the finger at, and costs money."
+48417893,48415217,Gov.uk has replaced Stripe with Dutch provider Adyen,2026-06-05T20:37:20Z,"Some banks in some parts of the EU have - SEPA instant was only mandated in January 2025, only for Euro payments."
+48618246,48608645,Loupe – A iOS app that raises awareness about what native apps can see,2026-06-21T12:13:35Z,"Yeah what's worse...
+
+I have a LG modern TV. Smart shit. I also use a Linux install on a NUC. HDMI.
+
+For some godsdamned reason, the TV was able to initiate an IP bridge with the Linux NUC and get an IP address on my network.
+
+Nobody typed it in the TV. And I'm unsure how it did so itself.
+
+What I do know is that Mikrotik allows DHCP-server blocks of wildcard MAC addresses. Blocked the whole fucking 24 bits of their allocation.
+
+AND if it does get back online, I also shitcanned its routing on the IP side based on hostname."
+48457479,48450142,Apple reveals new AI architecture built around Google Gemini models,2026-06-09T06:50:58Z,"Will it be possible to disable, or better yet, wipe the whole feature off?"
+48097752,48093100,Ratty – A terminal emulator with inline 3D graphics,2026-05-11T17:14:11Z,This is so cool I'm sad I can't think of any use case for me
+49848224,49841563,Dutch governments builds alternative for Microsoft based on NixOS,2026-09-25T18:29:42Z,"Yeah, there’s no VBA support anywhere. LibreOffice has their own scripting thing, and it works ok but it’s not compatible with the VBA and VBA stuff broadly doesn’t work there.
+
+Even without the VBA though, it’s missing basically any feature added in 2019 like Lambda and filter and dynamic arrays.
+
+I wouldn’t consider myself a power user, I would say I am a “high level basic user”, and even I have noticed the shortcomings. And this is also coming from a dude who very much wants a FOSS thing to succeed over Microsoft."
+48262246,48258015,"Show HN: Audiomass – a free, open-source multitrack audio editor for the web",2026-05-24T23:59:34Z,"It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).
+
+Sorry still working on improving the UX :)
+
+EDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032"
+48629140,48618455,Identity verification on Claude,2026-06-22T12:17:30Z,"What about buying API access through intermediaries like OpenRouter? Also, will the people passing verification be added to a openaiwatchlist DB?"
+49225890,49224294,Danish high schoolers will have to verbally defend written assignments,2026-08-08T21:03:02Z,"> would be impossible to scale
+
+I think education is something better scaled horizontally than vertically. More schools, with more professors instead increasing the student per professor throughput. The classes where I learned the absolute most, and had the best experience, were closer in size to 25 than 100."
+48857220,48792383,Train sim created by just one person is being called the best ever made,2026-07-10T08:19:25Z,"Ah yes that's wider than driving a train, if thats what this games I misunderstood."
+49213430,49199346,Taste Is All That's Left,2026-08-07T17:09:26Z,"hmm that's true, in the presentation they don't focus for more than 5 seconds on the backend lol"
+49478668,49437283,Nitter and XCancel receive cease and desist notices,2026-08-28T14:04:04Z,"My problem is. People do not even use their brains no more. Just copy that someone else made. They are essentially stealing, like mindless zombies. Why do we even have AI if people are at such low level mental capacity?"
+48732393,48730729,European digital ID wallets rely on safety services of Google and Apple,2026-06-30T13:19:47Z,"Again, at this point, they're taking things too far,age gates shouldn't need to be an impenetrable fortress (notwithstanding the question of whether they should exist in the first place).
+
+It should simply be the adult account on the device is notified if the device is rooted, effectively no longer in child mode. Go crazy with the warnings on both devices if you want as they've opted in at that point."
+48962585,48957779,GPT-5.6 used a prompt to close a 30-year gap in convex optimization,2026-07-18T21:26:37Z,"Thank you! We can decide to just... you know... do things.
+
+Like, am I crazy here? The rules that we live by are largely made up and the points don't matter - we can decide to live in a better world if we want to. It's hard, and there are obstacles, for sure, but this appeal to doom for the sake of doom just... why? We have made unfathomable progress over the last century and if we keep trying we can make progress like that over the next century too!"
+48379463,48364055,"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",2026-06-03T03:13:53Z,So many elon shills J. ust A. sking Q. uestion -ing off
+49098211,49095865,KOReader,2026-07-29T14:44:46Z,"I don't know what the situation is like for Kindle, but there are atleast two open source alternatives for Kobo. KOReader is the Swiss Army knife, Plato is easier to use.
+
+A few people are suggesting that KOReader is symptomatic if the issues with open source software. The reality is it targets a particular group of users."
+49825161,49803892,Claude Opus 5.5,2026-09-24T01:43:08Z,"You joke but it's really easy to develop viruses at home. You can order everything you need online, and it's not expensive nor does it require a particular skill set.
+
+God I wish people on HN would just shut up with snarky takes about things they don't understand. This place used to be better."
+48375757,48364055,"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",2026-06-02T20:25:47Z,"They still hold a fairly large amount of money in index funds ""about 19.2 percent for public pension plans and 11.2 percent for corporate plans"" [0 (2015)] That's a significant sum of money that will be forced into purchasing SpaceX well before it normally would be.
+
+[0] https://www.nytimes.com/2015/03/04/business/pension-funds-trail-individuals-in-embracing-index-funds.html"
+48175023,48168221,I don't think AI will make your processes go faster,2026-05-18T02:31:09Z,"I'm getting the impression that LLMs are just not very good at ""reasoning"" about time. I have definitely had success getting a coding agent to produce decent concurrent code, but I had to basically lead it by the nose, and I strongly suspect that in most cases it would have taken less time to just do it the old fashioned way."
+50000334,49996437,Claude Haiku 5.5,2026-10-07T23:53:05Z,Was it ever? I thought that whole thing was paused. Still unclear if personal use of agent sdk inside a harness is allowed.
+48245422,48237163,Why Japanese companies do so many different things,2026-05-23T07:05:22Z,"How are you drawing that conclusion? He mentioned in several comments on this thread that he is Korean…?
+
+Genuinely curious."
+48901853,48889637,"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",2026-07-14T03:15:35Z,"Not sure that last one rings true. There are entire languages with no allowed unused variables (some without prepending a _ to the names) that people love to develop with.
+
+In the industry, how often is it that a tool/language is picked up for the ease of developing that tool, vs ease of using that tool?"
+49233430,49231154,Mea Culpa – Dark Hours,2026-08-09T17:23:57Z,"I think it's time to bring back the IBM classic.
+
+> A computer can never be held accountable. Therefore a computer must never make a management decision"
+49164548,49154332,SQLite Critical CVEs or LLM Slop?,2026-08-04T05:11:27Z,This is weird I didn't imply or say any of these things that you're arguing against right now.
+48961542,48957779,GPT-5.6 used a prompt to close a 30-year gap in convex optimization,2026-07-18T19:41:30Z,"What a load of absolute nonsense.
+
+I’m convinced many of you barely go outside and have the capacity for original thoughts.
+
+Sloppity slop slop."
+49975432,49963171,Web Search API,2026-10-06T07:42:45Z,"Folks are heavily discounting cloudflare here and it would outshine AWS shortly and here's why:
+
+1. Due to AI, most of the software is going to be personal apps.
+
+2. For personal apps, (even most commercial SaaS) SQLite is all you need.
+
+3. The Javascript ecosystem is huge in terms of components, libraries. ShadCN and what not.
+
+4. Cloudflare has workers, durable objects which is isolated SQLite, D1 which is isolated SQLite
+
+5. You can run crons, long running jobs, cloudlflare has emails.
+
+6. Cloudlflare has best in class open weigh AI models as API for cheap.
+
+7. Cloudflare has amazing CLI wrnagler but upcoming cf is purpose built for agentic workflows.
+
+8. The built in AI assistant is really really good in guiding you how to setup, architecture and work around limitations etc.
+
+Combine all the above, in next 5 years Cloureflare is going to get stronger with more workloads deployed to it then all three hyper clouds combined."
+49380875,49373456,Show HN: I trained a 125M model to autocomplete piano on-device,2026-08-20T22:05:09Z,Prompting and having the model fill out the rest makes it feel like jazz or at least an improvised result of a song
+48097660,48093100,Ratty – A terminal emulator with inline 3D graphics,2026-05-11T17:06:53Z,"Later rebranded as Mirai. I remember playing with a pirated copy of Nichimen Mirai somewhere in 2001 (I think), it looked weirdly Ediacaran in the Cambrian explosion of the late 90s."
+49847231,49841563,Dutch governments builds alternative for Microsoft based on NixOS,2026-09-25T17:10:59Z,"Man going from a Windows environment all the way to NixOS is quite the change isn't it? Probably good if NixOS can get more attention and easier to use. I see a lot of hype for it, and then people seem to give up as it can get pretty gnarly with some of the configuration. I'm a fan of something like Fedora Silverblue with the immutable OS setup."
+50055748,50045946,"NYC's ""Click to Cancel"" rule is now in effect",2026-10-12T12:53:37Z,"Brazil's Anatel (telecommunications regulatory agency) also has a ""click to cancel"" policy since 2014"
+48642800,48618455,Identity verification on Claude,2026-06-23T10:20:15Z,"You’re misunderstanding the process.
+
+It goes something like this (it varies by country / citizenship): first you upload a picture of your ID, then you use your phone to take a video of your face, then the two are matched. A failure is when the uploaded ID doesn’t match your face.
+
+You can’t get to the part where they don’t match without uploading a picture of their ID. If you don’t have their ID, then you can’t fail to match. If you fake the ID, then when they come to upload their own ID, their ID won’t match your fake ID and they won’t be blocked."
+49214914,49199346,Taste Is All That's Left,2026-08-07T19:04:00Z,"pangram says this is AI generated and has a very, very, VERY low rate of saying something is AI generated wrong.
+
+https://www.pangram.com/history/0b397596-fa85-4869-bae3-2b1da3d2e423?ucc=Jc598D4eqMu"
+48533142,48471638,Firewood Splitting Simulator,2026-06-14T21:46:18Z,"I love it also, but I think the comments are pointing to an unmet need for firewood splitting simulators.
+
+The comments are suggesting that someone could go to town adding different kinds of hatchets, mauls, axes, woods, and different swings, and people would eat it up."
+48423945,48415217,Gov.uk has replaced Stripe with Dutch provider Adyen,2026-06-06T11:40:54Z,"Seems to be focused on retail / POS, not online payments. Though they do have eCommerce page and even API:
+
+https://www.lightspeedhq.com/ecom/
+
+https://www.lightspeedhq.com/pos/retail/api/"
+48297568,48292224,I'm Tired of Talking to AI,2026-05-27T17:31:26Z,"I'm honestly tired of these articles lamenting their personal grievances against AI or experiences.
+
+AI is here to stay its permeating through all of our communication layer and this is the worst its going to be
+
+Think about that. Anything fault you find with AI or experiences are not going to wait and sit around , its going to get better faster.
+
+It's like shouting against the wind eventually people stop paying attention and learn to adapt as they always do with technology"
+50003813,49994443,Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app,2026-10-08T09:50:53Z,"Neat!!! Does this work with mailto, can you embed html into emails?"
+48337787,48324712,The dead economy theory,2026-05-30T16:11:57Z,"> Right, but it's already doing that, and runs just fine, from what I understand. The developers don't have to sit there pounding the enter key on their keyboards over and over all day to keep the messages flowing.
+
+It “works fine” precisely because there’s a lot of engineers pounding the enter key.
+
+This is really just basic stuff, when you serve literally billions of users worldwide, you need a lot of people just to keep everything going smoothly as more and more people adopt it. Software doesn’t just magically scale to arbitrary usage and what made sense to build 5 years ago may no longer be the correct architecture today."
+48727921,48724230,.self: A new top-level domain designed to support self-hosting,2026-06-30T02:33:08Z,Their free terms are kind of bad. They use CORS security feature to block you from loading content from other sites. It doesn't cost them anything to let your site link outside content so they are only doing it make the free tier bad so people upgrade.
+49513829,49510514,Playa Phone,2026-08-31T19:23:46Z,"Can you just smoke weed, enjoy the music and not talk to anybody? Is that sort of experience possible?"
+48338838,48324712,The dead economy theory,2026-05-30T17:45:03Z,"> I think the thing companies forget is that a lot of them can't remain functional if a shrinking percentage of the population can afford their products.
+
+Why not? Apple, for example, had billions upon billions of dollars in cash. Think about that: That means they gave billions upon billions of dollars worth of stuff to people and never got back anything in return. And there is no sign that they ever plan to get anything in return. They are already quite happy to give their stuff away for free.
+
+And why wouldn't they? When you give people stuff for free, they put you on a pedestal and treat you like a king. Those who lead Apple get to do things and get away with things you and I can only dream of. That's the appeal of still doing it even though you don't get any economic return. Social return is what actually starts to matter once your basic needs are met."
+48174505,48168221,I don't think AI will make your processes go faster,2026-05-18T00:42:28Z,"One of my beliefs about AI, for small / medium sized companies it allows them massive speed ups and generally increases their capability (I'm also in this space), existing employees of all types essentially get massive speed boosts / opens pathways not available before. For big companies, they are likely to have a bunch of problems due to size, communication pathways, management structures, decision making structures, etc."
+48974150,48968606,"Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",2026-07-20T03:48:40Z,That really speaks to his initial comments of his being in a 'R&R desert'.
+48962408,48957779,GPT-5.6 used a prompt to close a 30-year gap in convex optimization,2026-07-18T21:07:07Z,"I can see (given that you've responded to a few of my points here), that you care about this enough to respond.
+
+What if money wasn't a thing? What if that wasn't the only incentive in the economy? What if there were other ways to balance supply and demand curves (which is basically the principle use for money) so we could reduce shortages, etc.
+
+Dream big man, I'm serious! And who cares if there is no money to be made? Like, what are you (individually you) doing to create the world you want to live in? What world do you even want to live in?"
+48857113,48792383,Train sim created by just one person is being called the best ever made,2026-07-10T08:04:15Z,"> nothing is easier then adding constraints
+
+What's easier is removing the constraints you just added artificially. Constraints you can remove with a flick of a finger are not constraints.
+
+> so why don't you add them back
+
+The reason the proverb says ""necessity is the mother of invention"" is because ""desire"" is usually not enough to drive it. It's easy to take the hard road when you're forced onto it, but very hard to choose it when there's an easy alternative."
+48550227,48542480,Iroh 1.0,2026-06-16T03:31:47Z,"We are using QUIC, but using a QUIC/TLS extension called raw public keys in TLS. The DNS is not involved in any way, and there is no way anybody can shut down your usage of iroh.
+
+https://datatracker.ietf.org/doc/html/rfc7250
+
+In the beginning of the project we did use self-signed certs, but due to raw public keys that is no longer necessary. And in any case scary build flags aren't an issue since we control our own rust QUIC implementation, noq."
+48103910,48093100,Ratty – A terminal emulator with inline 3D graphics,2026-05-12T03:34:56Z,"> The question is - why do we still need the terminal abstraction at all?
+
+Because nobody is willing to put in the work to create a GUI toolkit that doesn't suck ass.
+
+It's not that people want the ""terminal abstraction"". What people want is ""Put <thing> on screen without me needing a PhD in graphics programming."" That's why the dominant desktop interface paradigms have become TUIs and a Browser-In-A-Trenchcoat."
+48822847,48819608,"30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",2026-07-07T19:53:23Z,Compiled resources for nerds are catnip. Hit that bookmark/upvote button to never get to it :)
+48986314,48981620,Jelly UI: Soft-body physics for native HTML form controls,2026-07-20T23:40:57Z,"""There's a time and place for everything, but not now!""
+
+I think now that llms make it super easy to add anything that its important not to add everything."
+48815189,48808928,CoMaps – FOSS Offline Maps,2026-07-07T08:53:06Z,"yes, there are questions like that (steps, ramp, etc). Also questions about road surfaces, pavement/sidewalk, etc"
+48385002,48364055,"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",2026-06-03T14:58:06Z,"Perhaps a return to first principles: a smart investment is an asset that generates value. For example I have a powerful PC - that is a smart investment, and not only because I bought lots of RAM before the RAM shortage. Others might have a farm tractor and land, or a restaurant building and tables and chairs and fridges. A house is a smart investment for almost anyone (problem is they're too expensive to be worth it). A car, if your city isn't walkable or your job involves carrying equipment around. A sound system if you own a nightclub."
+49017282,49008211,Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab),2026-07-23T05:28:35Z,"There is also impress.js[1], a 3d infinite canvas for slides which I used in the past. You write your content as plain html in a single file, very easy.
+
+[1]: https://impress.js.org"
+49507830,49495372,California lawmakers unanimously pass Linux exemption from age-verification law,2026-08-31T10:01:02Z,"Interesting, you don't think the GPL should be enforced? That requires specific behavior."
+49985682,49977072,"JetBrains reports revenue growth, net financial loss for 2025",2026-10-06T23:29:50Z,"Still the best code editor. Plus it doesn't have blood written all over it, like VS Code."
+48172021,48168221,I don't think AI will make your processes go faster,2026-05-17T18:51:01Z,"They are so bad at UI. I'm not a traditionally trained UI dev, but in the past I've been the solo dev on so many projects that I had to git gud on making at least a clean, functional UI. No crazy animations and ""delightful experiences,"" but I'm skeptical that level of design is necessary for anything outside of consumer apps designed for kids and the child-like. My default, slapped-together UIs for just getting out of the way and getting forward movement are still infinitely better than the inconsistent, buggy, overly decorated UIs the LLMs produce."
+49970485,49963171,Web Search API,2026-10-05T20:48:21Z,"There is a difference between ""read my content and make it available to your users"" and ""make money by reading my content and making it available to your users"". Terms of use like this are trying to say ""we are the only ones who get to make money from this"", and therein lies the problem."
+49226689,49224294,Danish high schoolers will have to verbally defend written assignments,2026-08-08T22:57:51Z,"Even in fairly recent times viva voce was common. I had to defend my final year report on a long piece of practical work as part of the final for my BSc in Applied Physics in 1975.
+
+You don't need to do everything orally. A return to handwritten final exams done without electronic aids would help too. They can be open note as mine were in the mid 70s or even open book.
+
+As for scalability, I really don't see the problem; if we are producing so many qualified people then we surely can use some of them to examine the next generation. It sounds like the argument that often appears on the web where someone, usually an American, claims that a solution that works in, say the UK, can't work in their country simply because their population is larger.
+
+Also, we really should consider if shoe horning every young person into an academic institution is useful either to society or to the person concerned. It certainly has not been an unmixed success in the UK."
+48011086,47989883,VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage,2026-05-04T16:39:50Z,"It’s not whataboutism, I’m simply challenging the notion that AI caused this. UI has been in the toilet and worsening for 15 years.
+
+A combination of trend (minimalism cult masquerading as sophistication), pragmatic trimming down of things to work on tiny screens, dumbing down things in an attempt to reduce complexity, and of course dark patterns, to push users toward profitable actions (like clicking ads or continued ‘engagement’) and away from costly ones (finding support, for instance)."
+48969630,48957779,GPT-5.6 used a prompt to close a 30-year gap in convex optimization,2026-07-19T16:44:37Z,"As I say above, here in the UK we used to have the top rate of tax at 95% of your earnings, and it was the period of fastest growth for poor and middle class people (Boomers at the time)
+
+Unfortunately, the rich are the ones most capable of buying democracy, and the current set of politicians seem to very much welcome the money..."
+49158501,49154332,SQLite Critical CVEs or LLM Slop?,2026-08-03T17:04:08Z,"Eh, I'm not going to litigate your claims.
+
+My point is it's silly to whine that HN is a place where multiple points of view on the topic are aired out and discussed.
+
+If you want a personal echo chamber where only your own beliefs are affirmed and anything else is flagged off or downvoted, I'm sure you can go find one or, worst case, vibe code one into existence."
+49472098,49464896,Trade (and Tariffs),2026-08-27T22:26:59Z,"Who is ""Everyone""? EU is trying in various ways to reduce tariffs, like (biggest example I know): Mercosur, to quote ""both the EU and Mercosur will gradually reduce import duties on 91–92% of exports"" (https://en.wikipedia.org/wiki/EU%E2%80%93Mercosur_Partnership_Agreement).
+
+Of course European farmers complain (they will get competition and potentially lower quality products), so yes, some people like the current tariffs.
+
+Behind every tariff there will be an interest group. If you are producing X in a country and there is an import tariff on X you are happy. If you are buying X you are not happy.
+
+There can be strategic industries that you want to encourage, but the issue is if tariffs are applied with a plan or not. Opinions might differ on this one but history will tell."
+48062227,48056227,Maybe you shouldn't install new software for a bit,2026-05-08T12:40:41Z,"> Presumably npm exempts security updates from its minimum release age
+
+Why would it? Then an attacker would just push compromised code as a ""security update"". Since the majority of these npm attacks are account-based, the attacker can do everything the actual owner could."
+48976978,48968606,"Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",2026-07-20T10:47:34Z,"Well, the reality of those types of businesses is that once set they do become a relatively low maintenance (and for some, very low 'urgent' maintenance) passive income.
+
+It's really easy to pull $300k/y as an SRE (but that does amount to about $100/hr equivalent in SMB, assuming realistic >40h workweeks and the tax advantages in SMB, even less if you have to pay for services you enjoy and can't find time for due to FTE - nannies or even changing your own oil).
+
+It is extremely hard to keep that $100/hr and a sliding scale - one week you work 50h, the other 30h, then you take a month or three off at $5h/week.
+
+Mine (and I don't regret these) is running midsize PV plants. Slightly bigger than residential (hey, does OP want solar PV on the rooftop? I have a bowling alley as a client, they are a great match), but again not large enough to attract a scaled business.
+
+I approximately put in 5h on each a year after the initial setup (around 100hr each), for $10k/y in profit from each."
+48138699,48137145,RTX 5090 and M4 MacBook Air: Can It Game?,2026-05-14T17:46:26Z,"What are the chances there will be another Mac Pro in the future?
+
+Will Apple ever make a computer that makes Siracusa happy? (and do you have the ""Believe"" shirt?)"
+48335287,48324499,GTA 6 Developers Unionize,2026-05-30T12:02:56Z,"Actually, one hour of overtime should cost twice as much, if not more. When I worked on movie sets, hour 1-8 was ordinary pay. Hour 8-12 was 1/5 of the daily pay an hour, hour 12-15 1/3 of daily pay an hour and so on. This forced production companies to front load effort on planning."
+49124435,49112744,Read this before you buy that TV streaming stick,2026-07-31T15:35:15Z,"Frankly, I pay for most of the things I care about in the internet nowadays. Substack, Medium, newspapers, youtube premium, manning books, safari books. TV streaming.
+
+The ad supported web is, with very few exceptions, useless."
+48738290,48724230,.self: A new top-level domain designed to support self-hosting,2026-06-30T19:50:00Z,"You're right, I'm confusing it for $70 to register, which registered the domain for 2 years."
+49243348,49242739,Tl;dv: Over 180k meetings left wide open,2026-08-10T13:25:36Z,"I understand the need to shame this platform, but why expose all their clients to this much risk? This disclosure here just named a whole bunch of clients. Why?"
+50001759,49996437,Claude Haiku 5.5,2026-10-08T04:14:13Z,"> because I still learn something new from it every time
+
+Can you share in what ways these learnings affect your decisions or behaviors?"
+48064575,48056227,Maybe you shouldn't install new software for a bit,2026-05-08T15:30:47Z,"It talks about ""installing software"". You should definitely install updates from your Linux distribution and installing new packages from a curated repository is certainly not worse than having software already installed. Reducing the footprint is always a good idea though. Installing software from random uncurated sources is generally risky."
+48979074,48968606,"Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",2026-07-20T14:06:20Z,"Just because a guy wears a fitted suit doesn't mean he'll be good at handling your money. Likewise if you buy tens of thousands of euros worth of incredibly overbuilt teutonic industrial equipment in matching colors and snap-in cabinets doesn't mean the guy who builds the PLC program in ladder logic will be any good at it - or that the next guy will have an easier time troubleshooting it than if the whole thing ran on an Arduino scavenged out of an intro to robotics kit.
+
+Experts know there is stuff worth spending on, and there's stuff like the ESP32 where no amount of money will buy you something better, and no amount of money will save you, if the guy building the whole thing is an idiot."
+49120505,49112232,Stacked PRs are now live on GitHub,2026-07-31T08:31:17Z,">1. The PRs are across different related repos, so they literally can't be combined into one PR.
+
+This would be such a insanely useful features for a small subset of power users that they will never deliver."
+49857571,49840054,Plan mode is dead,2026-09-26T15:40:20Z,"If you want to see an even more heavy/""extreme"" example of this, there was this HN post & blog some months ago on Claude Design.
+
+Basically, Claude Design is primarily a huge prompt.
+
+That's all.
+
+There's no ""magic sauce"", and with the right tools to call, even your local LLM can implement ""Qwen Design""."
+49194171,49187256,Zed DeltaDB,2026-08-06T08:48:42Z,"nice to see more initiatives to improve vcs in the current chaos and paradigm change.
+
+simultaneously, i find it curious that the ide's git integration feels incomplete in front of vs code and its forks.
+
+git is not perfect but for a lot of users, a better ux can help solve most of their grievances. regardless, network effect exists and it would take more than a killer app/site to get this going.
+
+i would not outright dismiss this attempt, just like svn guys may have treated git back in the day."
+49233212,49231154,Mea Culpa – Dark Hours,2026-08-09T17:01:08Z,"Certainly, this isn't going to be career-ending, as it should. No, someone with just as few morals as OP will say to themselves, ""just the kind of person I was looking for!"", and the failing up begins."
+48426184,48415217,Gov.uk has replaced Stripe with Dutch provider Adyen,2026-06-06T15:54:06Z,"> If you look at the countries who stayed out of both wars (Sweden, Switzerland)…they are currently the tech hubs of Europe. They both have more unicorns per capita than the US.
+
+And in absolute terms, the UK has the #1 number of unicorns in Europe, 4th globally."
+48336341,48324712,The dead economy theory,2026-05-30T14:05:36Z,"> The dead economy is not one where nothing happens. Plenty will happen. The GDP might even go up; AI-related investments are already propping it up. The dead economy is one where plenty happens and none of it requires you. Where the productive capacity of civilization has been captured by a system you have no stake in, no input into, and no vote on. Where the people who built it told you they don’t think you should have a say
+
+Who cares what they think? If the people feel that the economy is bad, the economy is bad. Full stop. Unless the tech oligarchs remove human labor entirely, there will always be a mortal threat to them posed by a disenfranchised population.
+
+That's where this article loses the plot. Even if the world is just AI buying and selling goods and services to itself, so what? That's not a ""dead economy"", in the ""secretly dead but only the wealthy notice"" that's ""dead economy"" as in ""french revolution is ongoing so commerce has taken a pause""."
+48177703,48168221,I don't think AI will make your processes go faster,2026-05-18T10:42:33Z,"My processes are going faster.
+
+My company is able to prototype and develop faster, no doubt. Obviously need to use the tools effectively and have the right people. This is true for any business."
+49981509,49977072,"JetBrains reports revenue growth, net financial loss for 2025",2026-10-06T17:24:23Z,I use IntelliJ without any AI and then Claude runs in Ghostty tabs. I find this quite optimal.
+50046594,50036864,A city-building game in which the city would prefer you didn't,2026-10-11T18:58:23Z,"Yeah, cars are the #1 of quality of life problem in cities."
+48540649,48533101,Windows 11 users are tired of MS account requirements creeping into everything,2026-06-15T13:03:29Z,"> A user can set up a computer with a Microsoft account, switch to using a PIN every day, and never think about that account again. Then, one day, after a firmware update, a hardware change, or an unexpected issue, the system may display a BitLocker recovery screen requesting a recovery key.
+
+This is absolutely TRASH behavior. One of my siblings not only experienced this but after setting Bitlocker off it turned on ONCE AGAIN automatically after some time.
+
+I urged him to print those fucking codes on paper just in case after we carefully recovered them. This is one of the worst things that can happen to a non technical user."
+48616840,48608645,Loupe – A iOS app that raises awareness about what native apps can see,2026-06-21T08:28:54Z,"Even if that was the case - which it isn't - the aggregator data isn't keyed by the user in question. That is highly illegal pretty much everywhere and would get you in a lot of trouble. You can't ""just"" find out which apps an arbitrary person has installed on their phone. That's not how it works."
+48461629,48450142,Apple reveals new AI architecture built around Google Gemini models,2026-06-09T14:29:10Z,"They decided to use the Siri branding, so I am going to do as they tell me an associate it with my prior Siri experience. That's a brands sole purpose, to give a buyer an indication of a product before they buy it. (Or in my case, given my experience with the brand, not buy it)."
+48924100,48905248,How to stop Claude from saying load-bearing,2026-07-15T17:17:43Z,"I’d like it if my leadership stopped using load-bearing, and others like “shape” and “estate”.
+
+In the past, when you saw a new term of art it came from some book being passed around leadership (like Architect Elevator) or some new training program. “Platform mindset”, “Shift-left everything” etc.
+
+These days, they are all coming from LLMs. You can probably infer which contracts we have from the wording of all-hands messages.
+
+I even LIKE “shape”, it’s nice and generic and everyone immediately understands it. I just see it as an obvious low-impact brainwashing, and wonder what other effects there are that we don’t notice."
+49595882,49588988,Nitter and XCancel resume service after legal advice,2026-09-07T09:05:26Z,"Well it's true, these clones were attempts to cash in on the left wing Elon manufactured hate, nitter and xcancel are similar."
+48998430,48993414,"Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber",2026-07-21T21:14:41Z,"This isn't a perfect survey, but I am a Codex user and most of my employees are pretty stuck in their workflows and were not really interested in trying even when I was saying good things (even pre-Opus 4.8).
+
+When we work trial people, 100% of people ask for Claude rather than Codex or anything else.
+
+When I talk to people at non-AI tech events everyone basically says they use Claude and have not tried an alternative.
+
+Developers writ large are actually not that interested in trying multiple tools, they like customizing their chosen tool and tweaking it forever.
+
+I think developers are as susceptible to brand marketing as everyone else. It's why almost everyone has a Macbook."
+48138057,48137145,RTX 5090 and M4 MacBook Air: Can It Game?,2026-05-14T17:00:44Z,"Yeah, the solution was to link it to the nvidia page of the card, then it was like, 'oh, okay.' But at that point, I lost faith in it's ability to provide me with the information I was looking for. If it's information is so out of date that it doesn't know about the 5000 series, how could I be confident that it knew the details I was asking about (game engine related research)?"
+50038564,50036864,A city-building game in which the city would prefer you didn't,2026-10-11T00:36:50Z,"Some context, because it is definitely an insider joke.
+
+Davis had a long and contentious civic debate on whether or not Target should be allowed to build a store in Davis, eventually Davis held a city wide vote on the matter, which did pass [1].
+
+Davis voters reject Measure V, spiking plans to build Village Farms housing [2].
+
+Just a couple of examples where growth that most cities would approve without thought became a city wide civic issue that the community actually voted on.
+
+[1] https://localwiki.org/davis/Target/History
+[2] https://www.abridged.org/news/davis-measure-v-election-update/"
+49577921,49570669,Actively exploited sandbox RCE in all Chromium versions,2026-09-05T16:09:18Z,"Type confusion bugs exist in Rust programs too, the language does not eliminate all such issues (though it does help somewhat). I think it would be more prudent to wait until we have details before getting on the soapbox."
+49183185,49167448,Xbox goes down. You can't play games you own on disc,2026-08-05T14:11:57Z,"it's also wrong because i can buy a painting, or a custom song, or a poem, or whatever, and that's mine, no one else can come take it away from me.
+
+Isn't it weird how there's tiers to everything and they only benefit the top tiers."
+49533808,49521973,Introducing Ad Blocker for Firefox on iOS,2026-09-02T09:20:33Z,"This should be standard on ALL Firefox on all systems. Why is not that? Ads are a kind of security threat for a long time.
+
+Brave is doing it, Firefox can do it too. And maybe I can recommend that kind of browser to the average Joe again."
+49159601,49154332,SQLite Critical CVEs or LLM Slop?,2026-08-03T18:24:44Z,It’s just a boring and unhelpful complaint that afaict largely serves to soothe the commenters ego rather than point at anything insightful that’s useful or predictive. Point me to your favorite “next token predictor” comment that was actually insightful or predictive. You have years of material to draw from.
+48617031,48608645,Loupe – A iOS app that raises awareness about what native apps can see,2026-06-21T09:05:52Z,"Yes indeed, the limit is 50 which is of course enough to fully profile ""regular people"" who only have a handful of apps. Also don't forget, Meta/Google/TikTok/WhateverPalantir are updated weekly which means they can tweak their LSApplicationQueriesSchemes list and cover even more apps if they want to."
+49855472,49840054,Plan mode is dead,2026-09-26T11:22:54Z,">when people on HN think they're special or do more ""real"" software engineering.
+
+But you're doing the same with your ""how it's done these days"".
+
+These days things are done in many contradicting ways, and it probably will take at least a few years to settle on common normal."
+49218284,49214008,DeepSeek V4 Flash 0731,2026-08-08T02:07:46Z,"> OpenCode Go currently offers $120 for $10 on DeepSeek Flash v4
+
+At DeepSeek's absurdly low rates or market rates?"
+49214095,49199346,Taste Is All That's Left,2026-08-07T18:01:19Z,"Isn’t that expected, though? If 100 of us were to write a five page essay on the chaffing mechanics of an Underoos wedgie, the likelihood that any of them are the same is pretty small, isn’t it?"
+49133884,49112744,Read this before you buy that TV streaming stick,2026-08-01T12:34:00Z,"If you email me (it's on my HN profile), I can send one to you the moment we are taking D2C orders. We still have to make it self-serve ready for end consumers. Really thanks for your interest :)"
+49576773,49570772,Record-High 89% in U.S. Say Government Corruption Widespread,2026-09-05T14:22:06Z,No one even mentioned the Trump administration. The major connection is through the Supreme Court.
+49815336,49803892,Claude Opus 5.5,2026-09-23T12:53:37Z,Deepseek on high reminds me of Opus 4.x which was quite good for a lot of tasks.
+49243447,49242739,Tl;dv: Over 180k meetings left wide open,2026-08-10T13:33:54Z,So did he email privacy@tldv.io? Why not? Maybe someone who understands it would read it.
+49177196,49167448,Xbox goes down. You can't play games you own on disc,2026-08-05T00:38:39Z,"Multiplayer game will desync if you don't say ""Doritos(tm) Dew it Right"""
+48338609,48324499,GTA 6 Developers Unionize,2026-05-30T17:21:47Z,Who is outsourced here? It’s not immediately apparent from the article that people were being outsourced?
+48829195,48819608,"30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",2026-07-08T08:32:03Z,"First year CD student excited to learn puts together a website, and more experienced guys makes a shitty comment that puts things into context. Then someone makes a funny comment mimicking its structure. Is that correct?"
+48062731,48037336,Rumors of my death are slightly exaggerated,2026-05-08T13:21:32Z,"There are worse fates. Claude has been feeding a number of mentally unwell people screwed up conspiracy theories about me rigging the last presidential election. (I'm not involved in politics or elections at all, never have been). Once they've got it on a theme about how ""absolutely right"" their crazy theories are it embraces and extends them and confidently tells the user that anyone disagreeing must be involved in some movie plot conspiracy to conceal the truth.
+
+(I'd link but I'm wary of directing traffic or attention to them and contributing to them becoming self perpetuating and most have been getting taken down)"
+49341770,49338459,How Bluesky draws its logo on screenshots,2026-08-18T05:51:18Z,Like adding some nice fingerprinting. I really feel my devices work against me. Nothing works for me.
+49220263,49214008,DeepSeek V4 Flash 0731,2026-08-08T09:51:08Z,"> This matches my experience with DeepSeek V4 Pro at Max reasoning,
+
+That was ages ago (in LLM release timelines). DeepSeek V4 Flash beats it now and a lot cheaper.
+
+> On similar tasks, GLM 5.2 at Max reasoning screwed up maybe 20-30% of the time,
+
+GLM 5.3 bridges this gap.
+
+> I'd say as Chinese models get better, whatever moat Anthropic and OpenAI have dissipates.
+
+Their moat, especially OpenAI is funding and hardware resources. They gain train models 10x as large and also serve at large scale. That's it."
+49452188,49448321,AWS Acquires DuckLabs,2026-08-26T16:49:42Z,"TL;DR AWS will either acquire MD next/soon, or (more likely) keep them around for the optics that they are totally not going to starve the community of anything other than DuckDB as a hosted AWS service.
+
+From the MD ""about page"":
+
+The idea for MotherDuck came after Jordan Tigani, MotherDuck co-founder and chief duck-herder, saw DuckDB in action and thought, “Wow, this is amazing! someone should really build a serverless version.”
+
+...
+
+Hannes and Mark, who founded DuckLabs to focus on the core technology and build the world’s best analytics database, were looking for partners who would build a commercial cloud offering."
+49219320,49214008,DeepSeek V4 Flash 0731,2026-08-08T06:19:52Z,Is deepseek actually turning enough of a profit off inference to fully pay for training the next model? And do those profits depend on releasing model weights somehow?
+48096963,48093100,Ratty – A terminal emulator with inline 3D graphics,2026-05-11T16:14:03Z,Filling GitHub with LLM crap isn't on your list... I wonder why
+49292426,49289844,Accelerating GPT-5.6 Sol Ultrafast,2026-08-13T22:04:46Z,"I feel odd to use these models, because it feels like a faster model doesn't feel that much faster if it spends reading files, making edits and running checks.
+
+It feels too situational."
+50011049,49993914,"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",2026-10-08T19:45:44Z,"As far as I know the card networks do insure the transaction in cases of fraud so the merchant is still paid. The same per swipe fee for $2 does not make sense for $2000.
+
+I know in practice the merchant is left holding the bag with charge back fraud, but it is a devil's advocate point."
+49119598,49112232,Stacked PRs are now live on GitHub,2026-07-31T06:15:07Z,"They are a monopoly in certain regions of the world.
+
+Even though I live in a western country, just one of my clients after all these years of being self-employed, uses GitHub.
+
+Nobody else would ever use it. And why would they? Especially for proprietary applications."
+49453955,49448819,Meta reaches $17B settlement over social media harms to children,2026-08-26T18:52:38Z,"You fall out of society, basically. In my circles, most people expect everyone our age to have Instagram, even though it's been blocked by the government since 2022.
+
+As far as I'm concerned, the algorithmic part that shows me content from strangers is a tacked-on extra, and not a very welcome one."
+49491374,49477854,U.S. sanctions against the A/I Collective,2026-08-29T16:49:55Z,"""Brazilian banks"" were never classified as Foreign Terrorist Organizations. It is a specific designation and law that comes with 20 year prison sentences."
+49857375,49840054,Plan mode is dead,2026-09-26T15:16:24Z,"It can't read your mind that you have an HSM, can it?"
+48068302,48037336,Rumors of my death are slightly exaggerated,2026-05-08T20:22:31Z,"A similar story from the always hilarious Dave Barry!
+https://davebarry.substack.com/p/death-by-ai
+
+Note: Dave Barry is not dead. He is, in fact, alive."
+49581610,49570669,Actively exploited sandbox RCE in all Chromium versions,2026-09-05T23:08:46Z,"Basically no one has a requirement to track what someone else is looking at. In fact, if not given explicit consent by the person being tracked (like they've specifically sought you tracking it for them, e.g. marking their place), we should frankly criminalize it. Mass surveillance should result in jail time."
+48992964,48981620,Jelly UI: Soft-body physics for native HTML form controls,2026-07-21T14:41:27Z,"Maybe, but changing the font size of individual chars could already help."
+48988740,48966120,Qwen 3.8,2026-07-21T06:22:13Z,+1 for AI Translation within HN. This will help us to learn a lot across languages.
+49294577,49289844,Accelerating GPT-5.6 Sol Ultrafast,2026-08-14T03:54:39Z,"Those results were found with 64 subagents, or with GPT 5.6 Sol Pro which uses parallelism under the hood.
+
+Low latency is a big deal but the immediate use cases are somewhat different in the short-term (more serial coding workflows) rather than pure math research which is effectively massive-scale search through a tree of possibilities, which is where you want throughput and low cost per token, rather than high speed per token."
+48342136,48324712,The dead economy theory,2026-05-31T01:04:26Z,"Not really. Automation is a tool that amplifies human productivity. It doesn't replace it--humans still have to be involved.
+
+AI, it is claimed, will eventually make humans completely unnecessary in the production process. I'll believe it when I see it. AI is an automation tool--possibly a more sophisticated one than previous ones, but still a tool. It will still need humans to be involved."
+48896626,48889637,"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",2026-07-13T18:20:03Z,"> Can't help to think of a recent HN post about most AI-generated projects being abandoned within months. Why?
+
+That which can be created with little effort can be dismissed with little fanfare, since it can easily be recreated later if there's a need.
+
+The other category of AI abandonware is one-off stuff. It did its job and there's no further use for it."
+49234360,49231154,Mea Culpa – Dark Hours,2026-08-09T18:49:51Z,"You accidentally and completely unknowingly came up with an app with the same name that does the same thing down to having the same bug?
+
+Nah.
+
+This is marketing spam.
+
+Get this shit outta here."
+50001861,49993914,"Visa, Mastercard, major banks facing new litigation over 'anticompetitive' fees",2026-10-08T04:40:20Z,"It’s not about what they have to offer to Europeans, but rather to Brazilians traveling in Europe. PIX is developed by the Brazilian Central Bank to the benefit of Brazilian citizens."
+48992692,48981620,Jelly UI: Soft-body physics for native HTML form controls,2026-07-21T14:17:31Z,"> Another example: When typing only the newly typed character and caret are rendered. The rest of your entire screen is reused.
+
+You're right that they avoid unnecessary painting but it is not this granular anymore. It used to be but rendering is so much faster these days where it is cheaper to just render a bit more than tracking dirty regions. It's easily visible on Android where you can enable ""Show view updates"" and see the entire textbox view updates when the cursor flashes. The docs say the same thing.
+
+https://developer.android.com/reference/android/view/View#invalidate(android.graphics.Rect)"
+49370809,49360015,A joke domain purchase turned in geopolitical warfare,2026-08-20T05:46:39Z,Did you know several service providers automatically suspend service based on a single unverified report from a pseudonymous account on AbuseIPDB? Make of that what you will.
+48090802,48072190,"EU Parliamentary Research Service calls VPNs ""a loophole that needs closing""",2026-05-11T03:33:45Z,"If your worldview is based on news you are consuming, then I would like to avoid the discussion.
+
+No, I don’t see the US descending into fascism. Quite the opposite. But the EU unfortunately does, and that saddens me a lot."
+48268538,48258015,"Show HN: Audiomass – a free, open-source multitrack audio editor for the web",2026-05-25T16:14:42Z,Really cool project! Been looking for a browser-based audio editor. How does it handle large file sizes?
+49680306,49673098,Nvidia is the central bank of AI,2026-09-13T05:25:04Z,They don't even need to fudge the data on the studies they have published. They just need to hold back other studies that contradict the idea. Pouring over the published data looking for flaws will never get us access to the unpublished data.
+49468698,49458161,Nvidia agrees to acquire Hugging Face for $13B,2026-08-27T17:56:55Z,"Marginal tax rates are meaningless because, even in the 1950s, the system was complex and can be gamed.
+
+If you want to judge the net effect of tax policy over time, look at the percentage of GDP captured by federal receipts (the vast majority of which are taxes). In the U.S., it's averaged ~16.5%-~17.5% with occasional spikes and dips. Currently, it's very close to what it was in those 90%-marginal-rates 1950s."
+48542515,48533101,Windows 11 users are tired of MS account requirements creeping into everything,2026-06-15T15:16:02Z,"You can use TPM2 to automatically unlock the root partition and not have to input a password manually at boot. This is how my laptop (running Arch, btw) is setup. Whether or not disk encryption is necessary for a system that is physically secure at home or elsewhere is debatable however. But a laptop can be easily left somewhere and disk encryption seems necessary unless it never leaves home."
+48544940,48471638,Firewood Splitting Simulator,2026-06-15T18:05:19Z,"My understanding is that the venting dylan604 is describing relate to airflow around the firebox / chimney, rather than in or out of the firebox.
+
+An incorrectly-placed firebox intake, or even a poorly-drafting open-hearth fireplace, can indeed dump smoke (and carbon monoxide) into the living / heated space."
+49578950,49570669,Actively exploited sandbox RCE in all Chromium versions,2026-09-05T17:52:59Z,"In the script tag you only have access to JS. This allows you to escape JS and have native code execution. It is still sandboxed by os-level primitives, but it is an escalation/first step in successful exploitation."
+48539476,48471638,Firewood Splitting Simulator,2026-06-15T10:58:20Z,"Ah, sweet summer child.
+
+When the days you have to break the ice on the dog's water bowl in the morning come, you will quickly learn what kinds of wood there are and what you want to burn for heat.
+
+For example, if you choose a lot of paper birch (it splits easily, lights easily, and smells nice while burning) you will quickly get to know all the local firefighters after all your chimney fires."
+50027526,50018088,"Sorry, I'm in a meeting",2026-10-09T22:45:55Z,"Maybe it's not the same scale, but I recently came across this passage in Cryptonomicon which I find applies to a lot of middle management.
+
+> The extreme formality with which he addresses these officers carries an important subtext: your problem, sir, is deciding what you want me to do, and my problem, sir, is doing it. My gung-ho posture says that once you give the order I'm not going to bother you with any of the details--and your half of the bargain is you had better stay on your side of the line, sir, and not bother me with any of the chickenshit politics that you have to deal with for a living. The implied responsibility placed upon the officer's shoulders by the subordinate's unhesitating willingness to follow orders is a withering burden to any officer with half a brain, and Shaftoe has more than once seen seasoned noncoms reduce green lieutenants to quivering blobs simply by standing before them and agreeing, cheerfully, to carry out their orders.
+
+Again, this is definitely not this extreme in corporate culture but this is exactly the kind of division of labor I see with most successful teams."
+48857078,48792383,Train sim created by just one person is being called the best ever made,2026-07-10T07:59:45Z,"I enjoy going back to basics every once in a while; do Arduino / embedded programming on a shitty netbook (it came with Windows but it has only 32GB of storage so it couldn't even update), build games / stuff in Pico-8, start a new Go project with just the main toolkit, etc."
+48480226,48450646,Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf],2026-06-10T18:03:23Z,"My primary thoughts on exiting email came after reading Paul Graham's excellent essay on email being nothing more than a to-do list that ANYBODY can add on to [†].
+
+SPAM-rant: I personally feel that a system needs to exist/replace email... which uses some sort of low-tx-fee crypto to ""cost money"" for each and every email sent. The recipients could then ""refund"" such fees, optionally & consentually, when they've determined that sender worthy of free-contact.
+
+Everybody else should have to pay to call/text [Ω]. Since no such system publicly exists: I opt-out.
+
+[†] personal anxiety is my biggest reason for hating inbox-opening
+
+[Ω] e.g: similar to postal mailings"
+49172123,49167113,AI-Generated Images Discourage Me from Reading Your Blog,2026-08-04T17:33:39Z,"I used AI to make a presentation that animated around (html). It had the look of the storyboard and the postcards had tweakable controls on them for the data I wanted to show. It was pretty slick, something that would take me forever (and I'd never get the time approval to do)."
+48541125,48533101,Windows 11 users are tired of MS account requirements creeping into everything,2026-06-15T13:39:08Z,"For the typical user, this is far far far more likely to happen than that they would “pop out” the drive and read it in another machine.
+
+Defaults should be safe for most users. Power users are exactly the people who can deal with changing a setting. It’s constantly surprising to me when technical people insist that defaults should be optimized for technical people."
+49307191,49296740,Why does Opus 5 feel worse to work with?,2026-08-15T03:01:55Z,I have had some luck telling Sol to concisely rephrase Opus 5’s comments.
+49818660,49817469,Fixing the Portobello Police Station Clock,2026-09-23T16:33:14Z,"Seeing the number of holes in that ceiling I really am concerned that the floor the clock is on is the same as the one with the holes, and I would advise that you secure the floor if you return to the attic."
+48256589,48223997,I spent 50 hours drawing a line graph,2026-05-24T12:05:44Z,What I'm curious now is how one could use software (even PowerPoint) to make graphs that replicate that handmade aesthetic.
+49600950,49588988,Nitter and XCancel resume service after legal advice,2026-09-07T17:48:45Z,You have to give your phone number and are then tracked for what you view.
+48815018,48808928,CoMaps – FOSS Offline Maps,2026-07-07T08:24:06Z,"Think of it as a very stripped down and opinionated version of OsmAnd. It lacks a lot of power features, but is extremely fast and all of the options are easily available and work out of the box. So it's great for everyday use (especially in cities with a lot of POIs) but not as good for in depth travel and route planning.
+
+For example, I've used F-Droid OsmAnd extensively when planning my trip to Japan, because its guides, WikiData and Wikipedia integration are godsend for finding interesting places to visit, but used CoMaps when I was there to look things up and build routes. I'm also exclusively using OsmAnd for writing GNSS tracks because I can fine tune the parameters of measurements it captures."
+48077539,48072190,"EU Parliamentary Research Service calls VPNs ""a loophole that needs closing""",2026-05-09T19:30:01Z,"> signatures rooted at your local national government? > Google is already, at this second, tracking my every move online
+
+Apparently you haven't figured out yet that these two are partners. The government restrictions are needed in order to allow other players to perform correlation tracking and deducing your identity.
+
+> Nobody will be able to tie whatever you watch or write to your identity, because they won't have it.
+
+This is untrue in the light of what I said above. The proposed scheme lacks any proof of immunity against tracking and deducing identity. I haven't seen anything like a proof being discussed, while an honestly implemented scheme would require a long and well publicized discussion of the means of protection - to make sure it cannot be abused for political reasons.
+
+The lack of such a discussion is actually a proof that the purpose of the proposed scheme is precisely abuse."
+48812033,48808928,CoMaps – FOSS Offline Maps,2026-07-06T23:56:13Z,"Open source? Not that I've found. I use HERE WeGo for searching and driving, and CoMaps for walking around."
+49395511,49387497,Grand jury declines to indict Ohio man charged with destroying Flock camera,2026-08-22T00:46:54Z,"> I’m curious if your stance would be the same if someone was on trial for murdering a child
+
+I don't know, right? This was a case where the harm didn't go beyond property damage. I hope to never have to find out - whether after or during a trial! There are obviously limits to how principled/logical/rational/detached any given person can be."
+48242775,48237163,Why Japanese companies do so many different things,2026-05-22T23:14:09Z,"Good thing voters are skeptical of abundance or they have never heard of it (like 90% of democratic party members have never heard of abundance).
+
+Thank fuck too. Neoliberalism sucks, along with EK + DT."
+49018824,49008211,Show HN: Bento - An entire PowerPoint in one HTML file (edit+view+data+collab),2026-07-23T09:12:37Z,"Good spot, it does look like a bug when you are using 1 axis. I'll roll a fix in the next release today. Thanks for the feedback."
+49305954,49296740,Why does Opus 5 feel worse to work with?,2026-08-14T23:44:07Z,"Good fight / entirely thankless fight maybe.
+
+I can’t help feeling like this is the last gasp of the old internet. Those tiny corners of expertise can so easily be eliminated through a few months of “AI! SHINY!” and there’s no coming back. I’ve seen a couple of other communities decimated by AI. The participants start posting AI slop and then remarkably quickly everyone else just stops commenting. It’s awful."
+50081013,50045946,"NYC's ""Click to Cancel"" rule is now in effect",2026-10-14T00:47:55Z,"> I expect more businesses will transition to this strategy to counter NYC's new rule
+
+Pretty sure the other businesses that can afford to openly despise their customers to a comical degree already do stuff like that"
+49454528,49448819,Meta reaches $17B settlement over social media harms to children,2026-08-26T19:29:27Z,"All the recent evidence (https://www.npr.org/2026/03/09/nx-s1-5736553/fast-food-screens-kids-health) is that people who are best at self-regulation don't do it by surrounding themselves with tempting things and will-powering themselves not to indulge in them, they do it by changing their environment so the tempting things aren't an option. They're changing the environment via the courts and the ballot box. The people with no self-regulation are the ones complaining about the possibility of having their dopamine toys taken away."
+48897420,48889637,"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",2026-07-13T19:16:46Z,"You really think AI can't convert unsafe blocks to safe code?
+
+The reason AI can't fix memory unsafety in the original language is the same reason humans can't do it. There isn't enogh feedback from the compiler."
+48626070,48618455,Identity verification on Claude,2026-06-22T05:31:19Z,"It's not like Anthropic is the only company in the world that would have the basic details contained on a driver's license or passport. Odds are all of the PII required for someone to steal your identity is already in criminal hands.
+
+The National Public Data breach alone exposed the social security numbers of potentially upwards of 100 million Americans. Numerous companies have literally ""all"" of your personal data and you never did business with them/gave it to them directly.
+
+It's not right but the identity theft cat is out of the bag, which is why precautions like credit freezes, are recommended for all Americans."
+48478311,48450646,Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf],2026-06-10T15:58:35Z,Opting out at the very least means that you aren't the problem. I'd agree though that it's long past time people organized against these issues because one person has very little influence over how corporations act.
+48531612,48471638,Firewood Splitting Simulator,2026-06-14T19:27:02Z,"For players who are new to the game, there should be a 1/4 chance you go to bed proud of an honest day's work with your hands, and wake up the next morning having strained a muscle you didn't even know you had, and you can't chop wood for the next couple weeks."
+48627449,48618455,Identity verification on Claude,2026-06-22T08:37:37Z,"it takes time to build up an army, we are not a unified Europe. I think both are happening at the moment - We are building our military, we are taking over ""supporting"" Ukraine as Trump is stepping away from that. And im sure there is some hope that the US will go back to the way it was.
+
+Imagine you outsourced your entire company to a third party company and only have a few managers around. Then, you need to move all that support from the 3rd parties back in-house. Its not a task that is easy to do, and if we also take into account the required factories etc that need to be built to support, that takes even more time.
+
+Its something that is happening, we are building new trade agreements with countries around the world, excluding the US. We are working on our own defense packs, and eventually if the US decides to leave NATO, or we form our own alliance, then that will happen."
+48239819,48229319,The memory shortage is causing a repricing of consumer electronics,2026-05-22T18:48:36Z,"Gambling: the ROI math means you lose money
+
+Investing: the ROI math means you make money
+
+> So what you're saying is that we all just need to become better gamblers?
+
+It means take advantage of the free education you received. Make an assessment of what you enjoy and what you are good at. Select an opportunity in the intersection of those two endeavors.
+
+People start businesses every day in America.
+
+> Besides, this can't work for everyone
+
+Wealth is not zero sum. If you create wealth, that does not mean someone else must be worse off."
+49101515,49095865,KOReader,2026-07-29T18:55:23Z,"I've been a Kindle user since way back in 2010 with a Kindle 3G. I had a pretty huge amount of money invested into a library of books on Kindle. I installed koreader on my paperwhite earlier this year and haven't looked back. Even if it weren't for the limitations put on the walled garden for books in the kindle ecosystem, just the software upgrade alone feels great. When you hit buttons in koreader it actually responds in less than a second. I hadn't even realized how frustrating the UX of the kindle OS was until I realized the hardware was capable of feeling snappy.
+
+There's obviously a lot you need to provide yourself that Amazon gives ""for free"" with the Kindle ecosystem, but using koreader with OPDS and kosync for synchronizing progress across devices, I'm very happy to be just buying DRM-free books elsewhere and hosting a small OPDS+kosync server on my home server. Installing tailscale on my kindle makes it so I can even fetch books/sync progress when I'm away from home without needing to expose my book server to the internet."
+50048854,50036864,A city-building game in which the city would prefer you didn't,2026-10-11T22:53:43Z,"> My suspicion is San Francisco would love a Beijing-style hukou system. That lets it lock housing (and thus the built character of the city) and control immigration
+
+...how?
+
+Anyone in China is free to move to Beijing, rent an apartment, and take a job there. (And they do!) There are zero controls on movement, residency, or employment. The hukou system would prevent immigrants to San Francisco from sending their children to public school or going on the welfare rolls. Are those things they're doing a lot of now?"
+48976726,48905248,How to stop Claude from saying load-bearing,2026-07-20T10:16:36Z,"It annoys me, too, that people think only chatbots wrote intelligent prose."
+48457350,48450142,Apple reveals new AI architecture built around Google Gemini models,2026-06-09T06:34:32Z,"This comment makes it sound like they sold private recordings to whomever was willing to pay for them, but they paid third parties to evaluate Siri recordings."
+48898859,48889637,"Zig Creator Calls Spade a Spade, Anthropic Blows Smoke",2026-07-13T21:03:42Z,">We’re supposed to let the Tech Bros go on about how cutting corners is some genius productivity hack.
+
+Vibecoding in a nutshell"
+49225820,49224294,Danish high schoolers will have to verbally defend written assignments,2026-08-08T20:54:36Z,"sure, but what I was pointing out here is that ""woe betide you"" is a specific idiomatic phrase. it's usually used as a threat, i.e. ""woe betide you if you do that""."
+49490795,49477854,U.S. sanctions against the A/I Collective,2026-08-29T15:39:19Z,"> which means invasion is ""war"" but resistance is ""terrorism""
+
+That's the definition every undemocratic occupying power uses."
+48976784,48966120,Qwen 3.8,2026-07-20T10:24:20Z,"There is a lot of distrust against Google and Microsoft here, also when they opensource stuff, and Chromium and AOSP are great counterexamples."
+48299030,48292941,Private equity bought America's essential services,2026-05-27T19:12:43Z,At the end of the day it comes down to how much money your principles are worth. People are commenting about dentists and doctors being bought out. Those strike me as the kind of people that can afford retirement without also contributing to the worsening of society.
+49492512,49477854,U.S. sanctions against the A/I Collective,2026-08-29T19:19:01Z,"Are you implying that PA is a military organization that is at war with the UK? I don't think you actually have thought through the implications of that. If this were the case, they would be considered legitimate military targets who can be killed.
+
+That would be a lot worse for them than sanctions."
+49125462,49112232,Stacked PRs are now live on GitHub,2026-07-31T16:40:11Z,"dont know why you would use github stacked prs when you can just use ez-stack which has native worktree support and much more extensive functionality, also uses the stacked pr api
+
+https://github.com/rohoswagger/ez-stack"
+48078130,48072190,"EU Parliamentary Research Service calls VPNs ""a loophole that needs closing""",2026-05-09T20:50:57Z,"The China gap is going to zero, yet slave masses still sleep..."
+48240600,48229319,The memory shortage is causing a repricing of consumer electronics,2026-05-22T19:45:11Z,">So it will be hard to avoid a great repricing of consumer electronics in the coming years
+
+I would have thought in the coming years they'll build more chip plants or the AI bubble will crash or some such. If there's an effect it should be greatest now."
+48822844,48819008,Chat Control passed first round in EU Parliament,2026-07-07T19:53:09Z,"This is existing regulation being extended. It allows sites to scan messages. Not mandates.
+
+These kind of responses is why it is hard to trust privacy advocates on HN. They are high on rhetorics, but half the time dont know what they are talking about."
+49455748,49448819,Meta reaches $17B settlement over social media harms to children,2026-08-26T20:52:53Z,It sounds like you’re saying “sophisticated marketing”. Can you distinguish that from marketing that say McDonald’s does towards kids?
+49648039,49570669,Actively exploited sandbox RCE in all Chromium versions,2026-09-10T18:13:16Z,I don't see the distinction—the core pitch of gemini is the very fact that it's not tied to any of these technologies.
+48312158,48292224,I'm Tired of Talking to AI,2026-05-28T17:14:09Z,"Don't fight with AI. People who reported increased throughput don't verify AI output. Programs which are simply AI wrappers don't verify the output. If a serious programmer starts to design an algorithm that verifies AI output, the progress starts to slow down because you are doing something not needed if you don't use AI."
+50038987,50018088,"Sorry, I'm in a meeting",2026-10-11T01:40:42Z,"> It's actually very simple. Paying Google is bad. Not paying is good. That's it.
+
+Given how many of Google's products are ""free"", not paying does not prevent Google extracting value/benefit from you. If they weren't getting some value from ""free"" services they offer, they wouldn't offer them in the first place:
+
+* https://killedbygoogle.com
+
+The only way to 'not support' Google is by not using their services, even if they are ""free"". (And ad blockers aren't a counter to this (IMHO), because you're still supporting them with network effects.)"
+48317363,48292224,I'm Tired of Talking to AI,2026-05-29T00:19:40Z,"That sounds legitimately hard and I don’t envy you. Hopefully (to carry your analogy) you can find punctual sports fans who freely share their holiday plans.
+
+> Whenever you try to vent how you don't fit into the culture people point out that it's your fault you're the weirdo.
+
+Surely it’s pretty self evident why this is the case."
+50047732,50036864,A city-building game in which the city would prefer you didn't,2026-10-11T20:56:24Z,The street grid south of Market isn't rotated at a diagonal; Literally unplayable.
+49011028,49010167,GigaToken: ~1000x faster Language model tokenization,2026-07-22T18:12:03Z,"Author here! In my case it's mostly pretraining experiments, where you might want to change your data mixture/filtering/processing of training data, and splits are usually done at a token-level instead of a text level. In this case we usually run for days on a huge number of CPUs to finish tokenizing something like DCLM.
+
+From what I can tell it's also useful for inference when considering time-to-first-token (TTFT) as reported by fastokens.[0]
+
+I'm not sure about the proprietary inference engines, but in the open source ones tokenization is done before looking up if a text sequence is present in the KV-cache. If you have a long prefix that's been seen before (say a system prompt), the time for tokenizing that will be a large part of your TTFT. The tokenizer cache should be warmed up in this case, so the throughput for Gigatoken would be significantly higher than reported in the repo.
+
+[0] https://github.com/crusoecloud/fastokens"
+48466552,48450646,Surveillance is not safety: A statement on the UK's latest threat to privacy [pdf],2026-06-09T19:40:39Z,"I get the idea of refusing on principle, but the older I get the more I have started to become pessimistic towards that stance.
+
+I have seen time and time again that individual, principled stands like this do nothing to change anything and only hurt the individual. Unless you are part of an organized movement against something, opting out doesn't help."
+48681567,48675179,An entire Herculaneum scroll has been read for the first time,2026-06-26T02:11:16Z,"I suspect most of the critique even back then was around teaching from static written text, not the writing itself. In my experience that aligns well with modern education theory."
+49473315,49448819,Meta reaches $17B settlement over social media harms to children,2026-08-28T01:25:15Z,"Mark Zuckerberg created the world you are lamenting.
+
+Besides, this message came out in a lawsuit Mark lost and was not a public message. He was in a lawsuit because he stole people's ideas.
+
+The guy still has the same heart and mind he did when he wrote this. He proves it every day."
+49997424,49994443,Show HN: Bigwords.page – Turn any screen into a sign. The URL is the app,2026-10-07T19:11:03Z,"I use a similar thing but designed to be as few steps as possible:
+
+https://bigtext.k55.io/"
+48423956,48415217,Gov.uk has replaced Stripe with Dutch provider Adyen,2026-06-06T11:41:57Z,do consider that in Italy most credit cards cost around ~30€ per year + a 2€ tax for all months you spend more than ~70€ and most offer no benefits. Debit cards are offered for free by all banks. So credit is only used to rent cars (not really mandatory anymore) and if you really need the credit (but other ways of getting short term credit exist now).
+48258196,48223997,I spent 50 hours drawing a line graph,2026-05-24T15:43:16Z,"I'm glad I'm not the only who seemingly has a taste for ""older"" diagrams from that period. It makes me think of the same aesthetic roots of what's now called ""cassette futurism"" or ""NASA-punk"". Older engineering charts really feel like there was more care and thought put into each line or facet, even though I'm sure it's a trick of time."
+48582182,48565498,"US holds off blacklisting DeepSeek, more than 100 firms deemed security risks",2026-06-18T07:50:24Z,… the one closet to your canoe is loudly warning you of the dangers of the one still on the bank
+48628251,48618455,Identity verification on Claude,2026-06-22T10:24:34Z,"…and when they inevitably leak your government name with your facial biometrics? You can change your cc number and your phone number and your address. Your facial geometry, not so much."
+48999940,48981620,Jelly UI: Soft-body physics for native HTML form controls,2026-07-21T23:47:39Z,"Nothing? I actually measured it incorrectly in the comment you replied. With nothing happening on the page Chrome's task manager reports ~0.1 CPU usage for the tab. Almost all of the overhead on this page is from the header and footer animations [1] and not the widgets. Browsers limit things like `requestAnimationFrame` in inactive tabs anyway so even if it was bad it wouldn't be devastating.
+
+[1] https://news.ycombinator.com/item?id=48986612"
+48064140,48053623,Dirty Frag: Universal Linux LPE,2026-05-08T14:56:53Z,Where does it say that the Dirty Frag one was found by LLMs? The research site with all the information doesn't mention LLM or AI at all.
+49176724,49167448,Xbox goes down. You can't play games you own on disc,2026-08-04T23:33:57Z,"Valve needs to grow a bit of a spine here.
+
+The Call of Duty series is one of the worst offenders, effectively every game outside of the last 2 years has so many bad CVEs' and remote code exploits that even opening them on your PC is unsafe. Playing the official matchmaking on even something as recent as Black Ops 3 will have your computer compromised in minutes.
+
+Yet they are still on the store front, they never go on sale. Black Ops 2 has been out for well over a decade and still wants full price for it on Steam & its unsafe.
+
+Playing Call of Duty games on PC is probably the most unsafe thing you can do with your computer, outside of downloading malware itself.
+
+Valve should delist these games from the store if they are effectively unplayable. They should ban Activision from selling new games on the store if they cannot make older titles even remotely safe. It's pure neglect, most of this stuff is fixed by the community with a few lines of code."
+49448698,49438052,Dolly Parton has died,2026-08-26T13:22:04Z,"They did. They said Rogers telling children that they’re special made them “entitled brats.”
+
+And they’ve been trying for decades."
+49409817,49409092,What Is a Harness?,2026-08-23T15:54:25Z,"I don't think so.
+
+What I can see is a world where we end up with a Chromium-shaped harness, a fully featured standard implementation everyone builds against, because doing every single thing yourself would be crazy.
+
+The antithesis to Pi, if you will."
+49532130,49510514,Playa Phone,2026-09-02T05:31:54Z,"I've implemented this. There's no random function with voip.ms, but there are time-based rules. So it'll play the Matrix easter egg about 1/90th of the day after no answer."
+48262132,48258015,"Show HN: Audiomass – a free, open-source multitrack audio editor for the web",2026-05-24T23:40:01Z,"Try Ocenaudio - I’ve used pretty much every audio editor free and paid for and this is my go to for a free editor.
+
+I also cannot understand why anyone would recommend Audacity."
+49846064,49841563,Dutch governments builds alternative for Microsoft based on NixOS,2026-09-25T15:36:40Z,"Over 400 comments and it’s all flamewars and almost zero discussion of NixOS.
+
+I think NixOS would be a great solution for this sort of environment. With something like impermanence enabled to make the systems immutable, you could push all configuration from a central server and ensure that there is no drift. You could even use read-only nix stores served over nfs. This would all be easier if your hardware is limited to a few select configurations, of course."
+49172584,49167113,AI-Generated Images Discourage Me from Reading Your Blog,2026-08-04T18:09:50Z,"These artists are pretty cool:
+
+- https://andreaciulu.com/
+- https://www.rooperainisto.com/
+
+You might feel differently, but I feel intention and effort being communicated here."
+49468313,49458161,Nvidia agrees to acquire Hugging Face for $13B,2026-08-27T17:33:12Z,I keep reading this about old.reddit.com and yet I keep using it without being logged in. It must be some kind of A/B testing or slow rollout? Or maybe it's regional?
+49120372,49112744,Read this before you buy that TV streaming stick,2026-07-31T08:11:34Z,"Simple. Buy one, put it on a test stand, and look at connection log.
+
+Buying in bulk for a resell without testing even one product is kinda insane."
+48387169,48364055,"Can the stockmarket swallow Anthropic, SpaceX and OpenAI?",2026-06-03T17:44:52Z,"I think most people, especially in this topic, know essentially nothing about SpaceX and are just going off political stuff. SpaceX have dropped the price to get stuff to space by about two orders of magnitude already, and there's no apparent reason Starship might not succeed in which case you're looking at even more orders of magnitude cost deduction.
+
+Space is not, and cannot be, a frontier when it costs thousands of dollars to get a bottle of water into orbit. That suddenly changes when costs reach a sufficiently low threshold, and SpaceX is not only leading the race there but really the only significant player. Even China, with their vast resources, won't be able to compete unless they can reach near to technical parity with SpaceX. And, for now at least, they don't seem especially close and are, by far, the closest competitor SpaceX has, bro."
+50055130,50045946,"NYC's ""Click to Cancel"" rule is now in effect",2026-10-12T12:02:32Z,"Yes, better decided top dowm by a cabal. The more uniformity, the better."
+49442277,49438052,Dolly Parton has died,2026-08-25T23:45:10Z,I’m no artist so I’m left to ask - how exactly is that metric determined?
+49966951,49963171,Web Search API,2026-10-05T16:25:16Z,"Fully agree. The API via search and extract MCP works really well.
+
+I noticed that my API quota resets every month. Have not been charged once."
+48175759,48168221,I don't think AI will make your processes go faster,2026-05-18T05:03:23Z,"You joke but that's pretty much what cross functional teams are.
+
+The only other observation is that as you grow teams, communication channels multiply exponentially and at over 6-8 people communication starts breaking down.
+
+So instead you make small ""companies"" and set a few ground rules which software they build needs to follow, and you are back at a working org producing complex software."
+49118724,49112232,Stacked PRs are now live on GitHub,2026-07-31T03:38:17Z,If you make good commits and each of them is a valuable unit of work; having tooling that can manage rebasing them and creating a reviewable PR for each is super valuable for maintaining momentum and making reviews easier.
+49489296,49477854,U.S. sanctions against the A/I Collective,2026-08-29T12:17:33Z,"The fact that nomenclature can be applied arbitrarily doesn't mean it is in this case. In this case, antifa groups do in fact generally oppose facism."
+49592217,49510514,Playa Phone,2026-09-07T00:00:07Z,"The booth now is shut down for the year. And I have some stats to share:
+
+For 2026 the booth was setup from Sunday, August 30 around 1pm to Sunday, September 6th at 6am, but was broken for a little over a day starting Thursday afternoon due to a failed power supply and a discovery that our spare was a dud.
+
+Due to the widespread publicity, it was overwhelmed with incoming calls, receiving 33,400 total. Only 1,270 (3.8%) calls were answered for a total talk time of 44.5 hours, 1,600 (4.8%) weren’t answered within after 6 rings, and 30,500 calls (91.3%) got busy signals or other errors. Of the 7,200 unique phone numbers that tried to call, only 970 (13.5%) were able to actually talk to someone.
+
+There were fewer outbound calls this year, presumably due to the booth being busy with incoming calls. There were 1,140 outbound calls to 650 different numbers in 30 countries, for a total talk time of 26.1 hours."
+48731948,48730729,European digital ID wallets rely on safety services of Google and Apple,2026-06-30T12:44:17Z,"Special-casing support for GrapheneOS would be a band-aid, they should find a way to avoid requiring remote attestation in the first place, so anyone can use whatever OS they like on whatever hardware they like."
+48061042,48056227,Maybe you shouldn't install new software for a bit,2026-05-08T10:11:06Z,"Hardly an argument against random shell scripts execution, quite often elevated.
+
+Not everyone installs only what is available in pkgsrc."
+48924403,48916975,"I tricked Claude into leaking your deepest, darkest secrets",2026-07-15T17:38:38Z,"The memories cause issues for me, because when I ask for something unrelated to my current projects, it makes the incorrect assumption that I am always referencing those projects when asking questions.
+
+And, if I tell it, ""No, I am asking about Postgresql."" then it might update the memory that I am using Postgresql for my project instead of realizing that I am asking two separate (which is why I opened a different chat in the first place). Other times, though, it is helpful not needing to be verbose in my explanation."
+49589268,49570669,Actively exploited sandbox RCE in all Chromium versions,2026-09-06T18:18:13Z,"Good for you, now get others to do it. Definitely not the wrong neighborhood though, HN is extremely pro ad-block and every paywall link has an archive.ph link in the comments.
+
+Hell the top story right now is about a tool for backdooring twitter..."
+49575909,49570772,Record-High 89% in U.S. Say Government Corruption Widespread,2026-09-05T12:31:05Z,"Iran-Contra was a crime. The executive branch deliberately ignoring a law passed by congress.
+
+But Reagan did not put any money in his pocket. Other than a set of snow tires, Lt.Col Oliver North did not take any money for himself.
+
+It makes it better, somehow, not for money to be the motive. Or maybe it makes it worse."
+48732537,48730729,European digital ID wallets rely on safety services of Google and Apple,2026-06-30T13:32:58Z,"As a technical point, note that however there is no legal requirement to follow this reference. Wallet providers can choose a different implementation."
+49390954,49387497,Grand jury declines to indict Ohio man charged with destroying Flock camera,2026-08-21T17:02:57Z,"> Voting is choose between two terrible candidates
+
+This framing makes it seem like the candidates are identically terrible. Which is never the case."
+49980357,49977072,"JetBrains reports revenue growth, net financial loss for 2025",2026-10-06T15:55:31Z,"This is exactly what the frontier models are trying to do!
+
+Check this graph:
+
+https://paraplouis.github.io/llm-pareto-frontier/"
+49415145,49409092,What Is a Harness?,2026-08-24T04:20:35Z,"For a truly ""handoff-able"" session, you also need to store the data it was working on. In most cases, these are the git patches"
+49221938,49214008,DeepSeek V4 Flash 0731,2026-08-08T14:05:54Z,"I've never understood this line of thinking...
+
+Are you saying we shouldn't care about the future of affordability and access because at this moment we have seemingly endless access?
+
+Sounds extremely short sighted."
+48473931,48450142,Apple reveals new AI architecture built around Google Gemini models,2026-06-10T09:56:15Z,"not much info to personally go with tbh.
+
+for those commenting on relying on a competitor for a ""major"" component of their product, look no further to how they source their displays from samsung all this time. even their silicon at one point! [1]
+
+while it is now all about harness and ""holding it right"", their approach seem no different from other instances on hardware side. in terms of why not a more ""leading"" provider, look how the openai integration panned out so far. moreover, they have little to no initiative nor incentive to provide edge models or a hybrid solution so far. and anthropic's moat is not in audio.
+
+[1] https://news.ycombinator.com/item?id=6419506"
+48531320,48471638,Firewood Splitting Simulator,2026-06-14T19:06:25Z,"This is oddly satisfying. Only weird part is it seems to split whichever piece I click, even if it's behind another piece or in between two other pieces, where it would be difficult or impossible to hit just that one piece and not the others around it."
+49587512,49570772,Record-High 89% in U.S. Say Government Corruption Widespread,2026-09-06T15:33:23Z,"That's kind of my point.
+
+This was a descriptive, not a prescriptive statement, of a real problem. He literally says that it is concerning that prosecuting large institutions can cause economic harm. He isn't saying they won't prosecute, he says it's difficult because of the downsides. Holder made a mistake of wheeling out a complex nuance to a public that isn't prepared to handle it.
+
+I don't understand where is the evidence of malicious force trying to self-serve? Anything specific that points to corruption here? Is this like ""yay, Holder gave us a loophole! We just need to build an incredibly large, successful business, and now it will be difficult for Holder to prosecute us, so we can finally start being corrupt""? Is that what you're saying?
+
+What large successful business would want to squander it all on corruption on an off chance that the economic inconvenience would save them from prosecution? They are the most incentivized to identify and remove that sort of PR and legal cancer from their org."
+49680673,49673098,Nvidia is the central bank of AI,2026-09-13T06:34:02Z,"> Making a loan/offering credit isn't automatically money creation
+
+The Fed can limitlessly increase monetary base (MB) to increase M1. Non-bank lenders create M4 which turns into M2 through the money markets which turns into M1 through the banks. More convoluted and more limited, by design. But the net effect is the same–more M1.
+
+More broadly: when you open a bar tab, you're literally creating money, even if it never hits M1.
+
+Credit is always money creation. When it's done at scale it's almost always creating M1."
+49294034,49289844,Accelerating GPT-5.6 Sol Ultrafast,2026-08-14T02:11:12Z,"But speech evolves. And we all pronounce ""ten ex"", not ""ten times"". Actual speech usage very clearly pronounce the letter 'x'.
+
+So it's 10x. And no need for Unicode codepoints."
+47999762,47989883,VS Code inserting 'Co-Authored-by Copilot' into commits regardless of usage,2026-05-03T18:15:51Z,"> a desire to support functionality that some customers expect of VS Code w.r.t. AI-generated code
+
+This isn't enough. What was the _full train of thought_ for this? Why would it be added when AI isn't used?"
+48987868,48968606,"Show HN: I replaced a $120k bowling center system with $1,600 in ESP32s",2026-07-21T03:57:06Z,"Oh totally. I actually thought about exactly that. I'm basically thinking ""this -will- fail at some point, so when it does, I want to be able to replace a failed unit very rapidly.""
+
+I'm tinkering with an auto-provisioning function that tells a given ESP what node type it's connected to and configures itself from there."

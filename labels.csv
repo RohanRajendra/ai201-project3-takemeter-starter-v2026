@@ -113,8 +113,6 @@ So perhaps these websites only help X to exist.",assertion,"pre-labelled, checke
 "There’s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/
 
 Like it or not (I’m in “not”), this is hardly a new thing.",evidence,cold; hn:49977700
-"I did not say otherwise. I also said ""it can"", not ""it has"".
-This is humor...",assertion,cold; hn:49372184
 "> Don't pin versions, pull everything from latest
 
 Rebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",assertion,cold; hn:49158268
@@ -122,7 +120,7 @@ Rebuild broke half your tests. People are exploiting the CVE against your system
 
 The demand curve for a business could be such that you sell 100 widgets and get $100 profit, sell 200 widgets get $101 profit. Why bother trying to sell more than 100 widgets?
 
-Maybe you can sell 50 widgets and make $90, that sounds like a pretty good deal. Instead of making 50 more widgets you could do something else and make more than $10 profit in the same time.",assertion,cold; hn:48297562
+Maybe you can sell 50 widgets and make $90, that sounds like a pretty good deal. Instead of making 50 more widgets you could do something else and make more than $10 profit in the same time.",experience,cold; hn:48297562
 "I don't know what the disconnect is. I'm running Windows 11 Arm right now on the best laptop I've ever owned -- an Asus Zenbook A16 with OLED screen and 48 GB of RAM (all for $1699).
 
 It's super fast -- it beats a 2026 Macbook Pro rendering Blender ""Classroom"".
@@ -135,7 +133,6 @@ I've watched coworkers go through all sorts of contortions, and downloading hack
 "Someone claims to have ported it to iOS but I haven't tried it and one of the open issues says that the release build doesn't work:
 
 https://github.com/hezi/koreader-ios",evidence,cold; hn:49099519
-"What is the alternative? Trust has been built, as long as the trust is not eroded it is safer than any other retailer?",assertion,cold; hn:49124111
 "I am using a Xiaomi phone. The hardware is fine, the camera is very good compared to the average, the software absolutely sucks, bootloader unlocking is not possible and it comes full of spyware and adware that you can't disable.",experience,cold; hn:48585705
 "With physical access, root access is as simple as setting init=/bin/bash in the kernel parameters from a bootloader. No need for credentials or anything.",assertion,cold; hn:48057643
 It's even more expensive to have your country's digital ID held hostage by the US or its big tech players.,assertion,cold; hn:48736759
@@ -146,7 +143,7 @@ For environments where you want people to access your local instance, I believe 
 Previously, you might have to make sure they're in the same LAN network. But with Iroh, anything works.",experience,cold; hn:48548011
 "This is awesome. Congratulations!
 
-As others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",assertion,cold; hn:48265006
+As others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",experience,cold; hn:48265006
 "There was a ton of... not exactly footguns, just things to keep in mind if you’ve wanted your site to work as you intended in all browsers. The webcompat nowadays is way better now.
 
 That said, personally I’ve never understood Dreamweaver either. By the time I tried it, I’ve already got used to Notepad++ and writing HTML by hand, so I’ve just treated it as another text editor... and IIRC it just felt way more laggy than Notepad++, with a browser preview panel that took half of my 4:3 display. Maybe I’d discover some cool features if I’ve spent some more time in it? I dunno.",experience,cold; hn:48729114
@@ -155,9 +152,6 @@ That said, personally I’ve never understood Dreamweaver either. By the time I 
 regardless, this industry goes through such cycles (which have killed weaker companies and made the situation worse). high time for the memory ""OPEC"" to disband.",assertion,cold; hn:48246117
 "I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it.",experience,cold; hn:50001679
 Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?,assertion,cold; hn:48058739
-"I'd rather not engage in politics in HN, I'm surprised the article made it here to begin with like it's Reddit. Also, if people already made up their mind then there's no reason for me to waste my time trying to explain anything, it will take a stand alone post with multiple pages if were really to go that route. I will say this, my position is similar to what Mearsheimer has been talking about when it comes to this conflict. Any of his lectures will brief you in on the nuance.",evidence,cold; hn:49377610
-"And your reasoning is exactly what makes it a winning strategy. ""If other people do it, then why not me?"" That makes it that they are no longer other people, you yourself are a part of that group now. One could argue that it is an even worse position. It literally makes you an enabler of the problem you see in the world, while at the same time you acknowledge it as an even existential problem. 
-When we are with billions, we cannot all be 'truly' wealthy in a material sense and by definition your wealth will come at the expense of others. Your reasoning makes me sad as instead of questioning what constitutes true wealth, it seems you are guided by an exclusively materialistic view of it and join the destructive behaviour you see around you out of fear of not having enough.",assertion,cold; hn:47997688
 It's pretty easy to find the PR considering the entire app is OSS https://github.com/bluesky-social/social-app/pull/9637,evidence,cold; hn:49348150
 "Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting.",assertion,cold; hn:48330616
 "At least in my union defined benefit pension it specifically excludes overtime since that obviously is ripe for abuse. It's just your basic calculation: average of your best 5 years of salary at 2% per year of service.
@@ -169,9 +163,6 @@ Compiz 3d effects were ultimately a useless gimmick and I predict this is too.",
 "I’m afraid it’s a terrible metaphor, starting with the fact that LLMs are nothing like electricity, and the relation of harnesses to them is nothing like that of electronics to electricity, save perhaps one is a prerequisite of the other.
 
 Harnesses (and the concept of agents before them) presuppose competence in LLMs which simply doesn’t exist.",assertion,cold; hn:49409699
-"""Because the common denominator between both of these distinct incidents was Firebase, we are taking the additional step of immediately removing it from our tech stack altogether to definitively eliminate the risk of similar vulnerabilities in the future."" - from their post-mortem.
-
-Thank god the root cause was definitively identified! /s",evidence,cold; hn:49244971
 "Well, there's really no need to come up with such complicated (and not entirely accurate) analogies here. It's actually very simple. Paying Google is bad. Not paying is good. That's it.",assertion,cold; hn:50036534
 "These kind of rights are something which only physical persons should have, and card networks aren't infringing on the rights of real humans. Businesses aren't people, and they shouldn't have any inherent right to be provided with utilities or payment solutions. And as it stands today they don't.
 

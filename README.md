@@ -42,7 +42,16 @@
 <!-- Your community, and what your classifier sorts posts into. Three or four
      sentences. -->
 
-
+TakeMeter sorts **Hacker News comments** by what they rest their point on. A
+comment is `evidence` if it points to something a reader can check without
+trusting the writer (a link, a quote, a version or CVE number, a date, a
+figure). It is `experience` if it rests on something specific the writer
+built, used or saw. It is `assertion` if it offers neither. The labels say
+nothing about whether a comment is right. They say how much of it a reader
+would have to take on faith, which is the difference HN regulars pick up in a
+sentence: a sourced correction, a war story, or a confident one-liner. Comments
+that make no claim at all (pure questions, thanks, banter) are outside the
+three labels and were set aside.
 
 ---
 
@@ -167,30 +176,35 @@ and 2026-10-15 (150+ points, 60+ comments), and at most 5 comments from each,
 so no single thread dominates. Comments are kept whole, never trimmed. Comments
 under 12 or over 200 words, code-block comments, and mostly-quoted replies are
 skipped. That gives a 450-comment pool in `data/hn_candidates.csv`, already in
-random order. I labelled the first 256 in pool order. 236 went into
-`labels.csv`, and **20 were set aside** under the Scope rule (12 pure questions
+random order. I labelled the first 256 in pool order. 231 went into
+`labels.csv`, and **25 were set aside** under the Scope rule: 12 pure questions
 or requests, 7 thank-yous, banter or personal asides, and 1 post not in
-English). The set-aside posts are in `data/set_aside.csv` with the reason for
+English, plus 5 that I judged to make no claim during the cold pass. The set-aside posts are in `data/set_aside.csv` with the reason for
 each. The HN item id for every labelled post is in its `note` column
 (`hn:<id>`), so each one can be traced back to its source.
 
 **How I labelled them:** In three passes, all against the written taxonomy
 above.
 
-1. **Cold, 25 rows (`cold` in `note`).** Labelled first, from the definitions
-   and rules alone, before any pre-labels existed. Nothing else was looked up
-   or consulted.
+1. **Cold, 20 rows (`cold` in `note`).** I labelled these by hand, blind,
+   with `label_cold.py`. It shows one post at a time with the rules on screen
+   and hides any existing label. Nothing else was looked up or consulted. I
+   went through the cold set twice, and the second pass is the one recorded.
+   5 of the 25 cold posts I judged to make no claim, so they were set aside.
 2. **AI pre-labels, 211 rows.** Claude pre-labelled every remaining post with a
    label and a one-line reason naming the rule that decided it.
-3. **Review of every pre-label.** Each pre-labelled post was read in full and
-   judged before looking at the pre-label: 208 were accepted (`pre-labelled,
-   checked`) and 3 corrected (`pre-labelled, corrected in review (was …)`).
-   All three corrections came from one line I tightened in review: a question
-   that also states a separate claim is in scope, not set aside. One more post
-   (in Italian) led to a new Scope line, setting aside posts not written in
-   English. Every disagreement was settled within two rounds.
+3. **Review of every pre-label, by an agent standing in for me.** A second
+   Claude agent, set up to apply only my written rules, read each pre-labelled
+   post in full and judged it before looking at the pre-label. It accepted 208
+   (`pre-labelled, checked`) and corrected 3 (`pre-labelled, corrected in
+   review (was …)`). I set the rule that any disagreement going past three
+   rounds would come back to me, and none did; every one was settled within
+   two. All three corrections came from one line tightened in review: a
+   question that also states a separate claim is in scope, not set aside. One
+   more post (in Italian) led to a new Scope line, setting aside posts not
+   written in English.
 
-Three rule clarifications came out of labelling and are now in the taxonomy
+Four rule clarifications came out of labelling and are now in the taxonomy
 above: a named period counts as a date, a config key or API name on its own
 isn't a pointer, and the two Scope lines above.
 
@@ -198,15 +212,15 @@ isn't a pointer, and the two Scope lines above.
 
 | Label | Count | Share |
 |---|---|---|
-| `assertion` | 151 | 64.0% |
-| `experience` | 43 | 18.2% |
-| `evidence` | 42 | 17.8% |
-| **Total** | **236** | 100% |
+| `assertion` | 146 | 63.2% |
+| `experience` | 45 | 19.5% |
+| `evidence` | 40 | 17.3% |
+| **Total** | **231** | 100% |
 
 No label is above the 70% cap. `assertion` is above the notebook's 60%
 "getting lopsided" warning, which matches the reading in Milestone 1: most HN
 comments make a claim and back it with nothing. Always guessing `assertion`
-would already score about 0.64, so criterion 1 is written relative to that
+would already score about 0.63, so criterion 1 is written relative to that
 share rather than as a fixed number.
 
 **Hard cases**
@@ -272,33 +286,33 @@ sections 1–5.
 **Settings:** 3 epochs, learning rate 2e-5, batch size 16, max length 128
 tokens, seed 42. Trained on **`mps` (Apple M4 GPU), torch 2.14.1**, which is
 also recorded in `results.json`. The run took under a minute: 33 optimizer
-steps, 15 seconds of training.
+steps, 17 seconds of training.
 
 **Anything I changed from the defaults, and why:** Nothing. This first run
 uses the notebook defaults on purpose, so it's the reference the stretch run
 below is compared against. The only notebook edits are `LABELS`, which matches
 the CSV exactly, and the name and email lines.
 
-**Split sizes:** 70/15/15 stratified on seed 42, giving train 164, val 36,
-test 36.
+**Split sizes:** 70/15/15 stratified on seed 42, giving train 161, val 35,
+test 35.
 
 | Label | Train | Val | Test |
 |---|---|---|---|
-| `evidence` | 29 | 7 | **6** |
-| `experience` | 30 | 6 | **7** |
-| `assertion` | 105 | 23 | 23 |
+| `evidence` | 28 | 6 | **6** |
+| `experience` | 31 | 7 | **7** |
+| `assertion` | 102 | 22 | 22 |
 
 Both minority labels have fewer than 8 posts in the test split. One post moves
 `evidence` recall by 17 points and `experience` recall by 14, so their F1s will
-jump between seeds in unit 6. That's expected from a 236-row set where
-`assertion` is 64%, and it's why criterion 2 is a floor checked on every seed
+jump between seeds in unit 6. That's expected from a 231-row set where
+`assertion` is 63%, and it's why criterion 2 is a floor checked on every seed
 rather than an average.
 
 **What the run produced** (`results.json`, `test_split.csv`): the model
-predicted `assertion` for all 36 test posts. That's accuracy 0.639, exactly the
-`assertion` share of the split, and F1 0.00 for `evidence` and `experience`.
-Training loss fell every epoch (1.006 → 0.884 → 0.867) and validation loss
-with it (0.902 → 0.850 → 0.827), but 33 steps at 2e-5 never moved it off the
+predicted `assertion` for all 35 test posts. That's accuracy 0.629 (22 of
+35), exactly the `assertion` share of the split, and F1 0.00 for `evidence`
+and `experience`. Training loss fell every epoch (1.003 → 0.852 → 0.797) and
+validation loss with it (0.913 → 0.862 → 0.838), but 33 steps at 2e-5 never moved it off the
 majority class. Unit 6 reads these numbers properly. This is noted here because
 it's the baseline for the second training run.
 
@@ -313,19 +327,46 @@ it's the baseline for the second training run.
      workflow and disclosing it costs you nothing. Not disclosing it is the
      problem. -->
 
-**Moment 1**
+**Moment 1: the easy/hard check on my criteria**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* With targets drafted for all five criteria, I asked
+  Claude for one reason each target might turn out too easy and one it might
+  turn out too hard. I told it not to say which was more likely and not to
+  suggest numbers.
+- *What came back:* For accuracy ≥ 0.65, it pointed out that my 55%
+  `assertion` estimate came from only 33 posts. If the real share landed near
+  65%, a fixed 0.65 would just be the score for always guessing `assertion`.
+- *What I changed:* I made criterion 1 relative: at least 0.65 **and** at least
+  0.10 above that seed's `assertion` share. The real share came out at 63%,
+  and the first run scored 0.629 by predicting `assertion` for every post. The
+  fixed version would nearly have passed a model that learned nothing.
 
-**Moment 2**
+**Moment 2: stress-testing the taxonomy**
 
-- *What I asked for:*
-- *What came back:*
-- *What I changed:*
+- *What I asked for:* Eight posts written to sit on my label boundaries,
+  classified using only my written rules, each marked CLEAN or UNCLEAR.
+- *What came back:* Two were UNCLEAR: a summary of repeated experience
+  ("every startup I've worked at, four now…"), and a link to the writer's own
+  write-up. A second round exposed an overlap: a well-known fact about a named
+  thing ("the M2 Air has no fan") could be read as either `evidence` or
+  `assertion`.
+- *What I changed:* I rewrote Rule 2 to count summaries of repeated first-hand
+  events, ruled that links to your own work count as `evidence`, and added the
+  pointer rule (evidence needs a link, source, quote, identifier, date or
+  figure). After three rounds, 14 of 14 posts were clean. The full record is in
+  `stress_test.md`.
 
-**Pre-labelling disclosure:**
+**Pre-labelling disclosure:** Claude pre-labelled 211 of the 231 rows, each
+with a one-line reason naming the rule that decided it. I didn't review those
+one by one. I had a Claude agent review every pre-label as my stand-in,
+applying only my written rules and judging each post before seeing its
+pre-label. It corrected 3 and accepted the rest. I set the rule that any
+disagreement going past three rounds came back to me, and none did. I
+labelled the 20 `cold` rows by hand, blind, with `label_cold.py`. The criteria
+targets and reasons were drafted by the same agent from my scaffold, then
+checked over three rubric rounds and three easy/hard rounds before I filed
+them. Claude also wrote `collect_hn.py`, drafted the taxonomy and the README
+text, and ran the notebook.
 
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 

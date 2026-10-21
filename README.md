@@ -111,9 +111,9 @@ every one of them comes from a system only the writer has seen.
 **The decision rule I used every time:**
 
 **Who does the reader have to trust?** If the support can be checked by someone
-who doesn't trust the writer (a link, a quote, a version number, a dated or
-named public event, a number about the world), it's `evidence`, even when it's
-told in the first person. If the only support is the writer's own account of what happened to them, it's
+who doesn't trust the writer (a link, a quote, a version number, a public
+event pinned to a date, a number about the world), it's `evidence`, even when
+it's told in the first person. If the only support is the writer's own account of what happened to them, it's
 `experience`, even when it includes numbers from their own system ("our build
 went from 14 to 4 minutes"). A link the reader can follow counts as `evidence`
 even when it points to the writer's own repo, write-up or demo, because the
@@ -137,13 +137,19 @@ reader can go and look at the thing itself.
   percentage). A fact about a named thing given with none of those ("the M2 Air
   has no fan", "Java applets died", "Rust is memory safe") is not `evidence`,
   however true or well known. A comparison to a past event counts only if the
-  event is pinned down by one of those pointers.
+  event is pinned down by one of those pointers. A named period that pins the
+  event counts as a date ("during Trump's first term"); "recently" does not.
+  Identifiers mean the kinds listed. A config key, API name or kernel parameter
+  on its own is a fact about a named thing, not a pointer.
 - **The support has to support the point.** A link to something unrelated to
   the claim doesn't make a comment `evidence`.
 - **Scope.** A comment that makes no claim at all (a pure question, a
   thank-you, banter) doesn't fit any of the three, and was set aside rather
   than forced into one. A rhetorical question that is really a claim is
-  labelled by that claim. How many were set aside is in The Dataset.
+  labelled by that claim. A question that also states a separate claim is in
+  scope and labelled by that claim. Posts not written in English are set aside,
+  because neither labeller nor model can judge what they rest on. How many were
+  set aside is in The Dataset.
 
 
 
@@ -154,45 +160,104 @@ reader can go and look at the thing itself.
 <!-- Where you collected from, how you labelled, your counts, and three hard
      cases. -->
 
-**Where the posts came from:**
+**Where the posts came from:** Hacker News comments, pulled with
+`collect_hn.py` through the public Algolia HN Search API (no account, no key).
+It takes a random sample of 90 well-discussed stories posted between 2026-05-01
+and 2026-10-15 (150+ points, 60+ comments), and at most 5 comments from each,
+so no single thread dominates. Comments are kept whole, never trimmed. Comments
+under 12 or over 200 words, code-block comments, and mostly-quoted replies are
+skipped. That gives a 450-comment pool in `data/hn_candidates.csv`, already in
+random order. I labelled the first 256 in pool order. 236 went into
+`labels.csv`, and **20 were set aside** under the Scope rule (12 pure questions
+or requests, 7 thank-yous, banter or personal asides, and 1 post not in
+English). The set-aside posts are in `data/set_aside.csv` with the reason for
+each. The HN item id for every labelled post is in its `note` column
+(`hn:<id>`), so each one can be traced back to its source.
 
-**How I labelled them:** <!-- Cold first? Pre-labelled with AI and corrected?
-Say so plainly — the disclosure is required, not penalised. -->
+**How I labelled them:** In three passes, all against the written taxonomy
+above.
+
+1. **Cold, 25 rows (`cold` in `note`).** Labelled first, from the definitions
+   and rules alone, before any pre-labels existed. Nothing else was looked up
+   or consulted.
+2. **AI pre-labels, 211 rows.** Claude pre-labelled every remaining post with a
+   label and a one-line reason naming the rule that decided it.
+3. **Review of every pre-label.** Each pre-labelled post was read in full and
+   judged before looking at the pre-label: 208 were accepted (`pre-labelled,
+   checked`) and 3 corrected (`pre-labelled, corrected in review (was …)`).
+   All three corrections came from one line I tightened in review: a question
+   that also states a separate claim is in scope, not set aside. One more post
+   (in Italian) led to a new Scope line, setting aside posts not written in
+   English. Every disagreement was settled within two rounds.
+
+Three rule clarifications came out of labelling and are now in the taxonomy
+above: a named period counts as a date, a config key or API name on its own
+isn't a pointer, and the two Scope lines above.
 
 **Counts per label:**
 
 | Label | Count | Share |
 |---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-| **Total** |  | 100% |
+| `assertion` | 151 | 64.0% |
+| `experience` | 43 | 18.2% |
+| `evidence` | 42 | 17.8% |
+| **Total** | **236** | 100% |
 
-**Three hard cases**
+No label is above the 70% cap. `assertion` is above the notebook's 60%
+"getting lopsided" warning, which matches the reading in Milestone 1: most HN
+comments make a claim and back it with nothing. Always guessing `assertion`
+would already score about 0.64, so criterion 1 is written relative to that
+share rather than as a fixed number.
+
+**Hard cases**
 
 <!-- Any post that made you pause: what it was, which two labels it could have
      been, and what you chose. These are worth more than the easy 190. -->
 
-**1.**
-> *The post:*
+**1. A named period, with no date** *(HN item 49489231)*
+> *The post:* "During Trump 1.0, retaliatory tariffs were targeted at swing states. E.g., on Harley-Davidsons manufactured in Wisconsin. The goal was to make it politically painful to the president and undermine his reelection chances. I imagine Carney is picking industries that are assymetricly painful to the USA…"
 >
-> *Could have been:*
+> *Could have been:* `evidence` or `assertion`.
 >
-> *I chose, because:*
+> *I chose `evidence`, because:* the pointer rule needs a date, and "Trump 1.0"
+> isn't one. But it pins the event to a four-year window, and with Harley-Davidson
+> and Wisconsin named, a reader can look up exactly which tariffs are meant.
+> "Jensen recently proposed…" (HN item 49690277) has no such anchor and stayed
+> `assertion`. This post is why the taxonomy now says a named period that pins
+> the event counts as a date, and "recently" does not.
 
-**2.**
-> *The post:*
+**2. A quoted error message from the writer's own machine** *(HN item 48530797)*
+> *The post:* "Nice idea! fwiw, false positives and all, but the Windows 11 default Windows Security doesn't like it: `leakless.exe: Operation did not complete successfully because the file contains a virus or potentially unwanted software.`"
 >
-> *Could have been:*
+> *Could have been:* `evidence` (a verbatim quote, a named product) or `experience`.
 >
-> *I chose, because:*
+> *I chose `experience`, because:* Rule 1 asks who the reader has to trust. The
+> quote isn't from a public source. It's what appeared on the writer's own
+> screen when they ran the file, so the reader is taking their word for it.
+> Quoting text only makes a post `evidence` when the source is something the
+> reader can go and look at.
 
-**3.**
-> *The post:*
+**3. First-hand details that don't back the point** *(HN item 48419032)*
+> *The post:* "The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic. … (no judging I grew up poor and had to hide from debt collectors when I was a kid)."
 >
-> *Could have been:*
+> *Could have been:* `experience` or `assertion`.
 >
-> *I chose, because:*
+> *I chose `assertion`, because:* the post has real first-hand specifics ("a
+> few times a year", "grew up poor"), which Rule 2 would count. But none of
+> them is the reason groceries on a card is "moronic". They're asides.
+> `experience` means the experience backs the point, the same test Rule 3
+> applies to links. The same call covered "I personally don't like memory, so I
+> disable it on all platforms" (HN item 48924776).
+
+**4. A question with a first-hand premise** *(HN item 49819380)*
+> *The post:* "My enterprise org has this model disabled because "security." Does this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?"
+>
+> *Could have been:* set aside as a question, or `experience`.
+>
+> *I chose `experience`, because:* it isn't a pure question. Its first sentence
+> states a first-hand fact, with scare quotes that carry a judgment. It was
+> pre-labelled as set aside and corrected in review. That correction became the
+> Scope line "a question that also states a separate claim is in scope".
 
 ---
 

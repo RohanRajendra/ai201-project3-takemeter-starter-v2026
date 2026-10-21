@@ -368,6 +368,68 @@ checked over three rubric rounds and three easy/hard rounds before I filed
 them. Claude also wrote `collect_hn.py`, drafted the taxonomy and the README
 text, and ran the notebook.
 
+---
+
+## Stretch Features
+
+**Declared before building.** This section was committed before any stretch
+data was collected or any stretch run was made. Results are added under each
+item once it's built.
+
+**Everything stretch lives alongside the core, not in it.** `labels.csv`, the
+notebook's defaults, `results.json` and `test_split.csv` stay exactly as they
+were at the end of Milestone 6, so unit 6 tests the setup the criteria were
+written for. Stretch data goes in `labels_stretch.csv` (with a `stretch` column
+saying which item each row belongs to), stretch runs in `stretch_runs.py`
+(which reuses the notebook's own split, train and evaluate functions
+unchanged), and stretch results in `results_stretch_*.json`. Every run uses
+seed 42.
+
+### 1. A second training run with one hyperparameter changed
+
+- **The change:** `EPOCHS` 3 → 10. Nothing else changes: same 231 rows, same
+  seed-42 split, same learning rate, batch size and max length.
+- **Why this one:** run 1 took only 33 optimizer steps and predicted
+  `assertion` for every test post, while training and validation loss were
+  still falling. More passes over the same data is the most direct test of
+  whether the model was under-trained or can't learn the distinction at all.
+- **What I'll report:** accuracy, macro F1, per-label F1 and the confidence
+  gap, against run 1, with the size of every change.
+
+### 2. A fourth label, `question`
+
+- **What it captures:** comments that make no claim and only ask for
+  something. 12 of the 256 posts I labelled were pure questions or requests
+  and had to be set aside, because the three labels describe how a claim is
+  supported and these make none. A three-label model still has to put them
+  somewhere.
+- **Definition (to be added to the taxonomy):** the comment asks for
+  information, clarification or help the writer doesn't have, and makes no
+  claim of its own.
+- **Boundary rule:** the existing Scope line decides it. A question that also
+  states a separate claim is labelled by that claim, and only a pure question
+  is `question`. So none of the 231 existing rows change label.
+- **Data:** the set-aside pure questions, plus pure questions from the
+  unlabelled rest of the pool (and a fresh pull if needed), labelled with the
+  same pre-label-and-review workflow. Target at least 40 `question` rows.
+- **What I'll report:** the four-label run (run 1's data plus the `question`
+  rows, run 2's settings), with per-label F1 including `question`, and what
+  happened to the other three labels.
+
+### 3. 50 extra examples for the thinnest label
+
+- **Which label:** `evidence`, with 40 rows (17.3%), the thinnest of the three.
+- **Where they'll come from:** a fresh `collect_hn.py` pull from different
+  stories (new seed, excluding every comment already in the pool). Candidates
+  get pre-filtered to comments with a link, a number or a quote, to save
+  reading, then labelled with the same workflow. The first 50 that come out
+  `evidence` are kept; the filter only decides what gets read, not the label.
+- **A fair comparison:** the 50 new rows go into the training split only. The
+  model is tested on exactly the same 35 test posts as run 2, with the same
+  settings, so the only thing that changes is the extra `evidence` data.
+- **What I'll report:** `evidence` precision, recall and F1 against run 2, plus
+  whatever happens to the other labels.
+
 <!-- ═══════════════════════ UNIT 6 — THE TEST ═══════════════════════
 
      Don't fill these in during unit 5.

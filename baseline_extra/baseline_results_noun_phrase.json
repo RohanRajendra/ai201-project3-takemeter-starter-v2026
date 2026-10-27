@@ -1,0 +1,209 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 35,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 35,
+    "accuracy": 0.4857142857142857,
+    "f1_macro": 0.4222222222222222,
+    "per_label": {
+      "assertion": {
+        "precision": 0.6666666666666666,
+        "recall": 0.5454545454545454,
+        "f1": 0.6,
+        "support": 22
+      },
+      "evidence": {
+        "precision": 0.2222222222222222,
+        "recall": 0.3333333333333333,
+        "f1": 0.26666666666666666,
+        "support": 6
+      },
+      "experience": {
+        "precision": 0.375,
+        "recall": 0.42857142857142855,
+        "f1": 0.39999999999999997,
+        "support": 7
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Or if your editor is happy to store them in a subfolder that is useful. I use Sublime with the AutoProjects extension and it puts .sublime-project snd .sublime-workspace under a .sublime folder that I can have a .gitignore * underneath.",
+      "gold": "experience",
+      "predicted": "evidence"
+    },
+    {
+      "text": "hmm that's true, in the presentation they don't focus for more than 5 seconds on the backend lol",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",
+      "gold": "assertion",
+      "predicted": "experience"
+    },
+    {
+      "text": "Looking at the top comment about Google right now. Big difference between \"their products/processes suck\" vs. \"these people and their companies and government are an insidious evil\".\n\nAh, the ol' gaslighting you into thinking you're gaslighting me trick.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I think the discouragement started long before AI, probably before GUI, based on the terminal-like website you host.",
+      "gold": "assertion",
+      "predicted": "experience"
+    },
+    {
+      "text": "What I think is really going on is an attempt to segment the market in favor of Google's strengths. It's a bet that models are \"good enough\" for many use cases even before they reach human-level intelligence, and Google is trying to capture workflows where quantity beats quality.\n\nThey are likely deliberately avoiding the SoTA race for a few reasons:\n\n1. Their best models are marginally better than current SoTA releases. \n2. They'd like to let Ant/OAI make mistakes with safeguards / let them get the regulatory heat. The unknown unknowns are huge with SoTA models (eg OAI accidentally hacking huggingface) and they are protecting their reputation. \n3. They want to encourage companies to become cost conscious because they can likely win on price in the long run. Getting market share in \"quantity beats quality\" workflows forces companies to establish processes to choose the \"cheapest acceptable model\", which is a good environment for Google.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "My enterprise org has this model disabled because \"security.\"\n\nDoes this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "> My impression is that people who can work on stuff like that are the kind who just take the stuff in the world for granted.\n\nSome are also doing it for the technical challenge, especially those working on new tech rather than refining what already exists. Like the people who try to solve the great problems of mathematics/physics (or find interesting new ones) for the challenge of it (and sometimes refuse prizes & recognition if they do solve or otherwise discover something vital).\n\nThis sort of person is often blinkered to the possible extreme long-term outcomes, or are able to mentally separate themselves from them (\u201cI just made the discovery, I didn't use it to do anything bad\u201d or \u201cI was paid for it, follow the money source and blame them\u201d). Of course once a genie is out of the bottle, other sorts of people are more than eager to ask it for wishes\u2026",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I've gone out of my way to not read my wikipedia page. Beyond this, there's a rule (suggestion??) that you not edit your own biographical page.\n\nAs a result, I have no idea whether things are right, wrong, misguided, or kflooey on that page. Anyone who wants to know details can simply stop over here for coffee and a chat.\n\nCheers, -Cliff",
+      "gold": "experience",
+      "predicted": "assertion"
+    },
+    {
+      "text": "It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).\n\nSorry still working on improving the UX :)\n\nEDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> \u201cthe x\u201d, with x having not only no antecedent but also being a coined word or quasi-synonym for something that is already named in the code base\n\nIt does the same thing if you try to get it to do analysis of text or turn data into summaries. It will invent cryptic hyphenated compound words to describe things instead of using plain language or preexisting terms.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Implicitly its payment via data but most people don't understand. Theres an asymmetry in the transaction to me.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "So many elon shills J. ust A. sking Q. uestion -ing off",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "This sounds like such a fun project, especially to share with like minded friends.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Prompting and having the model fill out the rest makes it feel like jazz or at least an improvised result of a song",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Anna's Archive has huge data stores behind it, Nitter doesn't and is easy to replicate. You, yes you, can and should set one up right now. They can't get all of us. If you post it to #nitter:matrix.org it might even get included on the public instance lists.",
+      "gold": "assertion",
+      "predicted": "experience"
+    },
+    {
+      "text": "Honestly, I didn't even know this was a problem that needed to be solved.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "> Now we are considering scrapping it\n\nTurns out, it was probably good that nobody spent time reviewing it.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "How are you drawing that conclusion? He mentioned in several comments on this thread that he is Korean\u2026?\n\nGenuinely curious.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Author here. It\u2019s ironic because this post was clearly geared towards non-hackers. But now that we\u2019re here.. the other analogy I considered presenting was:\n\nharness = chassis,\nmodel = engine,\nfuel = tokens,\nagent = car\n\nI\u2019m curious what y\u2019all might think and whether that analogy carries more explanatory power",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "There's been a market for a while. In thinking of Azul Java, which is just OpenJDK but with someone to point the finger at, and costs money.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "It doesn\u2019t really matter what Ricardo said in 1817: every US academic economist surveyed in 2018 by the Kent Clark Center disagreed that US aluminum and steel tariffs would increase the welfare of the American people ([0]), and this is with the benefit of >200 years in advances in economic scholarship and analysis since Ricardo.\n\n[0] https://kentclarkcenter.org/surveys/steel-and-aluminum-tariffs/",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Does it just use \"here\" / viewing box as a bias, not a hard cutoff? Personally I definitely expect \"here\" to mean \"absolutely no results outside my window under any circumstances\" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Not quite, the EU parliament can't propose new laws nor repeal existing ones, only amend them and vote on proposals from the commission.\n\nThe Stop Killing Games campaign, for example, has noticed that the EU commission keeps repeating lobbyist lies and has no expectations of new laws actually passing, so they're focusing on amending existing law through parliament.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I like this a lot and am going to experiment w/ incorporating in my early literacy app.\n\nHeads up: the \"See it live in the showcase \u2192 \" links in the API documentation do not go back to the showcase - they just reload the same current API section.\n\nQuestion: maybe I've missed it, but what exists here wrt distribution / packaging / bundling / source availability? I see MIT listed, but no repo. I see src=\"https://jelly-ui.com/package.js\" as a sourcing import, but obviously I'm not going to bundle foreign assets into my app.",
+      "gold": "experience",
+      "predicted": "assertion"
+    },
+    {
+      "text": "https://github.com/datafusion-contrib/datafusion-ducklake is more established, and linked to directly from the ducklake docs",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> Domestic China is the only very large audience for their own models\n\nI don't think so. US models are very expensive, and not available in every country. I am not willing to pay $50/1M tokens for writing my pet projects.",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "That's great if you're talking to a high schooler that has never been politically active, but I'm literally a democratic party operative. I've attend state conventions, state nominating conventions, platform conventions, DNC twice. This is not the democratic party I want to part of and why I'm extremely thankful people-led organizations like WFP and DSA are actively trying to change things for the better.\n\nNone of what you are describing has any real momentum behind it and for how many decades will you let politicians fails you until you do something in response?\n\nLike bro, the democratic party isn't an opposition party. There is a reason why the party has majority unfavorability rating [1] throughout Trump's entire second term. How do you square this?\n\nThis is a fucking terrible sign and it's why progressive candidates have seen a massive insurgency this cycle and why the corporate do-nothing dems are so scared shitless that they might have to actually answer why they are okay with genocide + corporate welfare programs while doing nothing to help people materially.\n\nYou say no one is excusing them, then spend your entire comment excusing them.\n\nWhat do you actually do politically?\n\n[1] https://fiftyplusone.news/polls/favorability/democratic-party",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "dense small models do not like quantization. i find 27b fp8 to be smarter albeit less knowledgable versus the 122B",
+      "gold": "experience",
+      "predicted": "evidence"
+    },
+    {
+      "text": "agree - I was really uneasy with the lede in their v2.0 preview:\n\n\"DuckDB has been an in-process database since day one. But people have asked us \u2013 very persistently \u2013 for a client/server mode, and we have finally caved\"\n\nThis was already satisfied by numerous projects and products, and feels like a \"me too\" attempt to capture AI-based workflows. DuckDB always felt like \"SQLite for Analytic Data\" but I fear these changes and now acquiring the org leading technical direction is where they deviate for good. AWS is so unnecessary for what DuckDB can (and should, IMO) be; MongoDB jumps to mind as a cautionary tale.",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "With physical access, root access is as simple as setting init=/bin/bash in the kernel parameters from a bootloader. No need for credentials or anything.",
+      "gold": "assertion",
+      "predicted": "experience"
+    },
+    {
+      "text": "Nicely done! Glad to see real hacking is still alive in the age of AI.",
+      "gold": "assertion",
+      "predicted": "experience"
+    },
+    {
+      "text": "I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham\u2019s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.",
+      "gold": "experience",
+      "predicted": "experience"
+    }
+  ]
+}

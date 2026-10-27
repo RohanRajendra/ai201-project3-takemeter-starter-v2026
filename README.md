@@ -615,25 +615,134 @@ the core stays frozen for unit 6):
 
 ---
 
+## Unit 6 Stretch Features
+
+**Declared before building.** This section was committed in the Milestone 1
+commit, before any three-seed run, confusion matrix or improvement existed.
+Results are added under each item once it's built.
+
+**1. A confidence check:** are the model's confident predictions right more
+often than its unsure ones?
+- **The numbers:** for every seed, before and after the improvement, the
+  accuracy of the most-confident third of test predictions against the
+  least-confident third, and the mean confidence when right against when
+  wrong. All of these are already in `results_three_seeds_before.json` and
+  `results_three_seeds_after.json`.
+- **When:** written alongside Milestone 4, because criterion 3 is the
+  confidence criterion and uses the same numbers.
+- **What it reports:** whether confidence tracks correctness, and whether the
+  answer changes once the model stops predicting one label.
+
+**2. A per-label error write-up** for whichever label the post-improvement
+confusion matrix says is worst (lowest F1 across the three seeds).
+- **Method:** `error_analysis.py` re-runs the improved setting on the same three
+  seeds and saves every test prediction (`error_analysis.json`). I'll check it
+  reproduces `results_three_seeds_after.json`.
+- **What it says:** which label the worst label gets confused with, in which
+  direction, and what the misclassified posts have in common, read post by
+  post against the taxonomy.
+- **When:** right after Milestone 5. The before model is expected to predict
+  `assertion` for everything, so its errors have nothing to say about any one
+  label.
+
+**3. A second measured improvement:** one more change, chosen from the
+post-improvement diagnosis and the error write-up, made on top of the first.
+- **How it's measured:** the same three seeds, with `RUN_LABEL = "after2"` →
+  `results_three_seeds_after2.json`, and a third run log in the same format.
+- **What it reports:** whether it helped, against the first improvement's log,
+  and how I know.
+
+---
+
 ## Baseline vs. Trained
 
 <!-- Both models on the same posts. `python baseline.py --trained results.json`
      prints this table for you. -->
 
+**Same posts, both columns:** the 35 held-out posts in `test_split.csv`
+(seed 42). For the baseline, `baseline_results.json` records `held_out: true`
+and `n: 35`; for the trained model, `results.json` records `n_test: 35`. The
+baseline is `facebook/bart-large-mnli`, zero-shot, using only the three
+definitions in `label_definitions.txt`. Trained is the unit 5 run in
+`results.json` (DistilBERT, 3 epochs). Both ran on **`mps`** (Apple M4).
+
 | Measure | Baseline | Trained | Difference |
 |---|---|---|---|
-| Overall accuracy |  |  |  |
-| Macro F1 |  |  |  |
-| F1 — `label_one` |  |  |  |
-| F1 — `label_two` |  |  |  |
+| Overall accuracy | 0.514 | 0.629 | +0.114 |
+| Macro F1 | 0.385 | 0.257 | -0.127 |
+| F1 — `assertion` | 0.682 | 0.772 | +0.090 |
+| F1 — `evidence` | 0.222 | 0.000 | -0.222 |
+| F1 — `experience` | 0.250 | 0.000 | -0.250 |
+
+**What the definitions were worth** (same 35 posts, three prompts; files in
+`baseline_extra/`):
+
+| Baseline prompt | Accuracy | Macro F1 | F1 `evidence` | F1 `experience` | F1 `assertion` |
+|---|---|---|---|---|---|
+| My definitions, as written in `label_definitions.txt` (**the baseline above**) | 0.514 | 0.385 | 0.222 | 0.250 | 0.682 |
+| The same definitions reworded as noun phrases | 0.486 | 0.422 | 0.267 | 0.400 | 0.600 |
+| Bare label names, no definitions | 0.571 | 0.469 | 0.444 | 0.250 | 0.711 |
+
+My definitions were worth **less than nothing**: the bare names beat them by
+0.057 accuracy and 0.084 macro F1. Part of the reason is mechanical.
+`baseline.py` builds each hypothesis as "This post is {}.", and my definitions
+start with a verb, so the model was asked whether "This post is backs its point
+with something specific…" was true. Rewording them as noun phrases ("a comment
+that backs its point…") recovers some macro F1 (0.385 → 0.422), but not the gap
+to bare names. My reading is that the three definitions share one frame
+("backs its point", "claim", "support"), so an NLI model sees three
+near-identical hypotheses, while the bare words "evidence", "experience" and
+"assertion" are more different from each other. With the definitions, it
+called 12 posts `evidence` and got 2 right. The official baseline stays the
+`label_definitions.txt` run, because that's what criterion 5 names.
+
+**The baseline on the other two seeds' test posts** (`baseline_extra/`). This
+is a supplementary check, for criterion 5's run-log row. Section 6 splits each
+seed this way, so these are exactly the posts each seed's trained model is
+scored on.
+
+| Baseline (definitions) | Seed 42 | Seed 7 | Seed 2024 |
+|---|---|---|---|
+| Accuracy | 0.514 | 0.571 | 0.343 |
+| Macro F1 | 0.385 | 0.555 | 0.310 |
+
+Nothing was trained here, yet macro F1 moves 0.245 between splits. That
+spread comes purely from which 35 posts land in the test set, and it's a
+measure of how noisy any single 35-post number in this project is.
+
+**Runtime:** one baseline pass over the 35 posts takes about 24 seconds on
+`mps`, including loading the model, because it runs three NLI comparisons per
+post. The fine-tuned model scores the same 35 in under a second (`eval_runtime`
+0.36 s in the unit 5 run).
 
 **What I predicted before I looked:**
 <!-- Milestone 1 asks you to write this BEFORE seeing the trained numbers. A
      prediction made afterwards isn't one. -->
 
+*Written before `baseline.py` had produced a single number. The trained model's
+unit 5 numbers were already known, since it predicted `assertion` for all 35
+test posts.*
+
+> "I predict the trained model beats the zero-shot baseline only on overall
+> accuracy and `assertion` F1: always answering `assertion` banks the 22 of 35
+> majority posts, while bart-large-mnli will scatter its guesses across all
+> three labels and land below 0.63. It will lose on macro F1 and on `evidence`
+> and `experience` F1, because its zeros there lose to any zero-shot model that
+> catches even one post with a link or a first-person story."
+
 **What the gap actually means:**
 <!-- If the baseline matched your trained model, your fine-tuning added
      nothing — and that is a real finding, not a failure. Say it plainly. -->
+
+The prediction held on all five rows. The trained model "wins" on accuracy
+and `assertion` F1 only because it says `assertion` for every post, and 22 of
+the 35 are `assertion`. On everything that needs telling labels apart, the
+untrained baseline is better: it finds 2 of the 6 `evidence` posts and 1 of
+the 7 `experience` posts, and the trained model finds none. **The 3-epoch
+fine-tune learned the class prior and nothing else, so fine-tuning added
+nothing a reader would want.** The model never left the majority class, so
+this measures the training run more than the task. Whether fine-tuning can
+beat zero-shot on this taxonomy is Milestone 5's question.
 
 
 

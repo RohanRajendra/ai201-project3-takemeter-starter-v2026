@@ -1,0 +1,209 @@
+{
+  "model": "facebook/bart-large-mnli",
+  "n": 35,
+  "seed": 42,
+  "held_out": true,
+  "used_definitions": true,
+  "scores": {
+    "n": 35,
+    "accuracy": 0.5714285714285714,
+    "f1_macro": 0.5546558704453441,
+    "per_label": {
+      "assertion": {
+        "precision": 0.8125,
+        "recall": 0.5909090909090909,
+        "f1": 0.6842105263157896,
+        "support": 22
+      },
+      "evidence": {
+        "precision": 0.15384615384615385,
+        "recall": 0.3333333333333333,
+        "f1": 0.21052631578947367,
+        "support": 6
+      },
+      "experience": {
+        "precision": 0.8333333333333334,
+        "recall": 0.7142857142857143,
+        "f1": 0.7692307692307692,
+        "support": 7
+      }
+    }
+  },
+  "predictions": [
+    {
+      "text": "It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).\n\nSorry still working on improving the UX :)\n\nEDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed.",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "What do you mean? AI is being trained on all data available, so obviously it\u2019s being trained on data from 2017/2018 as well.\n\nOr do you mean that the patterns that AI is showing today were already present in communication around that time?\n\nThat seems obvious as well, as AI has a lot of repetitive patterns that come from all kinds of periods, of which \u201cload-bearing\u201d is just one.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "That's great and all, but what they should have done was just scrapped the age-verification stuff entirely. You can't really justify having that kind of restriction on Windows and MacOS but not on Linux.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "That\u2019s what I came here to ask. Their demo looks like Compiz back in the day: ok, cool, you have 3d effects, but\u2026 why? What does it do for me?\n\nCompiz 3d effects were ultimately a useless gimmick and I predict this is too.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "What's wrong with the name? It stands for GNU Image Manipulation Program.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "But Jensen recently proposed a tokenization of GPU power which would be definition be financially rewarded by limiting the supply of GPUs. So I'm not sure how true your proposition will remain moving forward.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I think the PPP calculations may suffer from the same problem as the USA inflation rate being nominally low. Housing, food and medicine are all ludicrously cheap outside of tier 1 cities.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "> Don't pin versions, pull everything from latest\n\nRebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "There\u2019s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/\n\nLike it or not (I\u2019m in \u201cnot\u201d), this is hardly a new thing.",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I'm getting the impression that LLMs are just not very good at \"reasoning\" about time. I have definitely had success getting a coding agent to produce decent concurrent code, but I had to basically lead it by the nose, and I strongly suspect that in most cases it would have taken less time to just do it the old fashioned way.",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "Audio and Video professionals jumped ship around the time Apple canned all the pro software",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Point out what verbatim piece of text forbids any and all usage of LLMs for coding and having that project on Codeberg?\n\nLiterally the first \"informal guidelines\" (subject to change of course) states:\n\n> Projects who have an active community that cares about and maintains the software\n\nYou can use LLMs for development + fulfill this requirement, contrary to popular belief.\n\nThey want to get rid of slop projects and vibe coders, not any project that has any developer that used any LLM. But again, requires you to read through the actual text to actually get their intention here.",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "So many elon shills J. ust A. sking Q. uestion -ing off",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "He has been emailing the CEO for six months with no replies. This is has also been posted here before with not a single pip or comment ... :-)\n\nAnd these customers absolute lack of technical due diligence, on this nth example, of move fast and break things...makes them deserve what they are getting.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I\u2019m a fan of paying for search with money rather than my privacy.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Alternatively, they can care about principles and issues that differ from that of the other party.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.\n\nIn case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: \u201calternative facts\u201d.",
+      "gold": "evidence",
+      "predicted": "experience"
+    },
+    {
+      "text": "Who's your audience? People who don't use electron - historically downvoted. People who do - won't upvote this. People who don't care.. I guess?",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> Wtf. I've always wanted this, and it was right there.\n\nHaha, same! I was literally looking for this feature last week without realising.\n\nWhat could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",
+      "gold": "experience",
+      "predicted": "evidence"
+    },
+    {
+      "text": "> Also Nvidia isn\u2019t really creating money\n\nThat\u2019s what loans are.\n\nhttps://en.wikipedia.org/wiki/Money_creation",
+      "gold": "evidence",
+      "predicted": "evidence"
+    },
+    {
+      "text": "One trick I\u2019ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn\u2019t know about .git/config though!",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say \"right to free assembly was to give richer corporations more sway.\"\n\nFundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.\n\nCitizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "I think the audio is missing a lot of the hiccups, delays, and quirks that come with humans in meetings but the rest is pretty good!",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "There is like 1 or 2 actual \"video game journalists\" everyone else is just a glorified blogger.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.\n\nThe way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid).",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting.",
+      "gold": "assertion",
+      "predicted": "evidence"
+    },
+    {
+      "text": "Does it just use \"here\" / viewing box as a bias, not a hard cutoff? Personally I definitely expect \"here\" to mean \"absolutely no results outside my window under any circumstances\" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",
+      "gold": "assertion",
+      "predicted": "assertion"
+    },
+    {
+      "text": "I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it.",
+      "gold": "experience",
+      "predicted": "experience"
+    },
+    {
+      "text": "> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.\n\nSo in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.\n\n> Then Nadella took over as CEO. The stock went up by a factor of 10\n\nThe stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?\n\n> It's similar to military generals.\n\nGreat analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",
+      "gold": "evidence",
+      "predicted": "assertion"
+    },
+    {
+      "text": "This is awesome. Congratulations!\n\nAs others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",
+      "gold": "experience",
+      "predicted": "evidence"
+    }
+  ]
+}

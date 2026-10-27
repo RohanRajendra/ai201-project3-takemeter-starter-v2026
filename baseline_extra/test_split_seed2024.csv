@@ -1,0 +1,80 @@
+text,label,note
+So many elon shills J. ust A. sking Q. uestion -ing off,assertion,"pre-labelled, checked; hn:48379463"
+"May be you can add AI to your page, nobody make slides by hand now.",assertion,"pre-labelled, checked; hn:49017871"
+"Again, you're not wrong, but none of those things are insurmountable. If the team is really so stressed it cannot spend 30 minutes, over the many year of the existence of that bug, that seems like a development environment close to hell.
+
+Knowledge loss is precisely my point: there is very little a-priori knowledge needed to solve this, the guy who found the bug proves that.",assertion,"pre-labelled, checked; hn:48335137"
+What's wrong with the name? It stands for GNU Image Manipulation Program.,assertion,"pre-labelled, checked; hn:49475254"
+"What a lovely blog in general: some really fun retro-computing projects, written up in a very thoughtful, human way. Feels like a throwback to the earlier hacking spirit of the internet. Thank you, Colin: your ""experiment with writing"" is a success as far as I'm concerned!",assertion,"pre-labelled, checked; hn:49818426"
+"One trick I’ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn’t know about .git/config though!",experience,"pre-labelled, checked; hn:48593831"
+This is a lovely toy project. But please do not do this for real; imperfections - even minute imperfections - in data visualisations have consequences. 'Non-techy' people take for granted shapes and lines over numbers and sequences simply because computers are accurate. Correctness of data is a separate matter of course,assertion,"pre-labelled, checked; hn:48261770"
+Multipass is just an apt-get or brew command away. People trust software too much these days.,assertion,"pre-labelled, checked; hn:48918161"
+"It's an opt-in feature. https://techcrunch.com/2025/09/08/signal-introduces-free-and-paid-backup-plans-for-your-chats/
+
+A service that advertises itself as privacy focused refusing to update their privacy policy while adding features like this seems like a pretty big dead canary.",evidence,"pre-labelled, checked; hn:48455681"
+"Any text, code, image, video or audio they/anybody has ever uploaded to the public internet? Is this a real question?",assertion,"pre-labelled, checked; hn:48589145"
+But is the UI harder to use than building housing in San Francisco?,assertion,"pre-labelled, checked; hn:50037808"
+"Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",experience,"pre-labelled, checked; hn:48270492"
+"There was a ton of... not exactly footguns, just things to keep in mind if you’ve wanted your site to work as you intended in all browsers. The webcompat nowadays is way better now.
+
+That said, personally I’ve never understood Dreamweaver either. By the time I tried it, I’ve already got used to Notepad++ and writing HTML by hand, so I’ve just treated it as another text editor... and IIRC it just felt way more laggy than Notepad++, with a browser preview panel that took half of my 4:3 display. Maybe I’d discover some cool features if I’ve spent some more time in it? I dunno.",experience,cold; hn:48729114
+"This sounds like such a fun project, especially to share with like minded friends.",assertion,"pre-labelled, checked; hn:49818174"
+"Mathematics is a language. If anything, it's much more well defined and formal than most others. Train on enough examples and statistical autocomplete gets you places. I'm surprised how anyone would even consider this intelligence?",assertion,"pre-labelled, checked; hn:48961277"
+I've been getting a little frustrated with having to rearchitect things any time I want to try a new harness. Wrote about my most recent experiments with separating conversation from control loop here and using MCP as the seam here: https://demianbrecht.com/posts/the-harness-within-the-harness/. This allows me to build a spectrum of agentic to entirely deterministic tools and be able to port them from one harness to another with only a minimal amount of harness-specific config.,evidence,"pre-labelled, checked; hn:49472184"
+"There’s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/
+
+Like it or not (I’m in “not”), this is hardly a new thing.",evidence,cold; hn:49977700
+Audio and Video professionals jumped ship around the time Apple canned all the pro software,assertion,"pre-labelled, checked; hn:48141468"
+"Google isn't allowed to, it was always Debian. If Debian doesn't, Google has to assume the most restrictive category, or deny service altogether.",assertion,"pre-labelled, checked; hn:49500391"
+"""Create money"" here doesn't mean literally fluffing the balance sheet like when the fed prints money (which would have accounting differences), it means spending the same money more rapidly than otherwise. This is NVidia's personal contribution to increasing the economy's Money Multiplier [https://en.wikipedia.org/wiki/Money_multiplier], which effectively increases the money supply from the broader economy's perspective.",evidence,"pre-labelled, checked; hn:49678463"
+"> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.
+
+So in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.
+
+> Then Nadella took over as CEO. The stock went up by a factor of 10
+
+The stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?
+
+> It's similar to military generals.
+
+Great analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",evidence,"pre-labelled, checked; hn:48278487"
+"These kind of rights are something which only physical persons should have, and card networks aren't infringing on the rights of real humans. Businesses aren't people, and they shouldn't have any inherent right to be provided with utilities or payment solutions. And as it stands today they don't.
+
+You as a real human should have a right to have a bank account and to send and receive money. Just as you as you as a real human should have a right to access any other basic utility.
+
+Your business should not have any such rights. If the power company doesn't want to provide your data center or steel factory with electricity, then your business shall have no right to it.
+
+If a card payment company doesn't want to provide their services to your brothel or your weapons factory or your weed shop, then your business shall have no right to it.",assertion,"pre-labelled, checked; hn:50004509"
+"Facebook is intentionally designed to be as addictive as possible. It's not just FOMO, https://news.ycombinator.com/item?id=24579498",evidence,"pre-labelled, checked; hn:49455153"
+"> Wtf. I've always wanted this, and it was right there.
+
+Haha, same! I was literally looking for this feature last week without realising.
+
+What could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",experience,"pre-labelled, checked; hn:48595928"
+"The debate thing was clownish, for sure.
+
+My recollection of the DNC linkage was that the Clinton campaign agreed to help the DNC in a set of ways (likely raising money for the DNC and helping Democratic candidates) in exchange for some affordances and Sanders refused to do likewise (which, to his credit is on brand). Is that not accurate? I admit it's been 10 years and there have been a lot of claims made as to why Sanders should have been given the nomination in spite of not winning more votes.",assertion,"pre-labelled, checked; hn:49392758"
+"Curiously, the Mac App Store sandbox has a com.apple.security.network.client entitlement that a developer must justify to Apple, whereas the iOS App Store does not, allowing unrestricted access to the internet.",assertion,"pre-labelled, checked; hn:48618365"
+"> Require stores and publishers to use language that reflects the nature of the transaction.
+
+After this law is made and they change the word without changing anything else, that won't save the past. They'll probably even market test some nonsense word that won't even make people feel like they're being ripped off.",assertion,"pre-labelled, checked; hn:49176449"
+I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham’s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.,experience,"pre-labelled, checked; hn:48543690"
+"My enterprise org has this model disabled because ""security.""
+
+Does this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?",experience,"pre-labelled, corrected in review (was SET_ASIDE); hn:49819380"
+"Thank you! We can decide to just... you know... do things.
+
+Like, am I crazy here? The rules that we live by are largely made up and the points don't matter - we can decide to live in a better world if we want to. It's hard, and there are obstacles, for sure, but this appeal to doom for the sake of doom just... why? We have made unfathomable progress over the last century and if we keep trying we can make progress like that over the next century too!",assertion,"pre-labelled, checked; hn:48962585"
+"This is just finally bringing the magical ""the computer did it"" to the masses!
+
+When companies like Amazon accept, warehouse, bill for and ship unsafe Chinese trash, well, at every step it was just a computer. Google, X and others will happily show state funded scam advertisements from fake accounts and there is no one accountable, because it's just the computer handling those.
+
+Now with AI, everyone can claim this magical legal immunity for themselves.",assertion,"pre-labelled, checked; hn:49235070"
+"This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",experience,"pre-labelled, checked; hn:48828914"
+"I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say ""right to free assembly was to give richer corporations more sway.""
+
+Fundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.
+
+Citizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",assertion,"pre-labelled, checked; hn:49467243"
+"Well, there's really no need to come up with such complicated (and not entirely accurate) analogies here. It's actually very simple. Paying Google is bad. Not paying is good. That's it.",assertion,cold; hn:50036534
+I mean if you want it to plan something without writing code first you literally just need to ask it to plan out the implementation first it's not exactly a difficult concept,assertion,"pre-labelled, checked; hn:49855439"

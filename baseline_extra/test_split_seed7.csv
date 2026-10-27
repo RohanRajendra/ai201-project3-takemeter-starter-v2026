@@ -1,0 +1,88 @@
+text,label,note
+"It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).
+
+Sorry still working on improving the UX :)
+
+EDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",evidence,"pre-labelled, checked; hn:48262246"
+"Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed.",experience,"pre-labelled, checked; hn:49207286"
+"What do you mean? AI is being trained on all data available, so obviously it’s being trained on data from 2017/2018 as well.
+
+Or do you mean that the patterns that AI is showing today were already present in communication around that time?
+
+That seems obvious as well, as AI has a lot of repetitive patterns that come from all kinds of periods, of which “load-bearing” is just one.",assertion,"pre-labelled, checked; hn:48914036"
+"How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",assertion,"pre-labelled, checked; hn:48552314"
+"That's great and all, but what they should have done was just scrapped the age-verification stuff entirely. You can't really justify having that kind of restriction on Windows and MacOS but not on Linux.",assertion,"pre-labelled, checked; hn:49505701"
+"That’s what I came here to ask. Their demo looks like Compiz back in the day: ok, cool, you have 3d effects, but… why? What does it do for me?
+
+Compiz 3d effects were ultimately a useless gimmick and I predict this is too.",assertion,cold; hn:48095986
+What's wrong with the name? It stands for GNU Image Manipulation Program.,assertion,"pre-labelled, checked; hn:49475254"
+But Jensen recently proposed a tokenization of GPU power which would be definition be financially rewarded by limiting the supply of GPUs. So I'm not sure how true your proposition will remain moving forward.,assertion,"pre-labelled, checked; hn:49690277"
+"I think the PPP calculations may suffer from the same problem as the USA inflation rate being nominally low. Housing, food and medicine are all ludicrously cheap outside of tier 1 cities.",assertion,"pre-labelled, checked; hn:48580970"
+"> Don't pin versions, pull everything from latest
+
+Rebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",assertion,cold; hn:49158268
+"There’s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/
+
+Like it or not (I’m in “not”), this is hardly a new thing.",evidence,cold; hn:49977700
+"I'm getting the impression that LLMs are just not very good at ""reasoning"" about time. I have definitely had success getting a coding agent to produce decent concurrent code, but I had to basically lead it by the nose, and I strongly suspect that in most cases it would have taken less time to just do it the old fashioned way.",experience,"pre-labelled, checked; hn:48175023"
+Audio and Video professionals jumped ship around the time Apple canned all the pro software,assertion,"pre-labelled, checked; hn:48141468"
+"Point out what verbatim piece of text forbids any and all usage of LLMs for coding and having that project on Codeberg?
+
+Literally the first ""informal guidelines"" (subject to change of course) states:
+
+> Projects who have an active community that cares about and maintains the software
+
+You can use LLMs for development + fulfill this requirement, contrary to popular belief.
+
+They want to get rid of slop projects and vibe coders, not any project that has any developer that used any LLM. But again, requires you to read through the actual text to actually get their intention here.",evidence,"pre-labelled, checked; hn:49845744"
+So many elon shills J. ust A. sking Q. uestion -ing off,assertion,"pre-labelled, checked; hn:48379463"
+"He has been emailing the CEO for six months with no replies. This is has also been posted here before with not a single pip or comment ... :-)
+
+And these customers absolute lack of technical due diligence, on this nth example, of move fast and break things...makes them deserve what they are getting.",assertion,"pre-labelled, checked; hn:49243631"
+I’m a fan of paying for search with money rather than my privacy.,assertion,"pre-labelled, checked; hn:49974630"
+"Alternatively, they can care about principles and issues that differ from that of the other party.",assertion,"pre-labelled, checked; hn:49392295"
+"The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.
+
+In case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: “alternative facts”.",evidence,"pre-labelled, checked; hn:49342333"
+Who's your audience? People who don't use electron - historically downvoted. People who do - won't upvote this. People who don't care.. I guess?,assertion,"pre-labelled, checked; hn:49016877"
+"+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",assertion,"pre-labelled, checked; hn:48925372"
+"> Wtf. I've always wanted this, and it was right there.
+
+Haha, same! I was literally looking for this feature last week without realising.
+
+What could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",experience,"pre-labelled, checked; hn:48595928"
+"> Also Nvidia isn’t really creating money
+
+That’s what loans are.
+
+https://en.wikipedia.org/wiki/Money_creation",evidence,"pre-labelled, checked; hn:49682695"
+"One trick I’ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn’t know about .git/config though!",experience,"pre-labelled, checked; hn:48593831"
+"I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say ""right to free assembly was to give richer corporations more sway.""
+
+Fundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.
+
+Citizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",assertion,"pre-labelled, checked; hn:49467243"
+Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?,assertion,cold; hn:48058739
+"Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",experience,"pre-labelled, checked; hn:48270492"
+"I think the audio is missing a lot of the hiccups, delays, and quirks that come with humans in meetings but the rest is pretty good!",assertion,"pre-labelled, checked; hn:50033412"
+"There is like 1 or 2 actual ""video game journalists"" everyone else is just a glorified blogger.",assertion,"pre-labelled, checked; hn:48857635"
+"The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.
+
+The way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid).",assertion,"pre-labelled, checked; hn:48419032"
+"Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting.",assertion,cold; hn:48330616
+"Does it just use ""here"" / viewing box as a bias, not a hard cutoff? Personally I definitely expect ""here"" to mean ""absolutely no results outside my window under any circumstances"" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",assertion,"pre-labelled, corrected in review (was SET_ASIDE); hn:48849796"
+"I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it.",experience,cold; hn:50001679
+"> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.
+
+So in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.
+
+> Then Nadella took over as CEO. The stock went up by a factor of 10
+
+The stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?
+
+> It's similar to military generals.
+
+Great analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",evidence,"pre-labelled, checked; hn:48278487"
+"This is awesome. Congratulations!
+
+As others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",experience,cold; hn:48265006

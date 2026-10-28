@@ -633,6 +633,24 @@ often than its unsure ones?
 - **What it reports:** whether confidence tracks correctness, and whether the
   answer changes once the model stops predicting one label.
 
+**Result, before the improvement** (`results_three_seeds_before.json`;
+11 posts per third):
+
+| Seed | Most-sure third right | Least-sure third right | Gap | Mean confidence when right | Mean confidence when wrong |
+|---|---|---|---|---|---|
+| 42 | 0.818 | 0.273 | +0.545 | 0.641 | 0.583 |
+| 7 | 0.545 | 0.545 | 0.000 | 0.616 | 0.605 |
+| 2024 | 0.909 | 0.455 | +0.455 | 0.624 | 0.551 |
+
+**On two of the three seeds, the confident predictions were right more often.
+But the comparison is close to empty.** Every prediction was `assertion`, so
+"right" just means "the post really was `assertion`", and confidence only
+measures how `assertion`-like the model found each post. The mean confidence
+gap between right and wrong predictions is small on every seed (0.058, 0.011
+and 0.073), and every one of those means sits between 0.55 and 0.64. The model
+was about equally sure of every post, right or wrong. The after half of this
+check, once the model predicts all three labels, goes under Milestone 5.
+
 **2. A per-label error write-up** for whichever label the post-improvement
 confusion matrix says is worst (lowest F1 across the three seeds).
 - **Method:** `error_analysis.py` re-runs the improved setting on the same three
@@ -783,8 +801,25 @@ movement is in the confidence ranking, which only orders posts that all got
 the same label. The untrained baseline moves 0.245 in macro F1 across these
 same three splits, and that is the real noise level of a 35-post test.
 
-The criteria table and verdicts are in **Verdicts and Diagnoses** below,
-filled in once the agreement check (criterion 4) existed.
+**The run log.** The five criteria from `criteria.md`, three seeds each, on
+`mps`:
+
+| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
+|---|---|---|---|---|---|
+| 1. Accuracy clearly beats always guessing `assertion` | accuracy ≥ 0.65 **and** ≥ 0.10 above the seed's `assertion` share | 0.629 (share 0.629, +0.00) | 0.629 (share 0.629, +0.00) | 0.629 (share 0.629, +0.00) | **MISSED** |
+| 2. No label is left behind | every label's F1 ≥ 0.50 | lowest 0.000 (`evidence` 0.000, `experience` 0.000, `assertion` 0.772) | lowest 0.000 (same three) | lowest 0.000 (same three) | **MISSED** |
+| 3. Confident guesses are right more often | most-sure third − least-sure third ≥ 0.20 | 0.545 (0.818 − 0.273) | 0.000 (0.545 − 0.545) | 0.455 (0.909 − 0.455) | **MISSED** |
+| 4. My labels agree with someone else's | `agreed` ≥ 23 and `compared` = 30 | 25 / 30 | 25 / 30 | 25 / 30 | **MET** |
+| 5. Fine-tuning beats the zero-shot baseline | trained macro F1 − baseline macro F1 ≥ 0.15, on the same posts | −0.127 (0.257 vs 0.385) | −0.297 (0.257 vs 0.555)\* | −0.052 (0.257 vs 0.310)\* | **MISSED** |
+
+- **Criterion 4 doesn't depend on the split.** The 30 staff posts and my labels
+  are the same whichever seed trains the model, so its one measurement fills
+  all three columns.
+- **Criterion 5, as written, is a single comparison** on the seed-42 posts
+  (`results.json` against `baseline_results.json`), so the seed-42 cell is the
+  verdict. \*The seed 7 and 2024 cells compare that seed's trained model with
+  the baseline scored on that seed's own test posts (`baseline_extra/`). They're
+  recorded so the row has three trials, and all three miss.
 
 ### Confusion matrix
 
@@ -834,11 +869,27 @@ label can't tell me anything about one boundary in my labels.
 
 | # | Criterion | Target | Verdict | How I decided |
 |---|---|---|---|---|
-| 1 |  |  |  |  |
-| 2 |  |  |  |  |
-| 3 |  |  |  |  |
-| 4 |  |  |  |  |
-| 5 |  |  |  |  |
+| 1 | Accuracy clearly beats always guessing `assertion` | ≥ 0.65 and ≥ 0.10 above the `assertion` share, on every seed | **MISSED** | Accuracy is 0.629 on all three seeds. That's below 0.65, and exactly the `assertion` share (+0.00), so both conditions fail on every seed. |
+| 2 | No label is left behind | every label's F1 ≥ 0.50, on every seed | **MISSED** | `evidence` and `experience` F1 are 0.000 on every seed. |
+| 3 | Confident guesses are right more often | gap ≥ 0.20, on every seed | **MISSED** | Seed 7's gap is 0.000, and the target has to hold on all three seeds. Seeds 42 and 2024 clear it; the diagnosis below explains why that means little. |
+| 4 | My labels agree with someone else's | `agreed` ≥ 23 and `compared` = 30 | **MET** | `agreement_results.json` has `agreed` 25 and `compared` 30. |
+| 5 | Fine-tuning beats the zero-shot baseline | trained − baseline macro F1 ≥ 0.15, same posts | **MISSED** | 0.257 − 0.385 = −0.127 on `test_split.csv`. The same-posts check holds: `held_out` is true, `n` 35 equals `n_test` 35, and the definitions were used. |
+
+**Revisions:** none. Criterion 3 has a real weakness, but it can still be
+measured and it produced a verdict, so it isn't broken in the sense the brief
+allows a revision for. The weakness is covered under criterion 3 below.
+
+**Checking the verdicts against the opposite case.** Following the brief, I
+argued the opposite verdict for every criterion where a reading had any room.
+- **Criterion 3:** "two seeds clear 0.20 comfortably and the mean gap is 0.33".
+  But the criterion says *every* seed, so MISSED stands.
+- **Criterion 4:** "25 is only two posts over the target, and the staff posts
+  come grouped by label". But the criterion is a count, and the grouping
+  applied to both labellers, so MET stands.
+- **Criterion 5:** "the baseline alone moves 0.245 across splits, so −0.127 is
+  inside the noise". But the noise cuts both ways, the target asks for +0.15,
+  and all three splits come out negative, so MISSED stands.
+- **Criteria 1 and 2:** no reading gets 0.629 over 0.65, or 0.000 over 0.50.
 
 **Diagnoses**
 
@@ -850,6 +901,69 @@ label can't tell me anything about one boundary in my labels.
      ⚠️ Use your agreement report as evidence. It is the only instrument you
      have that can tell a LABELLING problem from a MODEL problem, and this
      section is graded on whether you used it that way. -->
+
+**One cause behind all four misses: the training run stopped before the model
+left the majority class.** It isn't any of the three data causes (too few
+examples, an inconsistent boundary, a hard pair). The nearest of the four
+common causes is "a task the model can't reach from this much data", but the
+evidence says this data *can* be reached. The run was just too short to reach
+it: 33 optimizer steps at learning rate 2e-5. Four pieces of evidence:
+
+1. **The confusion matrix shows no boundary at all.** Pooled over the three
+   seeds, all 105 test posts were predicted `assertion` (18 of 18 `evidence`,
+   21 of 21 `experience`). A boundary I labelled inconsistently would show up
+   as one specific pair confused in both directions. A label that swallows
+   every other label is the model learning the class prior and nothing else.
+2. **The model was still learning when it stopped.** On every seed, validation
+   accuracy sat at exactly 0.629, the `assertion` share, after epochs 1, 2 and
+   3, while training loss kept falling (seed 42: 1.003 → 0.852 → 0.797; seed 7:
+   1.047 → 0.887 → 0.835; seed 2024: 0.992 → 0.894 → 0.879). Validation loss
+   fell with it (seed 42: 0.913 → 0.862 → 0.838).
+3. **The agreement report says labelling isn't the cause.** It's the only
+   instrument here that can separate a labelling problem from a model problem,
+   and it points away from labels. I matched staff on 25 of 30 (83%), above
+   their "a rate in the 70s is normal". The agent that reviewed 211 of the 231
+   rows in `labels.csv` matched them on 30 of 30. Labels that consistent would
+   let a working model draw at least the easy boundaries, and this model drew
+   none.
+4. **The same data does support learning.** The unit 5 stretch run
+   (`results_stretch_epochs.json`) used the same 231 rows and the same seed-42
+   split, and changed only `EPOCHS` 3 → 10. It reached accuracy 0.771 (≥ 0.65,
+   and +0.14 over the share), `evidence` F1 0.727 and macro F1 0.651 (+0.266
+   over the baseline). So 28 training examples are enough for `evidence`. The
+   bottleneck was the number of passes, not the number of posts.
+
+**Criterion by criterion:**
+
+- **1 (accuracy).** Accuracy equals the `assertion` share exactly because every
+  prediction is `assertion` (evidence 1). The cause is under-training
+  (evidences 2 and 4).
+- **2 (every label).** Both minority labels score 0 because neither is ever
+  predicted (evidence 1). Once training is fixed, the label most at risk is
+  `experience`. It reached only 0.333 F1 in the 10-epoch run, with its errors
+  going to `assertion`. And my one pile-(a) slip in the agreement report was on
+  the matching boundary: staff's `reaction` vs `hot_take` ("about the writer,
+  or a claim?") is my `experience` vs `assertion`. I'll watch that pair in
+  Milestone 5.
+- **3 (confidence).** With every prediction `assertion`, confidence can only
+  rank posts by how `assertion`-like they look, and "right" just means "truly
+  `assertion`". On seed 7 the ranking didn't separate them. Both thirds held 6
+  of 11 true `assertion` posts, and mean confidence when right (0.616) was
+  barely above when wrong (0.605). Seeds 42 and 2024 clear 0.20 only because
+  the ranking happened to put true-`assertion` posts on top. That's the
+  criterion's weakness: a model that never predicts a second label can pass it.
+  I've left the criterion alone (see Revisions). In practice, criterion 2 is
+  the guard against one-label models, and it failed here. The cause is the
+  same under-training.
+- **5 (beats the baseline).** Macro F1 of 0.257 is one class's F1 averaged with
+  two zeros, so even a weak zero-shot baseline (0.385, held back by its own
+  definitions; see Baseline vs. Trained) beats it. The cause is under-training
+  (evidences 1 and 2). Evidence 4 says the gap reverses with training.
+
+**What the diagnosis points at:** one training setting, `EPOCHS`. The brief
+warns that a training change is usually the wrong fix. Here, evidences 2 and 4
+say it's the right one, and evidences 1 and 3 rule out the data fixes as the
+first move. That's Milestone 5.
 
 
 

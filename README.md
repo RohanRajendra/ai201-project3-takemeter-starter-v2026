@@ -689,6 +689,101 @@ confusion matrix says is worst (lowest F1 across the three seeds).
   `assertion` for everything, so its errors have nothing to say about any one
   label.
 
+**Result: built.** `python error_analysis.py` → `error_analysis.json`. On all
+three seeds it reproduces `results_three_seeds_after.json` exactly, accuracy
+and confusion matrix both, so these are the after run's own predictions.
+
+**The worst label is `experience`:** mean F1 0.354 across the seeds (0.333,
+0.286 and 0.444), against 0.768 for `evidence` and 0.832 for `assertion`.
+
+**What it's confused with, and which way.** Pooled over the three seeds, real
+`experience` posts appeared 21 times in a test split. 6 were caught, **14 were
+called `assertion`** and 1 was called `evidence`. The model said `experience`
+14 times and was right 6 times; the other 8 were 6 `assertion` and 2
+`evidence` posts. So it's `experience` vs `assertion`, mostly in one
+direction: 14 lost to `assertion` against 6 taken from it.
+
+**What the 10 `experience` posts it called `assertion` have in common** (the
+14 misses are 10 distinct posts, because some sit in more than one seed's test
+split). I read each one against the taxonomy.
+
+1. **The first-hand part is one clause inside a post shaped like a claim,
+   advice or praise (6 of 10).**
+   - "I'm getting the impression that LLMs are just not very good at
+     'reasoning' about time. I have definitely had success getting a coding
+     agent to produce decent concurrent code, but I had to basically lead it
+     by the nose…" (HN 48175023)
+   - "dense small models do not like quantization. i find 27b fp8 to be
+     smarter…" (HN 48974634)
+   - "This is a beautiful way to present extremely high quality information. I
+     sometimes lament… searches for '%{title} filetype:pdf'…" (HN 48828914)
+   - "Haha, same! I was literally looking for this feature last week… the
+     problem is rarely that it can't do something, but the ergonomics…"
+     (HN 48595928)
+   - A tip: "One trick I've used is creating a folder…" (HN 48593831)
+   - Congratulations plus advice: "This is awesome. Congratulations!… you
+     haven't specified a license…" (HN 48265006)
+
+   My precedence rule says one specific first-hand clause makes the whole post
+   `experience`. The model reads the post's overall shape, which is an
+   `assertion`.
+2. **The rest are a question with a first-hand premise (1), a vague
+   first-hand claim (1), and two plain stories (2).**
+   - **The question** is README hard case 4: "My enterprise org has this model
+     disabled… Does this mean…?" (HN 49819380). It was set aside at first and
+     corrected in review.
+   - **The vague claim:** "I've been using `claude -p` for personal use for a
+     long time without issues" (HN 50001679). Rule 2 needs "where or how
+     often", and "a long time" barely meets it.
+   - **The two stories** are the only clean misses: the grad-thesis charts
+     (HN 48270492) and Cliff not reading his own Wikipedia page (HN 48066912).
+3. **"I" can't tell the pair apart.** 13 of the 14 misses contain first-person
+   words (I, I've, I'm, my, we, our), but so do 22 of the 60 `assertion` posts
+   the model got right. It's the only surface cue this pair has, and both
+   labels use it. `evidence` has links and numbers.
+4. **Some of it is my labelling, and I can point at it.** HN 48265006 is one
+   of the two `cold` rows where my hand label (`experience`) differed from the
+   review agent's earlier blind label (`assertion`). The model sided with the
+   agent. Two more were already on record as hard: 48828914 got a hard note in
+   the review, and 49819380 is README hard case 4. That matches the agreement report, where my one
+   pile-(a) slip was on the staff boundary that maps to this one. Still, only
+   1 of the 10 traces to two labellers actually disagreeing.
+5. **They're longer.** The median miss is 47 words, against 37 for the
+   `experience` posts it caught and 28.5 for `assertion` posts it got right.
+   Longer posts carry more claim around the first-hand clause.
+
+**The other direction: 8 posts wrongly called `experience`.** All 8 are in the
+least-sure third (confidence 0.44–0.61). They're first-person claims or
+predictions: "I predict this is too" (HN 48095986), "Personally I definitely
+expect…" (HN 48849796), "Author here…" (HN 49411339). Two are `evidence` posts
+in the first person, with a pointer that decides them under Rule 1: a
+"$50/1M tokens" price (HN 48997783) and a linked poll (HN 49581079). The model
+followed the voice, not the pointer. That's my hardest-boundary rule failing
+in the direction I predicted in unit 5.
+
+**Checking the triage claim from the confidence check:**
+
+| Third (33 / 39 / 33 posts over 3 seeds) | Right | Wrong | Accuracy |
+|---|---|---|---|
+| Least sure | 17 | 16 | 0.52 |
+| Middle | 30 | 9 | 0.77 |
+| Most sure | 31 | 2 | 0.94 |
+
+Of the 20 `experience`/`assertion` mix-ups, 12 are in the least-sure third, 6
+in the middle and 2 in the most-sure. Sending the least-sure third to a human
+would catch 16 of the 27 errors (59%), including 12 of the 20 mix-ups. The 2
+confident mistakes are both `experience` posts called `assertion` at about
+0.91: HN 48595928, a first-hand clause inside a claim, and HN 50001679, the
+vague claim.
+
+**What this points the second improvement at.** `experience` is the thinnest
+label by F1, and its misses are mostly the precedence case: a first-hand
+clause inside a claim-shaped post. With 31 training examples, the model hasn't
+seen that pattern often enough to learn that the clause decides the label.
+Relabelling doesn't look like the fix, because only 1 of the 10 misses traces
+to a labeller disagreement. More `experience` examples does, the brief's
+"thirty more posts of the label with the worst F1".
+
 **3. A second measured improvement:** one more change, chosen from the
 post-improvement diagnosis and the error write-up, made on top of the first.
 - **How it's measured:** the same three seeds, with `RUN_LABEL = "after2"` →

@@ -1,0 +1,1334 @@
+[
+  {
+    "seed": 42,
+    "reproduces_after_run": true,
+    "accuracy": 0.7714285714285715,
+    "confusion": {
+      "evidence": {
+        "evidence": 4,
+        "experience": 2,
+        "assertion": 0
+      },
+      "experience": {
+        "evidence": 1,
+        "experience": 2,
+        "assertion": 4
+      },
+      "assertion": {
+        "evidence": 0,
+        "experience": 1,
+        "assertion": 21
+      }
+    },
+    "posts": [
+      {
+        "text": "How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8814,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.058,
+          "experience": 0.0605,
+          "assertion": 0.8814
+        }
+      },
+      {
+        "text": "Or if your editor is happy to store them in a subfolder that is useful. I use Sublime with the AutoProjects extension and it puts .sublime-project snd .sublime-workspace under a .sublime folder that I can have a .gitignore * underneath.",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.6058,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.215,
+          "experience": 0.6058,
+          "assertion": 0.1792
+        }
+      },
+      {
+        "text": "hmm that's true, in the presentation they don't focus for more than 5 seconds on the backend lol",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8982,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0306,
+          "experience": 0.0711,
+          "assertion": 0.8982
+        }
+      },
+      {
+        "text": "+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8416,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0702,
+          "experience": 0.0882,
+          "assertion": 0.8416
+        }
+      },
+      {
+        "text": "Looking at the top comment about Google right now. Big difference between \"their products/processes suck\" vs. \"these people and their companies and government are an insidious evil\".\n\nAh, the ol' gaslighting you into thinking you're gaslighting me trick.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9203,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0305,
+          "experience": 0.0492,
+          "assertion": 0.9203
+        }
+      },
+      {
+        "text": "I think the discouragement started long before AI, probably before GUI, based on the terminal-like website you host.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8279,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.032,
+          "experience": 0.14,
+          "assertion": 0.8279
+        }
+      },
+      {
+        "text": "What I think is really going on is an attempt to segment the market in favor of Google's strengths. It's a bet that models are \"good enough\" for many use cases even before they reach human-level intelligence, and Google is trying to capture workflows where quantity beats quality.\n\nThey are likely deliberately avoiding the SoTA race for a few reasons:\n\n1. Their best models are marginally better than current SoTA releases. \n2. They'd like to let Ant/OAI make mistakes with safeguards / let them get the regulatory heat. The unknown unknowns are huge with SoTA models (eg OAI accidentally hacking huggingface) and they are protecting their reputation. \n3. They want to encourage companies to become cost conscious because they can likely win on price in the long run. Getting market share in \"quantity beats quality\" workflows forces companies to establish processes to choose the \"cheapest acceptable model\", which is a good environment for Google.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8669,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0679,
+          "experience": 0.0652,
+          "assertion": 0.8669
+        }
+      },
+      {
+        "text": "My enterprise org has this model disabled because \"security.\"\n\nDoes this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.8734,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.07,
+          "experience": 0.0567,
+          "assertion": 0.8734
+        }
+      },
+      {
+        "text": "> My impression is that people who can work on stuff like that are the kind who just take the stuff in the world for granted.\n\nSome are also doing it for the technical challenge, especially those working on new tech rather than refining what already exists. Like the people who try to solve the great problems of mathematics/physics (or find interesting new ones) for the challenge of it (and sometimes refuse prizes & recognition if they do solve or otherwise discover something vital).\n\nThis sort of person is often blinkered to the possible extreme long-term outcomes, or are able to mentally separate themselves from them (\u201cI just made the discovery, I didn't use it to do anything bad\u201d or \u201cI was paid for it, follow the money source and blame them\u201d). Of course once a genie is out of the bottle, other sorts of people are more than eager to ask it for wishes\u2026",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9067,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0438,
+          "experience": 0.0495,
+          "assertion": 0.9067
+        }
+      },
+      {
+        "text": "I've gone out of my way to not read my wikipedia page. Beyond this, there's a rule (suggestion??) that you not edit your own biographical page.\n\nAs a result, I have no idea whether things are right, wrong, misguided, or kflooey on that page. Anyone who wants to know details can simply stop over here for coffee and a chat.\n\nCheers, -Cliff",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.7745,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0419,
+          "experience": 0.1835,
+          "assertion": 0.7745
+        }
+      },
+      {
+        "text": "It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).\n\nSorry still working on improving the UX :)\n\nEDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8899,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8899,
+          "experience": 0.055,
+          "assertion": 0.0551
+        }
+      },
+      {
+        "text": "> \u201cthe x\u201d, with x having not only no antecedent but also being a coined word or quasi-synonym for something that is already named in the code base\n\nIt does the same thing if you try to get it to do analysis of text or turn data into summaries. It will invent cryptic hyphenated compound words to describe things instead of using plain language or preexisting terms.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8664,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0853,
+          "experience": 0.0483,
+          "assertion": 0.8664
+        }
+      },
+      {
+        "text": "Implicitly its payment via data but most people don't understand. Theres an asymmetry in the transaction to me.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8959,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0256,
+          "experience": 0.0785,
+          "assertion": 0.8959
+        }
+      },
+      {
+        "text": "So many elon shills J. ust A. sking Q. uestion -ing off",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.6165,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0787,
+          "experience": 0.3048,
+          "assertion": 0.6165
+        }
+      },
+      {
+        "text": "This sounds like such a fun project, especially to share with like minded friends.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9163,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0273,
+          "experience": 0.0564,
+          "assertion": 0.9163
+        }
+      },
+      {
+        "text": "Prompting and having the model fill out the rest makes it feel like jazz or at least an improvised result of a song",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8909,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0374,
+          "experience": 0.0718,
+          "assertion": 0.8909
+        }
+      },
+      {
+        "text": "Anna's Archive has huge data stores behind it, Nitter doesn't and is easy to replicate. You, yes you, can and should set one up right now. They can't get all of us. If you post it to #nitter:matrix.org it might even get included on the public instance lists.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.6917,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1851,
+          "experience": 0.1232,
+          "assertion": 0.6917
+        }
+      },
+      {
+        "text": "Honestly, I didn't even know this was a problem that needed to be solved.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.7557,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0439,
+          "experience": 0.2004,
+          "assertion": 0.7557
+        }
+      },
+      {
+        "text": "> Now we are considering scrapping it\n\nTurns out, it was probably good that nobody spent time reviewing it.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8036,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0431,
+          "experience": 0.1533,
+          "assertion": 0.8036
+        }
+      },
+      {
+        "text": "How are you drawing that conclusion? He mentioned in several comments on this thread that he is Korean\u2026?\n\nGenuinely curious.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9029,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0317,
+          "experience": 0.0655,
+          "assertion": 0.9029
+        }
+      },
+      {
+        "text": "Author here. It\u2019s ironic because this post was clearly geared towards non-hackers. But now that we\u2019re here.. the other analogy I considered presenting was:\n\nharness = chassis,\nmodel = engine,\nfuel = tokens,\nagent = car\n\nI\u2019m curious what y\u2019all might think and whether that analogy carries more explanatory power",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.6001,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0809,
+          "experience": 0.6001,
+          "assertion": 0.319
+        }
+      },
+      {
+        "text": "There's been a market for a while. In thinking of Azul Java, which is just OpenJDK but with someone to point the finger at, and costs money.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9062,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0283,
+          "experience": 0.0655,
+          "assertion": 0.9062
+        }
+      },
+      {
+        "text": "It doesn\u2019t really matter what Ricardo said in 1817: every US academic economist surveyed in 2018 by the Kent Clark Center disagreed that US aluminum and steel tariffs would increase the welfare of the American people ([0]), and this is with the benefit of >200 years in advances in economic scholarship and analysis since Ricardo.\n\n[0] https://kentclarkcenter.org/surveys/steel-and-aluminum-tariffs/",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8942,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.8942,
+          "experience": 0.0507,
+          "assertion": 0.055
+        }
+      },
+      {
+        "text": "Does it just use \"here\" / viewing box as a bias, not a hard cutoff? Personally I definitely expect \"here\" to mean \"absolutely no results outside my window under any circumstances\" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.4721,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0595,
+          "experience": 0.4684,
+          "assertion": 0.4721
+        }
+      },
+      {
+        "text": "Not quite, the EU parliament can't propose new laws nor repeal existing ones, only amend them and vote on proposals from the commission.\n\nThe Stop Killing Games campaign, for example, has noticed that the EU commission keeps repeating lobbyist lies and has no expectations of new laws actually passing, so they're focusing on amending existing law through parliament.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.7503,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.1649,
+          "experience": 0.0847,
+          "assertion": 0.7503
+        }
+      },
+      {
+        "text": "I like this a lot and am going to experiment w/ incorporating in my early literacy app.\n\nHeads up: the \"See it live in the showcase \u2192 \" links in the API documentation do not go back to the showcase - they just reload the same current API section.\n\nQuestion: maybe I've missed it, but what exists here wrt distribution / packaging / bundling / source availability? I see MIT listed, but no repo. I see src=\"https://jelly-ui.com/package.js\" as a sourcing import, but obviously I'm not going to bundle foreign assets into my app.",
+        "true": "experience",
+        "predicted": "evidence",
+        "confidence": 0.8851,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8851,
+          "experience": 0.0657,
+          "assertion": 0.0492
+        }
+      },
+      {
+        "text": "https://github.com/datafusion-contrib/datafusion-ducklake is more established, and linked to directly from the ducklake docs",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8964,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.8964,
+          "experience": 0.0493,
+          "assertion": 0.0544
+        }
+      },
+      {
+        "text": "> Domestic China is the only very large audience for their own models\n\nI don't think so. US models are very expensive, and not available in every country. I am not willing to pay $50/1M tokens for writing my pet projects.",
+        "true": "evidence",
+        "predicted": "experience",
+        "confidence": 0.6094,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0928,
+          "experience": 0.6094,
+          "assertion": 0.2978
+        }
+      },
+      {
+        "text": "That's great if you're talking to a high schooler that has never been politically active, but I'm literally a democratic party operative. I've attend state conventions, state nominating conventions, platform conventions, DNC twice. This is not the democratic party I want to part of and why I'm extremely thankful people-led organizations like WFP and DSA are actively trying to change things for the better.\n\nNone of what you are describing has any real momentum behind it and for how many decades will you let politicians fails you until you do something in response?\n\nLike bro, the democratic party isn't an opposition party. There is a reason why the party has majority unfavorability rating [1] throughout Trump's entire second term. How do you square this?\n\nThis is a fucking terrible sign and it's why progressive candidates have seen a massive insurgency this cycle and why the corporate do-nothing dems are so scared shitless that they might have to actually answer why they are okay with genocide + corporate welfare programs while doing nothing to help people materially.\n\nYou say no one is excusing them, then spend your entire comment excusing them.\n\nWhat do you actually do politically?\n\n[1] https://fiftyplusone.news/polls/favorability/democratic-party",
+        "true": "evidence",
+        "predicted": "experience",
+        "confidence": 0.4786,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0591,
+          "experience": 0.4786,
+          "assertion": 0.4624
+        }
+      },
+      {
+        "text": "This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.5667,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0797,
+          "experience": 0.3536,
+          "assertion": 0.5667
+        }
+      },
+      {
+        "text": "dense small models do not like quantization. i find 27b fp8 to be smarter albeit less knowledgable versus the 122B",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.5158,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0879,
+          "experience": 0.3963,
+          "assertion": 0.5158
+        }
+      },
+      {
+        "text": "agree - I was really uneasy with the lede in their v2.0 preview:\n\n\"DuckDB has been an in-process database since day one. But people have asked us \u2013 very persistently \u2013 for a client/server mode, and we have finally caved\"\n\nThis was already satisfied by numerous projects and products, and feels like a \"me too\" attempt to capture AI-based workflows. DuckDB always felt like \"SQLite for Analytic Data\" but I fear these changes and now acquiring the org leading technical direction is where they deviate for good. AWS is so unnecessary for what DuckDB can (and should, IMO) be; MongoDB jumps to mind as a cautionary tale.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.54,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.54,
+          "experience": 0.3077,
+          "assertion": 0.1523
+        }
+      },
+      {
+        "text": "With physical access, root access is as simple as setting init=/bin/bash in the kernel parameters from a bootloader. No need for credentials or anything.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.5669,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.3184,
+          "experience": 0.1147,
+          "assertion": 0.5669
+        }
+      },
+      {
+        "text": "Nicely done! Glad to see real hacking is still alive in the age of AI.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8943,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0374,
+          "experience": 0.0683,
+          "assertion": 0.8943
+        }
+      },
+      {
+        "text": "I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham\u2019s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.7669,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.092,
+          "experience": 0.7669,
+          "assertion": 0.1412
+        }
+      }
+    ]
+  },
+  {
+    "seed": 7,
+    "reproduces_after_run": true,
+    "accuracy": 0.6285714285714286,
+    "confusion": {
+      "evidence": {
+        "evidence": 3,
+        "experience": 0,
+        "assertion": 3
+      },
+      "experience": {
+        "evidence": 0,
+        "experience": 2,
+        "assertion": 5
+      },
+      "assertion": {
+        "evidence": 0,
+        "experience": 5,
+        "assertion": 17
+      }
+    },
+    "posts": [
+      {
+        "text": "It's the audio track in a channel. A channel is the horizontal strip, a waveform box is a piece of audio somewhere across that strip. You can double click on one to enter single editor mode, or single click to make it active (once it's active you can drag it around, apply effects to it, move it on a different channel etc etc).\n\nSorry still working on improving the UX :)\n\nEDIT: There's a short video here - https://x.com/pkalogiros/status/2053492761350046032",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.5367,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.5367,
+          "experience": 0.3197,
+          "assertion": 0.1436
+        }
+      },
+      {
+        "text": "Some time ago I found Zed did not have undo-trees (like Emacs and Vim have, possible with plugin). I think DeltaDB is probably going to power undo-trees for Zed.",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.5432,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.2235,
+          "experience": 0.5432,
+          "assertion": 0.2334
+        }
+      },
+      {
+        "text": "What do you mean? AI is being trained on all data available, so obviously it\u2019s being trained on data from 2017/2018 as well.\n\nOr do you mean that the patterns that AI is showing today were already present in communication around that time?\n\nThat seems obvious as well, as AI has a lot of repetitive patterns that come from all kinds of periods, of which \u201cload-bearing\u201d is just one.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8899,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.034,
+          "experience": 0.0761,
+          "assertion": 0.8899
+        }
+      },
+      {
+        "text": "How will that help your computer behind your NAT communicate with my computer behind my NAT? (I think you're still stuck on the blog post's very confusing opening, which does indeed make it sound like a terrible alternative to DNS, but it's actually something entirely different, for a very different purpose.)",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.529,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1183,
+          "experience": 0.3527,
+          "assertion": 0.529
+        }
+      },
+      {
+        "text": "That's great and all, but what they should have done was just scrapped the age-verification stuff entirely. You can't really justify having that kind of restriction on Windows and MacOS but not on Linux.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8662,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0379,
+          "experience": 0.096,
+          "assertion": 0.8662
+        }
+      },
+      {
+        "text": "That\u2019s what I came here to ask. Their demo looks like Compiz back in the day: ok, cool, you have 3d effects, but\u2026 why? What does it do for me?\n\nCompiz 3d effects were ultimately a useless gimmick and I predict this is too.",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.4641,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1608,
+          "experience": 0.4641,
+          "assertion": 0.3752
+        }
+      },
+      {
+        "text": "What's wrong with the name? It stands for GNU Image Manipulation Program.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.6215,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.1023,
+          "experience": 0.2761,
+          "assertion": 0.6215
+        }
+      },
+      {
+        "text": "But Jensen recently proposed a tokenization of GPU power which would be definition be financially rewarded by limiting the supply of GPUs. So I'm not sure how true your proposition will remain moving forward.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9025,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0318,
+          "experience": 0.0656,
+          "assertion": 0.9025
+        }
+      },
+      {
+        "text": "I think the PPP calculations may suffer from the same problem as the USA inflation rate being nominally low. Housing, food and medicine are all ludicrously cheap outside of tier 1 cities.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.6093,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.1722,
+          "experience": 0.2184,
+          "assertion": 0.6093
+        }
+      },
+      {
+        "text": "> Don't pin versions, pull everything from latest\n\nRebuild broke half your tests. People are exploiting the CVE against your system right now. Good luck!",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8863,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0371,
+          "experience": 0.0766,
+          "assertion": 0.8863
+        }
+      },
+      {
+        "text": "There\u2019s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/\n\nLike it or not (I\u2019m in \u201cnot\u201d), this is hardly a new thing.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.6043,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.6043,
+          "experience": 0.2622,
+          "assertion": 0.1335
+        }
+      },
+      {
+        "text": "I'm getting the impression that LLMs are just not very good at \"reasoning\" about time. I have definitely had success getting a coding agent to produce decent concurrent code, but I had to basically lead it by the nose, and I strongly suspect that in most cases it would have taken less time to just do it the old fashioned way.",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.8664,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0322,
+          "experience": 0.1013,
+          "assertion": 0.8664
+        }
+      },
+      {
+        "text": "Audio and Video professionals jumped ship around the time Apple canned all the pro software",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.4937,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.2466,
+          "experience": 0.4937,
+          "assertion": 0.2598
+        }
+      },
+      {
+        "text": "Point out what verbatim piece of text forbids any and all usage of LLMs for coding and having that project on Codeberg?\n\nLiterally the first \"informal guidelines\" (subject to change of course) states:\n\n> Projects who have an active community that cares about and maintains the software\n\nYou can use LLMs for development + fulfill this requirement, contrary to popular belief.\n\nThey want to get rid of slop projects and vibe coders, not any project that has any developer that used any LLM. But again, requires you to read through the actual text to actually get their intention here.",
+        "true": "evidence",
+        "predicted": "assertion",
+        "confidence": 0.828,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0538,
+          "experience": 0.1182,
+          "assertion": 0.828
+        }
+      },
+      {
+        "text": "So many elon shills J. ust A. sking Q. uestion -ing off",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.5949,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.1422,
+          "experience": 0.2628,
+          "assertion": 0.5949
+        }
+      },
+      {
+        "text": "He has been emailing the CEO for six months with no replies. This is has also been posted here before with not a single pip or comment ... :-)\n\nAnd these customers absolute lack of technical due diligence, on this nth example, of move fast and break things...makes them deserve what they are getting.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8331,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0538,
+          "experience": 0.1131,
+          "assertion": 0.8331
+        }
+      },
+      {
+        "text": "I\u2019m a fan of paying for search with money rather than my privacy.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9023,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.035,
+          "experience": 0.0627,
+          "assertion": 0.9023
+        }
+      },
+      {
+        "text": "Alternatively, they can care about principles and issues that differ from that of the other party.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9184,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0303,
+          "experience": 0.0512,
+          "assertion": 0.9184
+        }
+      },
+      {
+        "text": "The alt-right party in Hungary - Fidesz - at least since 2006, and the Republican Party since at least Trump, definitely targeted people who are fine with a broken belief systems, in other words, they are fine with continuous cognitive dissonance.\n\nIn case of Hungary, in the past 20 years, they moved contradictions inside an article, to inside a paragraph to inside a single word. Trump is on the single word/expression level since 2016 for sure: \u201calternative facts\u201d.",
+        "true": "evidence",
+        "predicted": "assertion",
+        "confidence": 0.4974,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.2309,
+          "experience": 0.2717,
+          "assertion": 0.4974
+        }
+      },
+      {
+        "text": "Who's your audience? People who don't use electron - historically downvoted. People who do - won't upvote this. People who don't care.. I guess?",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9317,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0246,
+          "experience": 0.0438,
+          "assertion": 0.9317
+        }
+      },
+      {
+        "text": "+1 for qubes. with some effort you can get a really nice stack with segmented git, disposable coding agents, package cachers, firewalls, and network visibility.",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.444,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1256,
+          "experience": 0.444,
+          "assertion": 0.4305
+        }
+      },
+      {
+        "text": "> Wtf. I've always wanted this, and it was right there.\n\nHaha, same! I was literally looking for this feature last week without realising.\n\nWhat could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.9113,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0276,
+          "experience": 0.0611,
+          "assertion": 0.9113
+        }
+      },
+      {
+        "text": "> Also Nvidia isn\u2019t really creating money\n\nThat\u2019s what loans are.\n\nhttps://en.wikipedia.org/wiki/Money_creation",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.6124,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.6124,
+          "experience": 0.2554,
+          "assertion": 0.1322
+        }
+      },
+      {
+        "text": "One trick I\u2019ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn\u2019t know about .git/config though!",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.5596,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.2226,
+          "experience": 0.5596,
+          "assertion": 0.2177
+        }
+      },
+      {
+        "text": "I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say \"right to free assembly was to give richer corporations more sway.\"\n\nFundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.\n\nCitizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9065,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0358,
+          "experience": 0.0577,
+          "assertion": 0.9065
+        }
+      },
+      {
+        "text": "Both of these (copy fail and dirtyfrag) exploit obscure socket address families. Are these filtered by commonly used seccomp profiles in eg docker (assuming seccomp can express it)?",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.5143,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1799,
+          "experience": 0.5143,
+          "assertion": 0.3057
+        }
+      },
+      {
+        "text": "Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.4609,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1442,
+          "experience": 0.3949,
+          "assertion": 0.4609
+        }
+      },
+      {
+        "text": "I think the audio is missing a lot of the hiccups, delays, and quirks that come with humans in meetings but the rest is pretty good!",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9138,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0256,
+          "experience": 0.0606,
+          "assertion": 0.9138
+        }
+      },
+      {
+        "text": "There is like 1 or 2 actual \"video game journalists\" everyone else is just a glorified blogger.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8921,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0338,
+          "experience": 0.0741,
+          "assertion": 0.8921
+        }
+      },
+      {
+        "text": "The only good use case for a credit card is if you are buying something from someone you do not trust. I have a CC and it use it a few times a year. But using them to pay for groceries or ordering something from Amazon is just moronic.\n\nThe way I see it: you are either rich and don't care or you are poor and need to spend money that is not in your account (no judging I grew up poor and had to hide from debt collectors when I was a kid).",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.91,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.027,
+          "experience": 0.063,
+          "assertion": 0.91
+        }
+      },
+      {
+        "text": "Also for every game dev working on GTA6, there's another working on Barbie's Horse Adventure. When positions are limited, you take what you can get and most of them are making games that are not at all interesting.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.5672,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.1042,
+          "experience": 0.3286,
+          "assertion": 0.5672
+        }
+      },
+      {
+        "text": "Does it just use \"here\" / viewing box as a bias, not a hard cutoff? Personally I definitely expect \"here\" to mean \"absolutely no results outside my window under any circumstances\" (with some room for fuzziness with different screen aspect ratios, though even then I expect fewer results, not more). I'm not familiar with what Photon does tho, and it's not particularly clear from a quick skim of the site/readme.",
+        "true": "assertion",
+        "predicted": "experience",
+        "confidence": 0.5629,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.174,
+          "experience": 0.5629,
+          "assertion": 0.2631
+        }
+      },
+      {
+        "text": "I've been using `claude -p` for personal use for a long time without issues. I do mean actual irregular, personal use though. Not using it to max out my quota, using it as main rather than sub or trying to be cheeky with it.",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.9049,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0257,
+          "experience": 0.0694,
+          "assertion": 0.9049
+        }
+      },
+      {
+        "text": "> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.\n\nSo in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.\n\n> Then Nadella took over as CEO. The stock went up by a factor of 10\n\nThe stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?\n\n> It's similar to military generals.\n\nGreat analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",
+        "true": "evidence",
+        "predicted": "assertion",
+        "confidence": 0.7042,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.123,
+          "experience": 0.1727,
+          "assertion": 0.7042
+        }
+      },
+      {
+        "text": "This is awesome. Congratulations!\n\nAs others on this thread have commented, you haven't specified a license. Don't jump on the first thing you think of. Consider the various OSS licenses and decide which one suits you best.",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.8807,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0368,
+          "experience": 0.0825,
+          "assertion": 0.8807
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2024,
+    "reproduces_after_run": true,
+    "accuracy": 0.8285714285714286,
+    "confusion": {
+      "evidence": {
+        "evidence": 5,
+        "experience": 0,
+        "assertion": 1
+      },
+      "experience": {
+        "evidence": 0,
+        "experience": 2,
+        "assertion": 5
+      },
+      "assertion": {
+        "evidence": 0,
+        "experience": 0,
+        "assertion": 22
+      }
+    },
+    "posts": [
+      {
+        "text": "So many elon shills J. ust A. sking Q. uestion -ing off",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.7049,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1069,
+          "experience": 0.1883,
+          "assertion": 0.7049
+        }
+      },
+      {
+        "text": "May be you can add AI to your page, nobody make slides by hand now.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8844,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0278,
+          "experience": 0.0878,
+          "assertion": 0.8844
+        }
+      },
+      {
+        "text": "Again, you're not wrong, but none of those things are insurmountable. If the team is really so stressed it cannot spend 30 minutes, over the many year of the existence of that bug, that seems like a development environment close to hell.\n\nKnowledge loss is precisely my point: there is very little a-priori knowledge needed to solve this, the guy who found the bug proves that.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8928,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0255,
+          "experience": 0.0816,
+          "assertion": 0.8928
+        }
+      },
+      {
+        "text": "What's wrong with the name? It stands for GNU Image Manipulation Program.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8322,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0517,
+          "experience": 0.1162,
+          "assertion": 0.8322
+        }
+      },
+      {
+        "text": "What a lovely blog in general: some really fun retro-computing projects, written up in a very thoughtful, human way. Feels like a throwback to the earlier hacking spirit of the internet. Thank you, Colin: your \"experiment with writing\" is a success as far as I'm concerned!",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.752,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0609,
+          "experience": 0.1871,
+          "assertion": 0.752
+        }
+      },
+      {
+        "text": "One trick I\u2019ve used is creating a folder and then adding a .gitignore inside it with *. Then nothing in that folder gets tracked, without needing to add anything to the public gitignore. Didn\u2019t know about .git/config though!",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.6888,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0943,
+          "experience": 0.2169,
+          "assertion": 0.6888
+        }
+      },
+      {
+        "text": "This is a lovely toy project. But please do not do this for real; imperfections - even minute imperfections - in data visualisations have consequences. 'Non-techy' people take for granted shapes and lines over numbers and sequences simply because computers are accurate. Correctness of data is a separate matter of course",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9079,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0284,
+          "experience": 0.0637,
+          "assertion": 0.9079
+        }
+      },
+      {
+        "text": "Multipass is just an apt-get or brew command away. People trust software too much these days.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8935,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0261,
+          "experience": 0.0804,
+          "assertion": 0.8935
+        }
+      },
+      {
+        "text": "It's an opt-in feature. https://techcrunch.com/2025/09/08/signal-introduces-free-and-paid-backup-plans-for-your-chats/\n\nA service that advertises itself as privacy focused refusing to update their privacy policy while adding features like this seems like a pretty big dead canary.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8496,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8496,
+          "experience": 0.0755,
+          "assertion": 0.0749
+        }
+      },
+      {
+        "text": "Any text, code, image, video or audio they/anybody has ever uploaded to the public internet? Is this a real question?",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.85,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0674,
+          "experience": 0.0826,
+          "assertion": 0.85
+        }
+      },
+      {
+        "text": "But is the UI harder to use than building housing in San Francisco?",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9158,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0311,
+          "experience": 0.0531,
+          "assertion": 0.9158
+        }
+      },
+      {
+        "text": "Reminds me of process I went through to create the charts for my humble grad thesis (1990-ish), by hand, with letter templates and one very expensive rotring pen. Then would transfer the figures to transparencies as backup for my defense. The real presentation was done using a slide projector (this was cutting edge back then, like over-the-top). Yes, took actual photos of my charts..",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.6318,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.066,
+          "experience": 0.3022,
+          "assertion": 0.6318
+        }
+      },
+      {
+        "text": "There was a ton of... not exactly footguns, just things to keep in mind if you\u2019ve wanted your site to work as you intended in all browsers. The webcompat nowadays is way better now.\n\nThat said, personally I\u2019ve never understood Dreamweaver either. By the time I tried it, I\u2019ve already got used to Notepad++ and writing HTML by hand, so I\u2019ve just treated it as another text editor... and IIRC it just felt way more laggy than Notepad++, with a browser preview panel that took half of my 4:3 display. Maybe I\u2019d discover some cool features if I\u2019ve spent some more time in it? I dunno.",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.571,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.134,
+          "experience": 0.571,
+          "assertion": 0.295
+        }
+      },
+      {
+        "text": "This sounds like such a fun project, especially to share with like minded friends.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8905,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0314,
+          "experience": 0.0782,
+          "assertion": 0.8905
+        }
+      },
+      {
+        "text": "Mathematics is a language. If anything, it's much more well defined and formal than most others. Train on enough examples and statistical autocomplete gets you places. I'm surprised how anyone would even consider this intelligence?",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9214,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0186,
+          "experience": 0.0601,
+          "assertion": 0.9214
+        }
+      },
+      {
+        "text": "I've been getting a little frustrated with having to rearchitect things any time I want to try a new harness. Wrote about my most recent experiments with separating conversation from control loop here and using MCP as the seam here: https://demianbrecht.com/posts/the-harness-within-the-harness/. This allows me to build a spectrum of agentic to entirely deterministic tools and be able to port them from one harness to another with only a minimal amount of harness-specific config.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8428,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8428,
+          "experience": 0.0809,
+          "assertion": 0.0763
+        }
+      },
+      {
+        "text": "There\u2019s a huge body of statute and case law about the differences between aggregations / databases and their contents. See: https://www.justia.com/intellectual-property/copyright/lists-directories-and-databases/\n\nLike it or not (I\u2019m in \u201cnot\u201d), this is hardly a new thing.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8459,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8459,
+          "experience": 0.0752,
+          "assertion": 0.0789
+        }
+      },
+      {
+        "text": "Audio and Video professionals jumped ship around the time Apple canned all the pro software",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.5093,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1536,
+          "experience": 0.3371,
+          "assertion": 0.5093
+        }
+      },
+      {
+        "text": "Google isn't allowed to, it was always Debian. If Debian doesn't, Google has to assume the most restrictive category, or deny service altogether.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8277,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0511,
+          "experience": 0.1212,
+          "assertion": 0.8277
+        }
+      },
+      {
+        "text": "\"Create money\" here doesn't mean literally fluffing the balance sheet like when the fed prints money (which would have accounting differences), it means spending the same money more rapidly than otherwise. This is NVidia's personal contribution to increasing the economy's Money Multiplier [https://en.wikipedia.org/wiki/Money_multiplier], which effectively increases the money supply from the broader economy's perspective.",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8431,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8431,
+          "experience": 0.0776,
+          "assertion": 0.0793
+        }
+      },
+      {
+        "text": "> I recommend you start a commune. Or a business. It's a free country, there are no laws against it.\n\nSo in your view, there are only two options: (a) unlimited astronomical compensation for CEOs while line workers get minimum wage or (b) hippie commune? You really can't see any other option? Even 50 to 60 years ago, CEO salaries were not as distorted as they are today and yet the world did not grind to a stop.\n\n> Then Nadella took over as CEO. The stock went up by a factor of 10\n\nThe stock is not a measure of productivity. It's a measure of expectation. The problem with you and many capitalists is that you view the stock as the company's product. It isn't. Is the current version of Windows ten times better than the previous version? No? Then why did the stock go up?\n\n> It's similar to military generals.\n\nGreat analogy. A general (O-10) in the US army serving since 1986 makes $19,000/mo. A private (E-1) makes $2,407/mo. That's a difference of ~8x. Now explain to me again why a CEO makes >1000x what his employees make?",
+        "true": "evidence",
+        "predicted": "assertion",
+        "confidence": 0.7169,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.1373,
+          "experience": 0.1457,
+          "assertion": 0.7169
+        }
+      },
+      {
+        "text": "These kind of rights are something which only physical persons should have, and card networks aren't infringing on the rights of real humans. Businesses aren't people, and they shouldn't have any inherent right to be provided with utilities or payment solutions. And as it stands today they don't.\n\nYou as a real human should have a right to have a bank account and to send and receive money. Just as you as you as a real human should have a right to access any other basic utility.\n\nYour business should not have any such rights. If the power company doesn't want to provide your data center or steel factory with electricity, then your business shall have no right to it.\n\nIf a card payment company doesn't want to provide their services to your brothel or your weapons factory or your weed shop, then your business shall have no right to it.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9049,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0299,
+          "experience": 0.0652,
+          "assertion": 0.9049
+        }
+      },
+      {
+        "text": "Facebook is intentionally designed to be as addictive as possible. It's not just FOMO, https://news.ycombinator.com/item?id=24579498",
+        "true": "evidence",
+        "predicted": "evidence",
+        "confidence": 0.8464,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.8464,
+          "experience": 0.0763,
+          "assertion": 0.0773
+        }
+      },
+      {
+        "text": "> Wtf. I've always wanted this, and it was right there.\n\nHaha, same! I was literally looking for this feature last week without realising.\n\nWhat could be more git- the problem is rarely that it can't do something, but the ergonomics of discovering how to make it work correctly.",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.8747,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0326,
+          "experience": 0.0927,
+          "assertion": 0.8747
+        }
+      },
+      {
+        "text": "The debate thing was clownish, for sure.\n\nMy recollection of the DNC linkage was that the Clinton campaign agreed to help the DNC in a set of ways (likely raising money for the DNC and helping Democratic candidates) in exchange for some affordances and Sanders refused to do likewise (which, to his credit is on brand). Is that not accurate? I admit it's been 10 years and there have been a lot of claims made as to why Sanders should have been given the nomination in spite of not winning more votes.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.6031,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.187,
+          "experience": 0.2099,
+          "assertion": 0.6031
+        }
+      },
+      {
+        "text": "Curiously, the Mac App Store sandbox has a com.apple.security.network.client entitlement that a developer must justify to Apple, whereas the iOS App Store does not, allowing unrestricted access to the internet.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.4371,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.2055,
+          "experience": 0.3574,
+          "assertion": 0.4371
+        }
+      },
+      {
+        "text": "> Require stores and publishers to use language that reflects the nature of the transaction.\n\nAfter this law is made and they change the word without changing anything else, that won't save the past. They'll probably even market test some nonsense word that won't even make people feel like they're being ripped off.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9148,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.03,
+          "experience": 0.0552,
+          "assertion": 0.9148
+        }
+      },
+      {
+        "text": "I was floored by the idea of browsing docs offline but disappointed that recreating the demo of archiving Paul Graham\u2019s essays gave me a ZIM with broken images and broken Unicode symbols when viewed in Kiwix.",
+        "true": "experience",
+        "predicted": "experience",
+        "confidence": 0.4662,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0912,
+          "experience": 0.4662,
+          "assertion": 0.4425
+        }
+      },
+      {
+        "text": "My enterprise org has this model disabled because \"security.\"\n\nDoes this mean they literally need to go in and check a box? Or is it a standard thing that enterprise accounts get these later than the consumer/API accounts?",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.8067,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0683,
+          "experience": 0.125,
+          "assertion": 0.8067
+        }
+      },
+      {
+        "text": "Thank you! We can decide to just... you know... do things.\n\nLike, am I crazy here? The rules that we live by are largely made up and the points don't matter - we can decide to live in a better world if we want to. It's hard, and there are obstacles, for sure, but this appeal to doom for the sake of doom just... why? We have made unfathomable progress over the last century and if we keep trying we can make progress like that over the next century too!",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9045,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0268,
+          "experience": 0.0687,
+          "assertion": 0.9045
+        }
+      },
+      {
+        "text": "This is just finally bringing the magical \"the computer did it\" to the masses!\n\nWhen companies like Amazon accept, warehouse, bill for and ship unsafe Chinese trash, well, at every step it was just a computer. Google, X and others will happily show state funded scam advertisements from fake accounts and there is no one accountable, because it's just the computer handling those.\n\nNow with AI, everyone can claim this magical legal immunity for themselves.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9062,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0299,
+          "experience": 0.0639,
+          "assertion": 0.9062
+        }
+      },
+      {
+        "text": "This is a beautiful way to present extremely high quality information. I sometimes lament the unpleasant friction involved in finding and reading academic papers (the overly formal style is a necessary evil, but the irritating paywalls, followed by inevitable searches for '%{title} filetype:pdf' feel like unnecessary ones).",
+        "true": "experience",
+        "predicted": "assertion",
+        "confidence": 0.6809,
+        "third": "least_sure",
+        "probabilities": {
+          "evidence": 0.0505,
+          "experience": 0.2686,
+          "assertion": 0.6809
+        }
+      },
+      {
+        "text": "I think your objection is fairly clear in terms of 1) you point out the difference between e.g. standing with a sign vs. more expensive options, and 2) you say \"right to free assembly was to give richer corporations more sway.\"\n\nFundamentally it sounds like your complaint is that wealthy people are presumably more able to be effective with their efforts than folks who, e.g. can't afford as big of a bullhorn.\n\nCitizens United wasn't about that. There wasn't a law saying no person shall spend more than $1k/yr supporting a candidate.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8329,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0704,
+          "experience": 0.0967,
+          "assertion": 0.8329
+        }
+      },
+      {
+        "text": "Well, there's really no need to come up with such complicated (and not entirely accurate) analogies here. It's actually very simple. Paying Google is bad. Not paying is good. That's it.",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.9194,
+        "third": "most_sure",
+        "probabilities": {
+          "evidence": 0.0231,
+          "experience": 0.0576,
+          "assertion": 0.9194
+        }
+      },
+      {
+        "text": "I mean if you want it to plan something without writing code first you literally just need to ask it to plan out the implementation first it's not exactly a difficult concept",
+        "true": "assertion",
+        "predicted": "assertion",
+        "confidence": 0.8442,
+        "third": "middle",
+        "probabilities": {
+          "evidence": 0.0415,
+          "experience": 0.1143,
+          "assertion": 0.8442
+        }
+      }
+    ]
+  }
+]

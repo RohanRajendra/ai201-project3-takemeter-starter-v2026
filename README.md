@@ -791,6 +791,163 @@ post-improvement diagnosis and the error write-up, made on top of the first.
 - **What it reports:** whether it helped, against the first improvement's log,
   and how I know.
 
+**Result: built.** Notebook section 6 with `RUN_LABEL = "after2"` →
+`results_three_seeds_after2.json`. The before and after files are untouched.
+Trained on **`mps` (Apple M4)**, torch 2.14.1, about 4 to 5 minutes of training
+a seed.
+
+**What I changed:** 34 more `experience` posts, added to each seed's training
+split only (`EXTRA_TRAIN = "labels_extra_experience.csv"` in section 6). Every
+other setting is the first improvement's: the same 231 rows in `labels.csv`,
+`EPOCHS = 10`, and the same learning rate, batch size, max length and seeds.
+Validation and test are the same posts as in both earlier runs. So all three
+run logs are scored on the same 35 test posts per seed, and criterion 5's
+baseline (`baseline_results.json`) still applies. `labels.csv` itself is
+untouched, as the unit's one rule asks.
+
+| Training split (the same on every seed) | After | After 2 |
+|---|---|---|
+| `evidence` | 28 (17.4%) | 28 (14.4%) |
+| `experience` | 31 (19.3%) | **65 (33.3%)** |
+| `assertion` | 102 (63.4%) | 102 (52.3%) |
+| Total | 161 | 195 |
+
+**Which diagnosis pointed at it:** the error write-up above. `experience` is
+the worst label (mean F1 0.354). Most of its misses are the precedence case, a
+first-hand clause inside a claim-shaped post, and only 1 of its 10 misses
+traces to a labeller disagreement. That points at more examples rather than
+relabelling: the brief's "thirty more posts of the label with the worst F1".
+
+**Where the 34 came from, and who labelled them:** Claude pre-labelled 42
+candidates as `experience`, each with a one-line reason. 28 came from the
+unlabelled rest of the core pool: Claude read all 96 posts in rows 256–449 of
+`data/hn_candidates.csv` (the same 90 stories as `labels.csv`) that weren't
+labelled yet and contained a first-person word. The other 14 are first-hand
+posts from fresh pull 1 (`data/hn_extra_pool.csv`) that it had already read
+while collecting unit 5's stretch examples. I reviewed every one myself with
+`review_experience.py`, which shows the post and the pre-label reason and asks
+me to confirm or override it. I confirmed 34 and overrode 8 (7 to `assertion`,
+1 to `evidence`). The 8 were dropped rather than added under my label, so the
+only thing this run adds is `experience` data. My verdicts are in
+`data/improvement2_review.csv`, and the candidates and reasons are in
+`data/improvement2_candidates.csv`. Two checks before training: none of the 34
+is already in `labels.csv` or `labels_stretch.csv`, and none shares an 8-word
+run with any validation or test post on any seed, so no test text leaked into
+training.
+
+### Run Log — After 2
+
+| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
+|---|---|---|---|---|---|
+| 1. Accuracy clearly beats always guessing `assertion` | accuracy ≥ 0.65 **and** ≥ 0.10 above the seed's `assertion` share | 0.771 (share 0.629, +0.14) | 0.686 (share 0.629, +0.06) | 0.886 (share 0.629, +0.26) | **MISSED** |
+| 2. No label is left behind | every label's F1 ≥ 0.50 | lowest 0.556 (`evidence` 0.600, `experience` 0.556, `assertion` 0.905) | lowest 0.600 (`evidence` 0.667, `experience` 0.600, `assertion` 0.732) | lowest 0.769 (`evidence` 0.909, `experience` 0.769, `assertion` 0.913) | **MET** |
+| 3. Confident guesses are right more often | most-sure third − least-sure third ≥ 0.20 | 0.273 (1.000 − 0.727) | 0.182 (0.727 − 0.545) | 0.364 (1.000 − 0.636) | **MISSED** |
+| 4. My labels agree with someone else's | `agreed` ≥ 23 and `compared` = 30 | 25 / 30 | 25 / 30 | 25 / 30 | **MET** |
+| 5. Fine-tuning beats the zero-shot baseline | trained macro F1 − baseline macro F1 ≥ 0.15, on the same posts | +0.302 (0.687 vs 0.385) | +0.111 (0.666 vs 0.555)\* | +0.554 (0.864 vs 0.310)\* | **MET** |
+
+How each verdict was decided:
+- **1 MISSED.** Seeds 42 and 2024 clear both conditions. Seed 7 went from 22 to
+  24 of 35 right (0.686), but that's only +0.06 over the share. It needed 26.
+- **2 MET.** `experience` is over 0.50 on every seed for the first time (0.556,
+  0.600 and 0.769), and `evidence` and `assertion` stay over it. The lowest
+  cell anywhere is seed 42's `experience`, at 0.556.
+- **3 MISSED.** Seed 7's gap is 0.182. Its most-sure third got 8 of 11 right
+  and its least-sure third 6 of 11, so one more right answer at the top would
+  have passed. Seeds 42 and 2024 clear it.
+- **4 MET.** Unchanged, since the change doesn't touch my staff labels.
+- **5 MET, as the criterion is written.** The seed-42 macro F1 is 0.687, against
+  0.385 in `baseline_results.json`: +0.302 ≥ 0.15. Only training data changed,
+  so these are the same seed-42 test posts the baseline was scored on. `n` 35 =
+  `n_test` 35, and `held_out` is true. \*On the supplementary seeds the margin
+  is +0.111 on seed 7 (up from +0.004, still under 0.15) and +0.554 on seed
+  2024.
+
+**All three run logs, side by side** (same seeds, same test posts):
+
+| Criterion | Before | After | After 2 |
+|---|---|---|---|
+| 1. Accuracy | MISSED (0.629 on every seed) | MISSED (0.771 / 0.629 / 0.829) | MISSED (0.771 / 0.686 / 0.886) |
+| 2. Every label F1 | MISSED (lowest 0.000 on every seed) | MISSED (lowest 0.333 / 0.286 / 0.444) | **MET** (lowest 0.556 / 0.600 / 0.769) |
+| 3. Confidence gap | MISSED (0.545 / 0.000 / 0.455) | **MET** (0.455 / 0.455 / 0.364) | MISSED (0.273 / 0.182 / 0.364) |
+| 4. Staff agreement | MET (25 / 30) | MET (25 / 30) | MET (25 / 30) |
+| 5. Beats the baseline | MISSED (−0.127) | **MET** (+0.267) | **MET** (+0.302) |
+| **Criteria met** | 1 of 5 | 3 of 5 | 3 of 5 |
+
+| After → after 2 | Seed 42 | Seed 7 | Seed 2024 | Mean change |
+|---|---|---|---|---|
+| Accuracy | 0.771 → 0.771 | 0.629 → 0.686 | 0.829 → 0.886 | +0.038 |
+| Macro F1 | 0.651 → 0.687 | 0.559 → 0.666 | 0.745 → 0.864 | +0.087 |
+| F1 — `evidence` | 0.727 → 0.600 | 0.667 → 0.667 | 0.909 → 0.909 | −0.042 |
+| F1 — `experience` | 0.333 → 0.556 | 0.286 → 0.600 | 0.444 → 0.769 | +0.287 |
+| F1 — `assertion` | 0.894 → 0.905 | 0.723 → 0.732 | 0.880 → 0.913 | +0.018 |
+
+**Confusion matrix, after 2.** Seed 42, as printed by section 7:
+
+| true \ predicted | evidence | experience | assertion |
+|---|---|---|---|
+| **evidence** | 3 | 3 | 0 |
+| **experience** | 1 | 5 | 1 |
+| **assertion** | 0 | 3 | 19 |
+
+All three seeds pooled (105 test posts), with the after run's count in
+brackets:
+
+| true \ predicted | evidence | experience | assertion |
+|---|---|---|---|
+| **evidence** | 11 (12) | 3 (2) | 4 (4) |
+| **experience** | 1 (1) | **16 (6)** | 4 (14) |
+| **assertion** | 0 (0) | 11 (6) | 55 (60) |
+
+**Did it help, and how do I know:**
+
+**Yes, for the label it was aimed at and on every summary number. But it moved
+part of the problem instead of removing it.** I know because the training data
+is the only thing that changed: the same seeds, the same test posts and the
+same settings. One caveat: adding rows also changes the order training sees
+its batches in, and with one run per seed I can't tell a one-post change apart
+from that.
+
+**What it fixed.** Pooled, the model found 16 of the 21 `experience` posts, up
+from 6. `experience` F1 rose on every seed (mean 0.354 → 0.642), and criterion
+2 flipped to MET. Macro F1 rose on every seed, and accuracy rose on two and
+held on the third.
+
+**It isn't just saying `experience` more often.** Pooled, it said `experience`
+30 times instead of 14, and 10 of the 16 extra calls were right. Precision went
+from 6 of 14 (0.43) to 16 of 30 (0.53).
+
+**What it cost.** The `experience`/`assertion` errors now lean the other way:
+11 `assertion` posts were called `experience` (6 before), against 4 the other
+way (14 before). Training went from 19% to 33% `experience` and from 63% to
+52% `assertion`, and the model's guesses followed: 30 `experience` calls
+instead of 14, and 63 `assertion` calls instead of 78. `evidence` also lost one
+more post to `experience`, all on seed 42 (2 → 3), where its F1 fell from 0.727
+to 0.600. Unit 5's 50 extra `evidence` posts had the same side effect: shrinking
+`assertion`'s share of training made the model call `assertion` less often. The
+difference is that this time the label that grew got better too.
+
+**Criterion 3 slipped to MISSED, by one post on one seed.** Most of the drop is
+the model getting better at its unsure posts:
+
+| Seed | Most-sure third right (after → after 2) | Least-sure third right | Gap | Mean confidence when wrong |
+|---|---|---|---|---|
+| 42 | 11 → 11 of 11 | 6 → 8 of 11 | 0.455 → 0.273 | 0.663 → 0.801 |
+| 7 | 9 → 8 of 11 | 4 → 6 of 11 | 0.455 → 0.182 | 0.656 → 0.759 |
+| 2024 | 11 → 11 of 11 | 7 → 7 of 11 | 0.364 → 0.364 | 0.733 → 0.637 |
+
+On seed 42 the gap shrank only because 2 more of the least-sure posts came out
+right. The real loss is smaller. Seed 7's most-sure third picked up one error,
+and on seeds 42 and 7 the wrong answers got more confident, by 0.14 and 0.10
+on average. Most of those wrong answers are now `experience` calls: 6 of 8 on
+seed 42 and 7 of 11 on seed 7.
+
+**Net: better, not fixed.** Macro F1 rose on every seed, and the criterion it
+lost went by one post, partly because the model got better on its hardest
+posts. It's still 3 of 5 met, but no label is left behind now. What's left is
+the same pair, erring the other way. Seed 7 called 7 of its 22 `assertion`
+posts `experience`, and that's most of why it still misses criterion 1, two
+right answers short.
+
 ---
 
 ## Baseline vs. Trained
@@ -1394,6 +1551,11 @@ splits, so this spread belongs to the test set, not the model.
   both conditions it needed 26 of 35 right (0.743), four more than it got. A
   0.20 spread across seeds says a single 35-post split can't settle a 0.10
   margin.
+
+**A second improvement came after this one** (stretch): 34 more `experience`
+posts in each seed's training split, logged as Run Log — After 2 under Unit 6
+Stretch Features #3. It flipped criterion 2 to MET and criterion 3 to MISSED,
+so 3 of 5 are still met.
 
 ---
 

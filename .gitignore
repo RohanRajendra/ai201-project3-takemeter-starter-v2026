@@ -30,3 +30,6 @@ Thumbs.db
 # they're part of what gets graded. Commit them.
 
 reqs/ 
+
+# The staff answer key comes from the TF. Keep it out of the public repo.
+data/staff_labels.csv

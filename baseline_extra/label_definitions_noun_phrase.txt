@@ -1,0 +1,7 @@
+# The same three definitions as label_definitions.txt, reworded as noun phrases
+# so they read grammatically inside baseline.py's hypothesis "This post is {}.".
+# Supplementary check only; the official baseline uses label_definitions.txt.
+
+evidence: a comment that backs its point with something specific a reader could check without taking the writer's word for it - a link, a named source, a quote, a version or CVE number, a date, or a number about the world
+experience: a comment that backs its point with the writer's own first-hand experience - something specific they built, used, ran, or saw happen
+assertion: a comment that makes a claim, judgment, or suggestion but offers neither checkable support nor first-hand experience for it

@@ -753,29 +753,75 @@ beat zero-shot on this taxonomy is Milestone 5's question.
 <!-- Five criteria across three seeds. The notebook's section 6 prints the
      spread table; the Target and Verdict columns are yours. -->
 
-| Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
-|---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+**How it ran:** notebook section 6 with `RUN_LABEL = "before"`, seeds 42, 7
+and 2024, the unit 5 settings unchanged (3 epochs, learning rate 2e-5, batch
+16, max length 128). Every seed was trained on **`mps` (Apple M4 GPU), torch
+2.14.1**; each entry of `results_three_seeds_before.json` records the device.
+Each seed is a fresh stratified 70/15/15 split of the same 231 rows: 161 train,
+35 val and 35 test, with 6 `evidence`, 7 `experience` and 22 `assertion` posts
+in every test split. Seed 42 reproduces `results.json` exactly.
+
+**The three seeds** (section 6's spread table):
+
+| Measure | Seed 42 | Seed 7 | Seed 2024 | Spread |
+|---|---|---|---|---|
+| Overall accuracy | 0.629 | 0.629 | 0.629 | 0.000 |
+| Macro F1 | 0.257 | 0.257 | 0.257 | 0.000 |
+| F1 — `evidence` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `experience` | 0.000 | 0.000 | 0.000 | 0.000 |
+| F1 — `assertion` | 0.772 | 0.772 | 0.772 | 0.000 |
+| Confidence: most-sure third | 0.818 | 0.545 | 0.909 | 0.364 |
+| Confidence: least-sure third | 0.273 | 0.545 | 0.455 | 0.273 |
+
+**The spread is zero, but that isn't stability.** All three models predicted
+`assertion` for every test post, on every seed. Stratification puts exactly
+22 `assertion` posts in each 35-post test split, so an always-`assertion` model
+scores 22/35 = 0.629 on all three. The notebook's note says "Accuracy moved
+0.000 across seeds. Stable enough to trust", but it isn't. The number is fixed
+by the split's label mix, not earned by the model. The only seed-to-seed
+movement is in the confidence ranking, which only orders posts that all got
+the same label. The untrained baseline moves 0.245 in macro F1 across these
+same three splits, and that is the real noise level of a 35-post test.
+
+The criteria table and verdicts are in **Verdicts and Diagnoses** below,
+filled in once the agreement check (criterion 4) existed.
 
 ### Confusion matrix
 
 <!-- ⚠️ TYPED AS A MARKDOWN TABLE. The notebook prints one ready to paste.
      An image of a matrix earns nothing. -->
 
-| true \ predicted |  |  |  |
+Seed 42, as printed by notebook section 7. Rows are true labels, columns are
+the model's guesses.
+
+| true \ predicted | evidence | experience | assertion |
 |---|---|---|---|
-| **** |  |  |  |
-| **** |  |  |  |
-| **** |  |  |  |
+| **evidence** | 0 | 0 | 6 |
+| **experience** | 0 | 0 | 7 |
+| **assertion** | 0 | 0 | 22 |
+
+All three seeds pooled (105 test posts), from the `confusion` field of each
+entry in `results_three_seeds_before.json`:
+
+| true \ predicted | evidence | experience | assertion |
+|---|---|---|---|
+| **evidence** | 0 | 0 | 18 |
+| **experience** | 0 | 0 | 21 |
+| **assertion** | 0 | 0 | 66 |
 
 **My biggest off-diagonal number, and what it means:**
 <!-- Not "the model made mistakes" — WHICH boundary it didn't learn, and which
      direction. "7 real analysis posts were called hot_take and only 3 went the
      other way" is a direction, not just an error rate. -->
+
+7 real `experience` posts were called `assertion` and 0 went the other way;
+the pooled count is 21 to 0. But `evidence` → `assertion` is just as total (6 of
+6, and 18 of 18 pooled). So the model didn't fail one boundary. It never drew
+any boundary: every post went to the majority label, which is a training
+failure, not a confusion between two specific labels. Section 7's note says a
+lopsided direction "usually points at your labelling". The agreement check in
+Milestone 3 is the test of that, but a model that never predicts a second
+label can't tell me anything about one boundary in my labels.
 
 
 

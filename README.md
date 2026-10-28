@@ -863,12 +863,41 @@ label can't tell me anything about one boundary in my labels.
      data/staff_taxonomy.md, not your own — so every argument below is made
      from those definitions and those decision rules. -->
 
-**Agreement rate:** ___ / 30 = ___%
+**Agreement rate:** 25 / 30 = 83%
+
+I labelled the 30 posts by hand, blind, under the staff taxonomy, with
+`label_staff.py`. It shows the staff definitions and rules verbatim and never
+opens the answer key. My labels are in `my_staff_labels.csv`, and the result is
+`agreement_results.json` (`agreed` 25, `compared` 30). I only got
+`data/staff_labels.csv` from my TF after my 30 were saved.
 
 <!-- Nobody grades this number. A 60% who argues every disagreement from the
      stated rules beats a 95% who wrote "staff was right" nine times. Several
      of the 30 were chosen because they're genuinely ambiguous — you should be
      winning some of these. -->
+
+**A second labeller, for the diagnosis.** The agent that reviewed 211 of the
+231 rows in `labels.csv` (see How I Used AI) also labelled the same 30 posts,
+blind, under the staff taxonomy. Its labels are in `my_staff_labels_proxy.csv`
+and its result in `agreement_results_proxy.json`.
+
+| Comparison, same 30 posts | Agreed | Rate |
+|---|---|---|
+| Me vs staff | 25 / 30 | 83% |
+| Review agent vs staff | 30 / 30 | 100%, including all 7 posts staff marked borderline |
+| Me vs review agent | 25 / 30 | 83%, the same five posts |
+
+One caveat on that 100%. The staff posts are grouped by label in ID order
+(sp_001–010 are `analysis`, 011–020 `hot_take`, 021–030 `reaction`). The
+agent noticed this only after labelling, and I can't rule out that runs of
+same-label posts made agreeing easier. I labelled in the same order and got
+25.
+
+| Labels given | `analysis` | `hot_take` | `reaction` |
+|---|---|---|---|
+| Staff | 10 | 10 | 10 |
+| Me | 7 | 15 | 8 |
+| Review agent | 10 | 10 | 10 |
 
 **Disagreements**
 
@@ -885,27 +914,114 @@ label can't tell me anything about one boundary in my labels.
      written rule two different ways on 30 posts, that is direct evidence about
      what you did across your own 200. -->
 
-**1.**
-> *The post:*
+**1. sp_004**
+> *The post:* "Everyone blames the hill at 18 miles. I split the field into people who ran the first half under 1:45 and over, and the slowdown after 18 was almost identical for both groups. If the hill were the problem the fast starters would fall apart harder."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take`
 >
-> *My call, and why:*
+> *My call, and why:* **I'm right.** Rule 1 asks whether the fact carries the
+> argument, but the fact never appears in the post. "Almost identical" is the
+> writer's summary of a split no reader can see, and "the fast starters would
+> fall apart harder" is an assumption, not a result. What's stated can't
+> reliably serve as the reason for the conclusion, so it's a confident claim
+> in the shape of a test: `hot_take`.
 >
-> *Which pile:*
+> *Which pile:* **(c)**. Rule 1 can be read as "a comparison was described",
+> which is staff's reading, or as "a fact the reader can see is doing the
+> work", which is mine. Mine is defensible.
 
-**2.**
-> *The post:*
+**2. sp_009**
+> *The post:* "The 10K route was remeasured in 2021 and came out 60 metres long. Everyone comparing PBs from before and after that is comparing two different races, which is about 12 seconds at club pace."
 >
-> *Staff said / I said:*
+> *Staff said / I said:* `analysis` / `hot_take`
 >
-> *My call, and why:*
+> *My call, and why:* **Both defensible.** The date and the 60 m are checkable,
+> and they really do support "the course changed", which is staff's reading
+> under Rule 1. But the post's claim is bigger: that pre- and post-2021 PBs are
+> "two different races", on the strength of a 60-metre error (0.6% of the
+> distance). Read that way, the measurement is offered as a flourish on a
+> conclusion already reached, which is Rule 1's own example of a `hot_take`
+> with a statistic in it.
 >
-> *Which pile:*
+> *Which pile:* **(c)**. Rule 1 doesn't say how big a claim a small fact can
+> carry before it becomes decoration.
+
+**3. sp_010**
+> *The post:* "Three of us ran the same session on the same day, different shoes, within 10 seconds of each other over 5 miles. I'm not saying shoes do nothing, but whatever they do was smaller than the noise between three people."
+>
+> *Staff said / I said:* `analysis` / `hot_take`
+>
+> *My call, and why:* **I'm right.** A backyard experiment is no reason to call
+> this `analysis` rather than `hot_take`. The `analysis` definition asks for "a
+> specific, checkable fact", and a private session with three friends and no
+> times can't be checked by any reader. Three uncontrolled runners can't carry
+> a claim about what shoes do. Staff's own note calls this one HARD and
+> concedes the tiny sample.
+>
+> *Which pile:* **(c)**. "Checkable" is ambiguous between "checkable in
+> principle" (staff) and "checkable by the reader" (me). My reading is
+> defensible.
+
+**4. sp_027**
+> *The post:* "Wind was so bad on the out section I was leaning at about 20 degrees. Coming back felt like cheating."
+>
+> *Staff said / I said:* `reaction` / `hot_take`
+>
+> *My call, and why:* **Staff is right.** I took "coming back felt like
+> cheating" as the claim that made it a `hot_take`. But it's the writer
+> reporting how their own run felt, and Rule 2 ("is it about a claim or about
+> the writer?") puts that squarely in `reaction`. Nothing general about the
+> world is asserted.
+>
+> *Which pile:* **(a)**. The rule covered it and I applied it loosely.
+
+**5. sp_029**
+> *The post:* "Just realised the shoes I set every PB in this year are the ones I bought by accident in the wrong size."
+>
+> *Staff said / I said:* `reaction` / `hot_take`
+>
+> *My call, and why:* **Both defensible.** Staff's reading is Rule 2: "just
+> realised" is the writer's own moment, now. My reading is that the post
+> credits wrong-size shoes as the reason for every PB. That attributes a cause
+> with no stats to back it up whatsoever, and "a confident claim with no
+> support" is the `hot_take` definition. Staff's own note says it "could be
+> read as a wry hot take".
+>
+> *Which pile:* **(c)**. Rule 2 can be answered both ways when a personal
+> moment is the vehicle for a general jab.
+
+**Piles:** (a) 1, (b) 0, (c) 4.
 
 **What the pattern in my disagreements tells me:**
 
+**All five go in one direction.** Every disagreement is me choosing
+`hot_take` where staff chose something else. Not once did I call a post
+`analysis` or `reaction` that staff called `hot_take`. I gave 15 `hot_take`
+labels against staff's 10.
 
+**The three `analysis` → `hot_take` calls are my own taxonomy leaking in.** My
+Rule 1 asks "who does the reader have to trust?", and under my rules a
+writer's private test is `experience`, not `evidence`. The staff taxonomy has
+no `experience` label, so when a post's support was the writer's own
+uncheckable data (sp_004, sp_010), or a small fact stretched over a big claim
+(sp_009), I fell back to `hot_take`. That makes these mostly pile (c),
+differences in how strict "checkable" is, not slips.
+
+**The one real slip, pile (a), is on the writer-versus-claim boundary.**
+sp_027 was a first-person report of the writer's own run, and I read it as a
+claim. In my taxonomy, that boundary is `experience` vs `assertion`
+(Rule 2: is a specific thing the writer did or saw described?). So on 30 posts
+my own lean is to read first-person posts as unsupported claims, toward
+`assertion`. That's direct evidence about one boundary in my data, and I use
+it in the diagnosis.
+
+**How far it reaches into my 231 labels.** Only my 20 `cold` rows were labelled
+by me alone. The other 211 were pre-labelled by Claude and reviewed by the
+agent that matched staff 30 out of 30. And on the cold rows, when I relabelled
+them, the two changes from the agent's first pass went the other way, from
+`assertion` to `experience`. So the agreement check says the bulk of my
+training labels came from a labeller that applies written rules the way their
+authors do. My lean toward the unsupported label is real but touches few rows.
 
 ---
 

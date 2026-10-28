@@ -651,6 +651,32 @@ and 0.073), and every one of those means sits between 0.55 and 0.64. The model
 was about equally sure of every post, right or wrong. The after half of this
 check, once the model predicts all three labels, goes under Milestone 5.
 
+**Result, after the improvement** (`results_three_seeds_after.json`; 11 posts
+per third):
+
+| Seed | Most-sure third right | Least-sure third right | Gap | Mean confidence when right | Mean confidence when wrong |
+|---|---|---|---|---|---|
+| 42 | 1.000 | 0.545 | +0.455 | 0.802 | 0.663 |
+| 7 | 0.818 | 0.364 | +0.455 | 0.751 | 0.656 |
+| 2024 | 1.000 | 0.636 | +0.364 | 0.804 | 0.733 |
+
+**Yes, once the model actually discriminates.** On every seed, its most
+confident third is right 82–100% of the time, against 36–64% for its least
+confident third. When it's right it's more sure, by 0.07 to 0.14 on average.
+That's also why criterion 3 flipped from MISSED to MET.
+
+The difference from before is what the confidence means. Before, every post
+got the same label, so confidence only ranked how `assertion`-like a post
+looked, and the mean confidences when right and wrong were within 0.06 of each
+other. Now the model is choosing between labels, and its confidence separates
+its right answers from its wrong ones on all three seeds.
+
+**What it could be good for:** if the pattern holds, a confidence threshold is
+a triage rule. Send the least-sure third to a human and keep the rest. Whether
+the `experience`/`assertion` mistakes actually sit in that unsure third needs
+per-post confidences, which `results_three_seeds_after.json` doesn't store. The
+per-label error write-up below re-runs the seeds and checks it post by post.
+
 **2. A per-label error write-up** for whichever label the post-improvement
 confusion matrix says is worst (lowest F1 across the three seeds).
 - **Method:** `error_analysis.py` re-runs the improved setting on the same three
@@ -1141,26 +1167,140 @@ authors do. My lean toward the unsupported label is real but touches few rows.
 
 ## The Improvement
 
-**What I changed:**
+**What I changed:** one training setting. `EPOCHS` went from 3 to 10 in notebook
+section 2. Nothing else changed: the same 231 labels, the same taxonomy, the
+same criteria, the same learning rate (2e-5), batch size (16), max length (128)
+and seeds (42, 7, 2024). Section 6 was re-run with `RUN_LABEL = "after"` →
+`results_three_seeds_after.json`. `results_three_seeds_before.json` is
+untouched. Every split is identical to the before run, so before and after are
+scored on the same 35 test posts per seed. Trained on **`mps` (Apple M4)**,
+torch 2.14.1.
 
-**Which diagnosis pointed at it:**
+**Which diagnosis pointed at it:** the diagnosis of criteria 1, 2, 3 and 5. The
+before model predicted `assertion` for all 105 test posts, its validation
+accuracy sat flat at the `assertion` share while training loss was still
+falling on every seed, and the agreement report ruled out the labels as the
+cause. Training stopped too early. 10 epochs gives 110 optimizer steps instead
+of 33.
 
 ### Run Log — After
 
 | Criterion | Target | Seed 42 | Seed 7 | Seed 2024 | Verdict |
 |---|---|---|---|---|---|
-| 1.  |  |  |  |  |  |
-| 2.  |  |  |  |  |  |
-| 3.  |  |  |  |  |  |
-| 4.  |  |  |  |  |  |
-| 5.  |  |  |  |  |  |
+| 1. Accuracy clearly beats always guessing `assertion` | accuracy ≥ 0.65 **and** ≥ 0.10 above the seed's `assertion` share | 0.771 (share 0.629, +0.14) | 0.629 (share 0.629, +0.00) | 0.829 (share 0.629, +0.20) | **MISSED** |
+| 2. No label is left behind | every label's F1 ≥ 0.50 | lowest 0.333 (`evidence` 0.727, `experience` 0.333, `assertion` 0.894) | lowest 0.286 (`evidence` 0.667, `experience` 0.286, `assertion` 0.723) | lowest 0.444 (`evidence` 0.909, `experience` 0.444, `assertion` 0.880) | **MISSED** |
+| 3. Confident guesses are right more often | most-sure third − least-sure third ≥ 0.20 | 0.455 (1.000 − 0.545) | 0.455 (0.818 − 0.364) | 0.364 (1.000 − 0.636) | **MET** |
+| 4. My labels agree with someone else's | `agreed` ≥ 23 and `compared` = 30 | 25 / 30 | 25 / 30 | 25 / 30 | **MET** |
+| 5. Fine-tuning beats the zero-shot baseline | trained macro F1 − baseline macro F1 ≥ 0.15, on the same posts | +0.267 (0.651 vs 0.385) | +0.004 (0.559 vs 0.555)\* | +0.435 (0.745 vs 0.310)\* | **MET** |
+
+How each verdict was decided:
+- **1 MISSED.** Seeds 42 and 2024 clear both conditions, but seed 7 lands
+  exactly on 22/35 = 0.629, the `assertion` share. The target has to hold on all
+  three. (Seed 7 isn't collapsed; it predicts all three labels. Its right and
+  wrong answers just net out to the share.)
+- **2 MISSED.** `experience` is under 0.50 on every seed. `evidence` and
+  `assertion` clear it everywhere.
+- **3 MET.** The gap is at least 0.364 on every seed.
+- **4 MET.** Unchanged, since the improvement doesn't touch my staff labels.
+- **5 MET, as the criterion is written.** It's one comparison on the seed-42
+  posts: the improved model's seed-42 macro F1 (0.651) against
+  `baseline_results.json` (0.385), +0.267 ≥ 0.15. The same-posts check holds:
+  `n` 35 = `n_test` 35, and `held_out` is true. `results.json` still holds the
+  before model, and regenerating it would overwrite the evidence for the
+  before verdict, so the after number comes from the seed-42 entry of
+  `results_three_seeds_after.json`. That's the same split and the same code
+  section 5 uses. \*The supplementary seeds show how fragile this MET is. On
+  seed 7 the margin is +0.004, a miss. On seed 2024 it's +0.435. A single
+  35-post comparison can come out either way, so I'd call this "met on the
+  split the criterion names", not "fine-tuning reliably beats zero-shot".
+
+**Before and after, side by side** (same seeds, same test posts):
+
+| Criterion | Before | After |
+|---|---|---|
+| 1. Accuracy | MISSED (0.629 on every seed, +0.00 over the share) | MISSED (0.771 / 0.629 / 0.829; 2 of 3 seeds pass) |
+| 2. Every label F1 | MISSED (lowest 0.000 on every seed) | MISSED (lowest 0.333 / 0.286 / 0.444, always `experience`) |
+| 3. Confidence gap | MISSED (0.545 / 0.000 / 0.455) | **MET** (0.455 / 0.455 / 0.364) |
+| 4. Staff agreement | MET (25 / 30) | MET (25 / 30) |
+| 5. Beats the baseline | MISSED (−0.127) | **MET** (+0.267; supplementary +0.004 / +0.435) |
+
+| Mean over 3 seeds | Before | After | Change |
+|---|---|---|---|
+| Accuracy | 0.629 | 0.743 | +0.114 |
+| Macro F1 | 0.257 | 0.652 | +0.394 |
+| F1 — `evidence` | 0.000 | 0.768 | +0.768 |
+| F1 — `experience` | 0.000 | 0.354 | +0.354 |
+| F1 — `assertion` | 0.772 | 0.832 | +0.060 |
+
+**Confusion matrix, after.** Seed 42, as printed by section 7:
+
+| true \ predicted | evidence | experience | assertion |
+|---|---|---|---|
+| **evidence** | 4 | 2 | 0 |
+| **experience** | 1 | 2 | 4 |
+| **assertion** | 0 | 1 | 21 |
+
+All three seeds pooled (105 test posts):
+
+| true \ predicted | evidence | experience | assertion |
+|---|---|---|---|
+| **evidence** | 12 | 2 | 4 |
+| **experience** | 1 | 6 | 14 |
+| **assertion** | 0 | 6 | 60 |
+
+The biggest off-diagonal number is now a real boundary, and the one the
+diagnosis named. 14 of the 21 real `experience` posts were called `assertion`,
+and 6 `assertion` posts went the other way. `evidence` is mostly learned:
+12 of 18, and no `assertion` post was ever called `evidence`.
 
 **Did it help, and how do I know:**
 
 <!-- If it didn't, say so. Relabelling that didn't help is a genuinely
      interesting result and earns full credit. -->
 
+**Yes. It fixed the failure it was aimed at, and two criteria flipped from
+MISSED to MET (3 and 5).** I know because only `EPOCHS` changed, and both run
+logs use the same three seeds and the same test posts, so the differences in
+the tables above can only come from training length. Mean macro F1 went from
+0.257 to 0.652, and the model now predicts all three labels on every seed.
 
+**It didn't fix everything, and it exposed something.** Criteria 1 and 2 are
+still missed, and both misses now trace to one label pair, `experience` vs
+`assertion`. The before run's zero spread is gone too. Accuracy now moves
+0.200 across seeds (0.629 to 0.829), and the notebook flags that as "too small
+or too lopsided for a stable measure". That's the real noise of a 35-post test
+split with 7 `experience` posts in it: one post is 14 points of `experience`
+recall. The untrained baseline moved 0.245 in macro F1 across the same three
+splits, so this spread belongs to the test set, not the model.
+
+**Diagnosis of the misses that remain**, using the same four causes:
+
+- **2 (`experience` under 0.50 on every seed).** The cause is **a genuinely
+  hard label pair**, `experience` vs `assertion`, plus **few examples** of the
+  minority side. The evidence:
+  - The pooled matrix puts 14 of 21 `experience` errors in `assertion`, with 6
+    going the other way. That's confusion in both directions within one pair,
+    the signature of a hard boundary rather than a missing label.
+  - It isn't data size alone. `evidence`, with fewer training posts (28 against
+    31), reaches F1 0.67–0.91, because it has surface cues (links, numbers,
+    version strings). `experience` and `assertion` are both first-person and
+    differ only in whether a specific thing the writer did is described
+    (Rule 2).
+  - The agreement report's one pile-(a) slip was on this same writer-versus-claim
+    boundary, so some of the noise may be in my labels. But that slip touches
+    my 20 hand-labelled rows at most. The review agent behind the other 211
+    matched staff 30 out of 30, which points at the pair being hard rather
+    than the labels being inconsistent.
+  - The per-label error write-up (stretch, below) reads the actual misclassified
+    posts.
+- **1 (accuracy on seed 7).** It's the same pair, and the noise level. Seed 7's
+  model swapped 5 `experience` posts into `assertion` and 5 `assertion` posts
+  into `experience`, which netted its accuracy to exactly the share. To clear
+  both conditions it needed 26 of 35 right (0.743), four more than it got. A
+  0.20 spread across seeds says a single 35-post split can't settle a 0.10
+  margin.
+
+---
 
 ---
 

@@ -391,6 +391,58 @@ made the same way: Claude pre-labelled 112 candidates and the same agent
 reviewed every one, correcting 15. Claude also wrote `stretch_runs.py` and ran
 the stretch runs.
 
+### Unit 6
+
+**Moment 3: finding the pattern in my `experience` errors**
+
+- *What I asked for:* after the first improvement, `experience` was the worst
+  label on every seed. I asked Claude to re-run the improved model on the same
+  three seeds, save every test prediction with its confidence, and read each
+  `experience` post it got wrong against my taxonomy, saying what they had in
+  common.
+- *What came back:* 6 of the 10 missed posts had the first-hand part as one
+  clause inside a post shaped like a claim, advice or praise. My precedence
+  rule counts that as `experience`, but the model read the overall shape as
+  `assertion`. First-person words couldn't separate the pair: they were in 13
+  of the 14 misses, and also in 22 of the 60 `assertion` posts it got right.
+  Only 1 of the 10 traced to two labellers disagreeing.
+- *What I changed:* I chose more `experience` examples over relabelling for the
+  second improvement, and reviewed all 42 candidates myself. Mean `experience`
+  F1 went from 0.354 to 0.642, and criterion 2 flipped to MET.
+
+**Moment 4: both sides of each staff disagreement**
+
+- *What I asked for:* for each of my 5 disagreements with the staff labels, the
+  strongest case for each label, argued only from `data/staff_taxonomy.md`. I
+  made every call and picked every pile myself.
+- *What came back:* the two cases for each post. When I filed my calls, it also
+  flagged that two of them contradicted their pile. On sp_004 and sp_010 I'd
+  written "I'm right" but put them in pile (a), which means I applied the rule
+  loosely.
+- *What I changed:* I moved both to pile (c), "the rule is ambiguous here and
+  my reading is defensible". That took pile (a) from 3 posts to 1, so the
+  diagnosis rests on one real slip (sp_027, on the writer-versus-claim
+  boundary) instead of three apparent ones.
+
+**Unit 6 disclosure:**
+- **Staff labels:** I labelled all 30 staff posts myself, blind, with
+  `label_staff.py`. Those are `my_staff_labels.csv`, which criterion 4
+  measures. The agent that reviewed my unit 5 labels labelled a second copy
+  blind (`my_staff_labels_proxy.csv`), used only as evidence in the diagnosis.
+- **Adjudication:** Claude wrote the both-sides cases. I made every call,
+  picked every pile and gave each reason, and Claude wrote my reasons up in
+  full against the staff definitions.
+- **The prediction** in Baseline vs. Trained was written by the same agent,
+  standing in for me, before `baseline.py` had produced any number.
+- **Second improvement:** Claude pre-labelled the 42 `experience` candidates,
+  each with a one-line reason. I confirmed 34 and overrode 8 myself with
+  `review_experience.py`.
+- **Everything else:** Claude wrote the unit 6 scripts (`label_staff.py`,
+  `error_analysis.py`, `review_experience.py`) and ran every training and
+  baseline run. It also drafted the rest of the unit 6 text from the result
+  files: the run logs, the verdicts and opposite-verdict checks, the
+  diagnoses, the error write-up and What's Still Broken.
+
 ---
 
 ## Stretch Features
@@ -1565,12 +1617,61 @@ so 3 of 5 are still met.
 
 <!-- For each criterion still missed: what you'd do, and why you stopped. -->
 
+The final notebook runs the second improvement's setup: 10 epochs, plus the 34
+extra `experience` posts in training (Run Log — After 2, under Unit 6 Stretch
+Features #3). Two criteria are still missed, both only on seed 7.
 
+**Criterion 1: accuracy on seed 7.** Seed 7 got 24 of 35 right (0.686) and
+needed 26 to clear the `assertion` share by 0.10. It has missed in all three
+runs (0.629, 0.629 and 0.686). 7 of its 11 mistakes are `assertion` posts
+called `experience`.
+- *What I'd do:* add first-person `assertion` posts to training: claims,
+  predictions and advice written with "I". The 34 new posts tipped the balance
+  of the only cue this pair has. Of the training posts with a first-person
+  word, `experience` went from 27–30% to 46–48% and `assertion` from 55–57% to
+  41–42%, and the pair's mistakes flipped direction with it. More posts like
+  the error write-up's "I predict this is too" would put "I" back on both
+  sides. I'd also want a bigger test split before trusting any fix here: one
+  post is 2.9 accuracy points, accuracy still spreads 0.200 across seeds, and
+  the margin being judged is 0.10.
+- *Why I stopped:* the unit allows one improvement, and the stretch one more.
+  Both are used. A third change would sit on top of two others, and a two-post
+  gain on one seed is too small to tell from run-to-run noise with one run per
+  seed.
+
+**Criterion 3: the confidence gap on seed 7.** It's 0.182 against a target of
+0.20. It was MET after the first improvement and slipped after the second, by
+one post: seed 7's most-sure third got 8 of 11 right, and its least-sure third
+6 of 11.
+- *What I'd do:* first find out whether it's real, by retraining seed 7's
+  split a few times with only the training seed changed. One post in a third
+  of 11 is 0.09, so 0.182 could be noise around a gap over 0.20. If it holds,
+  the same first-person `assertion` posts are the fix to try. Most of seed 7's
+  wrong answers are now `experience` calls (7 of 11), and its wrong answers got
+  more confident (0.656 → 0.759 on average).
+- *Why I stopped:* the same budget. The second improvement traded this
+  criterion for criterion 2, and undoing it would lose criterion 2 again, which
+  is the one that shows the model finds `experience` at all. A 0.182 gap still
+  means its confident calls are right more often than its unsure ones (8 of 11
+  against 6 of 11).
+
+**Criterion 5 is MET only on the split it names.** The criterion is one
+comparison on seed 42 (+0.302). On seed 7's split the margin is +0.111, under
+0.15. The verdict stands as written, but a three-seed version of this
+criterion would currently be missed.
 
 **The gap between what I meant my labels to capture and what the model
 learned:**
 <!-- Two sentences. Your confusion matrix is the evidence. -->
 
+I meant `experience` to turn on one thing, a specific first-hand event
+anywhere in the post, but the model learned the post's overall shape and
+voice: after the first improvement it called 14 of 21 real `experience` posts
+`assertion` (pooled matrix), mostly ones with the first-hand part buried in a
+claim, advice or praise, and after 34 more stories it called 11 `assertion`
+posts `experience`, so the pair still holds 15 of the final model's 23
+mistakes. `evidence`, whose pointer sits on the surface, was learned close to
+what I meant: no `assertion` post was called `evidence` in either improved run.
 
 
 <!-- ═════════════════════════════════════════════════════════════════════
